@@ -21,6 +21,10 @@ theme = "hextra"
     name = "Archives"
     pageRef = "/archives"
     weight = 2
+  [[menu.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 3
 
 [markup]
   [markup.goldmark]
