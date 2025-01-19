@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: apoorvtrivedi/approvedthoughts
+  branch: main
+  auth_endpoint: auth
+  base_url: https://api.netlify.com
+
+media_folder: "static/images"
+public_folder: "/images"
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "content/posts"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "pages"
+    label: "Pages"
+    folder: "content"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
