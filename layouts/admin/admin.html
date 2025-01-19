@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js" async></script>
+    <script>
+      window.CMS_MANUAL_INIT = true;
+      
+      CMS.init({
+        config: {
+          backend: {
+            name: 'github',
+            repo: 'apoorvtrivedi/approvedthoughts',
+            branch: 'main',
+            base_url: 'https://approvedthoughts.com'
+          },
+          media_folder: 'static/images',
+          public_folder: '/images',
+          collections: [
+            {
+              name: 'posts',
+              label: 'Blog Posts',
+              folder: 'content/posts',
+              create: true,
+              fields: [
+                {label: 'Title', name: 'title', widget: 'string'},
+                {label: 'Date', name: 'date', widget: 'datetime'},
+                {label: 'Draft', name: 'draft', widget: 'boolean', default: true},
+                {label: 'Body', name: 'body', widget: 'markdown'}
+              ]
+            }
+          ]
+        }
+      });
+    </script>
+  </body>
+</html>
