@@ -2,9 +2,8 @@ backend:
   name: github
   repo: apoorvtrivedi/approvedthoughts
   branch: main
-  base_url: https://auth.decapcms.com
+  base_url: https://api.staticcms.org
   auth_endpoint: auth
-  client_id: YOUR_GITHUB_CLIENT_ID
 
 media_folder: static/images
 public_folder: /images
