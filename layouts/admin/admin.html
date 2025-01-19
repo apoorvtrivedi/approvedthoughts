@@ -6,36 +6,20 @@
     <title>Content Manager</title>
   </head>
   <body>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js" async></script>
+    <!-- Add a loading message that we should see -->
+    <div id="loading">Loading CMS...</div>
+    
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script>
-      window.CMS_MANUAL_INIT = true;
-      
-      CMS.init({
-        config: {
-          backend: {
-            name: 'github',
-            repo: 'apoorvtrivedi/approvedthoughts',
-            branch: 'main',
-            base_url: 'https://approvedthoughts.com'
-          },
-          media_folder: 'static/images',
-          public_folder: '/images',
-          collections: [
-            {
-              name: 'posts',
-              label: 'Blog Posts',
-              folder: 'content/posts',
-              create: true,
-              fields: [
-                {label: 'Title', name: 'title', widget: 'string'},
-                {label: 'Date', name: 'date', widget: 'datetime'},
-                {label: 'Draft', name: 'draft', widget: 'boolean', default: true},
-                {label: 'Body', name: 'body', widget: 'markdown'}
-              ]
-            }
-          ]
-        }
-      });
+      // Basic error handling
+      window.onerror = function(msg, url, lineNo, columnNo, error) {
+        console.error('Error: ' + msg + '\nURL: ' + url + '\nLine: ' + lineNo + '\nColumn: ' + columnNo + '\nError object: ' + JSON.stringify(error));
+        document.body.innerHTML += '<p style="color:red;">Error loading CMS. Check console for details.</p>';
+        return false;
+      };
+
+      // Simple config without manual init
+      window.CMS_MANUAL_INIT = false;
     </script>
   </body>
 </html>
