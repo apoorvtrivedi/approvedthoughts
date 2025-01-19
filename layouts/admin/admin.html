@@ -6,7 +6,38 @@
     <title>Content Manager</title>
   </head>
   <body>
-    <!-- Include the script that builds the page and powers Decap CMS -->
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js" async></script>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      window.CMS_MANUAL_INIT = true;
+      
+      CMS.init({
+        config: {
+          backend: {
+            name: 'github',
+            repo: 'apoorvtrivedi/approvedthoughts',
+            branch: 'main',
+            base_url: 'https://auth.decapcms.com',
+            auth_endpoint: 'auth',
+            client_id: 'YOUR_GITHUB_CLIENT_ID'
+          },
+          media_folder: 'static/images',
+          public_folder: '/images',
+          collections: [
+            {
+              name: 'posts',
+              label: 'Blog Posts',
+              folder: 'content/posts',
+              create: true,
+              fields: [
+                {label: 'Title', name: 'title', widget: 'string'},
+                {label: 'Date', name: 'date', widget: 'datetime'},
+                {label: 'Draft', name: 'draft', widget: 'boolean', default: true},
+                {label: 'Body', name: 'body', widget: 'markdown'}
+              ]
+            }
+          ]
+        }
+      });
+    </script>
   </body>
 </html>
