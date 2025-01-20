@@ -8,17 +8,24 @@
   <body>
     <div id="debug">Waiting for authentication...</div>
     <script>
+      // Initialize CMS with stored token if it exists
+      if (window.localStorage.getItem('netlify-cms-github-token')) {
+        document.getElementById('debug').innerHTML = 'Found existing token, initializing CMS...';
+      }
+
       window.addEventListener('message', function(event) {
         const debugDiv = document.getElementById('debug');
         debugDiv.innerHTML += '<br>Message received: ' + JSON.stringify(event.data);
         
-        if (event.data.type === 'github:token') {
-          debugDiv.innerHTML += '<br>Setting token in localStorage...';
-          const token = event.data.token;
-          window.localStorage.setItem('git-gateway-github-token', token);
-          window.localStorage.setItem('netlify-cms-github-token', token);
-          debugDiv.innerHTML += '<br>Reloading page...';
-          window.location.reload();
+        if (event.data.type === 'github:token' && event.data.token) {
+          debugDiv.innerHTML += '<br>Token received, storing...';
+          window.localStorage.setItem('netlify-cms-github-token', event.data.token);
+          
+          // Force refresh the page after a short delay
+          setTimeout(() => {
+            debugDiv.innerHTML += '<br>Reloading page...';
+            window.location.href = window.location.href;
+          }, 1000);
         }
       });
     </script>
