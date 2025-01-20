@@ -6,6 +6,12 @@
     <title>Content Manager</title>
   </head>
   <body>
+    <script>
+      // Add message event listener before CMS loads
+      window.addEventListener('message', function(event) {
+        console.log('Message received:', event.data);
+      });
+    </script>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
 </html>
