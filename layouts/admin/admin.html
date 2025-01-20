@@ -10,17 +10,37 @@
     <script>
       window.CMS_MANUAL_INIT = true;
 
-      // Wait for CMS script to load before initializing
       function initCMS() {
         const token = window.localStorage.getItem('netlify-cms-github-token');
         if (token) {
           document.getElementById('debug').innerHTML = 'Found existing token, initializing CMS...';
-          // Make sure CMS is loaded
-          if (window.CMS) {
-            window.CMS.init({});
-          } else {
-            document.getElementById('debug').innerHTML += '<br>Waiting for CMS to load...';
-          }
+          // Initialize with full config
+          window.CMS.init({
+            config: {
+              backend: {
+                name: 'github',
+                repo: 'apoorvtrivedi/approvedthoughts',
+                branch: 'main',
+                token: token
+              },
+              media_folder: 'static/images',
+              public_folder: '/images',
+              collections: [
+                {
+                  name: 'posts',
+                  label: 'Blog Posts',
+                  folder: 'content/posts',
+                  create: true,
+                  fields: [
+                    {label: 'Title', name: 'title', widget: 'string'},
+                    {label: 'Date', name: 'date', widget: 'datetime'},
+                    {label: 'Draft', name: 'draft', widget: 'boolean', default: true},
+                    {label: 'Body', name: 'body', widget: 'markdown'}
+                  ]
+                }
+              ]
+            }
+          });
         }
       }
 
