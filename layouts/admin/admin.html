@@ -6,11 +6,15 @@
     <title>Content Manager</title>
   </head>
   <body>
-    <div id="debug">Waiting for authentication...</div>
+    <div id="debug">Checking authentication...</div>
     <script>
+      window.CMS_MANUAL_INIT = true;
+
       // Initialize CMS with stored token if it exists
-      if (window.localStorage.getItem('netlify-cms-github-token')) {
+      const token = window.localStorage.getItem('netlify-cms-github-token');
+      if (token) {
         document.getElementById('debug').innerHTML = 'Found existing token, initializing CMS...';
+        window.CMS.init({});
       }
 
       window.addEventListener('message', function(event) {
@@ -21,7 +25,6 @@
           debugDiv.innerHTML += '<br>Token received, storing...';
           window.localStorage.setItem('netlify-cms-github-token', event.data.token);
           
-          // Force refresh the page after a short delay
           setTimeout(() => {
             debugDiv.innerHTML += '<br>Reloading page...';
             window.location.href = window.location.href;
