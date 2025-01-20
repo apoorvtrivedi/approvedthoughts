@@ -7,11 +7,50 @@
   </head>
   <body>
     <script>
-      // Add message event listener before CMS loads
       window.addEventListener('message', function(event) {
         console.log('Message received:', event.data);
+        if (event.data.type === 'github:token') {
+          console.log('GitHub token received, setting up auth');
+          const token = event.data.token;
+          // Store the token
+          window.localStorage.setItem('git-gateway-github-token', token);
+          window.localStorage.setItem('netlify-cms-github-token', token);
+          // Reload to reinitialize the CMS with the token
+          window.location.reload();
+        }
       });
     </script>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      // Initialize CMS with manual config
+      window.CMS_MANUAL_INIT = true;
+      const config = {
+        backend: {
+          name: 'github',
+          repo: 'apoorvtrivedi/approvedthoughts',
+          branch: 'main',
+          auth_type: 'implicit',
+          app_id: 'Ov23liWc80V5gPeqWnwm' // Add your GitHub Client ID here
+        },
+        media_folder: 'static/images',
+        public_folder: '/images',
+        collections: [
+          {
+            name: 'posts',
+            label: 'Blog Posts',
+            folder: 'content/posts',
+            create: true,
+            fields: [
+              {label: 'Title', name: 'title', widget: 'string'},
+              {label: 'Date', name: 'date', widget: 'datetime'},
+              {label: 'Draft', name: 'draft', widget: 'boolean', default: true},
+              {label: 'Body', name: 'body', widget: 'markdown'}
+            ]
+          }
+        ]
+      };
+      
+      CMS.init({ config });
+    </script>
   </body>
 </html>
