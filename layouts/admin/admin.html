@@ -6,14 +6,18 @@
     <title>Content Manager</title>
   </head>
   <body>
+    <div id="debug">Waiting for authentication...</div>
     <script>
       window.addEventListener('message', function(event) {
-        console.log('Message received:', event.data);
+        const debugDiv = document.getElementById('debug');
+        debugDiv.innerHTML += '<br>Message received: ' + JSON.stringify(event.data);
+        
         if (event.data.type === 'github:token') {
-          console.log('GitHub token received, setting up auth');
+          debugDiv.innerHTML += '<br>Setting token in localStorage...';
           const token = event.data.token;
           window.localStorage.setItem('git-gateway-github-token', token);
           window.localStorage.setItem('netlify-cms-github-token', token);
+          debugDiv.innerHTML += '<br>Reloading page...';
           window.location.reload();
         }
       });
