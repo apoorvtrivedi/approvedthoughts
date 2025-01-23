@@ -1,4 +1,4 @@
 ---
 title: "Admin"
-layout: "admin"
+layout: "Admin"
 ---
