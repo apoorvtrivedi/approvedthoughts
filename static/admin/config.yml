@@ -2,24 +2,21 @@ backend:
   name: github
   repo: apoorvtrivedi/approvedthoughts
   branch: main
-  api_root: https://api.github.com
-  base_url: https://cms-auth.apoorv-trivedi.workers.dev/  # Replace with your actual worker URL
-  auth_endpoint: api/auth
+  base_url: https://api.netlify.com # Required for Decap CMS
+  auth_endpoint: auth # Used for Decap CMS authentication
+  app_id: Ov23liWc80V5gPeqWnwm  # Paste your Client ID here as it is
 
-
-
-media_folder: static/images
-public_folder: /images
+media_folder: "static/images"
+public_folder: "/images"
 
 collections:
-  - name: posts
-    label: Blog Posts
-    folder: content/posts
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
     create: true
     fields:
-      - {label: Title, name: title, widget: string}
-      - {label: Date, name: date, widget: datetime}
-      - {label: Draft, name: draft, widget: boolean, default: true}
-      - {label: Body, name: body, widget: markdown}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
 
-local_backend: false
+
