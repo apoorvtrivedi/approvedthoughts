@@ -2,8 +2,6 @@ backend:
   name: github
   repo: apoorvtrivedi/approvedthoughts
   branch: main
-  base_url: https://api.netlify.com # Required for Decap CMS
-  auth_endpoint: auth # Used for Decap CMS authentication
   app_id: Ov23liWc80V5gPeqWnwm  # Paste your Client ID here as it is
 
 media_folder: "static/images"
