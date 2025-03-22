@@ -1,32 +1,73 @@
-baseURL = "https://approvedthoughts.com"
+baseURL = "https://approvedthoughts.com/"
+languageCode = "en-us"
 title = "Approved Thoughts"
 theme = "hextra"
 
-[params]
-  description = "Welcome to Approved Thoughts"
-  displayUpdatedDate = true
-  
-  [params.search]
-    enable = true
-    
-  [params.sidebar]
-    enable = true
+# Enable search
+[outputs]
+home = ["HTML", "RSS", "JSON"]
 
+# Main menu
 [menu]
-  [[menu.main]]
-    name = "Blog"
-    pageRef = "/posts"
-    weight = 1
-  [[menu.main]]
-    name = "Archives"
-    pageRef = "/archives"
-    weight = 2
-  [[menu.main]]
-    name = "About"
-    pageRef = "/about"
-    weight = 3
+[[menu.main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 10
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[[menu.main]]
+  name = "Blog"
+  pageRef = "/posts"
+  weight = 20
+
+[[menu.main]]
+  name = "About"
+  pageRef = "/about"
+  weight = 30
+
+# Theme configuration
+[params]
+  # Display posts on the homepage
+  mainSections = ["posts"]
+  
+  # Show full content of posts on homepage
+  showFullContent = true
+  
+  # Site description
+  description = "Thoughts approved for public consumption"
+  
+  # Social links
+  [params.social]
+    # Add your social media links here
+    # twitter = "https://twitter.com/yourusername"
+    # github = "https://github.com/yourusername"
+    
+  # Footer configuration
+  [params.footer]
+    copyright = "© 2025 Approved Thoughts"
+
+# Hextra-specific settings
+[params.hextra]
+  # Enable dark mode toggle
+  darkMode = true
+  
+  # Customize the homepage
+  [params.hextra.home]
+    # Enable the hero section
+    enabled = true
+    title = "Approved Thoughts"
+    subtitle = "Ideas worth sharing"
+    
+  # Customize the navbar
+  [params.hextra.navbar]
+    enabled = true
+
+  # Sidebar navigation
+  [params.hextra.sidebar]
+    enabled = true
+    
+  # Page layout
+  [params.hextra.page]
+    # Show table of contents on blog posts
+    tableOfContents = true
+    # Show breadcrumbs
+    breadcrumb = true
