@@ -36,12 +36,12 @@
         </div>
         {{ end }}
         
-        <div class="blog-post-content" style="text-align: justify;">
-          {{ if .Params.image }}
-          <img src="{{ .Params.image }}" alt="{{ .Title }}" class="img-fluid mb-3">
-          {{ end }}
-          
-          {{ .Content }}
+        <div class="blog-post-content markdown-content" style="text-align: justify;">
+            {{ if .Params.image }}
+            <img src="{{ .Params.image }}" alt="{{ .Title }}" class="img-fluid mb-3">
+            {{ end }}
+            
+            {{ .Content }}
         </div>
         
         <div class="blog-post-navigation mt-5 pt-3" style="border-top: 1px solid #eee;">

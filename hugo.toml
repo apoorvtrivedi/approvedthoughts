@@ -8,8 +8,21 @@ enableRobotsTXT = true
 enableGitInfo = false
 enableEmoji = true
 
-[markup.goldmark.renderer]
-  unsafe = true  # Allow HTML in markdown
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
 
 [markup.highlight]
   noClasses = false

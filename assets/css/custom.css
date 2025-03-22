@@ -133,3 +133,64 @@ a {
   .justified {
     text-align: justify !important;
   }
+
+  /* Explicit styling for markdown elements */
+
+/* Ordered lists */
+ol {
+    list-style-type: decimal !important;
+    padding-left: 2rem !important;
+    margin-bottom: 1rem !important;
+    display: block !important;
+  }
+  
+  ol li {
+    display: list-item !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  /* Unordered lists */
+  ul {
+    list-style-type: disc !important;
+    padding-left: 2rem !important;
+    margin-bottom: 1rem !important;
+    display: block !important;
+  }
+  
+  ul li {
+    display: list-item !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  /* Blockquotes */
+  blockquote {
+    border-left: 4px solid #dee2e6 !important;
+    padding-left: 1rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    font-style: italic !important;
+    color: #6c757d !important;
+    display: block !important;
+  }
+  
+  /* Code blocks */
+  pre {
+    background-color: #f8f9fa !important;
+    padding: 1rem !important;
+    border-radius: 0.25rem !important;
+    overflow-x: auto !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  code {
+    font-family: monospace !important;
+    background-color: #f8f9fa !important;
+    padding: 0.2rem 0.4rem !important;
+    border-radius: 0.25rem !important;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
