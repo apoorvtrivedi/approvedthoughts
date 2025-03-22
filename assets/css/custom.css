@@ -194,3 +194,34 @@ ol {
     margin-top: 1.5rem !important;
     margin-bottom: 1rem !important;
   }
+
+  /* Paragraph spacing */
+p {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* Last paragraph in a container doesn't need bottom margin */
+  p:last-child {
+    margin-bottom: 0 !important;
+  }
+  
+  /* Spacing between block elements */
+  blockquote, ul, ol, pre, h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* Ensure blockquotes have proper spacing when stacked */
+  blockquote + blockquote {
+    margin-top: 2rem !important;
+  }
+  
+  /* Add spacing between list items */
+  li {
+    margin-bottom: 0.5rem !important;
+  }
+  
+  /* Last item in a list doesn't need bottom margin */
+  li:last-child {
+    margin-bottom: 0 !important;
+  }

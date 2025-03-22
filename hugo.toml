@@ -54,7 +54,7 @@ enableEmoji = true
   # Main page settings
   description = ""
   mainSections = ['posts', 'blog']
-  showFullContent = false
+  showFullContent = true
   
   # Site footer configuration
   copyright = "© 2023-2025 Approved Thoughts"
