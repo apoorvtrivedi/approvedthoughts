@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: apoorvtrivedi/approvedthoughts
+  name: git-gateway
   branch: main
 
 # Media files will be stored in the repo under static/images/uploads
