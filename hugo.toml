@@ -13,6 +13,11 @@ enableEmoji = true
 
 [markup.highlight]
   noClasses = false
+  
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
 
 [menu]
   [[menu.main]]

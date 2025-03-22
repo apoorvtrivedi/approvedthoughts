@@ -1,0 +1,78 @@
+/* Custom styles to override theme defaults */
+
+/* Make article links blue with underline */
+.prose a {
+    color: #3b82f6; /* blue-500 */
+    text-decoration: underline;
+  }
+  
+  .prose a:hover {
+    color: #1d4ed8; /* blue-700 */
+  }
+  
+  /* Ensure regular text is black */
+  .prose p, .prose li, .prose blockquote {
+    color: #111827; /* gray-900 */
+  }
+  
+  /* For dark mode */
+  .dark .prose p, .dark .prose li, .dark .prose blockquote {
+    color: #f9fafb; /* gray-50 */
+  }
+  
+  .dark .prose a {
+    color: #60a5fa; /* blue-400 */
+  }
+  
+  .dark .prose a:hover {
+    color: #93c5fd; /* blue-300 */
+  }
+  
+  /* Post formatting */
+  .prose {
+    max-width: none;
+  }
+  
+  /* Ensure proper spacing between elements */
+  .prose > * + * {
+    margin-top: 1.25em;
+  }
+  
+  /* Style blockquotes */
+  .prose blockquote {
+    border-left: 4px solid #e5e7eb; /* gray-200 */
+    padding-left: 1rem;
+    font-style: italic;
+  }
+  
+  .dark .prose blockquote {
+    border-left-color: #374151; /* gray-700 */
+  }
+  
+  /* Style headers */
+  .prose h1, .prose h2, .prose h3, .prose h4 {
+    color: #111827; /* gray-900 */
+    font-weight: 700;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  
+  .dark .prose h1, .dark .prose h2, .dark .prose h3, .dark .prose h4 {
+    color: #f9fafb; /* gray-50 */
+  }
+  
+  /* Center the main title */
+  h1.text-5xl {
+    text-align: center;
+  }
+  
+  /* Format post dates consistently */
+  .text-sm time {
+    font-size: 0.875rem;
+    color: #6b7280; /* gray-500 */
+  }
+  
+  /* Text justification for content */
+  .text-justify {
+    text-align: justify;
+  }
