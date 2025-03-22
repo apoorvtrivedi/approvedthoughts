@@ -39,7 +39,7 @@ enableEmoji = true
 
 [params]
   # Main page settings
-  description = "Thoughts and ideas worth sharing"
+  description = ""
   mainSections = ['posts', 'blog']
   showFullContent = false
   
