@@ -1,6 +1,6 @@
 export async function onRequest(context) {
     const clientId = Ov23liWc80V5gPeqWnwm;  // Replace with your GitHub OAuth App Client ID
-    const clientSecret = 7e95e01fd05051f783a19db3898c59731c8d182a;  // Replace with your GitHub OAuth App Client Secret
+    const clientSecret = '7e95e01fd05051f783a19db3898c59731c8d182a';  // Replace with your GitHub OAuth App Client Secret
   
     const { request } = context;
     const url = new URL(request.url);
