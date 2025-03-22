@@ -1,73 +1,62 @@
-baseURL = "https://approvedthoughts.com/"
-languageCode = "en-us"
-title = "Approved Thoughts"
-theme = "hextra"
+baseURL = 'https://approvedthoughts.com/'
+languageCode = 'en-us'
+title = 'Approved Thoughts'
+theme = 'hextra'
 
-# Enable search
-[outputs]
-home = ["HTML", "RSS", "JSON"]
+# Enable blog functionality
+enableRobotsTXT = true
+enableGitInfo = false
+enableEmoji = true
 
-# Main menu
+[markup.goldmark.renderer]
+  unsafe = true  # Allow HTML in markdown
+
+[markup.highlight]
+  noClasses = false
+
 [menu]
-[[menu.main]]
-  name = "Home"
-  pageRef = "/"
-  weight = 10
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Archives"
+    url = "/archives/"
+    weight = 2
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
 
-[[menu.main]]
-  name = "Blog"
-  pageRef = "/posts"
-  weight = 20
-
-[[menu.main]]
-  name = "About"
-  pageRef = "/about"
-  weight = 30
-
-# Theme configuration
 [params]
-  # Display posts on the homepage
-  mainSections = ["posts"]
+  # Main page settings
+  description = "Thoughts and ideas worth sharing"
+  mainSections = ['posts', 'blog']
+  showFullContent = false
   
-  # Show full content of posts on homepage
-  showFullContent = true
+  # Site footer configuration
+  copyright = "© 2023-2025 Approved Thoughts"
   
-  # Site description
-  description = "Thoughts approved for public consumption"
-  
-  # Social links
   [params.social]
-    # Add your social media links here
-    # twitter = "https://twitter.com/yourusername"
-    # github = "https://github.com/yourusername"
-    
-  # Footer configuration
-  [params.footer]
-    copyright = "© 2025 Approved Thoughts"
+    github = "apoorvtrivedi"
+    # Add other social links if needed
+    # twitter = "yourusername"
+    # linkedin = "yourusername"
 
-# Hextra-specific settings
-[params.hextra]
-  # Enable dark mode toggle
-  darkMode = true
-  
-  # Customize the homepage
-  [params.hextra.home]
-    # Enable the hero section
-    enabled = true
-    title = "Approved Thoughts"
-    subtitle = "Ideas worth sharing"
-    
-  # Customize the navbar
-  [params.hextra.navbar]
-    enabled = true
-
-  # Sidebar navigation
-  [params.hextra.sidebar]
-    enabled = true
-    
-  # Page layout
-  [params.hextra.page]
-    # Show table of contents on blog posts
-    tableOfContents = true
-    # Show breadcrumbs
-    breadcrumb = true
+  # Hextra specific settings
+  [params.hextra]
+    [params.hextra.navbar]
+      enable = true
+      
+    [params.hextra.footer]
+      enable = true
+      
+    [params.hextra.theme]
+      # Primary color of the theme
+      # Type: string
+      # Default: "#0055FF"
+      primaryColor = "#4F46E5"

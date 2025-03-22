@@ -1,0 +1,9 @@
+{{ with .Site.Menus.main }}
+<div class="flex items-center gap-4">
+  {{ range . }}
+  <a href="{{ .URL }}" class="text-sm font-medium text-gray-600 transition-colors hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400" {{ if .URL | relLangURL | eq $.Page.RelPermalink }}aria-current="page"{{ end }}>
+    {{ .Name }}
+  </a>
+  {{ end }}
+</div>
+{{ end }}
