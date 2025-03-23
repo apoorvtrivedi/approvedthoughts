@@ -37,10 +37,10 @@ enableEmoji = true
     name = "Home"
     url = "/"
     weight = 1
-  [[menu.main]]
-    name = "Archives"
-    url = "/archives/"
-    weight = 2
+  #[[menu.main]]
+  #  name = "Archives"
+  #  url = "/archives/"
+  #  weight = 2
   [[menu.main]]
     name = "Tags"
     url = "/tags/"
