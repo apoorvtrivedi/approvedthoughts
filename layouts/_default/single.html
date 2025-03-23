@@ -3,7 +3,7 @@
 <div class="container-fluid">
   <div class="row">
     <!-- Left Sidebar - 2 columns on large screens -->
-    <div class="col-lg-3 d-none d-lg-block">
+    <div class="col-lg-2 d-none d-lg-block">
       <div class="position-sticky" style="top: 2rem;">
         <!-- Removing Categories Section
         <div class="p-4 mb-3 bg-light rounded">
@@ -19,12 +19,12 @@
           </ul>
         </div>
         -->
-        
+
       </div>
     </div>
 
-    <!-- Main Content - 8 columns on large screens -->
-    <div class="col-lg-6 mx-auto">
+    <!-- Main Content - 5 columns on large screens -->
+    <div class="col-lg-5 mx-auto">
       <article class="blog-post">
         <h1 class="blog-post-title" style="font-weight: 700; font-size: 2.5rem; text-align: left;">{{ .Title }}</h1>
         <p class="blog-post-meta" style="font-size: 0.9rem; color: #6c757d;">{{ .Date.Format "02-Jan-2006" }}</p>
@@ -75,7 +75,7 @@
     </div>
 
     <!-- Right Sidebar - 2 columns on large screens -->
-    <div class="col-lg-3 d-none d-lg-block">
+    <div class="col-lg-2 d-none d-lg-block">
       <div class="position-sticky" style="top: 2rem;">
         <div class="p-4 mb-3 bg-light rounded">
           <h4 class="font-italic">Recent Posts</h4>
@@ -102,6 +102,11 @@
         </div>
       </div>
     </div>
+
+      <!-- Empty space at the right (this will create the empty space) -->
+  <div class="col-lg-3 d-none d-lg-block">
+    <!-- Intentionally left empty -->
+
   </div>
 </div>
 
@@ -120,13 +125,19 @@
       margin-right: -15px;
       margin-left: -15px;
     }
+    .col-lg-2 {
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
     .col-lg-3 {
       position: relative;
       width: 100%;
       padding-right: 15px;
       padding-left: 15px;
     }
-    .col-lg-6 {
+    .col-lg-5 {
       position: relative;
       width: 100%;
       padding-right: 15px;
@@ -200,14 +211,18 @@
       .d-lg-block {
         display: block !important;
       }
+      .col-lg-2 {
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%;
+    }
       .col-lg-3 {
         flex: 0 0 25%;
         max-width: 25%;
       }
-      .col-lg-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-      }
+      .col-lg-5 {
+      flex: 0 0 41.666667%;
+      max-width: 41.666667%;
+    }
     }
   </style>
   {{ end }}

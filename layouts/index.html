@@ -2,8 +2,8 @@
 <!-- Overall container -->
 <div class="container-fluid">
   <div class="row">
-    <!-- Left Sidebar - 3 columns on large screens -->
-    <div class="col-lg-3 d-none d-lg-block">
+    <!-- Left Sidebar - 2 columns on large screens -->
+    <div class="col-lg-2 d-none d-lg-block">
       <div class="position-sticky" style="top: 2rem;">
         <!-- Removing Categories section
         <div class="p-4 mb-3 bg-light rounded">
@@ -23,8 +23,8 @@
       </div>
     </div>
 
-    <!-- Main Content - 6 columns on large screens -->
-    <div class="col-lg-6 mx-auto">
+    <!-- Main Content - 5 columns on large screens -->
+    <div class="col-lg-5 mx-auto">
       <!-- Site Title - Centered and large -->
       <div class="text-center mb-5">
         <h1 style="font-size: 3.5rem; font-weight: 800; margin-top: 2rem;">{{ .Site.Title }}</h1>
@@ -76,8 +76,8 @@
       {{ end }}
     </div>
 
-    <!-- Right Sidebar - 3 columns on large screens -->
-    <div class="col-lg-3 d-none d-lg-block">
+    <!-- Right Sidebar - 2 columns on large screens -->
+    <div class="col-lg-2 d-none d-lg-block">
       <div class="position-sticky" style="top: 2rem;">
         <div class="p-4 mb-3 bg-light rounded">
           <h4 class="font-italic">Recent Posts</h4>
@@ -122,13 +122,19 @@
     margin-right: -15px;
     margin-left: -15px;
   }
+  .col-lg-2 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
   .col-lg-3 {
     position: relative;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
   }
-  .col-lg-6 {
+  .col-lg-5 {
     position: relative;
     width: 100%;
     padding-right: 15px;
@@ -203,13 +209,17 @@
     .d-lg-block {
       display: block !important;
     }
+    .col-lg-2 {
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%;
+    }
     .col-lg-3 {
       flex: 0 0 25%;
       max-width: 25%;
     }
-    .col-lg-6 {
-      flex: 0 0 50%;
-      max-width: 50%;
+    .col-lg-5 {
+      flex: 0 0 41.666667%;
+      max-width: 41.666667%;
     }
   }
 </style>
