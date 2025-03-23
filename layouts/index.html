@@ -2,7 +2,7 @@
 <!-- Overall container -->
 <div class="container-fluid">
   <div class="row">
-    <!-- Left Sidebar - 2 columns on large screens -->
+    <!-- Left Sidebar - 3 columns on large screens -->
     <div class="col-lg-3 d-none d-lg-block">
       <div class="position-sticky" style="top: 2rem;">
         <div class="p-4 mb-3 bg-light rounded">
@@ -20,7 +20,7 @@
       </div>
     </div>
 
-    <!-- Main Content - 8 columns on large screens -->
+    <!-- Main Content - 6 columns on large screens -->
     <div class="col-lg-6 mx-auto">
       <!-- Site Title - Centered and large -->
       <div class="text-center mb-5">
@@ -73,7 +73,7 @@
       {{ end }}
     </div>
 
-    <!-- Right Sidebar - 2 columns on large screens -->
+    <!-- Right Sidebar - 3 columns on large screens -->
     <div class="col-lg-3 d-none d-lg-block">
       <div class="position-sticky" style="top: 2rem;">
         <div class="p-4 mb-3 bg-light rounded">
@@ -119,17 +119,21 @@
     margin-right: -15px;
     margin-left: -15px;
   }
-  .col-lg-2 {
+  .col-lg-3 {
     position: relative;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
   }
-  .col-lg-8 {
+  .col-lg-6 {
     position: relative;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+  }
+  .mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   .d-none {
     display: none !important;
@@ -196,14 +200,13 @@
     .d-lg-block {
       display: block !important;
     }
-    .col-lg-2 {
-      flex: 0 0 16.666667%;
-      max-width: 16.666667%;
+    .col-lg-3 {
+      flex: 0 0 25%;
+      max-width: 25%;
     }
-    .col-lg-8 {
-      flex: 0 0 66.666667%;
-      max-width: 66.666667%;
+    .col-lg-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
     }
   }
 </style>
-{{ end }}
