@@ -288,10 +288,20 @@ p {
 
 /* Center the site title/logo in the navbar */
 .nav-container nav {
-  justify-content: center !important;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-/* Make title text slightly larger */
+/* Center the title and logo container */
+.nav-container nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Make the site title text slightly larger */
 .nav-container nav a span[title="Approved Thoughts"] {
-  font-size: 1.25rem; /* or 1.5rem if you want it even bigger */
+  font-size: 1.25rem;  /* Adjust size as needed */
+  font-weight: bold;
 }
