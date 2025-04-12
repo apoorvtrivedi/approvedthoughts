@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authenticating...</title>
+  </head>
+  <body>
+    <script>
+      // Handle GitHub OAuth redirect
+      const params = new URLSearchParams(window.location.search.substring(1));
+      const token = params.get('access_token');
+      
+      if (token) {
+        localStorage.setItem('github-token', token);
+        window.opener.postMessage(
+          {
+            type: 'oauth',
+            provider: 'github',
+            token
+          },
+          window.location.origin
+        );
+      } else {
+        console.error('Authentication error');
+      }
+      
+      if (window.opener) {
+        window.opener.focus();
+      }
+      window.close();
+    </script>
+  </body>
+</html>
