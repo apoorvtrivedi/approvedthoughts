@@ -1,47 +1,253 @@
 {{ define "main" }}
-<div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-  <div class="mx-auto max-w-3xl">
-    <h1 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-      Archives
-    </h1>
-    <p class="mt-4 text-gray-500 dark:text-gray-400">
-      Browse all posts by year and month
-    </p>
+<!-- Overall container -->
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <!-- Left empty space (8.33%) -->
+    <div class="col-lg-1 col-start d-none d-lg-block"></div>
+    
+    <!-- Left Sidebar (16.67%) -->
+    <div class="col-lg-2 d-none d-lg-block">
+      <div class="position-sticky" style="top: 2rem;">
+        <!-- Intentionally left empty -->
+      </div>
+    </div>
 
-    <div class="mt-10 space-y-10">
+    <!-- Main Content (41.67%) -->
+    <div class="col-lg-5">
+      <div class="mb-5">
+        <h1 style="font-weight: 700; font-size: 2.5rem; text-align: left;">{{ .Title }}</h1>
+        <p class="text-gray-600">Browse all posts by year and month</p>
+      </div>
+
+      <!-- Group posts by year -->
       {{ range (.Site.RegularPages.GroupByDate "2006").Reverse }}
-      <div>
-        <h2 class="text-2xl font-bold text-gray-900 dark:text-white">{{ .Key }}</h2>
-        <div class="mt-6 divide-y divide-gray-200 border-t border-gray-200 dark:divide-gray-700 dark:border-gray-700">
-          {{ range .Pages }}
-          <article class="py-4">
-            <div class="flex items-start">
-              <div class="min-w-[7rem] text-sm text-gray-500 dark:text-gray-400">
-                {{ .Date.Format "January 2" }}
-              </div>
-              <div>
-                <h3 class="font-medium text-gray-900 dark:text-white">
-                  <a href="{{ .Permalink }}" class="hover:text-primary-600 dark:hover:text-primary-400">
-                    {{ .Title }}
-                  </a>
-                </h3>
-                {{ with .Params.tags }}
-                <div class="mt-1 flex flex-wrap gap-1">
-                  {{ range . }}
-                  <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700">
-                    #{{ . }}
-                  </a>
+      {{ if ne .Key "0001" }}
+      <div class="mb-5">
+        <h2 style="font-weight: 700; font-size: 1.8rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; margin-bottom: 1rem;">{{ .Key }}</h2>
+        
+        <!-- Group by month within the year -->
+        {{ range (.Pages.GroupByDate "January").Reverse }}
+        <div class="mb-4">
+          <h3 style="font-weight: 600; font-size: 1.5rem; margin-bottom: 1rem;">{{ .Key }}</h3>
+          
+          <div class="ml-4">
+            {{ range .Pages.ByDate.Reverse }}
+            <article class="mb-4">
+              <div style="display: flex; align-items: baseline;">
+                <div style="min-width: 6rem; color: #6c757d; font-size: 0.9rem;">
+                  {{ .Date.Format "02 Jan" }}
+                </div>
+                <div>
+                  <a href="{{ .Permalink }}" style="font-weight: 600; color: blue; text-decoration: underline;">{{ .Title }}</a>
+                  
+                  {{ with .Params.tags }}
+                  <div style="margin-top: 0.25rem;">
+                    {{ range . }}
+                    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" style="color: blue; font-size: 0.8rem; margin-right: 0.5rem;">
+                      #{{ . }}
+                    </a>
+                    {{ end }}
+                  </div>
                   {{ end }}
                 </div>
-                {{ end }}
               </div>
-            </div>
-          </article>
-          {{ end }}
+            </article>
+            {{ end }}
+          </div>
         </div>
+        {{ end }}
       </div>
       {{ end }}
+      {{ end }}
     </div>
+
+    <!-- Right Sidebar (20%) -->
+    <div class="col-lg-sidebar d-none d-lg-block">
+      <div class="position-sticky" style="top: 2rem; margin-top: 2rem;">
+        <div class="bg-light p-4 rounded sidebar-container">
+          <div class="mb-4">
+            <h4 class="font-italic">Recent Posts</h4>
+            <ul class="list-unstyled">
+              {{ range first 5 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+              <li class="mb-1">
+                <a href="{{ .Permalink }}" style="color: blue; text-decoration: underline; font-size: 0.9rem;">
+                  {{ .Title }}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+
+          <div class="mt-4">
+            <h4 class="font-italic">Tags</h4>
+            <div>
+              {{ range first 10 .Site.Taxonomies.tags.ByCount }}
+              <a href="{{ .Page.Permalink }}" style="color: blue; text-decoration: underline; font-size: 0.8rem; margin-right: 0.5rem;">
+                #{{ .Page.Title }}
+              </a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Right empty space (13.33%) -->
+    <div class="col-lg-sidebar-space d-none d-lg-block"></div>
   </div>
 </div>
+
+<style>
+  /* Inline styles to enforce our layout */
+  .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .justify-content-center {
+    justify-content: center !important;
+  }
+  
+  .col-lg-1, .col-lg-2, .col-lg-5 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .d-none {
+    display: none !important;
+  }
+  
+  .position-sticky {
+    position: sticky;
+    top: 2rem;
+  }
+  
+  .text-center {
+    text-align: center !important;
+  }
+  
+  .text-right {
+    text-align: right !important;
+  }
+  
+  .rounded {
+    border-radius: 0.25rem !important;
+  }
+  
+  .bg-light {
+    background-color: #f8f9fa !important;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .mb-1 {
+    margin-bottom: 0.25rem !important;
+  }
+  
+  .mb-3 {
+    margin-bottom: 1rem !important;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .mb-5 {
+    margin-bottom: 3rem !important;
+  }
+  
+  .mt-4 {
+    margin-top: 1.5rem !important;
+  }
+  
+  .ml-4 {
+    margin-left: 1.5rem !important;
+  }
+  
+  .p-4 {
+    padding: 1.5rem !important;
+  }
+  
+  .text-gray-600 {
+    color: #718096 !important;
+  }
+  
+  .font-italic {
+    font-style: italic;
+  }
+  
+  /* Link styling */
+  a {
+    color: blue !important;
+    text-decoration: underline !important;
+  }
+
+  /* Responsive adjustments */
+  @media (min-width: 992px) {
+    .d-lg-block {
+      display: block !important;
+    }
+    
+    .col-lg-1 {
+      flex: 0 0 8.333333%;
+      max-width: 8.333333%;
+    }
+    
+    .col-lg-2 {
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%;
+    }
+    
+    .col-lg-5 {
+      flex: 0 0 41.666667%;
+      max-width: 41.666667%;
+    }
+    
+    /* Custom sidebar width (20%) */
+    .col-lg-sidebar {
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+    
+    /* Custom sidebar spacing (13.33%) */
+    .col-lg-sidebar-space {
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      flex: 0 0 13.333333%;
+      max-width: 13.333333%;
+    }
+  }
+  
+  .sidebar-container {
+    min-height: calc(100vh - 12rem);
+    background-color: #f8f9fa !important;
+    position: relative;
+  }
+</style>
 {{ end }}

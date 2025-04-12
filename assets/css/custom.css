@@ -225,3 +225,63 @@ p {
   li:last-child {
     margin-bottom: 0 !important;
   }
+
+  /* Hide the logo */
+.navbar-brand img, .navbar-brand svg {
+  display: none !important;
+}
+
+/* Center and enlarge the site title */
+.navbar-brand {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+/* Header styling for markdown content */
+.markdown-content h1 {
+  font-size: 2.25rem !important;
+  font-weight: 700 !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  padding-bottom: 0.3rem !important;
+  border-bottom: 1px solid #eaecef !important;
+}
+
+.markdown-content h2 {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  margin-top: 1.8rem !important;
+  margin-bottom: 0.8rem !important;
+  padding-bottom: 0.3rem !important;
+}
+
+.markdown-content h3 {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.markdown-content h4 {
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  margin-top: 1.25rem !important;
+  margin-bottom: 0.6rem !important;
+}
+
+.markdown-content h5 {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  margin-top: 1.1rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.markdown-content h6 {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+  color: #6c757d !important;
+}
