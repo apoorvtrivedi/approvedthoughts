@@ -14,11 +14,7 @@
 
     <!-- Main Content (40%) -->
     <div class="col-lg-5">
-      <!-- Site Title - Centered and large -->
-      <div class="text-center mb-5">
-        <h1 style="font-size: 3.5rem; font-weight: 800; margin-top: 2rem;">{{ .Site.Title }}</h1>
-        <p class="lead">{{ .Site.Params.description }}</p>
-      </div>
+      <!-- REMOVED: Site Title - Centered and large -->
 
       <!-- Blog Posts -->
       {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
@@ -56,36 +52,36 @@
       {{ end }}
     </div>
 
-<!-- Right Sidebar (20%) - This should be the same in both templates -->
-<div class="col-lg-sidebar d-none d-lg-block">
-  <div class="position-sticky" style="top: 2rem; margin-top: 8.5rem;">
-    <div class="bg-light p-4 rounded sidebar-container">
-      <div class="mb-4">
-        <h4 class="font-italic">Recent Posts</h4>
-        <ul class="list-unstyled">
-          {{ range first 5 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-          <li class="mb-1">
-            <a href="{{ .Permalink }}" style="color: blue; text-decoration: underline; font-size: 0.9rem;">
-              {{ .Title }}
-            </a>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
+    <!-- Right Sidebar (20%) - This should be the same in both templates -->
+    <div class="col-lg-sidebar d-none d-lg-block">
+      <div class="position-sticky" style="top: 2rem; margin-top: 2rem;">
+        <div class="bg-light p-4 rounded sidebar-container">
+          <div class="mb-4">
+            <h4 class="font-italic">Recent Posts</h4>
+            <ul class="list-unstyled">
+              {{ range first 5 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+              <li class="mb-1">
+                <a href="{{ .Permalink }}" style="color: blue; text-decoration: underline; font-size: 0.9rem;">
+                  {{ .Title }}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
 
-      <div class="mt-4">
-        <h4 class="font-italic">Tags</h4>
-        <div>
-          {{ range first 10 .Site.Taxonomies.tags.ByCount }}
-          <a href="{{ .Page.Permalink }}" style="color: blue; text-decoration: underline; font-size: 0.8rem; margin-right: 0.5rem;">
-            #{{ .Page.Title }}
-          </a>
-          {{ end }}
+          <div class="mt-4">
+            <h4 class="font-italic">Tags</h4>
+            <div>
+              {{ range first 10 .Site.Taxonomies.tags.ByCount }}
+              <a href="{{ .Page.Permalink }}" style="color: blue; text-decoration: underline; font-size: 0.8rem; margin-right: 0.5rem;">
+                #{{ .Page.Title }}
+              </a>
+              {{ end }}
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
     
     <!-- Right empty space (30%) -->
     <div class="col-lg-sidebar-space d-none d-lg-block"></div>
@@ -220,6 +216,53 @@
     text-decoration: underline !important;
   }
 
+  /* Markdown headers styling */
+  .markdown-content h1 {
+    font-size: 2.25rem !important;
+    font-weight: 700 !important;
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+    padding-bottom: 0.3rem !important;
+    border-bottom: 1px solid #eaecef !important;
+  }
+
+  .markdown-content h2 {
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+    margin-top: 1.8rem !important;
+    margin-bottom: 0.8rem !important;
+    padding-bottom: 0.3rem !important;
+  }
+
+  .markdown-content h3 {
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .markdown-content h4 {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    margin-top: 1.25rem !important;
+    margin-bottom: 0.6rem !important;
+  }
+
+  .markdown-content h5 {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    margin-top: 1.1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .markdown-content h6 {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    margin-top: 1rem !important;
+    margin-bottom: 0.5rem !important;
+    color: #6c757d !important;
+  }
+
   /* Responsive adjustments */
   @media (min-width: 992px) {
     .d-lg-block {
@@ -247,30 +290,30 @@
     }
 
     /* Custom sidebar width (20%) */
-  .col-lg-sidebar {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    flex: 0 0 20%;
-    max-width: 20%;
+    .col-lg-sidebar {
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+    
+    /* Custom sidebar spacing (13.33%) */
+    .col-lg-sidebar-space {
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      flex: 0 0 13.333333%;
+      max-width: 13.333333%;
+    }
   }
   
-  /* Custom sidebar spacing (13.33%) */
-  .col-lg-sidebar-space {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    flex: 0 0 13.333333%;
-    max-width: 13.333333%;
-  }
-
-  }
   .sidebar-container {
-  min-height: calc(100vh - 12rem);
-  background-color: #f8f9fa !important;
-  position: relative;
-}
+    min-height: calc(100vh - 12rem);
+    background-color: #f8f9fa !important;
+    position: relative;
+  }
 </style>
 {{ end }}

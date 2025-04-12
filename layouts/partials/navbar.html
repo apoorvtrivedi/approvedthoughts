@@ -1,0 +1,17 @@
+<header class="sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 border-b border-gray-200 dark:border-gray-800 bg-white/75 dark:bg-gray-900/75">
+    <div class="mx-auto max-w-screen-xl py-3 px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-center">
+        <div class="flex">
+          <a href="{{ "/" | relLangURL }}" 
+             class="text-xl font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400" 
+             style="font-size: 1.5rem; font-weight: 600;"
+             aria-label="{{ .Site.Title }}">
+            {{ .Site.Title }}
+          </a>
+        </div>
+        <div class="flex items-center md:absolute md:right-4">
+          {{ partial "navbar/navigation.html" . }}
+        </div>
+      </div>
+    </div>
+  </header>
