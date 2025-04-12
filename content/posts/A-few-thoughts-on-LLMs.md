@@ -6,7 +6,6 @@ tags: ["post", "LLM"]
 draft: false
 ---
 
-#### A few thoughts on LLMs
 I need to sit down and combine some of these thoughts into a coherent piece but for now, I just want to dump  it all here for reference later. I doubt any of these are original and I have certainly seen some elsewhere. 
 
 1. Market structure for LLM makers may end up being like the airline market. High fixed cost to set up, hard to create a product differentiation that users care about (other than price), lots of competitors entering, at least in part due to the "prestige" of owning one. Lots of utility for consumers but hardly any profit for producers. 
