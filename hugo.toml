@@ -79,5 +79,5 @@ enableEmoji = true
       # Default: "#0055FF"
       primaryColor = "#4F46E5"
 
-[params]
+  # Custom CSS
   customCSS = ["css/custom.css"]
