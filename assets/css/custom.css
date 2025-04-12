@@ -286,17 +286,12 @@ p {
   color: #6c757d !important;
 }
 
-/* Center the site title in Hextra theme */
-.navbar .navbar-brand {
-  margin: 0 auto;
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: block;
-  text-align: center;
+/* Center the site title/logo in the navbar */
+.nav-container nav {
+  justify-content: center !important;
 }
 
-/* Optional: Make the navbar flexible to allow centering */
-.navbar .navbar-start,
-.navbar .navbar-end {
-  flex: 1;
+/* Make title text slightly larger */
+.nav-container nav a span[title="Approved Thoughts"] {
+  font-size: 1.25rem; /* or 1.5rem if you want it even bigger */
 }
