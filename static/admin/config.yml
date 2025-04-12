@@ -2,7 +2,7 @@ backend:
   name: github
   repo: apoorvtrivedi/approvedthoughts
   branch: main
-  
+
 # Media files will be stored in the repo under static/images/uploads
 media_folder: static/images/uploads
 # The public path to the media files
@@ -19,27 +19,13 @@ collections:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { 
-          label: 'Publish Date', 
-          name: 'date', 
-          widget: 'datetime', 
-          format: 'YYYY-MM-DD'
-        }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Featured Image', name: 'image', widget: 'image', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Tags', name: 'tags', widget: 'list', required: false }
-  
-  - name: 'pages'
-    label: 'Pages'
-    folder: 'content'
-    create: true
-    slug: '{{slug}}'
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Menu', name: 'menu', widget: 'object', fields: [
-          { label: 'Main', name: 'main', widget: 'object', fields: [
-            { label: 'Weight', name: 'weight', widget: 'number', default: 100 }
-          ]}
-        ]}
+
+name: 'pages' label: 'Pages' folder: 'content' create: true slug: '{{slug}}' fields:
+{ label: 'Title', name: 'title', widget: 'string' }
+{ label: 'Body', name: 'body', widget: 'markdown' }
+{ label: 'Menu', name: 'menu', widget: 'object', fields: [ { label: 'Main', name: 'main', widget: 'object', fields: [ { label: 'Weight', name: 'weight', widget: 'number', default: 100 } ]} ]}
