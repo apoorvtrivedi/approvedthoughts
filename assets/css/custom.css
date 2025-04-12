@@ -286,16 +286,17 @@ p {
   color: #6c757d !important;
 }
 
-/* Center and enlarge the site title in the header */
-
-.navbar .site-title {
-  flex-grow: 1;
-  text-align: center;
-  font-size: 1.5rem; /* adjust size as needed */
+/* Center the site title in Hextra theme */
+.navbar .navbar-brand {
+  margin: 0 auto;
+  font-size: 1.5rem;
   font-weight: 600;
+  display: block;
+  text-align: center;
 }
 
-/* Optional: Hide the logo/title placeholder on the left to truly center */
-.navbar .site-title:first-child {
-  margin-right: auto;
+/* Optional: Make the navbar flexible to allow centering */
+.navbar .navbar-start,
+.navbar .navbar-end {
+  flex: 1;
 }
