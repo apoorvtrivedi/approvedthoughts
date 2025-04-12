@@ -2,8 +2,8 @@ backend:
   name: github
   repo: apoorvtrivedi/approvedthoughts
   branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
+  auth_type: implicit # Important for client-side auth
+  app_id: Ov23liWc80V5gPeqWnwm # Replace with your actual Client ID
 
 # Media files will be stored in the repo under static/images/uploads
 media_folder: static/images/uploads
