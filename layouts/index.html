@@ -56,8 +56,8 @@
       {{ end }}
     </div>
 
-<!-- Right Sidebar (25%) - This should be the same in both templates -->
-<div class="col-lg-3 d-none d-lg-block">
+<!-- Right Sidebar (20%) - This should be the same in both templates -->
+<div class="col-lg-sidebar d-none d-lg-block">
   <div class="position-sticky" style="top: 2rem; margin-top: 8.5rem;">
     <div class="bg-light p-4 rounded sidebar-container">
       <div class="mb-4">
@@ -88,7 +88,7 @@
 </div>
     
     <!-- Right empty space (30%) -->
-    <div class="col-lg-1 d-none d-lg-block"></div>
+    <div class="col-lg-sidebar-space d-none d-lg-block"></div>
   </div>
 </div>
 
@@ -245,6 +245,27 @@
       flex: 0 0 41.666667%;
       max-width: 41.666667%;
     }
+
+    /* Custom sidebar width (20%) */
+  .col-lg-sidebar {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  
+  /* Custom sidebar spacing (13.33%) */
+  .col-lg-sidebar-space {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 13.333333%;
+    max-width: 13.333333%;
+  }
+
   }
   .sidebar-container {
   min-height: calc(100vh - 12rem);
