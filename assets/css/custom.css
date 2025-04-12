@@ -302,6 +302,6 @@ p {
 
 /* Make the site title text slightly larger */
 .nav-container nav a span[title="Approved Thoughts"] {
-  font-size: 1.25rem;  /* Adjust size as needed */
+  font-size: 1.5rem;  /* Adjust size as needed */
   font-weight: bold;
 }
