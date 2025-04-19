@@ -1,0 +1,307 @@
+/* Custom stylesheet for Approved Thoughts */
+
+/* General link styling */
+a {
+    color: blue !important;
+    text-decoration: underline !important;
+  }
+  
+  /* Main title styling */
+  .site-title {
+    font-size: 3.5rem !important;
+    font-weight: 800 !important;
+    text-align: center !important;
+    margin: 2rem 0 1rem 0 !important;
+  }
+  
+  /* Blog post styling */
+  .blog-post {
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .blog-post:last-child {
+    border-bottom: none;
+  }
+  
+  .blog-post-title {
+    font-weight: 700 !important;
+    margin-bottom: 0.5rem !important;
+    text-align: left !important;
+  }
+  
+  .blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #6c757d;
+    font-size: 0.9rem;
+  }
+  
+  .blog-post-content {
+    text-align: justify !important;
+  }
+  
+  .blog-post-content p, 
+  .blog-post-content li, 
+  .blog-post-content blockquote {
+    color: #212529 !important;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .sidebar h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  
+  .sidebar ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .sidebar a {
+    color: blue !important;
+    text-decoration: underline !important;
+  }
+  
+  /* Layout for three-column design */
+  .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .col-lg-2, .col-lg-8 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  /* Position sticky sidebars */
+  .sticky-top {
+    position: sticky;
+    top: 2rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (min-width: 992px) {
+    .col-lg-2 {
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%;
+    }
+    
+    .col-lg-8 {
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%;
+    }
+    
+    .d-lg-block {
+      display: block !important;
+    }
+  }
+  
+  /* Hide sidebars on small screens */
+  @media (max-width: 991.98px) {
+    .d-lg-none {
+      display: none !important;
+    }
+  }
+  
+  /* Force text justification */
+  .justified {
+    text-align: justify !important;
+  }
+
+  /* Explicit styling for markdown elements */
+
+/* Ordered lists */
+ol {
+    list-style-type: decimal !important;
+    padding-left: 2rem !important;
+    margin-bottom: 1rem !important;
+    display: block !important;
+  }
+  
+  ol li {
+    display: list-item !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  /* Unordered lists */
+  ul {
+    list-style-type: disc !important;
+    padding-left: 2rem !important;
+    margin-bottom: 1rem !important;
+    display: block !important;
+  }
+  
+  ul li {
+    display: list-item !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  /* Blockquotes */
+  blockquote {
+    border-left: 4px solid #dee2e6 !important;
+    padding-left: 1rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    font-style: italic !important;
+    color: #6c757d !important;
+    display: block !important;
+  }
+  
+  /* Code blocks */
+  pre {
+    background-color: #f8f9fa !important;
+    padding: 1rem !important;
+    border-radius: 0.25rem !important;
+    overflow-x: auto !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  code {
+    font-family: monospace !important;
+    background-color: #f8f9fa !important;
+    padding: 0.2rem 0.4rem !important;
+    border-radius: 0.25rem !important;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Paragraph spacing */
+p {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* Last paragraph in a container doesn't need bottom margin */
+  p:last-child {
+    margin-bottom: 0 !important;
+  }
+  
+  /* Spacing between block elements */
+  blockquote, ul, ol, pre, h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* Ensure blockquotes have proper spacing when stacked */
+  blockquote + blockquote {
+    margin-top: 2rem !important;
+  }
+  
+  /* Add spacing between list items */
+  li {
+    margin-bottom: 0.5rem !important;
+  }
+  
+  /* Last item in a list doesn't need bottom margin */
+  li:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Hide the logo */
+.navbar-brand img, .navbar-brand svg {
+  display: none !important;
+}
+
+/* Center and enlarge the site title */
+.navbar-brand {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+/* Header styling for markdown content */
+.markdown-content h1 {
+  font-size: 2.25rem !important;
+  font-weight: 700 !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  padding-bottom: 0.3rem !important;
+  border-bottom: 1px solid #eaecef !important;
+}
+
+.markdown-content h2 {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  margin-top: 1.8rem !important;
+  margin-bottom: 0.8rem !important;
+  padding-bottom: 0.3rem !important;
+}
+
+.markdown-content h3 {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.markdown-content h4 {
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  margin-top: 1.25rem !important;
+  margin-bottom: 0.6rem !important;
+}
+
+.markdown-content h5 {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  margin-top: 1.1rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.markdown-content h6 {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+  color: #6c757d !important;
+}
+
+/* Center the site title/logo in the navbar */
+.nav-container nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Center the title and logo container */
+.nav-container nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Make the site title text slightly larger */
+.nav-container nav a span[title="Approved Thoughts"] {
+  font-size: 1.5rem;  /* Adjust size as needed */
+  font-weight: bold;
+}

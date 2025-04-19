@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Approved Thoughts – Posts</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Approved Thoughts</description>
+    <title>Approved Thoughts – Links</title>
+    <link>http://localhost:1313/tags/links/</link>
+    <description>Recent content in Links on Approved Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 12 Apr 2025 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/tags/links/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -94,38 +94,6 @@
 &lt;p&gt;&lt;a href=&#34;https://www.s-anand.net/blog/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;S Anand&lt;/a&gt;: A great website from a college senior. On campus he was know as Stud Anand.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Update: 12 Apr 2025</title>
-      <link>http://localhost:1313/posts/update-12-apr-2025/</link>
-      <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/update-12-apr-2025/</guid>
-      <description>
-        
-        
-        &lt;p&gt;After a few more iterations with Claude, the website is looking a lot better but it isn&amp;rsquo;t working that much better. The Archives link on top right throws up a poorly formatted page.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; The huge, black  &amp;ldquo;Approved Thoughts&amp;rdquo; at the top of the page and the smaller blue version in the header are redundant.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; There are many other issues to be fixed.&lt;/p&gt;
-&lt;p&gt;I also managed to get the CMS set up so that I could login and see all the posts in the CMS.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; It is useless though because the posts I create there do not show up on the site. So there is some solid debugging needed before I can get more ambitious here. Still I am quite chuffed that I have this set up and working.&lt;/p&gt;
-&lt;p&gt;Between the markets and a potential relocation, I have not devoted any time to this website. Hopefully that changes soon.&lt;/p&gt;
-&lt;p&gt;I have also decided another project I want to try my hand at. More as I get started.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Thought for the day:&lt;/strong&gt; If you ask &amp;ldquo;do I feel like doing this now&amp;rdquo;, you won&amp;rsquo;t do it. Certainly not regularly. First, figure out how to stop the question.&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;
-&lt;p&gt;This is now fixed.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;
-&lt;p&gt;This is also now fixed, although I am not sure if it is an improvement.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34;&gt;
-&lt;p&gt;This was almost fixed but broke again and I have given up for now. When on the road, I can add posts directly via GitHub so, I am good for now.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
 
       </description>
     </item>
@@ -408,42 +376,6 @@
 &lt;li&gt;A &lt;a href=&#34;https://x.com/davidbessis/status/1821170663832383918&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;different&lt;/a&gt; &lt;a href=&#34;https://x.com/davidbessis/status/1813247439765401612&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;way&lt;/a&gt; of learning math? Via &lt;a href=&#34;https://thezvi.substack.com/p/childhood-and-education-9-school&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zvi&lt;/a&gt;, who belongs in a third hall. Can&amp;rsquo;t fault him for lacking ambition but perhaps this is the rare tweet that should have been an article.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.nytimes.com/2025/03/06/style/charizard-cheeto-pokemon-auction.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A Cheeto Shaped Like the Pokemon Charizard Sells for Nearly $90,000&lt;/a&gt;. NYT Paywall but do you really need to read anything else?&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://sashachapin.substack.com/p/as-sweet-as-razor-blade-honey?&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Honey on a razor blade&lt;/a&gt;: Something about the actual visualization struck a chord with me.&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>A few thoughts on LLMs</title>
-      <link>http://localhost:1313/posts/a-few-thoughts-on-llms/</link>
-      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/a-few-thoughts-on-llms/</guid>
-      <description>
-        
-        
-        &lt;p&gt;I need to sit down and combine some of these thoughts into a coherent piece but for now, I just want to dump  it all here for reference later. I doubt any of these are original and I have certainly seen some elsewhere.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Market structure for LLM makers may end up being like the airline market. High fixed cost to set up, hard to create a product differentiation that users care about (other than price), lots of competitors entering, at least in part due to the &amp;ldquo;prestige&amp;rdquo; of owning one. Lots of utility for consumers but hardly any profit for producers.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;An LLM with an infinite context window, one that can contain all my life, will be an entirely different product than an LLM with a limited context window. You can never have enough when it comes to context windows.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Notwithstanding 1, &amp;ldquo;personality&amp;rdquo; makes a huge difference in the experience of working with an LLM and the ability to create the right one could determine whether a model can dominate a market or a niche. Claude Sonnet 3.5 absolutely had than special sauce in my experience. We need a lot more of it.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://x.com/thestalwart/status/1894704594535551334?s=46&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This.&lt;/a&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;I don’t see how we’re going to avoid a situation where the internet become lousy with AI-created, pseudo academic writing filled with made up facts and quotes, which will then get cemented into “knowledge” as those articles become the training fodder for future models.&lt;/p&gt;
-
-&lt;/blockquote&gt;
-&lt;p&gt;But combine it with the fact that if we all start getting our answers from LLMs, the online content &amp;amp; ad based &lt;a href=&#34;https://x.com/a16z/status/1892612797948952863&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;business model goes caput&lt;/a&gt; and then what is the incentive for people to put up good content on the web? None.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;But anyone who has good proprietary, verified, high-quality data &amp;amp; content will potentially control the value for the customer even as base LLMs become a commodity. Therefore does more data and content start going behind the paywall? If it doesn&amp;rsquo;t it becomes training data and cannot be monetized.&lt;/p&gt;
-&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>

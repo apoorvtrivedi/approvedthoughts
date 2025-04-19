@@ -1,0 +1,55 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Approved Thoughts – LLM</title>
+    <link>http://localhost:1313/tags/llm/</link>
+    <description>Recent content in LLM on Approved Thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>A few thoughts on LLMs</title>
+      <link>http://localhost:1313/posts/a-few-thoughts-on-llms/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/a-few-thoughts-on-llms/</guid>
+      <description>
+        
+        
+        &lt;p&gt;I need to sit down and combine some of these thoughts into a coherent piece but for now, I just want to dump  it all here for reference later. I doubt any of these are original and I have certainly seen some elsewhere.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Market structure for LLM makers may end up being like the airline market. High fixed cost to set up, hard to create a product differentiation that users care about (other than price), lots of competitors entering, at least in part due to the &amp;ldquo;prestige&amp;rdquo; of owning one. Lots of utility for consumers but hardly any profit for producers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;An LLM with an infinite context window, one that can contain all my life, will be an entirely different product than an LLM with a limited context window. You can never have enough when it comes to context windows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Notwithstanding 1, &amp;ldquo;personality&amp;rdquo; makes a huge difference in the experience of working with an LLM and the ability to create the right one could determine whether a model can dominate a market or a niche. Claude Sonnet 3.5 absolutely had than special sauce in my experience. We need a lot more of it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://x.com/thestalwart/status/1894704594535551334?s=46&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This.&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;I don’t see how we’re going to avoid a situation where the internet become lousy with AI-created, pseudo academic writing filled with made up facts and quotes, which will then get cemented into “knowledge” as those articles become the training fodder for future models.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;But combine it with the fact that if we all start getting our answers from LLMs, the online content &amp;amp; ad based &lt;a href=&#34;https://x.com/a16z/status/1892612797948952863&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;business model goes caput&lt;/a&gt; and then what is the incentive for people to put up good content on the web? None.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;But anyone who has good proprietary, verified, high-quality data &amp;amp; content will potentially control the value for the customer even as base LLMs become a commodity. Therefore does more data and content start going behind the paywall? If it doesn&amp;rsquo;t it becomes training data and cannot be monetized.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
