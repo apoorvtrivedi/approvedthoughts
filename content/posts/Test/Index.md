@@ -1,9 +1,19 @@
 ---
-title: "Test: Image Addition"
-date: 2025-05-10
-description:
-tags: ["image"]
+title: "Template Test"
+date: 2025-03-08
 draft: false
 ---
 
-![A Computer Can Never Be Held Accountable](a-computer-can-never-be-held-accountable.jpg)
+## Basic text
+
+This is plain text.
+
+## Template test
+
+The title of this page is: {{ .Title }}
+
+The current date is: {{ now.Format "January 2, 2006" }}
+
+## Image test
+
+![Test image](test-image.jpg)
