@@ -41,3 +41,13 @@ draft: false
 
 9. [Pro-Prompting](https://chatgpt.com/share/68115650-c684-8013-862c-ee1c9664aeae): A master in action. Prompt used for GeoGuessr by Kelsey Tuoc, in the last week's link on AI playing GeoGuessr. 
 
+10. [Boy Accidentally Orders 70,000 Lollipops on Amazon. Panic Ensues. (NYT)
+](https://www.nytimes.com/2025/05/08/business/dum-dums-amazon-order-kentucky.html): 
+
+    > On Sunday morning, as Holly LaFavers was preparing to go to church, a delivery worker dropped off a 25-pound box of lollipops in front of her apartment building in Lexington, Ky.
+
+    >And another. And then another. Soon, 22 boxes of 50,600 lollipops were stacked five boxes high in two walls of Dum-Dums. That was when Ms. LaFavers heard what no parent wants to hear: Her child had unwittingly placed a massive online order.
+
+    >“Mom, my suckers are here!” said her son, Liam, who had gone outside to ride his scooter.
+
+    >“I panicked,” Ms. LaFavers, 46, said. “I was hysterical.”
