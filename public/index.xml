@@ -1,18 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Approved Thoughts – Approved Thoughts</title>
+    <title>Approved Thoughts</title>
     <link>http://localhost:1313/</link>
     <description>Recent content on Approved Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <copyright>© 2025 Approved Thoughts. All rights reserved.</copyright>
     
-	  <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Links: Week of May 18 2025</title>
+      <link>http://localhost:1313/posts/links-18-may-2025/</link>
+      <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/links-18-may-2025/</guid>
+      <description>Links: Week of May 18 2025</description>
+    </item>
     
+    <item>
+      <title>Links: Week of 10 May 2025</title>
+      <link>http://localhost:1313/posts/links-10-may-2025/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/links-10-may-2025/</guid>
+      <description>Links: Week of 10 May 2025</description>
+    </item>
     
-      
-      
+    <item>
+      <title>Links: Week of 04 May 2025</title>
+      <link>http://localhost:1313/posts/links-04-may-2025/</link>
+      <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/links-04-may-2025/</guid>
+      <description>Links: Week of 04 May 2025</description>
+    </item>
     
+    <item>
+      <title>Links: Week of 26 Apr 2025</title>
+      <link>http://localhost:1313/posts/links-26-apr-2025/</link>
+      <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/links-26-apr-2025/</guid>
+      <description>Links: Week of 26 Apr 2025</description>
+    </item>
+    
+    <item>
+      <title>Links: Week of 19 Apr 2025</title>
+      <link>http://localhost:1313/posts/links-19-apr-2025/</link>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/links-19-apr-2025/</guid>
+      <description>Links: Week of 19 Apr 2025</description>
+    </item>
+    
+    <item>
+      <title>Links: Week of 12 Apr 2025</title>
+      <link>http://localhost:1313/posts/links-12-apr-2025/</link>
+      <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/links-12-apr-2025/</guid>
+      <description>Links: Week of 12 Apr 2025</description>
+    </item>
+    
+    <item>
+      <title>Update: 12 Apr 2025</title>
+      <link>http://localhost:1313/posts/update-12-apr-2025/</link>
+      <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/update-12-apr-2025/</guid>
+      <description>Update: 12 Apr 2025</description>
+    </item>
+    
+    <item>
+      <title>Links: Week of 06 Apr 2025</title>
+      <link>http://localhost:1313/posts/links-06-apr-2025/</link>
+      <pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/links-06-apr-2025/</guid>
+      <description>Links: Week of 06 Apr 2025</description>
+    </item>
+    
+    <item>
+      <title>Links: Week of 30 Mar 2025</title>
+      <link>http://localhost:1313/posts/links-30-mar-2025/</link>
+      <pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/links-30-mar-2025/</guid>
+      <description>Links: Week of 30 Mar 2025</description>
+    </item>
+    
+    <item>
+      <title>Links: Week of 22 Mar 2025</title>
+      <link>http://localhost:1313/posts/links-22-mar-2025/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/links-22-mar-2025/</guid>
+      <description>Links: Week of 22 Mar 2025</description>
+    </item>
     
   </channel>
 </rss>

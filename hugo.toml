@@ -2,11 +2,21 @@ baseURL = 'https://approvedthoughts.com/'
 languageCode = 'en-us'
 title = 'Approved Thoughts'
 theme = 'hextra'
+copyright = "© 2025 Approved Thoughts. All rights reserved."  # Adjust the year and text as appropriate
+
 
 # Enable blog functionality
 enableRobotsTXT = true
 enableGitInfo = false
 enableEmoji = true
+
+[outputs]
+home = ["HTML", "RSS"]
+page = ["HTML"]
+section = ["HTML"]
+
+[services.rss]
+limit = 10  # Change to your desired number, or set to -1 for unlimited
 
 [markup]
   [markup.goldmark]
@@ -55,6 +65,9 @@ enableEmoji = true
   description = ""
   mainSections = ['posts', 'blog']
   showFullContent = true
+ 
+  [params.author]
+  name = "Apoorv Trivedi" 
   
   # Site footer configuration
   copyright = "© 2023-2025 Approved Thoughts"
