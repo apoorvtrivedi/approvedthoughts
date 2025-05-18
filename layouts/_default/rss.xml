@@ -1,43 +1,55 @@
+{{- /* layouts/_default/rss.xml */ -}}
 {{- $pctx := . -}}
-{{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
+{{- if .IsHome -}}
+  {{- $pctx = .Site -}}
+{{- end -}}
 {{- $pages := slice -}}
-{{- if or $.IsHome $.IsSection -}}
+{{- if or .IsHome .IsSection -}}
   {{- $pages = $pctx.RegularPages -}}
 {{- else -}}
   {{- $pages = $pctx.Pages -}}
 {{- end -}}
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
-{{- if ge $limit 1 -}}{{ $pages = $pages | first $limit }}{{- end -}}
-{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+{{- if ge $limit 1 -}}
+  {{- $pages = first $limit $pages -}}
+{{- end -}}
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0"
      xmlns:atom="http://www.w3.org/2005/Atom"
      xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ .Title }} on {{ .Site.Title }}{{ end }}</title>
     <link>{{ .Permalink }}</link>
-    <description>Recent content{{ if ne .Title .Site.Title }} in {{ .Title }}{{ end }} on {{ .Site.Title }}</description>
+    <description><![CDATA[
+      Recent content{{ if ne .Title .Site.Title }} in {{ .Title }}{{ end }} on {{ .Site.Title }}
+    ]]></description>
     <generator>Hugo -- gohugo.io</generator>
     {{ with .Site.LanguageCode }}<language>{{ . }}</language>{{ end }}
     {{ with .Site.Copyright }}<copyright>{{ . }}</copyright>{{ end }}
-    {{ if not .Date.IsZero }}<lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
-    {{ with .OutputFormats.Get "RSS" }}{{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}{{ end }}
+    {{ if not .Date.IsZero }}
+      <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</lastBuildDate>
+    {{ end }}
+    {{ with .OutputFormats.Get "RSS" }}
+      <atom:link href="{{ .Permalink }}" rel="self" type="{{ .MediaType }}" />
+    {{ end }}
     {{ range $pages }}
       <item>
-        <title>{{ .Title | plainify }}</title>
+        <title>{{ .Title | html }}</title>
         <link>{{ .Permalink }}</link>
-        <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-        <guid>{{ .Permalink }}</guid>
+        <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+        <guid isPermaLink="true">{{ .Permalink }}</guid>
+
+        <!-- Put the full rendered HTML of the post in <description> -->
         <description><![CDATA[
-{{ with .Description -}}
-{{ . | safeHTML }}
-{{ else -}}
-{{ .Content | safeHTML }}
-{{ end -}}
-]]></description>
+          {{ .Content }}
+        ]]></description>
+
+        <!-- And also expose it via the content:encoded module -->
         <content:encoded><![CDATA[
-{{ .Content | safeHTML }}
-]]></content:encoded>
+          {{ .Content }}
+        ]]></content:encoded>
       </item>
     {{ end }}
   </channel>
 </rss>
+
