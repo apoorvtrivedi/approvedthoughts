@@ -1,5 +1,5 @@
 ---
-title: "Links: Week of May 18 2025"
+title: "Links: Week of 18 May 2025"
 date: 2025-05-18
 description:
 tags: ["links", "alpha"]
