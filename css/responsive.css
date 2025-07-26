@@ -1,0 +1,1166 @@
+/* ====================================
+   RESPONSIVE STYLES - UPDATED
+   ====================================
+   
+   Updated to match the new layout structure from style.css:
+   - New centered layout with content-max-width + sidebar-width
+   - Updated header structure with proper centering
+   - Consistent spacing and typography scaling
+   - Better mobile navigation
+   - Image modal responsiveness
+   ==================================== */
+
+/* ====================================
+   LARGE TABLET STYLES (1024px - 1199px)
+   ==================================== */
+@media screen and (max-width: 1199px) {
+    /* Adjust header content max-width for smaller screens */
+    .header-content {
+        max-width: 100%;
+        padding: 0 var(--space-lg);
+    }
+    
+    /* Reduce gap between content and sidebar */
+    .content-wrapper {
+        gap: calc(var(--gap-content-sidebar) * 0.8); /* 40px instead of 50px */
+    }
+}
+
+/* ====================================
+   TABLET STYLES (768px - 1023px)
+   ==================================== */
+@media screen and (max-width: 1023px) {
+    /* Header adjustments */
+    .header-content {
+        max-width: 100%;
+        padding: 0 var(--space-lg);
+    }
+    
+    /* Content and Sidebar Layout - Stack vertically */
+    .content-wrapper {
+        flex-direction: column;
+        gap: var(--space-xxl);
+        align-items: center;
+    }
+    
+    .main-content {
+        width: 100%;
+        max-width: var(--content-max-width);
+    }
+    
+    /* Sidebar becomes horizontal grid */
+    .sidebar {
+        width: 100%;
+        max-width: var(--content-max-width);
+        position: static;
+        max-height: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-lg);
+    }
+    
+    /* Search section spans full width */
+    .sidebar-section:last-child {
+        grid-column: 1 / -1;
+    }
+    
+    /* Adjust sidebar sections for tablet */
+    .sidebar-section {
+        padding: var(--space-md);
+    }
+    
+    /* Reduce font sizes slightly for tablet */
+    :root {
+        --font-size-h1: 2.25rem;
+        --font-size-h2: 1.75rem;
+        --font-size-h3: 1.25rem; /* Matches updated post title size */
+    }
+    
+    /* Post Cards - reduce padding */
+    .post-card {
+        padding: var(--space-md);
+    }
+    
+    /* Container padding */
+    .container {
+        padding: 0 var(--space-lg);
+    }
+}
+
+/* ====================================
+   MOBILE STYLES (max-width: 767px)
+   ==================================== */
+@media screen and (max-width: 767px) {
+    /* Header adjustments for mobile */
+    :root {
+        --header-height: var(--header-height-mobile);
+    }
+    
+    .site-header {
+        height: var(--header-height-mobile);
+    }
+    
+    .header-content {
+        height: var(--header-height-mobile);
+        max-width: 100%;
+        padding: 0 var(--space-md);
+    }
+    
+    /* Mobile Navigation */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: var(--space-sm);
+        z-index: 1001;
+    }
+    
+    .hamburger {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background: var(--color-text);
+        position: relative;
+        transition: var(--transition-base);
+    }
+    
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: var(--color-text);
+        transition: var(--transition-base);
+    }
+    
+    .hamburger::before { top: -8px; }
+    .hamburger::after { bottom: -8px; }
+    
+    .nav-menu {
+        position: fixed;
+        top: var(--header-height-mobile);
+        right: -100%;
+        width: 280px;
+        height: calc(100vh - var(--header-height-mobile));
+        background-color: var(--color-bg);
+        flex-direction: column;
+        padding: var(--space-lg);
+        box-shadow: -4px 0 20px rgba(0,0,0,0.15);
+        transition: right 0.3s ease;
+        z-index: 1000;
+        overflow-y: auto;
+        list-style: none;
+        margin: 0;
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .nav-menu li {
+        margin-bottom: 0;
+    }
+    
+    .nav-link {
+        padding: var(--space-md) 0;
+        display: block;
+        border-bottom: 1px solid var(--color-border-light);
+        color: var(--color-text);
+        font-weight: 500;
+        font-size: var(--font-size-medium);
+    }
+    
+    .nav-link:hover {
+        color: var(--color-primary);
+        text-decoration: none;
+    }
+    
+    .nav-link.active::after {
+        display: none;
+    }
+    
+    /* Mobile Typography */
+    :root {
+        --font-size-h1: 2rem;
+        --font-size-h2: 1.5rem;
+        --font-size-h3: 1.125rem; /* Smaller post titles on mobile */
+        --font-size-h4: 1rem;
+    }
+    
+    /* Site Title */
+    .site-title {
+        font-size: 1.25rem;
+    }
+    
+    /* Container */
+    .container {
+        padding: 0 var(--space-md);
+    }
+    
+    .site-container {
+        padding: var(--space-lg) 0;
+    }
+    
+    /* Content wrapper */
+    .content-wrapper {
+        gap: var(--space-xl);
+    }
+    
+    /* Main content takes full width */
+    .main-content {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    /* Sidebar becomes single column */
+    .sidebar {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    
+    .sidebar-section {
+        padding: var(--space-md);
+    }
+    
+    /* Post Cards */
+    .post-card {
+        padding: var(--space-md);
+        margin-bottom: var(--space-md);
+    }
+    
+    /* Post Meta - keep horizontal but allow wrapping */
+    .post-meta {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--space-xs);
+        line-height: 1.2;
+    }
+    
+    /* Ensure meta items don't break to individual lines */
+    .post-meta > * {
+        white-space: nowrap;
+    }
+    
+    /* Post Footer - stack vertically with proper order */
+    .post-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-sm);
+    }
+    
+    .post-tags {
+        order: 1;
+        width: 100%;
+    }
+    
+    .post-actions {
+        order: 2;
+        width: 100%;
+        justify-content: flex-end;
+    }   
+    
+    /* Section Title (hidden in main CSS but ensure it stays hidden) */
+    .section-title {
+        display: none;
+    }
+    
+    /* Pagination */
+    .pagination {
+        flex-wrap: wrap;
+        gap: var(--space-md);
+        margin-top: var(--space-xl);
+    }
+    
+    .pagination-current {
+        width: 100%;
+        text-align: center;
+        order: -1;
+        margin-bottom: var(--space-sm);
+    }
+    
+    .pagination-prev,
+    .pagination-next {
+        flex: 1;
+        text-align: center;
+        min-width: 120px;
+    }
+    
+    /* Footer */
+    .site-footer {
+        padding: var(--space-lg) 0;
+    }
+    
+    .footer-content {
+        text-align: center;
+    }
+    
+    .footer-links {
+        margin-top: var(--space-sm);
+    }
+    
+    /* Search Form - stack vertically on very small screens */
+    .search-form {
+        gap: var(--space-sm);
+    }
+    
+    .search-input {
+        font-size: var(--font-size-small);
+    }
+    
+    /* Individual Post Page Adjustments */
+    .post-full {
+        max-width: 100%;
+    }
+    
+    .post-full .post-content {
+        font-size: var(--font-size-medium); /* Slightly smaller on mobile */
+        line-height: 1.7;
+    }
+}
+
+/* ====================================
+   SMALL MOBILE STYLES (max-width: 480px)
+   ==================================== */
+@media screen and (max-width: 480px) {
+    /* Further reduce spacing */
+    :root {
+        --space-lg: 1.25rem;
+        --space-xl: 1.75rem;
+        --space-xxl: 2.5rem;
+    }
+    
+    /* Even smaller typography */
+    :root {
+        --font-size-h1: 1.75rem;
+        --font-size-h2: 1.375rem;
+        --font-size-h3: 1.125rem;
+    }
+    
+    /* Header */
+    .site-title {
+        font-size: 1.125rem;
+    }
+    
+    /* Navigation menu width */
+    .nav-menu {
+        width: 250px;
+    }
+    
+    /* Post Cards */
+    .post-card {
+        padding: var(--space-sm) var(--space-md);
+        margin-bottom: var(--space-md);
+    }
+    
+    /* Tags */
+    .post-tags {
+        gap: var(--space-xs);
+    }
+    
+    .tag {
+        font-size: 0.75rem;
+        padding: 0.25em 0.5em;
+    }
+    
+    /* Search Form - full width button */
+    .search-form {
+        flex-direction: column;
+    }
+    
+    .search-button {
+        width: 100%;
+        padding: var(--space-md);
+        height: auto;
+    }
+    
+    /* Sidebar sections */
+    .sidebar-section {
+        padding: var(--space-sm) var(--space-md);
+    }
+    
+    /* Pagination buttons */
+    .pagination-prev,
+    .pagination-next {
+        font-size: var(--font-size-small);
+        padding: var(--space-sm);
+    }
+    
+    /* Post content adjustments */
+    .post-full .post-content {
+        font-size: var(--font-size-small);
+        line-height: 1.6;
+    }
+}
+
+/* ====================================
+   LANDSCAPE MOBILE (orientation: landscape)
+   ==================================== */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    /* Reduce header height in landscape */
+    :root {
+        --header-height-mobile: 50px;
+    }
+    
+    .site-header {
+        height: 50px;
+    }
+    
+    .header-content {
+        height: 50px;
+    }
+    
+    /* Adjust navigation menu */
+    .nav-menu {
+        top: 50px;
+        height: calc(100vh - 50px);
+    }
+    
+    /* Reduce site container padding */
+    .site-container {
+        padding: var(--space-md) 0;
+    }
+}
+
+/* ====================================
+   WIDE SCREENS (min-width: 1200px)
+   ==================================== */
+@media screen and (min-width: 1200px) {
+    /* Ensure header content uses the proper max-width */
+    .header-content {
+        max-width: calc(var(--content-max-width) + var(--gap-content-sidebar) + var(--sidebar-width));
+        padding: 0 var(--space-md);
+    }
+}
+
+/* ====================================
+   EXTRA WIDE SCREENS (min-width: 1440px)
+   ==================================== */
+@media screen and (min-width: 1440px) {
+    /* Increase container max-width */
+    .container {
+        max-width: 1400px;
+    }
+    
+    /* Header content can be wider */
+    .header-content {
+        max-width: calc(var(--content-max-width) + var(--gap-content-sidebar) + var(--sidebar-width) + 100px);
+        padding: 0 var(--space-xl);
+    }
+    
+    /* Increase font sizes slightly */
+    :root {
+        --font-size-base: 17px;
+        --font-size-h1: 2.75rem;
+        --font-size-h2: 2.25rem;
+    }
+    
+    /* More generous spacing */
+    .site-container {
+        padding: var(--space-xxl) 0;
+    }
+    
+    /* Increase gap between content and sidebar */
+    .content-wrapper {
+        gap: calc(var(--gap-content-sidebar) * 1.2); /* 60px instead of 50px */
+    }
+}
+
+/* ====================================
+   IMAGE MODAL RESPONSIVENESS
+   ==================================== */
+@media screen and (max-width: 768px) {
+    .modal-close {
+        top: 10px;
+        right: 15px;
+        font-size: 32px;
+    }
+    
+    .modal-image {
+        max-width: 95%;
+        max-height: 80%;
+    }
+    
+    .modal-caption {
+        font-size: var(--font-size-xs);
+        margin-top: var(--space-sm);
+        max-width: 90%;
+        padding: var(--space-xs) var(--space-sm);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .modal-close {
+        top: 5px;
+        right: 10px;
+        font-size: 28px;
+    }
+    
+    .modal-image {
+        max-width: 98%;
+        max-height: 75%;
+    }
+    
+    .modal-caption {
+        max-width: 95%;
+        font-size: 0.75rem;
+    }
+}
+
+/* ====================================
+   VIDEO CONTAINER RESPONSIVENESS
+   ==================================== */
+@media screen and (max-width: 768px) {
+    .video-container {
+        max-width: 100%;
+        margin: 0 0 1rem 0; /* Remove auto centering on mobile */
+    }
+    
+    .tweet-container {
+        max-width: 100%;
+        margin: 0 0 1rem 0; /* Remove auto centering on mobile */
+    }
+}
+
+/* ====================================
+   HOVER EFFECTS (for devices with hover)
+   ==================================== */
+@media (hover: hover) {
+    /* Enhanced hover effects for desktop */
+    .post-card {
+        transform: translateY(0);
+    }
+    
+    .post-card:hover {
+        transform: translateY(-2px);
+    }
+    
+    .tag {
+        transform: scale(1);
+    }
+    
+    .tag:hover {
+        transform: scale(1.05);
+    }
+    
+    /* Clickable image hover effects only on hover-capable devices */
+    .clickable-image:hover {
+        transform: scale(1.02);
+        box-shadow: var(--shadow-lg) !important;
+    }
+}
+
+/* ====================================
+   REDUCED MOTION
+   ==================================== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+    
+    /* Keep essential transitions but make them instant */
+    .nav-menu {
+        transition: none;
+    }
+    
+    .modal-image {
+        animation: none;
+    }
+    
+    .image-modal {
+        animation: none;
+    }
+}
+
+/* ====================================
+   HIGH CONTRAST MODE
+   ==================================== */
+@media (prefers-contrast: high) {
+    :root {
+        --color-primary: #0066cc;
+        --color-text: #000000;
+        --color-bg: #ffffff;
+        --color-border: #000000;
+        --color-link: #0000ee;
+        --color-link-hover: #0000aa;
+        --color-link-visited: #551a8b;
+    }
+    
+    .post-card {
+        border-width: 2px;
+        border-color: var(--color-border);
+    }
+    
+    .tag {
+        border: 1px solid currentColor;
+    }
+    
+    /* Ensure navigation is visible in high contrast */
+    .nav-menu {
+        border: 2px solid var(--color-border);
+    }
+    
+    .nav-link {
+        border-bottom-width: 2px;
+    }
+}
+
+/* ====================================
+   PRINT STYLES (Enhanced)
+   ==================================== */
+@media print {
+    .site-header,
+    .sidebar,
+    .pagination,
+    .site-footer,
+    .search-form,
+    .menu-toggle,
+    .image-modal {
+        display: none !important;
+    }
+    
+    .content-wrapper {
+        display: block;
+        flex-direction: column;
+    }
+    
+    .main-content {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+        background: #fff;
+    }
+    
+    .post-card {
+        border: 1px solid #ccc;
+        margin-bottom: 1rem;
+        page-break-inside: avoid;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+    
+    /* Show URLs for external links */
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+}
+
+/* ====================================
+   ARCHIVE PAGE RESPONSIVE STYLES
+   ==================================== */
+
+/* Mobile Styles (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    .archive-header {
+        margin-bottom: var(--space-lg);
+        text-align: left;
+    }
+    
+    .archive-title {
+        font-size: var(--font-size-h3);
+    }
+    
+    .archive-description {
+        font-size: var(--font-size-small);
+    }
+    
+    /* Archive sections */
+    .archive-section-toggle {
+        padding: var(--space-sm) var(--space-md);
+        font-size: var(--font-size-small);
+    }
+    
+    .archive-year-toggle {
+        font-size: var(--font-size-medium);
+    }
+    
+    /* Post lists */
+    .archive-post-link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-xs);
+    }
+    
+    .archive-post-date {
+        min-width: auto;
+        font-size: var(--font-size-xs);
+    }
+    
+    .archive-separator {
+        display: none;
+    }
+    
+    .archive-post-title {
+        font-size: var(--font-size-small);
+    }
+    
+    /* Tag filters */
+    .archive-tag-filters {
+        padding: var(--space-sm);
+        gap: var(--space-xs);
+    }
+    
+    .archive-tag-filter {
+        font-size: var(--font-size-xs);
+        padding: var(--space-xs);
+    }
+}
+
+/* Small Mobile Styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .archive-section-toggle {
+        padding: var(--space-sm);
+    }
+    
+    .section-title {
+        font-size: var(--font-size-small);
+    }
+    
+    .post-count {
+        font-size: var(--font-size-xs);
+    }
+    
+    /* Stack tag filters more tightly */
+    .archive-tag-filters {
+        gap: var(--space-xs);
+    }
+    
+    .archive-tag-filter {
+        padding: 0.25rem 0.5rem;
+    }
+}
+
+/* ====================================
+   ENHANCED ARCHIVE PAGE RESPONSIVE STYLES
+   ==================================== */
+
+/* Mobile Styles (max-width: 767px) */
+@media screen and (max-width: 767px) {
+
+    /* Archive stats become horizontal and compact */
+    .archive-stats {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: var(--space-xs);
+        padding: var(--space-sm);
+        text-align: center;
+    }
+
+    .stat-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-xs);
+        flex: 1;
+    }
+
+    .stat-number {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+        line-height: 1.2;
+    }
+    
+    /* Search container */
+    .search-container {
+        margin-bottom: var(--space-md);
+    }
+    
+    .search-input {
+        padding: var(--space-sm) var(--space-sm) var(--space-sm) 35px;
+        font-size: var(--font-size-small);
+        border-radius: 20px;
+    }
+    
+    .search-icon {
+        left: var(--space-sm);
+        font-size: 0.9rem;
+    }
+    
+    /* Tag filter adjustments */
+    .tag-filter-bar {
+        padding: var(--space-md);
+    }
+    
+    .tag-pills {
+        gap: var(--space-xs);
+    }
+    
+    .tag-pill {
+        font-size: 0.8rem;
+        padding: var(--space-xs) var(--space-sm);
+        border-radius: 15px;
+    }
+    
+    .tag-count {
+        font-size: 0.7rem;
+    }
+    
+    /* Timeline adjustments */
+    .archive-timeline::before {
+        display: none;
+    }
+    
+    .archive-year-toggle::before {
+        display: none;
+    }
+    
+    .archive-year-toggle {
+        padding: var(--space-md);
+        font-size: var(--font-size-medium);
+        gap: var(--space-sm);
+    }
+    
+    .year-indicator {
+        font-size: 0.8rem;
+        padding: var(--space-xs);
+    }
+    
+    /* Month sections */
+    .archive-month-section {
+        margin-left: 0;
+        border-left: none;
+        padding-left: 0;
+        margin-bottom: var(--space-md);
+    }
+    
+    .archive-month-toggle {
+        padding: var(--space-sm);
+        font-size: var(--font-size-small);
+    }
+    
+    .post-count-badge {
+        font-size: 0.75rem;
+        padding: 0.2em 0.5em;
+    }
+    
+    /* Post items */
+    .archive-post-item {
+        padding: var(--space-sm);
+        margin-bottom: var(--space-xs);
+    }
+    
+    .archive-post-link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-xs);
+        font-size: var(--font-size-small);
+    }
+    
+    .archive-post-date {
+        font-size: 0.75rem;
+        min-width: auto;
+    }
+    
+    .archive-post-title {
+        font-size: var(--font-size-small);
+        line-height: 1.3;
+    }
+}
+
+/* Small Mobile Styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .archive-header {
+        margin-bottom: var(--space-lg);
+    }
+    
+    .archive-title {
+        font-size: var(--font-size-h3);
+    }
+    
+    .archive-description {
+        font-size: var(--font-size-small);
+    }
+    
+/* Stats become even more compact */
+    .archive-stats {
+        padding: var(--space-xs) var(--space-sm);
+    }
+
+    .stat-item {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .stat-number {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+        line-height: 1.1;
+    }
+    
+    /* Filter bar */
+    .tag-filter-bar {
+        padding: var(--space-sm);
+    }
+    
+    .filter-label {
+        font-size: var(--font-size-small);
+        margin-bottom: var(--space-sm);
+    }
+    
+    /* Year toggles */
+    .archive-year-toggle {
+        padding: var(--space-sm);
+        flex-wrap: wrap;
+        gap: var(--space-xs);
+    }
+    
+    .year-indicator {
+        font-size: 0.75rem;
+    }
+    
+    /* Month toggles */
+    .archive-month-toggle {
+        padding: var(--space-xs) var(--space-sm);
+    }
+    
+    .archive-month-toggle .month-title {
+        font-size: var(--font-size-xs);
+    }
+    
+    /* Tighter spacing for tag pills */
+    .tag-pill {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+    }
+    
+    /* Post links stack vertically */
+    .archive-post-link {
+        padding: var(--space-xs);
+    }
+    
+    .archive-post-date {
+        font-weight: 500;
+        color: var(--color-text-muted);
+    }
+}
+
+/* Tablet landscape adjustments */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .archive-stats {
+        justify-content: space-around;
+    }
+    
+    .tag-pills {
+        justify-content: center;
+    }
+    
+    .archive-timeline::before {
+        left: 15px;
+    }
+    
+    .archive-year-toggle::before {
+        left: -25px;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/* ====================================
+   SEARCH RESULTS RESPONSIVE STYLES
+   ==================================== */
+
+/* Mobile Styles (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    /* Search input adjustments */
+    .search-input {
+        padding: var(--space-sm) var(--space-sm) var(--space-sm) 35px;
+        font-size: var(--font-size-small);
+    }
+    
+    .search-icon {
+        left: var(--space-sm);
+        font-size: 0.9rem;
+    }
+    
+    /* Search results container */
+    .search-results-container {
+        max-height: 250px;
+        border-radius: 0 0 var(--border-radius) var(--border-radius);
+    }
+    
+    /* Search results header */
+    .search-results-header {
+        padding: var(--space-xs) var(--space-sm);
+        font-size: var(--font-size-xs);
+    }
+    
+    /* Search results content */
+    .search-results {
+        max-height: 200px;
+    }
+    
+    /* Search result items */
+    .search-result-item {
+        padding: var(--space-xs) var(--space-sm);
+    }
+    
+    .search-result-title {
+        font-size: var(--font-size-xs);
+    }
+    
+    .search-result-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-xs);
+        font-size: 0.7rem;
+    }
+    
+    .search-result-type {
+        font-size: 0.65rem;
+        padding: 0.1em 0.3em;
+    }
+    
+    /* Keyboard hint */
+    .search-keyboard-hint {
+        padding: var(--space-xs);
+        font-size: 0.7rem;
+    }
+    
+    /* Sidebar search adjustments */
+    .sidebar .search-results-container {
+        /* On mobile, sidebar search results can take full width */
+        left: calc(-1 * var(--space-md));
+        right: calc(-1 * var(--space-md));
+        max-height: 200px;
+    }
+}
+
+/* Small Mobile Styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    /* Further reduce search input */
+    .search-input {
+        padding: var(--space-xs) var(--space-xs) var(--space-xs) 30px;
+        font-size: var(--font-size-xs);
+    }
+    
+    .search-icon {
+        left: var(--space-xs);
+        font-size: 0.8rem;
+    }
+    
+    /* Smaller search results */
+    .search-results-container {
+        max-height: 200px;
+    }
+    
+    .search-results {
+        max-height: 150px;
+    }
+    
+    /* Tighter spacing for search results */
+    .search-result-item {
+        padding: var(--space-xs);
+    }
+    
+    .search-result-title {
+        font-size: 0.75rem;
+        line-height: 1.2;
+    }
+    
+    .search-result-meta {
+        font-size: 0.65rem;
+    }
+    
+    /* Hide keyboard hint on very small screens */
+    .search-keyboard-hint {
+        display: none;
+    }
+}
+
+/* Tablet Styles (768px - 1023px) */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    /* Adjust search for tablet */
+    .search-results-container {
+        max-height: 350px;
+    }
+    
+    .search-results {
+        max-height: 290px;
+    }
+    
+    /* Sidebar search on tablet */
+    .sidebar .search-results-container {
+        /* Sidebar is now horizontal grid, so search results can be wider */
+        max-height: 250px;
+    }
+}
+
+/* Landscape Mobile (orientation: landscape) */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    /* Reduce search results height in landscape to save vertical space */
+    .search-results-container {
+        max-height: 180px;
+    }
+    
+    .search-results {
+        max-height: 130px;
+    }
+    
+    /* Hide keyboard hint in landscape */
+    .search-keyboard-hint {
+        display: none;
+    }
+}
+
+/* High contrast adjustments */
+@media (prefers-contrast: high) {
+    .search-results-container {
+        border-width: 2px;
+        border-color: var(--color-border);
+    }
+    
+    .search-result-item {
+        border-bottom-width: 2px;
+    }
+    
+    .search-result-item:hover {
+        background-color: var(--color-bg);
+        border-color: var(--color-text);
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .search-results-container {
+        animation: none;
+    }
+    
+    .search-result-item {
+        transition: none;
+    }
+}
+
+/* Print styles - hide search results */
+@media print {
+    .search-results-container {
+        display: none !important;
+    }
+}
