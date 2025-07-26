@@ -1,10 +1,12 @@
 ---
-title: "Links: Week of 19 Jul 2025"
-date: 2025-07-21
+title: "Links: Week of 26 Jul 2025"
+date: 2025-07-26
 description: 
 tags: ["links"]
 draft: false
 ---
+
+Some readers have commented that I am obsessed with AI. This is not correct. I wish I was. But is there anything more interesting happening in the world right now? I don't think so.
 
 1. [Musician Who Died in 2021 Resurrected as Clump of Brain Matter, Now Composing New Music](https://futurism.com/neoscope/musician-resurrected-brain-new-music):
     > Art can outlast the artist — but what about their artistic impulses?
@@ -34,5 +36,3 @@ draft: false
     >  An essay series on the hidden mechanisms that support modern life — and what happens if we don’t maintain them 
 
     This should be amazing. So far, Agriculture, Water and Electricity. 
-
-
