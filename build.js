@@ -423,8 +423,8 @@ function getBaseTemplate() {
     <title>{{title}}</title>
     
     <!-- CSS Files -->
-    <link rel="stylesheet" href="{{rootPath}}css/style.css">
-    <link rel="stylesheet" href="{{rootPath}}css/responsive.css">
+    <link rel="stylesheet" href="{{rootPath}}css/style.css?v=1.1">
+    <link rel="stylesheet" href="{{rootPath}}css/responsive.css?v=1.1">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{rootPath}}assets/icons/favicon.ico">
