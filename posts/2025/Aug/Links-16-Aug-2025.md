@@ -36,9 +36,10 @@ draft: false
 
     > 17. ... The human condition is that we want it all, and we’re not willing to make trades… ‘deathbed regrets’ typically have the bias of wanting the other path—the path they could have taken—without considering the cost of that path. So they say, “Hey I was really successful and I did all these things, but you know, I would give it all up today to have my family.” It’s like, well yeah, but you didn’t, because you actually chose the path that you’re on, and you weren’t willing to do that. What you are saying right now is that you want it all. Sure. So does everyone.
 
-4. ![embed](https://x.com/junkbondanalyst/status/1954520550362988867)
+4. Mad respect for whoever decided that there was a business opportunity here and then made it happen.  
 
-    Mad respect for whoever decided that there was a business opportunity here and then made it happen. 
+    ![embed](https://x.com/junkbondanalyst/status/1954520550362988867)
+   
 
 5. [Space Rock That Punched Through Roof Almost Struck Resident (NYT)](https://www.nytimes.com/2025/08/11/science/meteor-georgia-older-than-earth.html): 
     > “I suspect that he heard three simultaneous things,” Mr. Harris said of the person whose home was hit. “One was the collision with his roof, one was a tiny cone of a sonic boom, and a third was it impacting the floor all in the same moment.”
@@ -49,10 +50,10 @@ draft: false
 
 7. ![embed](https://x.com/reddit_lies/status/1954926000585716067)
 
-8.  ![embed](https://x.com/dieworkwear/status/1955756224030630264)
+8.  Great thread from a master. Love how he says so much without saying anything. See the photos in this tweet for a masterpiece. 
 
-    Great thread for a master. Love how he says so much without saying anything. See the photos in this tweet for a masterpiece: 
-    
+    ![embed](https://x.com/dieworkwear/status/1955756224030630264)
+
     ![embed](https://x.com/dieworkwear/status/1955756255668265094)
 
 9. [The Infinite Well: How Innovation Keeps Water Flowing](https://newsletter.humanprogress.org/p/the-infinite-well-how-innovation): 
