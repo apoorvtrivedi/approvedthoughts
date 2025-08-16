@@ -28,7 +28,7 @@ The Sonnet is the “most intelligent model” by Anthropic. It is the go to mod
 
 The project went through multiple chats because after a while, in each chat, I would start getting this message:
 
-![This chat is getting long.](assets/images/2025/Jan/image.png)
+![This chat is getting long.](image.png)
 
 Here, for the first time, I used a trick I had recently seen (I think) on Twitter.
 
