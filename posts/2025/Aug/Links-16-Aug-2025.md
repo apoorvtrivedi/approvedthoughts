@@ -9,13 +9,7 @@ draft: false
 1. [Face it: you're a crazy person](https://www.experimental-history.com/p/face-it-youre-a-crazy-person): 
     > I meet a lot of people who don’t like their jobs, and when I ask them what they’d rather do instead, about 75% say something like, “Oh, I dunno, I’d really love to run a little coffee shop.” If I’m feeling mischievous that day, I ask them one question: “Where would you get the coffee beans?”
 
-    > If that’s a stumper, here are some followups:
-
-    > Which kind of coffee mug is best?
-
-    > How much does a La Marzocco espresso machine cost?
-
-    > Would you bake your blueberry muffins in-house or would you buy them from a third party?
+    > If that’s a stumper, here are some followups: Which kind of coffee mug is best? How much does a La Marzocco espresso machine cost? Would you bake your blueberry muffins in-house or would you buy them from a third party?
 
     > The point of the Coffee Beans Procedure is this: if you can’t answer those questions, if you don’t even find them _interesting_, then you should not open a coffee shop, because this is how you will spend your days as a cafe owner. You will not be sitting droopy-lidded in an easy chair, sipping a latte and greeting your regulars as you page through _Anna Karenina_. You will be running a small business that sells hot bean water.
 
@@ -48,9 +42,11 @@ draft: false
 
 6. [Performance Art?](https://www.nytimes.com/2025/08/10/business/last-supper-joseph-awuah-darko.html)
 
-7. ![embed](https://x.com/reddit_lies/status/1954926000585716067)
+7. The ratio of members!
+    
+    ![embed](https://x.com/reddit_lies/status/1954926000585716067)
 
-8.  Great thread from a master. Love how he says so much without saying anything. See the photos in this tweet for a masterpiece. 
+8.  Great thread from a master. Love how he says so much without saying anything. See the photos in the third tweet for a masterpiece (as he puts it, the 3rd and the 4th slide.). 
 
     ![embed](https://x.com/dieworkwear/status/1955756224030630264)
 
