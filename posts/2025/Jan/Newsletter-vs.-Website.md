@@ -12,7 +12,7 @@ I enjoyed heading down the rabbit hole of how to learn better last week. I alrea
 
 As it happens, this is also a space where a lot is changing (yes, AI, duh!) and one that is even otherwise relevant to me given the presence of two (reluctant) learners that I am (even more reluctantly) trying to support.
 
-![GPT4 as Tutor](https://x.com/emollick/status/1879633485004165375)
+![embed](https://x.com/emollick/status/1879633485004165375)
 
 So it seemed like a natural beat to walk.
 

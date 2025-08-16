@@ -36,8 +36,9 @@ draft: false
 7. Better ways to wear a Polo: Always a pleasure to see a master in action.
     ![embed](https://x.com/dieworkwear/status/1880103365348323582)
 
+    ![embed](https://x.com/dieworkwear/status/1880103368976396505)
 
-    “…networking conferences where there’s plated cantaloupe.” *chef’s kiss*.
+“…networking conferences where there’s plated cantaloupe.” *chef’s kiss*.
 
 Here’s another one from Derek:
     ![embed](https://x.com/dieworkwear/status/1879026335315853613)
@@ -50,7 +51,7 @@ Here’s another one from Derek:
 
     > Only after I started remedying my “gluteal amnesia” (real medical term) did it become clear how little I knew about basic affairs like walking, standing and sitting (or living, for that matter). Within a week of the mandated twisting and shimmying and clam-shelling, my spine was noticeably straighter, smoother. Four weeks later and I could finally walk without pain again. It took three months more to fully rebalance my loopy musculature and break into a manageable jog — but when I did, I noticed a wondrous new power to each step and spring. My reawakened haunch muscles were doing their job.Programming note: I will be on the road next few weeks. Wish me luck with getting these out on time.
 
-For the last two months, I have been doing a core workout formulated personally for me by (who else?) ChatGPT, with a special focus on glutes and I can feel the difference, not just in my ability, but my willingness to do things. Core strength is underrated and it isn’t just about the abs. You can have a six-pack and a weak core. I happen to have one of those.
+    For the last two months, I have been doing a core workout formulated personally for me by (who else?) ChatGPT, with a special focus on glutes and I can feel the difference, not just in my ability, but my willingness to do things. Core strength is underrated and it isn’t just about the abs. You can have a six-pack and a weak core. I happen to have one of those.
 
 That’s it for this week. It seems like my writing and links are all AI all the time but that isn’t the intention. However it is a space where a lot of fun stuff is happening right now and so that’s the path of least resistant.
 

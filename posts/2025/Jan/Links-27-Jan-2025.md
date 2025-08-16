@@ -18,12 +18,12 @@ draft: false
 
 3. [Bjorn Lomborg](https://x.com/BjornLomborg): A good follow if you want to see less depressing news about climate change, for instance that [polar bear population](https://x.com/BjornLomborg/status/1596907524577320960) has been increasing since the 1960s or that the [Great Barrier Reef](https://x.com/BjornLomborg/status/1613153797034971137) is doing just fine. Do note that [his work](https://en.wikipedia.org/wiki/Bj%C3%B8rn_Lomborg) is also subject to Gell-Mann Amnesia.
 
-4. ![UAP/UFO?](https://x.com/MvonRen/status/1882514812791640436?mx=2)
+4. ![embed](https://x.com/MvonRen/status/1882514812791640436?mx=2)
 
     Only reason I am posting this is because I am right now in the land of the great UFO scare of 2025, New Jersey. Trump appointed CIA Director? On Fox News? Former Texas Congressman? There should be an emoji for that. Here’s a [palate cleanser](https://www.theintrinsicperspective.com/p/the-ufo-craze-was-created-by-government) (via Alex Tabarrok at MR).
 
-5. Watch till the end for the reaction.
-    ![Jokic](https://x.com/nbaindia/status/1882668945951596645)
+5. Jokic. Watch till the end for the reaction.
+    ![embed](https://x.com/nbaindia/status/1882668945951596645)
 
 6. [Is it better to bribe Trump by purchasing his memecoin or his stock?](http://jpkoning.blogspot.com/2025/01/is-it-better-to-bribe-trump-by.html) Not financial advice.
 

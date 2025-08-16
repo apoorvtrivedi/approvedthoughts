@@ -11,7 +11,7 @@ draft: false
 
     For my day to day queries, I simply ask Claude, like I would ask a colleague or a friend and it just works. But for professional work, correctly prompting the LLMs improves the quality of output significantly. I hope to find (and create) more such examples. 
 2. [Wisdom](https://simonwillison.net/2025/Feb/3/a-computer-can-never-be-held-accountable/#atom-everything): 
-    ![A computer can never be held accountable. Therefore a computer must never make a management decision](/static/images/a-computer-can-never-be-held-accountable.jpg)
+    ![A computer can never be held accountable. Therefore a computer must never make a management decision](/assets/images/2025/Jan/a-computer-can-never-be-held-accountable.jpg)
 
 3. [Wisdom II](https://x.com/gergelyorosz/status/1887813676972851577): A lot of AI cheerleading takes [this form](https://ghuntley.com/dothings/). Yes, you can just do things. I have also thought and posted along those lines. But as Gergely points out, the hard thing in building a payment system is not the code - its fraud, AML, KYC, tax, reporting, reconcilliation...
     
