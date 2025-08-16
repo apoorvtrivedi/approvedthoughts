@@ -38,7 +38,8 @@ And it did! I pasted the update in another chat and the conversation continued t
 
 You can check out the first chat [here[](https://claude.ai/chat/1fd15f60-b8cb-49b1-835f-7c339e83aefb). I think / hope it has no confidential information. I won’t be sharing the remaining chats because they do have some of my account credentials. This one should provide enough context for most of what I am discussing here though.
 
-So How’d it Go?
+**So How’d it Go?**
+
 Well you’ve seen the “website”, so clearly not as well as I’d hoped. That said, I am continuing with the project and based on what I have learned so far, I am hopeful I will eventually get it working.
 
 It is still remarkable that I got this far, considering that I have zero experience with the technologies / services involved. Claude successfully walked me through setting up 3 different services (Cloudflare, GitHub and Hugo) and had them work with each other to serve up the site.
@@ -59,7 +60,7 @@ Claude also seemed to just understand better where we were in the overall projec
 
 Of course, the answer to step 2 would have 5 steps, so now I have to scroll back and forth to figure out which step of which step I am on. So despite being a “stronger” model, I found it discouraging and just much harder with the R1 to have to keep track of where we were in the project.
 
-What went wrong?
+**What went wrong?**
 
 I suspect the website would be looking a lot better if I had just followed Claude’s guidance. In fact, even now, I think it is at a stage where I can post these weekly updates there with some extra effort.
 
@@ -75,7 +76,8 @@ Eventually I gave up with Claude and took the project over to DeepSeek R1. It ma
 
 Maybe AI agents will fix this issue in future. In any event, the project is on pause as I travel and I am wondering whether I should start from scratch with DeepSeek instead of trying to fix the current version.
 
-What did I learn?
+**What did I learn?**
+
 A lot.
 
 Despite the hiccup, I feel comfortable that these models can help me do projects that I just couldn’t have done before. I intend to try more projects, and of course, finish this one.
@@ -88,7 +90,8 @@ Larger context windows will change everything. A model that can keep your entire
 
 I am a little more skeptical than before about LLMs becoming generally intelligent or superintelligent. Their ability to deal with problems that are not in their training data seems limited. Maybe agentic models will overcome some of this but breakthroughs in for e.g. fundamental physics seem unlikely. Obviously I am extrapolating from a tiny sample but that’s the direction in which I have updated my priors.
 
-What’s next?
+**What’s next?**
+
 I have a few ideas I want to work on once (not if!) I finish the website. I wonder if I can set up a web server on my old Mac and run a few basic services off it. For e.g. creating a URL shortening service (like Bitly) or a QR code generation service.
 
 This from Simon Willison is my inspiration. 14 projects in 1 week. No rocket science but just small, useful things here and there. Or, if I am more ambitious, that custom Spaced Repetition app built by Andy Matuschak, I mentioned couple of weeks ago.
