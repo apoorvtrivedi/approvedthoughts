@@ -175,10 +175,16 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.approvedthoughts.com/tags/post.html</loc>
-        <lastmod>2025-08-16</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
+        <loc>https://www.approvedthoughts.com/posts/2025/links-27-jan-2025.html</loc>
+        <lastmod>2025-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.approvedthoughts.com/posts/2025/the-one-where-i-set-up-a-website.html</loc>
+        <lastmod>2025-01-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.approvedthoughts.com/tags/links.html</loc>
@@ -188,6 +194,12 @@
     </url>
     <url>
         <loc>https://www.approvedthoughts.com/tags/alpha.html</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.approvedthoughts.com/tags/post.html</loc>
         <lastmod>2025-08-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
