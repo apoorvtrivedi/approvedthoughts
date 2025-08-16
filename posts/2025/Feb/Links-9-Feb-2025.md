@@ -1,5 +1,5 @@
 ---
-title: "Links: Week of Feb 09 2025"
+title: "Links: Week of 09 Feb 2025"
 date: 2025-02-09
 type: links
 description:
@@ -12,10 +12,13 @@ draft: false
     For my day to day queries, I simply ask Claude, like I would ask a colleague or a friend and it just works. But for professional work, correctly prompting the LLMs improves the quality of output significantly. I hope to find (and create) more such examples. 
 2. [Wisdom](https://simonwillison.net/2025/Feb/3/a-computer-can-never-be-held-accountable/#atom-everything): 
     ![A computer can never be held accountable. Therefore a computer must never make a management decision](/static/images/a-computer-can-never-be-held-accountable.jpg)
+
 3. [Wisdom II](https://x.com/gergelyorosz/status/1887813676972851577): A lot of AI cheerleading takes [this form](https://ghuntley.com/dothings/). Yes, you can just do things. I have also thought and posted along those lines. But as Gergely points out, the hard thing in building a payment system is not the code - its fraud, AML, KYC, tax, reporting, reconcilliation...
     
     That is true for most other hard things too. The hard thing in pharma is not finding the compound but getting the trials and approvals done. The hard thing in politics in not the manifesto but the consensus. 
+
 4. [Tarriffs and Modern Supply Chains](https://x.com/ben_golub/status/1886027389483827254): Tarriffs are more disruptive than I thought. 
+
 5. [How My Dad Reconciled His God and His Gay Son](https://www.nytimes.com/interactive/2025/02/05/opinion/coming-out-evangelical-pastor.html?smid=nytcore-ios-share): Beautiful. 
 
     >This is me with my dad, Bill White. For decades, he has been an evangelical pastor. Before I was born, he wrote a letter to my future wife. He didn’t know what we both do now: that I’m gay. When I came out nearly 16 years later, it shook his faith and fractured his church. But it never separated us. I wanted to understand how. So I read his journals.
