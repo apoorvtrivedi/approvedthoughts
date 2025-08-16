@@ -1,6 +1,7 @@
 ---
 title: "Spaced Repetition"
 date: 2025-01-12
+type:
 description: 
 tags: ["post"]
 draft: false

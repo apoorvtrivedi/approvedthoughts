@@ -1,7 +1,7 @@
 ---
 title: "A few thoughts on LLMs"
 date: 2025-03-01
-type: notes
+type: 
 description:
 tags: ["post", "LLM"]
 draft: false

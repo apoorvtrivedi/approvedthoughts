@@ -1,6 +1,7 @@
 ---
 title: "Links: Week of 12 Jan 2025"
 date: 2025-01-12
+type: links
 description: 
 tags: ["links"]
 draft: false

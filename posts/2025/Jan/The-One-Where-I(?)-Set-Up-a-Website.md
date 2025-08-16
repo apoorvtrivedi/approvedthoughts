@@ -1,6 +1,7 @@
 ---
 title: "The One Where I(?) Set Up a Website"
 date: 2025-01-26
+type: 
 description: 
 tags: ["post"]
 draft: false
