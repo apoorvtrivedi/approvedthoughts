@@ -32,7 +32,7 @@ draft: false
 
     > How many important scientific breakthroughs lie on the other side of our collective dismissal of ‘woo’?
 
-    ![cows](/posts/2025/Aug/23-Aug-2025-Link-3.png)
+    [![cows](/posts/2025/Aug/23-Aug-2025-Link-3.png)](https://x.com/LarryBrockJr/status/1942357971565944877)
 
 4. [Why I believe in AGI (again)](https://guzey.com/why-i-believe-in-agi-again/): 
     > First, I’m now convinced that ChatGPT understands what it reads. Second, reasoning models persuade me that ChatGPT is creative. Third, ChatGPT summarizes texts extremely well, which I believe to be a robust measure of intelligence.

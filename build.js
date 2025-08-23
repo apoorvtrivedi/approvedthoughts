@@ -121,14 +121,37 @@ function capitalize(str) {
 }
 
 function processInlineImages(content) {
-    // This regex matches markdown image syntax: ![alt text](image-url)
-    const imageRegex = /!\[([^\]]*)\]\(([^)]+)\)/g;
+    // First, handle linked images: [![alt text](image-url)](link-url)
+    const linkedImageRegex = /\[!\[([^\]]*)\]\(([^)]+)\)\]\(([^)]+)\)/g;
     
-    return content.replace(imageRegex, (match, alt, src) => {
+    content = content.replace(linkedImageRegex, (match, alt, src, linkUrl) => {
         // Create a unique ID for each image
         const imageId = 'img-' + Math.random().toString(36).substr(2, 9);
         
-        // Create enhanced image with click-to-enlarge
+        // Create enhanced image with link wrapper
+        return `
+<div class="image-container">
+    <a href="${linkUrl}" target="_blank" rel="noopener" class="image-link">
+        <img 
+            src="${src}" 
+            alt="${alt}" 
+            loading="lazy" 
+            class="inline-image linked-image" 
+            id="${imageId}"
+        />
+    </a>
+    ${alt ? `<div class="image-caption">${alt}</div>` : ''}
+</div>`;
+    });
+    
+    // Then handle regular images: ![alt text](image-url)
+    const imageRegex = /!\[([^\]]*)\]\(([^)]+)\)/g;
+    
+    content = content.replace(imageRegex, (match, alt, src) => {
+        // Create a unique ID for each image
+        const imageId = 'img-' + Math.random().toString(36).substr(2, 9);
+        
+        // Create enhanced image with click-to-enlarge (no external link)
         return `
 <div class="image-container">
     <img 
@@ -143,6 +166,8 @@ function processInlineImages(content) {
     ${alt ? `<div class="image-caption">${alt}</div>` : ''}
 </div>`;
     });
+    
+    return content;
 }
 
 // ====================================

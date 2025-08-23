@@ -1984,3 +1984,73 @@ pre code {
     right: 0;
     z-index: 1001;
 }
+
+/* ====================================
+   LINKED IMAGE STYLES
+   Add these styles to your style.css
+   ==================================== */
+
+/* Image link wrapper */
+.image-container .image-link {
+    display: block;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: var(--transition-base);
+    position: relative;
+}
+
+.image-container .image-link:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Linked images get different styling than clickable modal images */
+.linked-image {
+    border: 2px solid transparent;
+    transition: var(--transition-base);
+    cursor: pointer;
+}
+
+.linked-image:hover {
+    border-color: var(--color-link);
+    transform: scale(1.02);
+}
+
+/* Add a small link icon overlay to indicate it's a link */
+.image-container .image-link::after {
+    content: "🔗";
+    position: absolute;
+    top: var(--space-sm);
+    right: var(--space-sm);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-xs);
+    opacity: 0;
+    transition: var(--transition-base);
+    z-index: 10;
+}
+
+.image-container .image-link:hover::after {
+    opacity: 1;
+}
+
+/* Make sure the image container is positioned relatively for the overlay */
+.image-container {
+    position: relative;
+    margin: var(--space-lg) 0;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Distinguish between linked and modal images visually */
+.clickable-image {
+    /* Keep existing modal image styles */
+}
+
+.linked-image {
+    /* No onclick modal behavior, just link styling */
+}
