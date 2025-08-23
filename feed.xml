@@ -10,7 +10,7 @@
         <language>en-us</language>
         <managingEditor>noreply@approvedthoughts.com (Your Name)</managingEditor>
         <webMaster>noreply@approvedthoughts.com (Your Name)</webMaster>
-        <lastBuildDate>Sat, 23 Aug 2025 04:42:45 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 23 Aug 2025 05:25:15 GMT</lastBuildDate>
         <pubDate>Sat, 23 Aug 2025 00:00:00 GMT</pubDate>
         <generator>Approved Thoughts Static Site Generator</generator>
         <docs>https://www.rssboard.org/rss-specification</docs>
@@ -27,11 +27,11 @@
 <li><p><a href="https://www.nytimes.com/2025/08/12/dining/marthas-vineyard-alpha-gal-tick-bites.html?smid=nytcore-ios-share" target="_blank" rel="noopener">Why Is Martha’s Vineyard Going Vegan? It’s All About Tick Bites. (NYT)</a>: </p>
 <blockquote>
 <p>On the porch of the Chilmark General Store and at sunset-watching parties on Menemsha Beach, conversations circle ineluctably to the lone star tick, which after a single bite can leave people with a life-threatening allergy to most meat and dairy.</p>
-</blockquote>
-<blockquote>
+
+
 <p>Known as alpha-gal syndrome, the condition is changing the way many people shop, cook and eat in a place long known as a food-lover’s retreat for its thriving independent farms and restaurants. These new habits may prove to be lasting, as some islanders who initially avoided beef and cheese temporarily, out of necessity, later give them up for good out of preference.</p>
-</blockquote>
-<blockquote>
+
+
 <p>“It’s sort of supersized vegetarianism,” said Rebecca Miller, a farm owner who has the syndrome herself.</p>
 </blockquote>
 </li>
@@ -43,23 +43,23 @@
 <li><p><a href="https://x.com/rivatez/status/1942963545940922605" target="_blank" rel="noopener">@rivatez</a>:</p>
 <blockquote>
 <p>That animals seemingly anticipate events should humble us more. Changes in groundwater chemistry, electromagnetic fields and sound waves make animals restless, distressed and even relocate</p>
-</blockquote>
-<blockquote>
+
+
 <p>In the West it is seen as ‘woo’ to contemplate that energy/weather humans don’t <em>consciously</em> experience can affect our psychology, and yet we forget that we are animals too.  </p>
-</blockquote>
-<blockquote>
+
+
 <p>Even outside extreme weather events, the lunar cycle moves oceans, huge bodies of water. We are, like all animals, primarily made of water. The word ‘lunacy’ comes from the ancient understanding that our minds can be affected by it </p>
-</blockquote>
-<blockquote>
+
+
 <p>An interesting experiment is to log your daily mood for a few months- ups and downs, anxiety / joy levels, big arguments with loved ones etc. Then afterwards, retroactively chart it against lunar cycles and NASA space weather data that tracks geomagnetic storms, solar flares etc. </p>
-</blockquote>
-<blockquote>
+
+
 <p>Be open- minded and try it. I, too, used to think this stuff was BS </p>
-</blockquote>
-<blockquote>
+
+
 <p>Now I think much of modern psychiatry is giving people drugs to tune down people’s individual responses to these external inputs, eg ‘bipolar’ might just indicate high sensitivity </p>
-</blockquote>
-<blockquote>
+
+
 <p>How many important scientific breakthroughs lie on the other side of our collective dismissal of ‘woo’?</p>
 </blockquote>
 </li>
@@ -99,8 +99,7 @@
     <div class="image-caption">Good News</div>
 </div>
 
-<pre><code>&quot;The better news is that this is happening at a time when exercise seems to be increasing for many groups, especially the young and old. The bad news is ... deep Medicaid cuts and declines in childhood vaccine uptake are not exactly optimistic predictors of American health.&quot;
-</code></pre>
+<p>&quot;The better news is that this is happening at a time when exercise seems to be increasing for many groups, especially the young and old. The bad news is ... deep Medicaid cuts and declines in childhood vaccine uptake are not exactly optimistic predictors of American health.&quot;</p>
 <ol start="6">
 <li><p><a href="https://www.astralcodexten.com/p/your-review-dating-men-in-the-bay?" target="_blank" rel="noopener">Your Review: Dating Men In The Bay Area</a>: Not what it says on the label at all! Recommended.</p>
 </li>
@@ -119,11 +118,11 @@
 <li><p><a href="https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide" target="_blank" rel="noopener">GPT-5 prompting guide</a>: </p>
 <blockquote>
 <p>GPT-5, our newest flagship model, represents a substantial leap forward in agentic task performance, coding, raw intelligence, and steerability.</p>
-</blockquote>
-<blockquote>
+
+
 <p>While we trust it will perform excellently “out of the box” across a wide range of domains, in this guide we’ll cover prompting tips to maximize the quality of model outputs, derived from our experience training and applying the model to real-world tasks. We discuss concepts like improving agentic task performance, ensuring instruction adherence, making use of newly API features, and optimizing coding for frontend and software engineering tasks - with key insights into AI code editor Cursor’s prompt tuning work with GPT-5.</p>
-</blockquote>
-<blockquote>
+
+
 <p>We’ve seen significant gains from applying these best practices and adopting our canonical tools whenever possible, and we hope that this guide, along with the <a href="https://platform.openai.com/chat/edit?optimize=true" target="_blank" rel="noopener">prompt optimizer tool</a> we’ve built, will serve as a launchpad for your use of GPT-5. But, as always, remember that prompting is not a one-size-fits-all exercise - we encourage you to run experiments and iterate on the foundation offered here to find the best solution for your problem.</p>
 </blockquote>
 <p>And a <a href="https://github.com/anthropics/prompt-eng-interactive-tutorial" target="_blank" rel="noopener">tutorial</a> by  Anthropic. </p>
@@ -146,11 +145,11 @@
 <li><p><a href="https://www.experimental-history.com/p/face-it-youre-a-crazy-person" target="_blank" rel="noopener">Face it: you&#39;re a crazy person</a>: </p>
 <blockquote>
 <p>I meet a lot of people who don’t like their jobs, and when I ask them what they’d rather do instead, about 75% say something like, “Oh, I dunno, I’d really love to run a little coffee shop.” If I’m feeling mischievous that day, I ask them one question: “Where would you get the coffee beans?”</p>
-</blockquote>
-<blockquote>
+
+
 <p>If that’s a stumper, here are some followups: Which kind of coffee mug is best? How much does a La Marzocco espresso machine cost? Would you bake your blueberry muffins in-house or would you buy them from a third party?</p>
-</blockquote>
-<blockquote>
+
+
 <p>The point of the Coffee Beans Procedure is this: if you can’t answer those questions, if you don’t even find them <em>interesting</em>, then you should not open a coffee shop, because this is how you will spend your days as a cafe owner. You will not be sitting droopy-lidded in an easy chair, sipping a latte and greeting your regulars as you page through <em>Anna Karenina</em>. You will be running a small business that sells hot bean water.</p>
 </blockquote>
 </li>
@@ -187,7 +186,7 @@
 <div class="tweet-container" >
   <blockquote class="twitter-tweet" data-width="350">
     <a href="https://twitter.com/junkbondanalyst/status/1954520550362988867" target="_blank" rel="noopener"></a>
-  </blockquote>
+</blockquote>
 </div>
    
 
@@ -206,7 +205,7 @@
 <div class="tweet-container" >
   <blockquote class="twitter-tweet" data-width="350">
     <a href="https://twitter.com/reddit_lies/status/1954926000585716067" target="_blank" rel="noopener"></a>
-  </blockquote>
+</blockquote>
 </div>
 
 <ol start="8">
@@ -215,22 +214,22 @@
 <div class="tweet-container" >
   <blockquote class="twitter-tweet" data-width="350">
     <a href="https://twitter.com/dieworkwear/status/1955756224030630264" target="_blank" rel="noopener"></a>
-  </blockquote>
+</blockquote>
 </div>
 
     
 <div class="tweet-container" >
   <blockquote class="twitter-tweet" data-width="350">
     <a href="https://twitter.com/dieworkwear/status/1955756255668265094" target="_blank" rel="noopener"></a>
-  </blockquote>
+</blockquote>
 </div>
 
 <ol start="9">
 <li><p><a href="https://newsletter.humanprogress.org/p/the-infinite-well-how-innovation" target="_blank" rel="noopener">The Infinite Well: How Innovation Keeps Water Flowing</a>: </p>
 <blockquote>
 <p>Solutions from experts follow a familiar pattern, claiming that the only way to avert a crisis is to adopt radical social and behavioral changes, driven by moral proselytizing, government intervention, or both, to save the water supply. Environmentalists urge people to replace old toilets with low-flow models, avoid running faucets while brushing their teeth or washing dishes, and switch to eating less water-intensive foods. Meanwhile, activists pressure elected officials to impose usage restrictions, ban certain crops in arid regions, and regulate everything from swimming pools to car washes.</p>
-</blockquote>
-<blockquote>
+
+
 <p>Fortunately the economics of water innovation reveals why the apparent scarcity tends to be self-correcting, without requiring us to adopt ascetic lifestyles or perform symbolic actions like picking up dropped ice cubes to water house plants or writing letters to elected officials. Rising prices, not moralizing pleas, lead people to conserve, look for substitutes, recycle resources, and innovate helping to meet demand through alternative means or improved efficiency.</p>
 </blockquote>
 <p> The same principles apply to many other things too. </p>
@@ -240,7 +239,7 @@
 <div class="tweet-container" >
   <blockquote class="twitter-tweet" data-width="350">
     <a href="https://twitter.com/therealcorpbro/status/1953558541929001060" target="_blank" rel="noopener"></a>
-  </blockquote>
+</blockquote>
 </div>]]></content:encoded>
             <author>noreply@approvedthoughts.com (Your Name)</author>
             <category><![CDATA[links]]></category>
@@ -256,17 +255,17 @@
 <li><p><a href="https://www.bloomberg.com/news/articles/2025-08-08/how-to-teach-your-kids-poker-with-one-card-at-age-four?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc1NDcyMzIwNywiZXhwIjoxNzU1MzI4MDA3LCJhcnRpY2xlSWQiOiJUME8wV1VHUFFROEUwMCIsImJjb25uZWN0SWQiOiI3OEUxOEM3Q0U0RkU0MzEzODVEQjBDQzU0RjI3NTQxMiJ9.HFg2dQk97KYWaALor1j4kzGlySZ3N-mYMfi5HMWM1nc" target="_blank" rel="noopener">How to Teach Your Kids Poker, the Easy Way</a>: </p>
 <blockquote>
 <p>The right way to begin is with one-card poker. Everyone antes one chip and gets one card, face down. You look at your card. There’s a single round of betting, which proceeds around the table: If no one else has bet, you can bet or check (do nothing); if anyone in front of you has bet, you can call (or match the bet), raise or fold. When everyone has called the last bet or folded, those who are left in the hand show their card. The highest card wins: Ace is highest, then king, so on down to two.</p>
-</blockquote>
-<blockquote>
+
+
 <p>That’s it. No pairs, no flushes, no full houses, no complicated order of hands to remember, though you do have to remember that a queen beats a jack. But you learn a lot of poker. You will always win with an ace, but you have to learn to maximize the value of your ace, to induce other people to bet into you and call your raises. One of my proudest moments as a parent was when my daughter first check-raised me with an ace.</p>
-</blockquote>
-<blockquote>
+
+
 <p>You’ll probably win with a king, but if someone raises you, does that mean that they have an ace (and have you beat), or a queen (and are overconfident), or a six (and are bluffing)? There are 52 cards, so you can estimate the probabilities if you are mathematically inclined, though if you are four you probably won’t.</p>
-</blockquote>
-<blockquote>
+
+
 <p>You probably won’t win with a six, but if you bet it confidently you might bluff everyone else out. If everyone else checks, and you’re the last person to bet, you might as well bet: You have “position,” everyone else has a weak hand, and you might be able to steal a pot. The essentials are there.</p>
-</blockquote>
-<blockquote>
+
+
 <p>Once the kids have mastered this, you can introduce the order of hands gently with two-card poker. (Any pair beats a high card, highest pair wins.) Then teach the rest with five-card straight poker. This isn’t a great game, but it’s a brief stopover on the way to five-card draw, which is a perfectly respectable poker game. Texas hold’em is not far behind.</p>
 </blockquote>
 </li>
@@ -324,7 +323,7 @@
 <div class="tweet-container" >
   <blockquote class="twitter-tweet" data-width="350">
     <a href="https://twitter.com/drjimfan/status/1948789854151868663" target="_blank" rel="noopener"></a>
-  </blockquote>
+</blockquote>
 </div>
 
 <ol start="5">
@@ -346,15 +345,15 @@
 <div class="tweet-container" >
   <blockquote class="twitter-tweet" data-width="350">
     <a href="https://twitter.com/robertwiblin/status/1951248197881393235" target="_blank" rel="noopener"></a>
-  </blockquote>
+</blockquote>
 </div>
 
 <ol start="8">
 <li><p><a href="https://www.washingtonpost.com/climate-environment/2025/07/30/deep-sea-discovery-pacific-ocean/" target="_blank" rel="noopener">Life in deep</a>:    </p>
 <blockquote>
 <p>When her three-person submersible descended more than 30,000 feet into one of the Pacific Ocean’s deepest trenches, Mengran Du wasn’t sure what they would find.</p>
-</blockquote>
-<blockquote>
+
+
 <p>What she saw, she recalled, was “unbelievable”: Dense clusters of tubeworms with tentacles tinged bloodred, jutting up like skyscrapers. Iridescent snails scaling the worms, like window washers. Bristly, white creatures wriggling between them like rush-hour commuters trying to get home for dinner.</p>
 </blockquote>
 </li>
@@ -363,14 +362,14 @@
 <div class="tweet-container" >
   <blockquote class="twitter-tweet" data-width="350">
     <a href="https://twitter.com/uapjames/status/1950906132383338979" target="_blank" rel="noopener"></a>
-  </blockquote>
+</blockquote>
 </div>
 
 <p>10. </p>
 <div class="tweet-container" >
   <blockquote class="twitter-tweet" data-width="350">
     <a href="https://twitter.com/john_hempton/status/1949066826362826881" target="_blank" rel="noopener"></a>
-  </blockquote>
+</blockquote>
 </div>]]></content:encoded>
             <author>noreply@approvedthoughts.com (Your Name)</author>
             <category><![CDATA[links]]></category>
@@ -387,11 +386,11 @@
 <li><p><a href="https://futurism.com/neoscope/musician-resurrected-brain-new-music" target="_blank" rel="noopener">Musician Who Died in 2021 Resurrected as Clump of Brain Matter, Now Composing New Music</a>:</p>
 <blockquote>
 <p>Art can outlast the artist — but what about their artistic impulses?</p>
-</blockquote>
-<blockquote>
+
+
 <p>A new art installation project in Australia, titled &quot;Revivification,&quot; raises this question with a very literal interpretation of &quot;impulse&quot;: using his DNA, the team behind the project have performed a quasi-resurrection of the late experimental American composer Alvin Lucier, creating a sort of brain that continuously composes music on the fly with its errant electrical signals.</p>
-</blockquote>
-<blockquote>
+
+
 <p>At the center of the piece is an &quot;in-vitro brain,&quot; grown from blood that Lucier, who passed away in 2021, donated in the final years of his life. Housed in a plinth, it&#39;s grown on top of an electrode mesh that connects it to twenty large brass plates placed around the room. Visitors can listen as the brain fires off electrical pulses that trigger a transducer and a mallet behind each plate, striking them to produce sound.</p>
 </blockquote>
 <p> Is this art? Is this science? Is this composing? </p>
@@ -456,8 +455,8 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://www.bbc.com/news/articles/cn8179z199vo" target="_blank" rel="noopener">Babies made using three people&#39;s DNA are born free of hereditary disease</a>:</p>
 <blockquote>
 <p>Eight babies have been born in the UK using genetic material from three people to prevent devastating and often fatal conditions, doctors say.</p>
-</blockquote>
-<blockquote>
+
+
 <p>The method, pioneered by UK scientists, combines the egg and sperm from a mum and dad with a second egg from a donor woman.</p>
 </blockquote>
 </li>
@@ -469,8 +468,8 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://calv.info/openai-reflections" target="_blank" rel="noopener">Reflections on OpenAI</a>: </p>
 <blockquote>
 <p>I left OpenAI three weeks ago. I had joined the company back in May 2024.</p>
-</blockquote>
-<blockquote>
+
+
 <p>I wanted to share my reflections because there&#39;s a lot of smoke and noise around what OpenAI is doing, but not a lot of first-hand accounts of what the culture of working there actually feels like.</p>
 </blockquote>
 </li>
@@ -500,11 +499,11 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://www.approvedthoughts.com/https://www.nytimes.com/2025/07/06/us/texas-floods-rescues.html" target="_blank" rel="noopener">Terrified Girls, Helicopters and a Harrowing Scene: A Rescuer’s Account at Camp Mystic (NYT)</a>:</p>
 <blockquote>
 <p>Scott Ruskan, a Coast Guard swimmer, is credited with saving 165 people at the all-girls’ camp from deadly floods in Central Texas.</p>
-</blockquote>
-<blockquote>
+
+
 <p>Mr. Ruskan realized that staying on scene would free up two extra spots on his helicopter for the evacuees, he said, so he told his unit, “I’d love to stay, I could do a lot more good on the ground.”</p>
-</blockquote>
-<blockquote>
+
+
 <p>He became the main person on scene to both triage and provide emotional support to the survivors.</p>
 </blockquote>
 <p> Hero.</p>
@@ -515,7 +514,7 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <div class="tweet-container" >
   <blockquote class="twitter-tweet" data-width="350">
     <a href="https://twitter.com/DKThomp/status/1942932780540698741" target="_blank" rel="noopener"></a>
-  </blockquote>
+</blockquote>
 </div>
 
 
@@ -560,11 +559,11 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://www.maximum-progress.com/p/does-cps-investigate-one-third-of" target="_blank" rel="noopener">Does CPS Investigate One Third of All Children in the US?</a> Yes. But...</p>
 <blockquote>
 <p>The scale of CPS investigations in the US is staggering. Like all things, this trend began in the late 60s and early 70s as mandatory reporter laws expanded and caused massive growth in child maltreatment reports. Since the 90s, the number of reports has stayed pretty stable and the number of substantiated investigations and interventions has been falling.</p>
-</blockquote>
-<blockquote>
+
+
 <p>The CPS could probably scale back it’s interventions for cases of maltreatment that only involve neglect, especially those that only involve lack of supervision rather than physical neglect. Other tradeoffs between false positive and false negative investigations and interventions are more difficult to have a strong opinion on given the terrible outcomes on both sides of the trolley track.</p>
-</blockquote>
-<blockquote>
+
+
 <p>There are probably some available pareto improving moves. The most straightforward in my view would be increasing staffing and state capacity in family courts so that cases can be reviewed more accurately and without requiring months or years of effort and tens of thousands of dollars on the part of the parents.</p>
 </blockquote>
 </li>
@@ -581,22 +580,22 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://x.com/kimmonismus/status/1939689534054379955" target="_blank" rel="noopener">Medical Superintelligence from Microsoft?</a>: </p>
 <blockquote>
 <p>Microsoft&#39;s LLM is not only designed for multiple-choice questions, but also for real medical diagnoses in realistic scenarios – and outperforms even top models such as o3.</p>
-</blockquote>
-<blockquote>
+
+
 <p>In a large-scale study with over 300 case studies from the New England Journal of Medicine, the system achieved a diagnostic accuracy of over 80%. This is not only four times higher than the participating doctors, but also marks a qualitative leap: the AI was not only more accurate, but also made more economical decisions – with around 20% lower costs because it avoided unnecessary tests.</p>
 </blockquote>
 </li>
 <li><p><a href="https://x.com/DrDominicNg/status/1939816655829475648" target="_blank" rel="noopener">A Doctor Responds</a></p>
 <blockquote>
 <p>Microsoft claims their new AI framework diagnoses 4x better than doctors.</p>
-</blockquote>
-<blockquote>
+
+
 <p>I&#39;m a medical doctor and I actually read the paper. Here&#39;s my perspective on why this is both impressive AND misleading ...</p>
-</blockquote>
-<blockquote>
+
+
 <p>...</p>
-</blockquote>
-<blockquote>
+
+
 <p>Final thought: We don&#39;t need AI that can diagnose every rare disease. We need AI that knows when to diagnose and when to reassure. That&#39;s the real art of medicine.</p>
 </blockquote>
 </li>
@@ -641,14 +640,14 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://x.com/kaseyklimes/status/1934417281674563915" target="_blank" rel="noopener">LLMs in Kitchen?</a>: I made Tofu with peanut sauce today based on a receipe created by Claude. Honestly, the proportions were off but it wasn&#39;t half bad. </p>
 <blockquote>
 <p>are LLMs 10X-ing anyone else in the kitchen? I am so much more confident cooking when I can ask infinite dumb questions and brainstorm ideas, backup plans, substitutes, etc. </p>
-</blockquote>
-<blockquote>
+
+
 <p>in the last couple weeks I’ve made jerk chicken with coconut rice and mango salsa, chipotle turkey tacos, honey-lime sriracha chicken &amp; sesame snap peas, skillet-blistered tomato and ravioli, and a fancy dessert. some of these things were just me looking in the fridge and saying “uhh this is what I have, help me turn it into something good” and so far they’ve all been great.</p>
-</blockquote>
-<blockquote>
+
+
 <p>I’m the stereotypical guy that knows how to make ~3 variations on a protein bowl and maybe ~2 nicer dishes for impressing girls when I was single and that’s about it. </p>
-</blockquote>
-<blockquote>
+
+
 <p>it’s fun feeling my agency expand and confidence quickly increase in this very practical domain. AI is great.</p>
 </blockquote>
 </li>
@@ -661,8 +660,8 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://www.washingtonpost.com/world/2025/06/21/india-ai-bpo-call-centers/" target="_blank" rel="noopener">AI is transforming Indian call centers.</a>: </p>
 <blockquote>
 <p>For three years, Kartikeya Kumar hesitated before picking up the phone, anticipating another difficult conversation with another frustrated customer.</p>
-</blockquote>
-<blockquote>
+
+
 <p>The call center agent, now 29, had tried everything to eliminate what a colleague called the “Indian-ism” in his accent. He mimicked the dialogue from Marvel movies and belted out songs by Metallica and Pink Floyd. Relief finally arrived in the form of artificial intelligence.</p>
 </blockquote>
 </li>
@@ -714,11 +713,11 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
  (WaPo)</a> </p>
 <blockquote>
 <p>When oncologists gave my 5-year-old daughter the all-clear from high-risk neuroblastoma in 2010, I breathed a sigh of relief.</p>
-</blockquote>
-<blockquote>
+
+
 <p>But her health needs were just beginning.</p>
-</blockquote>
-<blockquote>
+
+
 <p>Fifteen years later, the intense and often toxic treatments that saved Emily’s life have left her with a host of lifelong health challenges — hearing loss, stunted height, endocrine and kidney dysfunction, and permanent hair-thinning — issues no one talked about during her 18 months of cancer treatment.</p>
 </blockquote>
 <p> A good problem to have from one perspective but no less hard to deal with. </p>
@@ -734,19 +733,19 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://www.approvedthoughts.com/https://www.nytimes.com/2025/05/25/movies/mission-impossible-the-final-reckoning-william-donloe-rolf-saxon.html" target="_blank" rel="noopener">A ‘Mission: Impossible’ Fan Favorite Returns 3 Decades Later. Even He’s Surprised. (NYT)</a></p>
 <blockquote>
 <p>But according to the “Final Reckoning” director Christopher McQuarrie, Donloe made a big impact. In fact, he said in an interview, fans frequently asked him when he was going to bring the character back. For a long time, he didn’t understand why Donloe engendered such love, until he heard the question framed in a different way: “When is the team going to do right by what they did to Donloe?”</p>
-</blockquote>
-<blockquote>
+
+
 <p>“And I realized why William Donloe resonated,” McQuarrie said. “There was a perceived injustice, whether anybody could put their finger on it or not.”</p>
 </blockquote>
 </li>
 <li><p><a href="https://www.approvedthoughts.com/https://www.nytimes.com/2025/05/29/business/toto-toilet-japan-bidet.html" target="_blank" rel="noopener">The Rise of the Japanese Toilet (NYT)</a>: </p>
 <blockquote>
 <p>In 1982, a peculiar commercial aired on televisions across Japan.</p>
-</blockquote>
-<blockquote>
+
+
 <p>An actress in a pink floral dress and an updo drops paint on her hand and futilely attempts to wipe it off with toilet paper. She looks into the camera and asks: “Everyone, if your hands get dirty, you wash them, right?”</p>
-</blockquote>
-<blockquote>
+
+
 <p>“It’s the same for your bottom,” she continues. “Bottoms deserve to be washed, too.”</p>
 </blockquote>
 <p> Civilization on the march. </p>
@@ -754,8 +753,8 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://www.approvedthoughts.com/https://www.nytimes.com/2025/05/29/style/zarna-garg-comedian-book.html" target="_blank" rel="noopener">Zarna Garg Went From Stay-at-Home Mom to Stand-Up Comedian (NYT)</a>: </p>
 <blockquote>
 <p>After 16 years focusing on her husband, Shalabh, and her three children — Zoya, Brij and Veer — Ms. Garg re-entered the work force in 2019, but not to return to her erstwhile career as a personal injury lawyer. Instead, encouraged by her children, she started working the New York open-mic circuit and performing at Westside Comedy Club before headlining at Caroline’s on Broadway by 2020.</p>
-</blockquote>
-<blockquote>
+
+
 <p>In 2023, she talked her way into opening for Tina Fey and Amy Poehler on their Restless Leg Tour, and Prime Video aired her special “One in a Billion.” This spring, she made her film debut in the critically acclaimed rom-com “A Nice Indian Boy.” Her second special, “Practical People Win,” will air on Hulu in July, and she is developing a sitcom called “Zarna” with Mindy Kaling and Kevin Hart.</p>
 </blockquote>
 </li>
@@ -764,11 +763,11 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://aella.substack.com/p/chattel-childhood?triedRedirect=true" target="_blank" rel="noopener">Chattel Childhood</a>: Trigger warning - fairly explicit start and parts. </p>
 <blockquote>
 <p>I don’t approve of the Simbari childrearing, not because I think the pain and disgust of what the children are forced to do is inherently bad, but because they are forced.</p>
-</blockquote>
-<blockquote>
+
+
 <p>To love someone skillfully is to pour fuel on their soul. It’s to see the world through their desire, to delight in it, and go “I desire you to get what you want.” It is the amplification of their will.</p>
-</blockquote>
-<blockquote>
+
+
 <p>The Simbari people are destroying the will of their children. My parents destroyed my will. And I think, quite seriously, that our current culture is likewise destroying the will of its children en masse. That’s what you do to property.</p>
 </blockquote>
 <p> Worth thinking about although largely I don&#39;t agree with this. Her will seems to be doing just fine. </p>
@@ -780,8 +779,8 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://x.com/idothethinking/status/1929044811425648823" target="_blank" rel="noopener">High cost of building in US</a>: </p>
 <blockquote>
 <p>Zuckerburg&#39;s worth is 226 billion. The NY Subway builds tunnels at $4 bil. per mile. SF&#39;s BART builds subways at $2 bil. per mile. It&#39;s crazy that all of Zuckerberg&#39;s wealth would build just 8% of the current NYC subway network. </p>
-</blockquote>
-<blockquote>
+
+
 <p>Meanwhile in Paris cost $250 mil. per mile.</p>
 </blockquote>
 </li>
@@ -820,11 +819,11 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://x.com/Econ_4_Everyone/status/1925172995481362619" target="_blank" rel="noopener">AI &amp; Critical Thinking</a>:</p>
 <blockquote>
 <p>An interviewer just asked me what skills AI will make more important. My response? Critical thinking skills. </p>
-</blockquote>
-<blockquote>
+
+
 <p>This is because in the past there was value in creating large quantities of information. That is now costless. The new currency is how to generate, assimilate, interpret, and make that large amount of information actionable. </p>
-</blockquote>
-<blockquote>
+
+
 <p>The next question then becomes how do we teach, and improve our own, critical thinking skills? I discuss that in a <a href="https://t.co/8V26lIjLxa" target="_blank" rel="noopener">recent study</a> where I create a critical thinking skills hierarchy.  </p>
 </blockquote>
 </li>
@@ -870,8 +869,8 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://x.com/ecmaEditors/status/1925537127502422290" target="_blank" rel="noopener">Who Benefits from Surge Pricing?</a>: </p>
 <blockquote>
 <p>What are the welfare effects of surge pricing? Using Uber data, I develop an empirical model of spatial equilibrium composed of demand, supply, and matching. I find that surge pricing raises total welfare, benefitting riders but hurting drivers.</p>
-</blockquote>
-<blockquote>
+
+
 <p>Welfare effects differ substantially across sides of the market: rider surplus increases by 3.57% of gross revenue, whereas driver surplus and the platform’s current profits decrease by 0.98% and 0.50% of gross revenue, respectively. </p>
 </blockquote>
 <p>This doesn&#39;t make sense. If it hurts the platform or the drivers, why would they do it? </p>
@@ -882,8 +881,8 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <p>Makes sense. After this my eyes glazed over and I dropped the paper in Claude and asked it why drivers would participate in this. Here&#39;s what it says: </p>
 <blockquote>
 <p> The paper acknowledges this is the more problematic finding. &quot;My findings suggest that drivers might have good reason to complain. Their hourly earnings are not much higher than the minimum wage, so even the small effects I find might be a concern.&quot; </p>
-</blockquote>
-<blockquote>
+
+
 <p>However, drivers may not have full information about the counterfactual (uniform pricing), and many drivers are part-time workers using Uber for supplemental income rather than as their primary employment.</p>
 </blockquote>
 </li>
@@ -918,11 +917,11 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://www.approvedthoughts.com/https://www.nytimes.com/2025/05/15/world/europe/harvard-magna-carta-original.html" target="_blank" rel="noopener">Harvard Paid $27 for a Copy of Magna Carta. Surprise! It’s an Original.</a>: To be fair it was $27 in 1946 dollars, but still. #alpha</p>
 <blockquote>
 <p>Professor Carpenter was at home in Blackheath, south east London, plowing his way through Harvard Law School’s digital images as research for a book when he opened a file named HLS MS 172 — the catalog name for Harvard Law School Manuscript 172.</p>
-</blockquote>
-<blockquote>
+
+
 <p>“I get down to 172 and it’s a single parchment sheet of Magna Carta,” he said. “And I think ‘Oh my god, this looks to me for all the world — because I read it — like an original.’”</p>
-</blockquote>
-<blockquote>
+
+
 <p>Professor Carpenter emailed Professor Vincent, who was, at the time, at work in a library in Brussels. “David sent it with a message saying, ‘What do you think that is?’” said Professor Vincent. “I wrote back within seconds, saying, ‘You and I both know what that is!’”</p>
 </blockquote>
 <p> I would not have answered like that.</p>
@@ -949,8 +948,8 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://www.politico.eu/article/ukraines-army-have-video-game-like-digital-weapons-store-deadly-realistic/" target="_blank" rel="noopener">Points for kills: How Ukraine is using video game incentives to slay more Russians</a>: </p>
 <blockquote>
 <p>Ukraine&#39;s military is turning to incentive schemes used in video games to spur its soldiers to kill more Russian troops and destroy their equipment.</p>
-</blockquote>
-<blockquote>
+
+
 <p>The program — called Army of Drones bonus — rewards soldiers with points if they upload videos proving their drones have hit Russian targets. It will soon be integrated with a new online marketplace called Brave 1 Market, which will allow troops to convert those points into new equipment for their units.</p>
 </blockquote>
 </li>
@@ -964,8 +963,8 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://www.nytimes.com/athletic/6331840/2025/05/04/f1-miami-gp-lego-car-driver-parade/" target="_blank" rel="noopener">Lego built full-size F1 cars for the Miami GP drivers’ parade.</a></p>
 <blockquote>
 <p>“That was the most fun drivers’ parade we’ve ever had,” Ferrari’s Lewis Hamilton said. “Some dirty driving from this one here (Gasly)! That was great fun.”</p>
-</blockquote>
-<blockquote>
+
+
 <p>“They’ll have to sweep the track, there’s quite a bit of Lego debris on the track,” Max Verstappen said. “A bit different, that’s for sure!”</p>
 </blockquote>
 </li>
@@ -974,14 +973,14 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://www.approvedthoughts.com/https://rickiheicklen.com/unparalleled-misalignments.html" target="_blank" rel="noopener">Unparalleled Misalignments</a>: I think I have shared this before but some things are worth sharing twice. </p>
 <blockquote>
 <p>This is a list of Unparalleled Misalignments, pairs of non-synonymous phrases where the words in one phrase are each synonyms of the words in the other.</p>
-</blockquote>
-<blockquote>
+
+
 <p>Butt dial // Booty call</p>
-</blockquote>
-<blockquote>
+
+
 <p>Father figure // Dad bod</p>
-</blockquote>
-<blockquote>
+
+
 <p>Local girl // Near miss</p>
 </blockquote>
 </li>
@@ -993,14 +992,14 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 </a>: </p>
 <blockquote>
 <p>On Sunday morning, as Holly LaFavers was preparing to go to church, a delivery worker dropped off a 25-pound box of lollipops in front of her apartment building in Lexington, Ky.</p>
-</blockquote>
-<blockquote>
+
+
 <p>And another. And then another. Soon, 22 boxes of 50,600 lollipops were stacked five boxes high in two walls of Dum-Dums. That was when Ms. LaFavers heard what no parent wants to hear: Her child had unwittingly placed a massive online order.</p>
-</blockquote>
-<blockquote>
+
+
 <p>“Mom, my suckers are here!” said her son, Liam, who had gone outside to ride his scooter.</p>
-</blockquote>
-<blockquote>
+
+
 <p>“I panicked,” Ms. LaFavers, 46, said. “I was hysterical.”</p>
 </blockquote>
 </li>
@@ -1027,8 +1026,8 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 (NYT)</a>: </p>
 <blockquote>
 <p>The video is just under two and a half minutes long. A slim man with close-cropped hair walks into a room, pulls a long black mamba — whose venom can kill within an hour — from a crate and allows it to bite his left arm. Immediately after, he lets a taipan from Papua New Guinea bite his right arm. “Thanks for watching,” he calmly tells the camera, his left arm bleeding, and then exits.</p>
-</blockquote>
-<blockquote>
+
+
 <p>Over nearly 18 years, the man, Tim Friede, 57, injected himself with more than 650 carefully calibrated, escalating doses of venom to build his immunity to 16 deadly snake species. He also allowed the snakes — mostly one at a time, but sometimes two, as in the video — to sink their sharp fangs into him about 200 times.</p>
 </blockquote>
 </li>
@@ -1058,11 +1057,11 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://www.nytimes.com/2025/04/19/nyregion/new-york-city-giant-game-night.html?smid=nytcore-ios-share&amp;sgrp=c&amp;pvid=664EA55A-E2EC-45AA-83DA-09E940368115" target="_blank" rel="noopener">Or play a boardgame?</a>:</p>
 <blockquote>
 <p>New York can be expensive, overwhelming and intimidating, and sometimes it is hard for people to connect. A martini can cost $25 in a bar that’s too noisy for conversation, and raucous nightclubs aren’t for everyone. So a free, monthly B.Y.O.B. (bring your own board game) night in an office building food court has become a big hit.</p>
-</blockquote>
-<blockquote>
+
+
 <p>In addition to Werewolf, people were playing classics, like chess and mahjong, but also relatively newer games, including Catan, Splendor, Hues and Cues, Saboteur, Nertz, Wavelength, Blokus and Camel Up.</p>
-</blockquote>
-<blockquote>
+
+
 <p>Board game events and clubs have grown in popularity in recent years — in New York and across the country. This one is organized by Richard Ye, a 24-year-old who works in finance. He bills the event as New York City’s largest board game meet-up, and a video of Mr. Ye celebrating his March gathering — where 500 people were in attendance — was widely shared on social media.</p>
 </blockquote>
 <p> File another one under #youcanjustdothings.</p>
@@ -1088,8 +1087,8 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <p> This probably still will: </p>
 <blockquote>
 <p>“It seems very odd that CADA hired a new ethnically-diverse woman to their youth station and then just forgot to tell anyone.”</p>
-</blockquote>
-<blockquote>
+
+
 <p>It’s notable because ARN is the whitest thing in media since the Night King and his throng of walkers on Game of Thrones. The network is also home of Australia’s most expensive, complained about and censured radio show, Kyle and Jackie O. </p>
 </blockquote>
 </li>
@@ -1101,8 +1100,8 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://simonwillison.net/2025/Apr/26/o3-photo-locations/#atom-everything" target="_blank" rel="noopener">Watching o3 guess a photo’s location is surreal, dystopian and wildly entertaining</a> by Simon Willison: </p>
 <blockquote>
 <p>First, this is really fun. Watching the model’s thought process as it churns through the photo, pans and zooms and discusses different theories about where it could be is wildly entertaining. It’s like living in an episode of CSI.</p>
-</blockquote>
-<blockquote>
+
+
 <p>It’s also deeply dystopian. Technology can identify locations from photographs now. It’s vitally important that people understand how easy this is—if you have any reason at all to be concerned about your safety, you need to know that any photo you share—even a photo as bland as my example above—could be used to identify your location.</p>
 </blockquote>
 </li>
@@ -1121,23 +1120,23 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://www.wsj.com/us-news/texas-lottery-gamblers-jackpot-win-40e3d6fb" target="_blank" rel="noopener">How &quot;The Joker&quot; Took Down The Texas Lottery (WSJ Paywall)</a>: What a story. There is plenty of alpha out there, if you know where and how to look. Also, brute force is underrated. Sadly behind a paywall and there&#39;s lot more to it than the gist below:</p>
 <blockquote>
 <p>In Texas, as in many states, most people who play the lottery go to a store with a machine, choose numbers, then walk away with a ticket. Back in 2023, Texas also allowed online lottery-ticket vendors to set up shops to print tickets for their customers.</p>
-</blockquote>
-<blockquote>
+
+
 <p>Marantelli’s team recruited one such seller, struggling startup Lottery.com, to help with the logistics of buying and printing the millions of tickets. Like all lotto retailers, it would collect a 5% sales commission. The Texas Lottery Commission allowed dozens of the terminals that print tickets to be delivered to the four workshops set up by the team.</p>
-</blockquote>
-<blockquote>
+
+
 <p>That April 19, the commission announced that there had been no winner in that day’s drawing. The next drawing, with an even larger pot, would be three days later, on a Saturday. The group sprang into action.</p>
-</blockquote>
-<blockquote>
+
+
 <p>The printing operation ran day and night. The team had converted each number combination into a QR code. Crew members scanned the codes into the terminals using their phones, then scrambled to organize all the tickets in boxes such that they could easily locate the winning numbers. </p>
-</blockquote>
-<blockquote>
+
+
 <p>The game called for picking six numbers from 1 to 54. For a pro gambler, some sets of numbers—such as 1,2,3,4,5,6—aren’t worth picking because so many other players choose them, which would split the pot. Marantelli’s operation bought 99.3% of the possibilities.</p>
-</blockquote>
-<blockquote>
+
+
 <p>Money moved to Lottery.com from Ranogajec’s accounts—held under the name John Wilson—in the Isle of Man, a tax haven off the U.K. coast, taking a circuitous route via an escrow account at a Detroit law firm, according to people familiar with the transfers and bank statements reviewed by the Journal.</p>
-</blockquote>
-<blockquote>
+
+
 <p>The crew hit the jackpot that Saturday. One of their tickets was the sole winner.</p>
 </blockquote>
 </li>
@@ -1150,8 +1149,8 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://www.geoffreylitt.com/2025/04/12/how-i-made-a-useful-ai-assistant-with-one-sqlite-table-and-a-handful-of-cron-jobs" target="_blank" rel="noopener">Stevens: a hackable AI assistant</a> via <a href="https://simonwillison.net/2025/Apr/13/stevens/#atom-everything" target="_blank" rel="noopener">Simon Willison</a>: So many cool projects, so little time. </p>
 <blockquote>
 <p>The assistant is called Stevens, named after the butler in the great Ishiguro novel Remains of the Day. Every morning it sends a brief to me and my wife via Telegram, including our calendar schedules for the day, a preview of the weather forecast, any postal mail or packages we’re expected to receive, and any reminders we’ve asked it to keep track of. All written up nice and formally, just like you’d expect from a proper butler.</p>
-</blockquote>
-<blockquote>
+
+
 <p>Beyond the daily brief, we can communicate with Stevens on-demand—we can forward an email with some important info, or just leave a reminder or ask a question via Telegram chat.</p>
 </blockquote>
 </li>
@@ -1210,11 +1209,11 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p>Flight to <a href="https://x.com/therealmissjo/status/1908932089418031387" target="_blank" rel="noopener">unkown destinations</a>. Would you take one? Doesn&#39;t seem like a big deal to me. As a reply to the tweet says, unlikely they will put you in a war zone, so if it is in Schengen, how bad could it be? I am probably clueless...</p>
 <blockquote>
 <p>Scandinavian Airlines are running “unknown” destination flights. </p>
-</blockquote>
-<blockquote>
+
+
 <p>You buy a ticket and board the plane. Then you find out where you are going. </p>
-</blockquote>
-<blockquote>
+
+
 <p>Would you do it?</p>
 </blockquote>
 </li>
@@ -1229,25 +1228,25 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p>Two high-value excerpts from <a href="https://www.twitter.com/johnauthers" target="_blank" rel="noopener">John Authers</a> Bloomberg newsletters: </p>
 <blockquote>
 <p>Here follows a crowd-sourced literary tip. I asked yesterday for recommendations on great detective franchises for easy reading in stressful times, and you delivered. I’ve had so many suggestions that this will need to come in installments. </p>
-</blockquote>
-<blockquote>
+
+
 <p>To start, the name you’ve recommended most often, and with greatest enthusiasm, is <strong>Michael Connelly</strong> and his Harry Bosch series (the detective loves jazz and lives in the LA hills). </p>
-</blockquote>
-<blockquote>
+
+
 <p>Other entrants includes the Dave Robicheaux series by <strong>James Lee Burke</strong> (set in Louisiana and starting with The Neon Rain), <strong>Arnaldur Indridason’s</strong> “really good, bleak Icelandic stuff” (try Jar City first). <strong>Volker Kutscher’s</strong> Babylon Berlin series, set in Weimar Germany. <strong>Robert van Gulik’s</strong> Judge Dee stories (written some decades ago and set in Ancient China — try Willow Pattern).  Also the Martin Beck books set in 1960-70s Sweden and written over 10 years by <strong>Maj Sjowall and Per Wahloo</strong> — a husband and wife team, and godparents of Scandinavian noir (Roseanna is recommended) and the Harry Hole books by <strong>Jo Nesbo</strong>, set in Norway.</p>
-</blockquote>
-<blockquote>
+
+
 <p>To be clear, I didn’t mention <strong>Raymond Chandler’s</strong> Marlowe books because I’ve already read all of them. If you’ve never dipped into Chandler, you have a treat in store — perhaps start with The Big Sleep. And as more than one of you said Connelly was as good as Chandler, I definitely want to read one of his. I’ll have plenty more suggestions tomorrow. Please, if you have any more to recommend, let me know.</p>
-</blockquote>
-<blockquote>
+
+
 <p>Herewith another installment in our crowd-sourced tour of great detective fiction franchises. You might want to try: <strong>Abir Mukherjee’s</strong> Wyndham and Banerjee series is set in India under the British Raj; the Canadian writer <strong>Eric Wright’s</strong> John Salter series, set in Toronto; <strong>Philip Kerr’s</strong> Bernie Gunther series, set in Nazi Germany; the Whitstable Pearl mysteries by <strong>Julie Wassmer</strong> (who used to be a scriptwriter for Eastenders so there are plenty of cliffhangers); <strong>Andrea Camilleri’s</strong> Inspector Montalbano series, featuring Sicily and plenty of great food; and Death of a Red Heroine, the first of the Inspector Chen series by <strong>Qiu Xiaolong</strong> in contemporary Shanghai. This comes highly recommended by Andy Rothman of Sinology, long one of my favorite guides to all things China, and by remarkable coincidence I had picked up a copy of this book from a neighborhood bookshelf earlier this week. So that’s what I’ll read next. More detectives next week.</p>
 </blockquote>
 </li>
 <li><p><a href="https://www.approvedthoughts.com/https://www.dbreunig.com/2025/04/10/the-domain-experts-are-drivers.html" target="_blank" rel="noopener">Drew Breunig</a> via <a href="https://simonwillison.net/2025/Apr/10/drew-breunig/#atom-everything" target="_blank" rel="noopener">Simon Willison</a>:</p>
 <blockquote>
 <p>The first generation of AI-powered products (often called “AI Wrapper” apps, because they “just” are wrapped around an LLM API) were quickly brought to market by small teams of engineers, picking off the low-hanging problems. But today, I’m seeing teams of domain experts wading into the field, hiring a programmer or two to handle the implementation, while the experts themselves provide the prompts, data labeling, and evaluations.</p>
-</blockquote>
-<blockquote>
+
+
 <p>For these companies, the coding is commodified but the domain expertise is the differentiator.</p>
 </blockquote>
 </li>

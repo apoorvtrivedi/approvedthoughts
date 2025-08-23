@@ -510,33 +510,54 @@ pre code {
     line-height: var(--line-height-tight);
 }
 
+/* ====================================
+   FINAL BLOCKQUOTE STYLES - REPLACE EXISTING
+   ==================================== */
+
+/* Main blockquote styling with thick subtle border */
 .post-content blockquote {
-    border-left: 4px solid var(--color-border);
+    border-left: 4px solid var(--color-link); /* Thick border using link blue - perfect for quoted content */
     background-color: var(--color-bg-secondary);
     padding: var(--space-md) var(--space-lg);
-    margin: var(--space-sm) 0;
+    margin: var(--space-md) 0;
     border-radius: var(--border-radius);
-    font-style: italic;
-    color: var(--color-text-light);
+    font-style: normal;
+    color: var(--color-text); /* Normal text color for better readability */
     font-size: var(--font-size-small);
 }
 
+/* Medium paragraph spacing inside blockquotes */
 .post-content blockquote p {
     font-size: var(--font-size-small);
-    margin-bottom: var(--space-xs);
+    margin-bottom: var(--space-md); /* Medium spacing as requested */
+    line-height: var(--line-height-tight);
 }
 
 .post-content blockquote p:last-child {
     margin-bottom: 0;
 }
 
+.post-content blockquote p:first-child {
+    margin-top: 0;
+}
+
+/* Empty paragraphs in blockquotes (for spacing between quote sections) */
+.post-content blockquote p:empty {
+    margin-bottom: var(--space-md);
+    height: var(--space-xs);
+}
+
+/* Lists inside blockquotes */
 .post-content blockquote ul,
 .post-content blockquote ol {
     font-size: var(--font-size-small);
+    margin: var(--space-md) 0;
+    padding-left: var(--space-md);
 }
 
 .post-content blockquote li {
     font-size: var(--font-size-small);
+    margin-bottom: var(--space-sm);
 }
 
 /* Footnotes styling */

@@ -708,11 +708,13 @@ async function processMarkdownFile(filePath) {
     processedContent       = processInlineImages(processedContent);
 
     // 3. Finally convert to HTML
-    const htmlContent      = marked(processedContent);
+    const htmlContent = marked(processedContent);
 
+    // 4. Merge consecutive blockquotes
+    const mergedBlockquotes = mergeConsecutiveBlockquotesAdvanced(htmlContent);
 
     // Process external links
-    const processedHtml = htmlContent.replace(
+    const processedHtml = mergedBlockquotes.replace(
         /<a href="(https?:\/\/(?![^"]*approvedthoughts\.com)[^"]+)"/g,
         '<a href="$1" target="_blank" rel="noopener"'
     );
@@ -1248,7 +1250,101 @@ async function generateAboutPage(posts) {
 }
 
 // ====================================
-// 8. MAIN BUILD PROCESS
+// BLOCKQUOTE MERGING IN BUILD SCRIPT
+// ====================================
+
+/**
+ * Merge consecutive blockquotes in HTML content
+ * This processes the HTML after markdown conversion to merge adjacent blockquotes
+ */
+function mergeConsecutiveBlockquotes(htmlContent) {
+    // Use a simple approach to merge consecutive blockquotes
+    // This regex finds patterns like: </blockquote>\s*<blockquote>
+    
+    // First, let's handle the case where blockquotes are separated only by whitespace
+    let processedContent = htmlContent.replace(
+        /<\/blockquote>\s*<blockquote>/g, 
+        '\n\n' // Replace the blockquote boundaries with paragraph breaks
+    );
+    
+    return processedContent;
+}
+
+/**
+ * Better approach: Parse HTML and merge blockquotes properly
+ */
+function mergeConsecutiveBlockquotesAdvanced(htmlContent) {
+    // Split content into lines for easier processing
+    const lines = htmlContent.split('\n');
+    const result = [];
+    let inBlockquote = false;
+    let blockquoteBuffer = [];
+    let i = 0;
+    
+    while (i < lines.length) {
+        const line = lines[i].trim();
+        
+        if (line === '<blockquote>') {
+            if (inBlockquote) {
+                // We're already in a blockquote and found another one
+                // Add a paragraph break to separate the content
+                blockquoteBuffer.push('');
+                blockquoteBuffer.push('');
+            } else {
+                // Starting a new blockquote
+                inBlockquote = true;
+                blockquoteBuffer = ['<blockquote>'];
+            }
+        } else if (line === '</blockquote>') {
+            // Check if the next non-empty line is another blockquote
+            let nextLineIndex = i + 1;
+            let nextSignificantLine = '';
+            
+            // Skip empty lines to find the next significant content
+            while (nextLineIndex < lines.length) {
+                const nextLine = lines[nextLineIndex].trim();
+                if (nextLine !== '') {
+                    nextSignificantLine = nextLine;
+                    break;
+                }
+                nextLineIndex++;
+            }
+            
+            if (nextSignificantLine === '<blockquote>') {
+                // Next significant line is another blockquote, so don't close this one yet
+                // Skip to that blockquote
+                i = nextLineIndex;
+                continue;
+            } else {
+                // Close the blockquote
+                blockquoteBuffer.push('</blockquote>');
+                result.push(...blockquoteBuffer);
+                inBlockquote = false;
+                blockquoteBuffer = [];
+            }
+        } else {
+            if (inBlockquote) {
+                blockquoteBuffer.push(lines[i]);
+            } else {
+                result.push(lines[i]);
+            }
+        }
+        i++;
+    }
+    
+    // Handle case where content ends while in a blockquote
+    if (inBlockquote && blockquoteBuffer.length > 0) {
+        if (!blockquoteBuffer.includes('</blockquote>')) {
+            blockquoteBuffer.push('</blockquote>');
+        }
+        result.push(...blockquoteBuffer);
+    }
+    
+    return result.join('\n');
+}
+
+// ====================================
+// 9. MAIN BUILD PROCESS
 // ====================================
 
 async function build() {
