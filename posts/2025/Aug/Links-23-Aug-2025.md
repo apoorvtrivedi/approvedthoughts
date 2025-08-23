@@ -38,7 +38,7 @@ draft: false
     > First, I’m now convinced that ChatGPT understands what it reads. Second, reasoning models persuade me that ChatGPT is creative. Third, ChatGPT summarizes texts extremely well, which I believe to be a robust measure of intelligence.
 
 5. [Derek Thompson](https://x.com/DKThomp/status/1956014687885074507): 
-    ![Good News](/posts/2025/Aug/23-Aug-2025-Linki-5.png)
+    [![Good News](/posts/2025/Aug/23-Aug-2025-Link-5.png)](https://x.com/LarryBrockJr/status/1942357971565944877)
 
 "The better news is that this is happening at a time when exercise seems to be increasing for many groups, especially the young and old. The bad news is ... deep Medicaid cuts and declines in childhood vaccine uptake are not exactly optimistic predictors of American health."
 
