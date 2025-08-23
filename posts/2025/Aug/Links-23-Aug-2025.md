@@ -41,7 +41,7 @@ draft: false
     ![Good News](/posts/2025/Aug/23-Aug-2025-Link-5.png)
 
 
-    > "The better news is that this is happening at a time when exercise seems to be increasing for many groups, especially the young and old. The bad news is ... deep Medicaid cuts and declines in childhood vaccine uptake are not exactly optimistic predictors of American health."
+> "The better news is that this is happening at a time when exercise seems to be increasing for many groups, especially the young and old. The bad news is ... deep Medicaid cuts and declines in childhood vaccine uptake are not exactly optimistic predictors of American health."
 
 6. [Your Review: Dating Men In The Bay Area](https://www.astralcodexten.com/p/your-review-dating-men-in-the-bay?): Not what it says on the label at all! Recommended.
 
