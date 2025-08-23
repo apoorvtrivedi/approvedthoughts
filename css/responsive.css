@@ -1164,3 +1164,13 @@
         display: none !important;
     }
 }
+
+@media (max-width: 768px) {
+  .post-content img {
+    display: block;
+    max-width: 100% !important;
+    width: 100% !important;   /* ensures shrink even if a width slipped in */
+    height: auto !important;
+  }
+  html, body { overflow-x: hidden; } /* prevent stray horizontal scroll */
+}
