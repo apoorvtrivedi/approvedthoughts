@@ -1088,24 +1088,6 @@ pre code {
     margin-bottom: var(--space-md);
 }
 
-.post-full .post-content blockquote {
-    border-left: 4px solid var(--color-border);
-    background-color: var(--color-bg-secondary);
-    padding: var(--space-md) var(--space-lg);
-    margin: var(--space-sm) 0;
-    border-radius: var(--border-radius);
-    font-style: italic;
-    color: var(--color-text-light);
-}
-
-.post-full .post-content blockquote p {
-    margin-bottom: var(--space-xs);
-}
-
-.post-full .post-content blockquote p:last-child {
-    margin-bottom: 0;
-}
-
 .post-full .post-footer {
     margin-top: var(--space-xxl);
     padding-top: var(--space-xl);

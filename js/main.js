@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function() {
             this.modalImg.alt = img.alt;
             
             // Set caption if available
-            const caption = img.alt || '';
+            const caption = img.dataset.caption || img.getAttribute('title') || '';
             if (this.modalCaption) {
                 this.modalCaption.textContent = caption;
                 this.modalCaption.style.display = caption ? 'block' : 'none';

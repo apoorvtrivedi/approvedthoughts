@@ -120,54 +120,46 @@ function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
+// Prevent quotes/ampersands from breaking attributes
+function escapeAttr(str = '') {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;');
+}
+
 function processInlineImages(content) {
-    // First, handle linked images: [![alt text](image-url)](link-url)
-    const linkedImageRegex = /\[!\[([^\]]*)\]\(([^)]+)\)\]\(([^)]+)\)/g;
-    
-    content = content.replace(linkedImageRegex, (match, alt, src, linkUrl) => {
-        // Create a unique ID for each image
-        const imageId = 'img-' + Math.random().toString(36).substr(2, 9);
-        
-        // Create enhanced image with link wrapper
-        return `
+  // 1) Linked images: [![alt](src "caption")](link)
+  const linkedImageRegex = /\[!\[([^\]]*)\]\(([^)\s]+)(?:\s+"([^"]+)")?\)\]\(([^)]+)\)/g;
+
+  content = content.replace(linkedImageRegex, (match, alt, src, title, linkUrl) => {
+    const id = 'img-' + Math.random().toString(36).slice(2, 11);
+    const caption = title || '';
+    const captionAttrs = caption ? ` data-caption="${escapeAttr(caption)}" title="${escapeAttr(caption)}"` : '';
+    return `
 <div class="image-container">
-    <a href="${linkUrl}" target="_blank" rel="noopener" class="image-link">
-        <img 
-            src="${src}" 
-            alt="${alt}" 
-            loading="lazy" 
-            class="inline-image linked-image" 
-            id="${imageId}"
-        />
-    </a>
-    ${alt ? `<div class="image-caption">${alt}</div>` : ''}
+  <a href="${linkUrl}" class="image-link">
+    <img src="${src}" alt="${escapeAttr(alt)}"${captionAttrs} loading="lazy" class="inline-image linked-image" id="${id}" />
+  </a>
+  ${caption ? `<div class="image-caption">${escapeAttr(caption)}</div>` : ''}
 </div>`;
-    });
-    
-    // Then handle regular images: ![alt text](image-url)
-    const imageRegex = /!\[([^\]]*)\]\(([^)]+)\)/g;
-    
-    content = content.replace(imageRegex, (match, alt, src) => {
-        // Create a unique ID for each image
-        const imageId = 'img-' + Math.random().toString(36).substr(2, 9);
-        
-        // Create enhanced image with click-to-enlarge (no external link)
-        return `
+  });
+
+  // 2) Regular images: ![alt](src "caption")
+  const imageRegex = /!\[([^\]]*)\]\(([^)\s]+)(?:\s+"([^"]+)")?\)/g;
+
+  content = content.replace(imageRegex, (match, alt, src, title) => {
+    const id = 'img-' + Math.random().toString(36).slice(2, 11);
+    const caption = title || '';
+    const captionAttrs = caption ? ` data-caption="${escapeAttr(caption)}" title="${escapeAttr(caption)}"` : '';
+    return `
 <div class="image-container">
-    <img 
-        src="${src}" 
-        alt="${alt}" 
-        loading="lazy" 
-        class="inline-image clickable-image" 
-        onclick="openImageModal('${imageId}')"
-        id="${imageId}"
-        style="cursor: pointer;"
-    />
-    ${alt ? `<div class="image-caption">${alt}</div>` : ''}
+  <img src="${src}" alt="${escapeAttr(alt)}"${captionAttrs} loading="lazy" class="inline-image clickable-image" onclick="openImageModal('${id}')" id="${id}" style="cursor: pointer;" />
+  ${caption ? `<div class="image-caption">${escapeAttr(caption)}</div>` : ''}
 </div>`;
-    });
-    
-    return content;
+  });
+
+  return content;
 }
 
 // ====================================

@@ -10,7 +10,7 @@
         <language>en-us</language>
         <managingEditor>noreply@approvedthoughts.com (Your Name)</managingEditor>
         <webMaster>noreply@approvedthoughts.com (Your Name)</webMaster>
-        <lastBuildDate>Sat, 23 Aug 2025 06:16:15 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 23 Aug 2025 06:55:45 GMT</lastBuildDate>
         <pubDate>Sat, 23 Aug 2025 00:00:00 GMT</pubDate>
         <generator>Approved Thoughts Static Site Generator</generator>
         <docs>https://www.rssboard.org/rss-specification</docs>
@@ -65,16 +65,10 @@
 </li>
 </ol>
 <div class="image-container">
-    <a href="https://x.com/LarryBrockJr/status/1942357971565944877" target="_blank" rel="noopener" target="_blank" rel="noopener" class="image-link">
-        <img 
-            src="https://www.approvedthoughts.com//posts/2025/Aug/23-Aug-2025-Link-3.png" 
-            alt="cows" 
-            loading="lazy" 
-            class="inline-image linked-image" 
-            
-        />
-    </a>
-    <div class="image-caption">cows</div>
+  <a href="https://x.com/LarryBrockJr/status/1942357971565944877" target="_blank" rel="noopener" class="image-link">
+    <img src="https://www.approvedthoughts.com//posts/2025/Aug/23-Aug-2025-Link-3.png" alt="cows" loading="lazy" class="inline-image linked-image"  />
+  </a>
+  
 </div>
 
 <ol start="4">
@@ -87,16 +81,8 @@
 </li>
 </ol>
 <div class="image-container">
-    <img 
-        src="https://www.approvedthoughts.com//posts/2025/Aug/23-Aug-2025-Link-5.png" 
-        alt="Good News" 
-        loading="lazy" 
-        class="inline-image clickable-image" 
-        
-        
-        
-    />
-    <div class="image-caption">Good News</div>
+  <img src="https://www.approvedthoughts.com//posts/2025/Aug/23-Aug-2025-Link-5.png" alt="Good News" loading="lazy" class="inline-image clickable-image"    />
+  
 </div>
 
 
