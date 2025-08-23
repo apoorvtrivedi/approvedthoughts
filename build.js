@@ -18,9 +18,9 @@ const config = {
     templatesDirectory: 'templates',
     postsPerPage: 10,
     siteTitle: 'Approved Thoughts',
-    siteDescription: 'A blog about technology, ideas, and observations',
+    siteDescription: '',
     siteUrl: 'https://www.approvedthoughts.com',
-    author: 'Your Name'
+    author: 'Apoorv Trivedi'
 };
 
 // Store for all posts data
