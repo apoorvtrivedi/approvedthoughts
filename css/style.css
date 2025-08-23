@@ -1183,6 +1183,12 @@ pre code {
     }
 }
 
+/* Fallback: constrain any image that appears inside post content */
+.post-content img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* ====================================
    IMAGE MODAL/LIGHTBOX
    ==================================== */
