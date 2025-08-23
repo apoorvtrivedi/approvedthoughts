@@ -560,6 +560,15 @@ pre code {
     margin-bottom: var(--space-sm);
 }
 
+/* Styling for blockquotes inside list items */
+.post-content li blockquote {
+    margin-top: var(--space-md);
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: var(--font-size-small);
+}
+
 /* Footnotes styling */
 .post-content .footnotes {
     margin-top: calc(var(--space-xl) / 2);

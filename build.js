@@ -162,6 +162,43 @@ function processInlineImages(content) {
   return content;
 }
 
+function decorateImagesInHtml(html) {
+  const genId = () => 'img-' + Math.random().toString(36).slice(2, 11);
+
+  // Handle linked images: <p><a ...><img ... title="caption"? /></a></p>
+  html = html.replace(
+    /<p>\s*<a([^>]+)>\s*<img([^>]*?)\/?>\s*<\/a>\s*<\/p>/gi,
+    (m, aAttrs, imgAttrs) => {
+      const id = genId();
+      const titleMatch = imgAttrs.match(/title="([^"]*)"/i);
+      const caption = titleMatch ? titleMatch[1] : '';
+      // ensure lazy loading
+      const hasLoading = /\bloading=/.test(imgAttrs);
+      let img = `<img ${imgAttrs.trim()}${hasLoading ? '' : ' loading="lazy"'} class="inline-image linked-image" id="${id}"${caption ? ` data-caption="${caption}"` : ''} />`;
+      // keep the original anchor attrs; external-link step will add target/rel once
+      const cap = caption ? `<div class="image-caption">${caption}</div>` : '';
+      return `<div class="image-container"><a${aAttrs}>${img}</a>${cap}</div>`;
+    }
+  );
+
+  // Handle plain images: <p><img ... title="caption"? /></p>
+  html = html.replace(
+    /<p>\s*<img([^>]*?)\/?>\s*<\/p>/gi,
+    (m, imgAttrs) => {
+      const id = genId();
+      const titleMatch = imgAttrs.match(/title="([^"]*)"/i);
+      const caption = titleMatch ? titleMatch[1] : '';
+      const hasLoading = /\bloading=/.test(imgAttrs);
+      let img = `<img ${imgAttrs.trim()}${hasLoading ? '' : ' loading="lazy"'} class="inline-image clickable-image" onclick="openImageModal('${id}')" id="${id}" style="cursor: pointer;"${caption ? ` data-caption="${caption}"` : ''} />`;
+      const cap = caption ? `<div class="image-caption">${caption}</div>` : '';
+      return `<div class="image-container">${img}${cap}</div>`;
+    }
+  );
+
+  return html;
+}
+
+
 // ====================================
 // 3. SEARCH INDEX FUNCTIONS
 // ====================================
@@ -721,19 +758,19 @@ async function processMarkdownFile(filePath) {
     let processedContent = processTwitterLinks(content);
     processedContent       = processYouTubeLinks(processedContent);
 
-    // 2. Now handle any remaining markdown images
-    processedContent       = processInlineImages(processedContent);
-
-    // 3. Finally convert to HTML
+    // 2. Convert to HTML first
     const htmlContent = marked(processedContent);
 
-    // 4. Merge consecutive blockquotes
-    const mergedBlockquotes = mergeConsecutiveBlockquotesAdvanced(htmlContent);
+    // 2.5 Now wrap images inside the HTML so lists/quotes stay intact
+    const htmlWithImages = decorateImagesInHtml(htmlContent);
 
-    // Process external links
+    // 3. Merge consecutive blockquotes
+    const mergedBlockquotes = mergeConsecutiveBlockquotes(htmlWithImages);
+
+    // 4. External links (opens off-site in new tab, added once)
     const processedHtml = mergedBlockquotes.replace(
-        /<a href="(https?:\/\/(?![^"]*approvedthoughts\.com)[^"]+)"/g,
-        '<a href="$1" target="_blank" rel="noopener"'
+    /<a href="(https?:\/\/(?![^"]*approvedthoughts\.com)[^"]+)"/g,
+    '<a href="$1" target="_blank" rel="noopener"'
     );
 
     // Calculate reading time
@@ -1287,78 +1324,6 @@ function mergeConsecutiveBlockquotes(htmlContent) {
     return processedContent;
 }
 
-/**
- * Better approach: Parse HTML and merge blockquotes properly
- */
-function mergeConsecutiveBlockquotesAdvanced(htmlContent) {
-    // Split content into lines for easier processing
-    const lines = htmlContent.split('\n');
-    const result = [];
-    let inBlockquote = false;
-    let blockquoteBuffer = [];
-    let i = 0;
-    
-    while (i < lines.length) {
-        const line = lines[i].trim();
-        
-        if (line === '<blockquote>') {
-            if (inBlockquote) {
-                // We're already in a blockquote and found another one
-                // Add a paragraph break to separate the content
-                blockquoteBuffer.push('');
-                blockquoteBuffer.push('');
-            } else {
-                // Starting a new blockquote
-                inBlockquote = true;
-                blockquoteBuffer = ['<blockquote>'];
-            }
-        } else if (line === '</blockquote>') {
-            // Check if the next non-empty line is another blockquote
-            let nextLineIndex = i + 1;
-            let nextSignificantLine = '';
-            
-            // Skip empty lines to find the next significant content
-            while (nextLineIndex < lines.length) {
-                const nextLine = lines[nextLineIndex].trim();
-                if (nextLine !== '') {
-                    nextSignificantLine = nextLine;
-                    break;
-                }
-                nextLineIndex++;
-            }
-            
-            if (nextSignificantLine === '<blockquote>') {
-                // Next significant line is another blockquote, so don't close this one yet
-                // Skip to that blockquote
-                i = nextLineIndex;
-                continue;
-            } else {
-                // Close the blockquote
-                blockquoteBuffer.push('</blockquote>');
-                result.push(...blockquoteBuffer);
-                inBlockquote = false;
-                blockquoteBuffer = [];
-            }
-        } else {
-            if (inBlockquote) {
-                blockquoteBuffer.push(lines[i]);
-            } else {
-                result.push(lines[i]);
-            }
-        }
-        i++;
-    }
-    
-    // Handle case where content ends while in a blockquote
-    if (inBlockquote && blockquoteBuffer.length > 0) {
-        if (!blockquoteBuffer.includes('</blockquote>')) {
-            blockquoteBuffer.push('</blockquote>');
-        }
-        result.push(...blockquoteBuffer);
-    }
-    
-    return result.join('\n');
-}
 
 // ====================================
 // 9. MAIN BUILD PROCESS
