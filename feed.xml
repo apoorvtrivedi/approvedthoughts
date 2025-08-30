@@ -10,13 +10,59 @@
         <language>en-us</language>
         <managingEditor>noreply@approvedthoughts.com (Apoorv Trivedi)</managingEditor>
         <webMaster>noreply@approvedthoughts.com (Apoorv Trivedi)</webMaster>
-        <lastBuildDate>Sat, 23 Aug 2025 08:12:12 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 30 Aug 2025 03:34:39 GMT</lastBuildDate>
         <pubDate>Sat, 23 Aug 2025 00:00:00 GMT</pubDate>
         <generator>Approved Thoughts Static Site Generator</generator>
         <docs>https://www.rssboard.org/rss-specification</docs>
         <ttl>1440</ttl>
         <atom:link href="https://www.approvedthoughts.com/feed.xml" rel="self" type="application/rss+xml" />
         
+        <item>
+            <title><![CDATA[Links: Week of 30 Aug 2025]]></title>
+            <link>https://www.approvedthoughts.com/posts/2025/links-30-aug-2025.html</link>
+            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2025/links-30-aug-2025.html</guid>
+            <pubDate>Sat, 23 Aug 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[1. [IST: Indian Spotlight Time](https://indianspotlighttime.substack.com/): 
+    > Exploring the India that often escapes headlines through the lived ...]]></description>
+            <content:encoded><![CDATA[<ol>
+<li><p><a href="https://indianspotlighttime.substack.com/" target="_blank" rel="noopener">IST: Indian Spotlight Time</a>: </p>
+<blockquote>
+<p>Exploring the India that often escapes headlines through the lived experiences of an ABCG: American Born Confused Gora. It’s a look beyond polished narratives and the obvious into the beautiful contradictions that actually power the country.</p>
+</blockquote>
+</li>
+<li></li>
+</ol>
+<div class="tweet-container" >
+  <blockquote class="twitter-tweet" data-width="350">
+    <a href="https://twitter.com/sdamico/status/1959779975978238446" target="_blank" rel="noopener"></a>
+  </blockquote>
+</div>
+
+<ol start="3">
+<li><p><a href="https://ethanding.substack.com/p/ai-subscriptions-get-short-squeezed" target="_blank" rel="noopener">tokens are getting more expensive</a>: A good discussion of why the AI Labs might stuggle with profitability. </p>
+<blockquote>
+<p>while it&#39;s true each generation of frontier model didn&#39;t get more expensive per token, something else happened. something worse. the number of tokens they consumed went absolutely nuclear.</p>
+</blockquote>
+</li>
+<li><p>Patrick OShaughnessy podcast with Joe Liemandt, Principal @ Alpha School</p>
+</li>
+</ol>
+<div class="video-container">
+  
+</div> 
+
+<ol start="5">
+<li>Failure of imagination is the only thing holding us back!</li>
+</ol>
+<div class="tweet-container" >
+  <blockquote class="twitter-tweet" data-width="350">
+    <a href="https://twitter.com/paularambles/status/1960762742266306717" target="_blank" rel="noopener"></a>
+  </blockquote>
+</div>]]></content:encoded>
+            <author>noreply@approvedthoughts.com (Apoorv Trivedi)</author>
+            <category><![CDATA[links]]></category>
+        </item>
+
         <item>
             <title><![CDATA[Links: Week of 23 Aug 2025]]></title>
             <link>https://www.approvedthoughts.com/posts/2025/links-23-aug-2025.html</link>
@@ -1323,56 +1369,6 @@ As of 2025, there are 102 IBA official cocktails, and as of July 12, 2025, I’v
 <li><p><a href="https://www.troyhunt.com/a-sneaky-phish-just-grabbed-my-mailchimp-mailing-list/" target="_blank" rel="noopener">If he can fall for a phishing attack, so can you</a> and they are only going to get more sophisticated. Be careful out there and step up your safety protocols. </p>
 </li>
 <li><p><a href="https://ai-2027.com/" target="_blank" rel="noopener">AI 2027</a>: I have yet to fully read this but it is a lot more &quot;optimistic&quot; on AI progress than I am right now and at least somewhat scary.</p>
-</li>
-</ol>]]></content:encoded>
-            <author>noreply@approvedthoughts.com (Apoorv Trivedi)</author>
-            <category><![CDATA[links]]></category>
-        </item>
-
-        <item>
-            <title><![CDATA[Links: Week of 30 Mar 2025]]></title>
-            <link>https://www.approvedthoughts.com/posts/2025/links-30-mar-2025.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2025/links-30-mar-2025.html</guid>
-            <pubDate>Sun, 30 Mar 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[1. [Unintentionally hilarious](https://www.washingtonpost.com/world/interactive/2025/greenland-trump-defense-russia-china/):...]]></description>
-            <content:encoded><![CDATA[<ol>
-<li><p><a href="https://www.washingtonpost.com/world/interactive/2025/greenland-trump-defense-russia-china/" target="_blank" rel="noopener">Unintentionally hilarious</a>: </p>
-<blockquote>
-<p>The Danish Defense Ministry also plans to fund two more dogsled teams to protect the 375,000-square-mile Northeast Greenland National Park, the largest in the world. These would be the hardcore Sirius patrols, viewed by the Danes as the Navy SEALs of the Arctic, which began operations during World War II.</p>
-</blockquote>
-<p>Two. Not one.</p>
-</li>
-<li><p><a href="https://x.com/karpathy/status/1903672057327452290" target="_blank" rel="noopener">How to vibe code?</a>: A fairly decent app and when you see his conversations with ChatGPT, its mostly just plain english. Does a programming background help. Sure, but you can go quite far without any. Here are the actual conversations: </p>
-<p>a. <a href="https://t.co/TMyPAK2RhZ" target="_blank" rel="noopener">Starting the app</a> </p>
-<p>b. <a href="https://t.co/vWnkwMrMe8" target="_blank" rel="noopener">Enhancements</a></p>
-<p>c. <a href="https://t.co/NVxc7p1uVH" target="_blank" rel="noopener">More enhancements</a></p>
-<p>d. <a href="https://t.co/e4xo4cmcWR" target="_blank" rel="noopener">Deploy to iPhone</a></p>
-<p>e. <a href="https://x.com/karpathy/status/1903891179370123559" target="_blank" rel="noopener">The actual App</a></p>
-</li>
-<li><p><a href="https://www.henrikkarlsson.xyz/p/why-we-ended-up-homeschooling" target="_blank" rel="noopener">Why we ended up homeschooling</a>:</p>
-<blockquote>
-<p>TL;DR: homeschooling makes it much easier to individualize education, which makes it more efficient and meaningful.</p>
-</blockquote>
-</li>
-<li><p><a href="https://x.com/simongerman600/status/1904057096208839040" target="_blank" rel="noopener">Tokyo vs. Rest of Japan</a>: </p>
-<blockquote>
-<p>This is called the sponge city effect in my little world of demographics. In a declining region we often see the biggest city soaking up population since jobs and health services etc cluster in a single area rather than spreading out. Japan has been shrinking for three decades while Tokyo happily grows.</p>
-</blockquote>
-</li>
-<li><p><a href="https://mattlakeman.org/2020/07/10/how-much-would-you-need-to-be-paid-to-live-on-a-deserted-island-for-1-5-years-and-do-nothing-but-kill-seals/" target="_blank" rel="noopener">How Much Would You Need to be Paid to Live on a Deserted Island for 1.5 Years and Do Nothing but Kill Seals?</a>: What it says on the label. </p>
-</li>
-<li><p><a href="https://x.com/maxwelltani/status/1904208683573161991" target="_blank" rel="noopener">Best take</a>: </p>
-<blockquote>
-<p>people are rightfully upset about this atlantic story because it gets at a truly alarming issue: being added to large, ongoing group texts without consent</p>
-</blockquote>
-<p>😂</p>
-</li>
-<li><p><a href="https://x.com/DylanoA4/status/1902357203857616932" target="_blank" rel="noopener">True that!</a>: </p>
-<blockquote>
-<p>Your brain will invent fake problems for you if you don&#39;t go out and find real ones</p>
-</blockquote>
-</li>
-<li><p><a href="https://www.highagency.com/" target="_blank" rel="noopener">I don&#39;t know if this is the right path, but its the right destination</a></p>
 </li>
 </ol>]]></content:encoded>
             <author>noreply@approvedthoughts.com (Apoorv Trivedi)</author>
