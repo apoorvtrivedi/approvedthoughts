@@ -10,7 +10,8 @@ draft: false
 1. If you’ve got a compliment, just let it out.
     ![embed](https://x.com/jayplemons/status/1964775529686688196)
 
-    And the amazing thing is that [the opposite works](https://x.com/ZyMazza/status/1965054215157346739) too!
+
+2. And the amazing thing is that [the opposite works](https://x.com/ZyMazza/status/1965054215157346739) too!
 
     > I think I mentioned this before but I was a national speech and debate octafinalist in high school and I was able to parlay that into a job running a debate program at an ambitious charter middle school in college. 
 
@@ -48,20 +49,20 @@ draft: false
 
     This reminds me of [Boggarts in the Harry Potter books](https://en.wikipedia.org/wiki/Magical_creatures_in_Harry_Potter#Boggart).
 
-2. [Church Planting: When Venture Capital Finds Jesus](https://substack.com/inbox/post/171207709): 
+3. [Church Planting: When Venture Capital Finds Jesus](https://substack.com/inbox/post/171207709): 
     > This guy is founding an evangelical church, and I find his ecosystem fascinating. First for its stunning similarities to venture-capital-funded tech start-ups, and then for its simplicity and open-heartedness. None of the dynamics in church planting are unique or even particularly rare, but they are unobfuscated, and that makes church planting the equivalent of a large print book for the social dynamics that favor charismatic narcissists.
 
-3. [Moon helium deal is biggest purchase of natural resources from space](https://wapo.st/3IjHTEy): 
+4. [Moon helium deal is biggest purchase of natural resources from space](https://wapo.st/3IjHTEy): 
     > Finnish tech firm Bluefors, a maker of ultracold refrigerator systems critical for quantum computing, has purchased tens of thousands of liters of Helium-3 from the moon — spending “above $300 million” — through a commercial space company called Interlune. The agreement, which has not been previously reported, marks the largest purchase of a natural resource from space.
 
-4. [We Are Going to Have to Live Here With One Another (NYT)](https://www.nytimes.com/2025/09/16/opinion/ezra-klein-podcast-ben-shapiro.html): I try to avoid posting political or negative items but this was worth making an excception for. A long and insightful discussion between Ezra Klein and Ben Shapiro. Eye opening, if you read with an open mind. 
+5. [We Are Going to Have to Live Here With One Another (NYT)](https://www.nytimes.com/2025/09/16/opinion/ezra-klein-podcast-ben-shapiro.html): I try to avoid posting political or negative items but this was worth making an excception for. A long and insightful discussion between Ezra Klein and Ben Shapiro. Eye opening, if you read with an open mind. 
 
-5. [They traveled to Thailand. They wound up cyber scam slaves in Myanmar.](https://www.reuters.com/graphics/SOUTHEASTASIA-SCAMS/mypmxwdwwvr/): Scary. I am not sure I like graphical news but an interesting experiment.
+6. [They traveled to Thailand. They wound up cyber scam slaves in Myanmar.](https://www.reuters.com/graphics/SOUTHEASTASIA-SCAMS/mypmxwdwwvr/): Scary. I am not sure I like graphical news but an interesting experiment.
 
-6. [Teen depression has *declined* for the past 4 years, after peaking in 2021.](https://x.com/Chris_Said/status/1968460412774490591): 
+7. [Teen depression has *declined* for the past 4 years, after peaking in 2021.](https://x.com/Chris_Said/status/1968460412774490591): 
     ![embed](https://x.com/Chris_Said/status/1968460412774490591)
 
-7. [ICPC medals for OpenAI and Gemini](https://simonwillison.net/2025/Sep/17/icpc/#atom-everything): 
+8. [ICPC medals for OpenAI and Gemini](https://simonwillison.net/2025/Sep/17/icpc/#atom-everything): 
     > We received the problems in the exact same PDF form, and the reasoning system selected which answers to submit with no bespoke test-time harness whatsoever. For 11 of the 12 problems, the system’s first answer was correct. For the hardest problem, it succeeded on the 9th submission. Notably, the best human team achieved 11/12.
 
     > We competed with an ensemble of general-purpose reasoning models; we did not train any model specifically for the ICPC. We had both GPT-5 and an experimental reasoning model generating solutions, and the experimental reasoning model selecting which solutions to submit. GPT-5 answered 11 correctly, and the last (and most difficult problem) was solved by the experimental reasoning model.
