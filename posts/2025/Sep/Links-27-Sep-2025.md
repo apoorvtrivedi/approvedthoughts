@@ -19,4 +19,4 @@ draft: false
 
 Ignoring the hype up top, Google does seem to be creating some practical tools with LLMs. With base LLMs getting quite good now, I wonder if the next unlock is in creating tools with customized workflows for specific tasks. Wrappers.  
 
-4. ![embed](https://youtube.com/playlist?list=PL7A1F4CF36C085DE1&si=NZI8cOTfxZlRg-LB)
+4. [Periodic Videos](https://youtube.com/playlist?list=PL7A1F4CF36C085DE1&si=NZI8cOTfxZlRg-LB)
