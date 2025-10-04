@@ -21,7 +21,7 @@ draft: false
     ![embed](https://x.com/leading_nowhere/status/1973642925885325336)
 
 4. [Democracy vs. Dictatorship](https://x.com/Noahpinion/status/1649686441012895747)
-    ![embed](https://x.com/Noahpinion/status/1649686441012895747)
+    
     ![embed](https://x.com/Noahpinion/status/1649820013522735104)
 
 5. [21 Facts About Throwing Good Parties](https://www.atvbt.com/21-facts-about-throwing-good-parties/): 
