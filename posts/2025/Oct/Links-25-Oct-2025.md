@@ -7,7 +7,7 @@ tags: ["links"]
 draft: false
 ---
 
-1. [Landon Donovan’s new hair, and the side effect he wasn’t expecting (NYT)](https://www.nytimes.com/athletic/6721868/2025/10/21/landon-donovan-hairpiece-reaction-baldness/): As a man of a certain age, this hit a little close to home. But, hats off (heheh!) to the man for having the courage to participate in a story like this. Making the world a hair safer for the rest of us.
+1. [Landon Donovan’s new hair, and the side effect he wasn’t expecting (NYT)](https://www.nytimes.com/athletic/6721868/2025/10/21/landon-donovan-hairpiece-reaction-baldness/): As a man of a certain age, this hit a little too close to home. But, hats off (heheh!) to the man for having the courage to participate in a story like this. Making the world a hair safer for the rest of us.
 
     > Donovan’s journey to a hair system started two decades ago when, as a 20-year-old, he noticed his hair was receding. He remembers one moment when he was warming up for a game against FC Dallas in Frisco and fans started chanting at him: “Rogaine! Rogaine!”
 
