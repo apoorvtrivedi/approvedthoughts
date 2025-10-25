@@ -17,6 +17,19 @@ draft: false
     > Seeing things in this way makes it easier to understand why people get so worked up over seemingly minor issues, like language policing. The problem with demanding political correctness in speech, and punishing or ostracizing those who fail, is that it turns every conversation into a Stroop test, allowing elites the opportunity to exhibit conspicuous self-control. It requires the typical person, while speaking, to actively suppress the familiar word that is primed (e.g. “homeless”), and to substitute through explicit cognition the recently-minted word that is now favoured (e.g. “unhoused”). Elites are not just insensitive, but positively dismissive of the burdens that this imposes on many people. As a result, by performing the cognitive operation with such fluidity, they are not only demonstrating their superiority, they are rubbing other people’s faces in it. (From this perspective, it is not surprising that the demand for “they/them” pronouns upset some people even more, because the introduction of a plural pronoun forces a verb change, which requires an even more demanding cognitive performance.)
 
 3. [Age Inversion](https://x.com/basedlayer/status/1979473779131625856):
+    
+    > Everyone under 30 is prematurely old (worried about savings, career, FIRE).
+
+    > Everyone over 50 is desperately young (Burning Man, psychedelics).
+
+    > My theory: Information abundance aged the young by showing them all future problems all at once.
+
+    > Information abundance also made the old young by showing them all missed experiences all at once.
+
+    > So now Gen Z talks like retirement planners and boomers act like teenagers.
+    
+    > It's so over.
+
     ![embed](https://x.com/basedlayer/status/1979473779131625856)
 
 4. [The Remains of the Day]() and the [movie](https://www.rottentomatoes.com/m/remains_of_the_day): 
