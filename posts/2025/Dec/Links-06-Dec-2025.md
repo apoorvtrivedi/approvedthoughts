@@ -8,7 +8,8 @@ draft: false
 ---
 
 1. [Humans killed millions of vultures. Now people are paying the price. (WaPo)](https://wapo.st/3Kwgm3S): So many unexpected links and unintended consequences. 
-    > Although other animals scavenge dead cattle, none do so as effectively as vultures. The birds will pick clean a bull carcass in 30 to 40 minutes.
+    > Although other animals scavenge dead cattle, none do so as effectively as vultures. The birds will pick ovedthoughts
+    clean a bull carcass in 30 to 40 minutes.
 
     > A paper published a year ago in the American Economic Review concluded that in certain districts, “the functional extinction of vultures — efficient scavengers who removed carcasses from the environment — increased human mortality by over 4% because of a large negative shock to sanitation.”
 
