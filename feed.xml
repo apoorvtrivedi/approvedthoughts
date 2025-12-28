@@ -10,7 +10,7 @@
         <language>en-us</language>
         <managingEditor>noreply@approvedthoughts.com (Apoorv Trivedi)</managingEditor>
         <webMaster>noreply@approvedthoughts.com (Apoorv Trivedi)</webMaster>
-        <lastBuildDate>Sun, 28 Dec 2025 15:19:35 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 28 Dec 2025 15:22:50 GMT</lastBuildDate>
         <pubDate>Sat, 27 Dec 2025 00:00:00 GMT</pubDate>
         <generator>Approved Thoughts Static Site Generator</generator>
         <docs>https://www.rssboard.org/rss-specification</docs>
@@ -116,9 +116,13 @@
 </div>
 
 <ol start="15">
-<li><p><a href="https://t.co/lGGBjlfe7b" target="_blank" rel="noopener">Automate your life with Claude Code</a>: </p>
-<div class="image-container"><img src="https://t.co/lGGBjlfe7b" alt="embed" loading="lazy" class="inline-image clickable-image"    /></div>
-</li>
+<li><a href="https://t.co/lGGBjlfe7b" target="_blank" rel="noopener">Automate your life with Claude Code</a>:</li>
+</ol>
+<div class="video-container">
+  
+</div>
+
+<ol start="16">
 <li><p><a href="https://simonwillison.net/2025/Dec/14/copywriters-reveal-how-ai-has-decimated-their-industry/#atom-everything" target="_blank" rel="noopener">Copywriters reveal how AI has decimated their industry</a>: It is coming for the white-collar jobs.</p>
 <blockquote>
 <p>AI is really dehumanizing, and I am still working through issues of self-worth as a result of this experience. When you go from knowing you are valuable and valued, with all the hope in the world of a full career and the ability to provide other people with jobs... To being relegated to someone who edits AI drafts of copy at a steep discount because “most of the work is already done” ...</p>

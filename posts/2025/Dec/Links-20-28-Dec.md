@@ -58,7 +58,7 @@ A long one to mark a year of link posts. Starting with feel-good stories for the
 
 15. [Automate your life with Claude Code](https://t.co/lGGBjlfe7b): 
     
-    ![embed](https://t.co/lGGBjlfe7b)
+    ![embed](https://youtu.be/uBJdwRPO1QE)
 
 16. [Copywriters reveal how AI has decimated their industry](https://simonwillison.net/2025/Dec/14/copywriters-reveal-how-ai-has-decimated-their-industry/#atom-everything): It is coming for the white-collar jobs.
     > AI is really dehumanizing, and I am still working through issues of self-worth as a result of this experience. When you go from knowing you are valuable and valued, with all the hope in the world of a full career and the ability to provide other people with jobs... To being relegated to someone who edits AI drafts of copy at a steep discount because “most of the work is already done” ...
