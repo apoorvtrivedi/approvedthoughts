@@ -2,9 +2,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Publish to GitHub",
+            "label": "Build and Publish to GitHub",
             "type": "shell",
-            "command": "git add . && git commit -m 'Update blog post' && git push origin main",
+            "command": "node build.js && git add . && git commit -m 'Update blog post' && git push origin main",
             "problemMatcher": [],
             "presentation": {
                 "reveal": "always",
@@ -12,9 +12,9 @@
             }
         },
         {
-            "label": "Publish with Custom Message",
+            "label": "Build and Publish with Custom Message",
             "type": "shell",
-            "command": "git add . && git commit -m '${input:commitMessage}' && git push origin main",
+            "command": "node build.js && git add . && git commit -m '${input:commitMessage}' && git push origin main",
             "problemMatcher": [],
             "presentation": {
                 "reveal": "always",
@@ -22,7 +22,17 @@
             }
         },
         {
-            "label": "Quick Save (No Push)",
+            "label": "Build Only (No Push)",
+            "type": "shell",
+            "command": "node build.js",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Quick Save (No Build, No Push)",
             "type": "shell",
             "command": "git add . && git commit -m 'Work in progress'",
             "problemMatcher": [],
