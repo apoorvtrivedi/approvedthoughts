@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Publish to GitHub",
+            "type": "shell",
+            "command": "git add . && git commit -m 'Update blog post' && git push origin main",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Publish with Custom Message",
+            "type": "shell",
+            "command": "git add . && git commit -m '${input:commitMessage}' && git push origin main",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Quick Save (No Push)",
+            "type": "shell",
+            "command": "git add . && git commit -m 'Work in progress'",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "commitMessage",
+            "type": "promptString",
+            "description": "Enter commit message",
+            "default": "Update blog post"
+        }
+    ]
+}
