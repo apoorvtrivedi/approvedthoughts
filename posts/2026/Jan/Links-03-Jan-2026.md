@@ -18,14 +18,14 @@ draft: false
 
     > Well if so, I’ve got just the guide for you!
 
-4. [The Prison Of Financial Mediocrity](https://x.com/systematicls/status/2004900241745883205): I saw this a fair bit on my timeline. The response in 4.1 makes a lot more sense to me though. 
+4. [The Prison Of Financial Mediocrity](https://x.com/systematicls/status/2004900241745883205): I saw this a fair bit on my timeline. The response in the tweet below makes a lot more sense to me though. 
     > A 25-year-old making $70k is constantly fed content from people their age making $2mn, living in Bali, "working" four hours a day. The baseline for "enough" keeps moving.
 
     > You never catch up. No matter what you achieve, social media will show you what you're missing. The spread between your life and the life you "should" have is maintained algorithmically, forever uncollapsible.
 
     > So you have AI shrinking your timeline AND social media ensuring you never feel like you've arrived. The pressure to escape, NOW, FAST, before it's too late, compounds daily.
 
-    4.1 ![embed](https://x.com/jaredkubin/status/2006028297688297475) 
+    ![embed](https://x.com/jaredkubin/status/2006028297688297475) 
 
 5. ![embed](https://x.com/sebkrier/status/2005424424254673263)
 
