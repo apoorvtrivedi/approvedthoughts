@@ -41,7 +41,7 @@ For the last 2-3 weeks I had been noticing a "vibe-shift" about a jump in the ab
 
     > They also increasingly use it for everything else one can do with a computer.
 
-5. [Toby Lutke, Founder & CEO, Spotify](https://x.com/tobi/status/2009311882553765914): Do endorsments come any stronger than this?
+5. [Toby Lutke, Founder & CEO, Shopify](https://x.com/tobi/status/2009311882553765914): Do endorsments come any stronger than this?
     ![embed](https://x.com/tobi/status/2009311882553765914)
 
 6. [Claude Code Tutorials](https://x.com/petergyang/status/2002402550570758283): Not tried. Saving here for later. 
