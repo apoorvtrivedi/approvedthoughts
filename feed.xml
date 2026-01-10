@@ -10,13 +10,117 @@
         <language>en-us</language>
         <managingEditor>noreply@approvedthoughts.com (Apoorv Trivedi)</managingEditor>
         <webMaster>noreply@approvedthoughts.com (Apoorv Trivedi)</webMaster>
-        <lastBuildDate>Sun, 04 Jan 2026 04:12:12 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 10 Jan 2026 10:07:12 GMT</lastBuildDate>
         <pubDate>Sat, 03 Jan 2026 00:00:00 GMT</pubDate>
         <generator>Approved Thoughts Static Site Generator</generator>
         <docs>https://www.rssboard.org/rss-specification</docs>
         <ttl>1440</ttl>
         <atom:link href="https://www.approvedthoughts.com/feed.xml" rel="self" type="application/rss+xml" />
         
+        <item>
+            <title><![CDATA[Links: Weeks of 10 Jan 2026 - The Vibe Shift]]></title>
+            <link>https://www.approvedthoughts.com/posts/2026/links-10-jan-2026.html</link>
+            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-10-jan-2026.html</guid>
+            <pubDate>Sat, 03 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[For the last 2-3 weeks I had been noticing a "vibe-shift" about a jump in the abilities of the leading LLMs. This week that conversation took center s...]]></description>
+            <content:encoded><![CDATA[<p>For the last 2-3 weeks I had been noticing a &quot;vibe-shift&quot; about a jump in the abilities of the leading LLMs. This week that conversation took center stage as many blog posts and tweets raving about the enhanced abilities of Claud Code, especially when using the command line interfact went viral. I have not had the chance to test it out myself, as I am pre-occupied with the family&#39;s upcoming relocation. However, after that, this is top of the list for me now and all links but two below are on this topic. I recommend everyone go down this rabbit hole.</p>
+<ol>
+<li><p><a href="https://www.approvedthoughts.com/https://www.nytimes.com/2026/01/07/movies/timothee-chalamet-michael-b-jordan-oscar-curse.html" target="_blank" rel="noopener">Can Timothée Chalamet Break This Oscar Curse? (NYT)</a>: Woke comes full-circle with NYT worrying about unfair treatment of young, white, male actors?</p>
+<blockquote>
+<p>For nearly a century, Oscar voters have been reluctant to hand the best-actor prize to young men, almost always opting to reward more seasoned performers.</p>
+
+
+
+<p>Though Oscar voters have no qualms about rewarding young actresses, they traditionally want to see more mileage on their men.</p>
+</blockquote>
+</li>
+<li><p><a href="https://www.approvedthoughts.com/https://marginalrevolution.com/marginalrevolution/2026/01/the-tyranny-of-the-complainers.html" target="_blank" rel="noopener">The Tyranny of the Complainers</a>: </p>
+<blockquote>
+<p>In 2015, for example, 6,852 of the 8,760 complaints submitted to Ronald Reagan Washington National Airport originated from one residence in the affluent Foxhall neighborhood of northwest Washington, DC. The residents of that particular house called Reagan National to express irritation about aircraft noise an average of almost 19 times per day during 2015.</p>
+</blockquote>
+</li>
+<li><p><a href="https://x.com/mollycantillon/status/2008918474006122936" target="_blank" rel="noopener">A Personal Panopticon (via MR)</a>: A great summary.</p>
+</li>
+</ol>
+<div class="tweet-container" >
+  <blockquote class="twitter-tweet" data-width="350">
+    <a href="https://twitter.com/mollycantillon/status/2008918474006122936" target="_blank" rel="noopener"></a>
+  </blockquote>
+</div>
+
+<pre><code>&gt; A few months ago, I started running my life out of Claude Code. Not out of intention to do so, it was just the place where everything met. And it just kept working. Empires are won by conquest. What keeps them standing is something much quieter. Before a king can tax, he must count. Before he can conscript, he must locate. Before he can rule, he must see. Legibility is the precondition for governance…
+
+&gt; The first thing Claude solved was product blindness. NOX now runs on a cron job: pulling Amplitude, cross-referencing GitHub, and pointing me to what needs building. It handles A/B testing, generates winning copy, and has turned customer support into a fully autonomous department.
+
+&gt; Once I saw this was possible, I chased it everywhere. Email, hitting inbox zero for the first time ever, with auto-drafted replies for everything inbound. Workouts, accommodating horrendously erratic travel schedules. Sleep, built a projector wired to my WHOOP after exactly six hours that wakes me with my favorite phrases. Subscriptions, found and returned $2000 I didn’t know I was paying. The dozen SFMTA citations I’d ignored, the action items I’d procrastinated into oblivion. People are using it to, I discovered, run vending machines, home automation systems, and keep plants alive.
+
+&gt; The feeling is hard to name. It is the violent gap between how blind you were and how obvious everything feels now with an observer that reads all the feeds, catches what you’ve unconsciously dropped, notices patterns across domains you’d kept stubbornly separate, and—crucially—tells you what to do about it.
+
+&gt; My personal finances are now managed in the terminal. Overnight it picks the locks of brokerages that refuse to talk to each other, pulls congressional and hedge fund disclosures, Polymarket odds, X sentiment, headlines and 10-Ks from my watchlist. Every morning, a brief gets added in ~/𝚝𝚛𝚊𝚍𝚎𝚜. Last month it flagged Rep. Fields buying NFLX shares. Three weeks later, the Warner Bros deal. I don’t always trade, sometimes I argue with the thesis. But I’m never tracking fifteen tabs at 6am anymore.
+
+&gt; It feels borderline unfair seeing around corners, being in ten places at once, surveilling yourself with the attention span of a thousand clones.
+
+&gt; A panopticon still, but the tower belongs to you.
+</code></pre>
+<ol start="4">
+<li><p><a href="https://thezvi.substack.com/p/claude-codes" target="_blank" rel="noopener">Claude Codes</a>: The definitive guide to the developments and the conversation, including some useful guides. </p>
+<blockquote>
+<p>Claude Code with Opus 4.5 is so hot right now. The cool kids use it for everything.</p>
+
+
+
+<p>They definitely use it for coding, often letting it write all of their code.</p>
+
+
+
+<p>They also increasingly use it for everything else one can do with a computer.</p>
+</blockquote>
+</li>
+<li><p><a href="https://x.com/tobi/status/2009311882553765914" target="_blank" rel="noopener">Toby Lutke, Founder &amp; CEO, Spotify</a>: Do endorsments come any stronger than this?</p>
+</li>
+</ol>
+<div class="tweet-container" >
+  <blockquote class="twitter-tweet" data-width="350">
+    <a href="https://twitter.com/tobi/status/2009311882553765914" target="_blank" rel="noopener"></a>
+  </blockquote>
+</div>
+
+<ol start="6">
+<li><a href="https://x.com/petergyang/status/2002402550570758283" target="_blank" rel="noopener">Claude Code Tutorials</a>: Not tried. Saving here for later.</li>
+</ol>
+<div class="tweet-container" >
+  <blockquote class="twitter-tweet" data-width="350">
+    <a href="https://twitter.com/petergyang/status/2002402550570758283" target="_blank" rel="noopener"></a>
+  </blockquote>
+</div>
+
+<ol start="7">
+<li><p><a href="https://www.hyperdimensional.co/p/among-the-agents?" target="_blank" rel="noopener">Among the Agents</a>: Examples and implications. </p>
+</li>
+<li><p><a href="https://x.com/karpathy/status/2004607146781278521?s=20" target="_blank" rel="noopener">Andrej Karpathy</a>: Don&#39;t worry if you feel you are behind. So does Andrej and he&#39;s among the best out there. </p>
+</li>
+<li><p><a href="https://thezvi.substack.com/p/advancements-in-self-driving-cars" target="_blank" rel="noopener">Self-Driving Cars</a>: The robots are coming too. What a time. </p>
+</li>
+<li><p><a href="https://finaloffshoring.com/The_Final_Offshoring.pdf" target="_blank" rel="noopener">The Final Offshoring</a>: More on robots. </p>
+<blockquote>
+<p>Thus, why should the future be any different? Why should one expect a sudden, dramatic wave of robotics working not just in the coming decade, but the coming handful of years? Why should
+the curse of Moravec’s Paradox suddenly break? </p>
+
+
+
+<p>The standard answer a savvy technologist would give is that increasingly capable AI video and world models will serve as a “base,” providing real-world understanding, while deployments,</p>
+</blockquote>
+</li>
+</ol>
+<p>whether through teleoperation, data gloves, or egocentric capture, will generate an additional data flywheel. This has already led to interesting emergent behaviors: absorbing egocentric data,
+tactile sensing, and generalization across environments. And we’re about to scale everything up by 100x. Long robotics. Things will be big soon.</p>
+<blockquote>
+<p>I think this is mostly correct, but let me add some nuance around both why to be bullish and two of the challenges that robotics faces today. </p>
+</blockquote>]]></content:encoded>
+            <author>noreply@approvedthoughts.com (Apoorv Trivedi)</author>
+            <category><![CDATA[links]]></category>
+        </item>
+
         <item>
             <title><![CDATA[Links: Weeks of 03 Jan 2026]]></title>
             <link>https://www.approvedthoughts.com/posts/2026/links-03-jan-2026.html</link>
@@ -1542,88 +1646,6 @@
 <p> To be clear this wasn&#39;t my experience. I gave it a PDF and asked it to estimate something based on the data in the file. It made up all the numbers and suggested they were in tables and pages that didn&#39;t exist in the PDF. I was not able to get it focused on the actual information in the PDF despite multiple reminders and other attempts. Apparently though, there was a bug in their system yesterday that made it appear dumber. I will try again.</p>
 </li>
 </ol>]]></content:encoded>
-            <author>noreply@approvedthoughts.com (Apoorv Trivedi)</author>
-            <category><![CDATA[links]]></category>
-        </item>
-
-        <item>
-            <title><![CDATA[Links: Week of 02 Aug 2025]]></title>
-            <link>https://www.approvedthoughts.com/posts/2025/links-02-aug-2025.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2025/links-02-aug-2025.html</guid>
-            <pubDate>Sat, 02 Aug 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[1. [Philosopher–Builder Summer Reads](https://blog.cosmos-institute.org/p/philosopherbuilder-summer-reads-2025https://blog.cosmos-institute.org/p/phil...]]></description>
-            <content:encoded><![CDATA[<ol>
-<li><p><a href="https://blog.cosmos-institute.org/p/philosopherbuilder-summer-reads-2025https://blog.cosmos-institute.org/p/philosopherbuilder-summer-reads-2025" target="_blank" rel="noopener">Philosopher–Builder Summer Reads</a>: </p>
-<blockquote>
-<p>These aren&#39;t generic &quot;tech books.&quot; They&#39;re works that can shape how serious builders think about what they&#39;re creating and why.</p>
-</blockquote>
-<p> <a href="https://blog.cosmos-institute.org/p/the-philosopher-builder" target="_blank" rel="noopener">And the original essay.</a></p>
-</li>
-<li><p><a href="https://www.washingtonpost.com/business/2025/07/26/doge-ai-tool-cut-regulations-trump/" target="_blank" rel="noopener">DOGE builds AI tool to cut 50 percent of federal regulations</a>: </p>
-<blockquote>
-<p>The tool, called the “DOGE AI Deregulation Decision Tool,” is supposed to analyze roughly 200,000 federal regulations to determine which can be eliminated because they are no longer required by law, according to a PowerPoint presentation obtained by The Post that is dated July 1 and outlines DOGE’s plans. Roughly 100,000 of those rules would be deemed worthy of trimming, the PowerPoint estimates — mostly through the automated tool with some staff feedback. The PowerPoint also suggests the AI tool will save the United States trillions of dollars by reducing compliance requirements, slashing the federal budget and unlocking unspecified “external investment.”</p>
-</blockquote>
-<p> A worthy goal for DOGE and possibly the right use of AI. If done well. </p>
-</li>
-<li><p><a href="https://thezvi.substack.com/p/americas-ai-action-plan-is-pretty" target="_blank" rel="noopener">America&#39;s AI Action Plan Is Pretty Good</a>: </p>
-<blockquote>
-<p>Otherwise, while this is far from a perfect plan or the plan I would choose, on the substance it is a good plan, a positive plan, with many unexpectedly good plans within it. There is a lot of attention to detail in ways those I’ve asked say reflect people who actually know what they are doing, which was by no means something to be taken for granted. It is hard to imagine that a much better plan could have been approved given who was doing the approving.</p>
-</blockquote>
-</li>
-<li></li>
-</ol>
-<div class="tweet-container" >
-  <blockquote class="twitter-tweet" data-width="350">
-    <a href="https://twitter.com/drjimfan/status/1948789854151868663" target="_blank" rel="noopener"></a>
-  </blockquote>
-</div>
-
-<ol start="5">
-<li><p>Two <a href="https://www.approvedthoughts.com/https://arjunramani.com/india-dispatch.html" target="_blank" rel="noopener">long</a> &amp; <a href="https://andrewbatson.com/2025/07/27/india-and-the-invidious-comparison-with-china/" target="_blank" rel="noopener">good</a> pieces on India this week though I have yet to fully read both. </p>
-</li>
-<li><p><a href="https://nintil.com/jhanas/" target="_blank" rel="noopener">Jhanas</a> and <a href="https://www.jhourney.io/" target="_blank" rel="noopener">Jhourney</a>: </p>
-<blockquote>
-<p>So I went down to the beach. &quot;Kinda nice&quot;, I thought. The sky had a particularly vibrant blue color, the waves had &#39;the right size&#39;, their roar was pleasant. I started to walk around trying to continue meditating. I focused my awareness on an arising sensation of open heartedness and then I noticed my eyes tearing up (&quot;Huh? I thought&quot;). I looked again at the ocean and then I saw it. It was fucking amazing. So much color and detail: waves within waves, the fractal structure of the foamy crests as they disintegrate back into the ocean. The feeling of the sun on my skin. I felt overwhelmed. As tears ran down my face and lowkey insane grin settled on my face I found myself mumbling &quot;It&#39;s... always been like this!!!!&quot; &quot;What the fuck??!&quot; followed by &quot;This is too much!! Too much!!!&quot;. The experience seemed to be demanding from me to feel more joy and awe than I was born to feel or something like that. In that precise moment I felt what &quot;painfully beautiful&quot; means for the first time in my life. I had to look away. I calmed a bit. I walked a few steps and looked back. The exact same thing happened. &quot;It&#39;s reproducible, hihihihi&quot;, and I started laughing. Then I found a log to sit on, calm down, and look back at the ocean. Now it wasn&#39;t overwhelming, but &quot;kinda nice&quot; was now &quot;fucking amazing&quot;.</p>
-</blockquote>
-<p> To do list. </p>
-</li>
-<li><p><a href="https://www.nytimes.com/athletic/1681634/2020/03/18/this-man-is-a-pickup-basketball-god/?source=user_shared_article" target="_blank" rel="noopener">Yes, Adam Sandler really is a pickup basketball god (NYT Paywall)</a>:</p>
-<blockquote>
-<p>Jackson was struck by the man’s attire: extra-baggy shorts and an extra-baggy yellow T-shirt. “I’m trying to figure out: Does he buy clothes? Did he buy them and then just stop buying them? His clothes really might have been from 2008.” It soon became apparent, however, that the guy could play. He was a true court general. He impressed Jackson with his basketball IQ.</p>
-</blockquote>
-</li>
-<li></li>
-</ol>
-<div class="tweet-container" >
-  <blockquote class="twitter-tweet" data-width="350">
-    <a href="https://twitter.com/robertwiblin/status/1951248197881393235" target="_blank" rel="noopener"></a>
-  </blockquote>
-</div>
-
-<ol start="8">
-<li><p><a href="https://www.washingtonpost.com/climate-environment/2025/07/30/deep-sea-discovery-pacific-ocean/" target="_blank" rel="noopener">Life in deep</a>:    </p>
-<blockquote>
-<p>When her three-person submersible descended more than 30,000 feet into one of the Pacific Ocean’s deepest trenches, Mengran Du wasn’t sure what they would find.</p>
-
-
-
-<p>What she saw, she recalled, was “unbelievable”: Dense clusters of tubeworms with tentacles tinged bloodred, jutting up like skyscrapers. Iridescent snails scaling the worms, like window washers. Bristly, white creatures wriggling between them like rush-hour commuters trying to get home for dinner.</p>
-</blockquote>
-</li>
-<li></li>
-</ol>
-<div class="tweet-container" >
-  <blockquote class="twitter-tweet" data-width="350">
-    <a href="https://twitter.com/uapjames/status/1950906132383338979" target="_blank" rel="noopener"></a>
-  </blockquote>
-</div>
-
-<p>10. </p>
-<div class="tweet-container" >
-  <blockquote class="twitter-tweet" data-width="350">
-    <a href="https://twitter.com/john_hempton/status/1949066826362826881" target="_blank" rel="noopener"></a>
-  </blockquote>
-</div>]]></content:encoded>
             <author>noreply@approvedthoughts.com (Apoorv Trivedi)</author>
             <category><![CDATA[links]]></category>
         </item>
