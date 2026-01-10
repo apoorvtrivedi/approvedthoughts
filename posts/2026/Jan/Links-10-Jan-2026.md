@@ -18,8 +18,6 @@ For the last 2-3 weeks I had been noticing a "vibe-shift" about a jump in the ab
     > In 2015, for example, 6,852 of the 8,760 complaints submitted to Ronald Reagan Washington National Airport originated from one residence in the affluent Foxhall neighborhood of northwest Washington, DC. The residents of that particular house called Reagan National to express irritation about aircraft noise an average of almost 19 times per day during 2015.
 
 3. [A Personal Panopticon (via MR)](https://x.com/mollycantillon/status/2008918474006122936): A great summary.
-    ![embed](https://x.com/mollycantillon/status/2008918474006122936)
-
     > A few months ago, I started running my life out of Claude Code. Not out of intention to do so, it was just the place where everything met. And it just kept working. Empires are won by conquest. What keeps them standing is something much quieter. Before a king can tax, he must count. Before he can conscript, he must locate. Before he can rule, he must see. Legibility is the precondition for governance…
 
     > The first thing Claude solved was product blindness. NOX now runs on a cron job: pulling Amplitude, cross-referencing GitHub, and pointing me to what needs building. It handles A/B testing, generates winning copy, and has turned customer support into a fully autonomous department.
@@ -33,6 +31,8 @@ For the last 2-3 weeks I had been noticing a "vibe-shift" about a jump in the ab
     > It feels borderline unfair seeing around corners, being in ten places at once, surveilling yourself with the attention span of a thousand clones.
 
     > A panopticon still, but the tower belongs to you.
+
+    ![embed](https://x.com/mollycantillon/status/2008918474006122936)
 
 4. [Claude Codes](https://thezvi.substack.com/p/claude-codes): The definitive guide to the developments and the conversation, including some useful guides. 
     > Claude Code with Opus 4.5 is so hot right now. The cool kids use it for everything.
