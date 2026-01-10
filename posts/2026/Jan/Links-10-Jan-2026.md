@@ -7,7 +7,7 @@ tags: ["links"]
 draft: false
 ---
 
-For the last 2-3 weeks I had been noticing a "vibe-shift" about a jump in the abilities of the leading LLMs. This week that conversation took center stage as many blog posts and tweets raving about the enhanced abilities of Claud Code, especially when using the command line interfact went viral. I have not had the chance to test it out myself, as I am pre-occupied with the family's upcoming relocation. However, after that, this is top of the list for me now and all links but two below are on this topic. I recommend everyone go down this rabbit hole.
+For the last 2-3 weeks I had been noticing a "vibe-shift" about a jump in the abilities of the leading LLMs. This week that conversation took center stage as many blog posts and tweets raving about the enhanced abilities of Claud Code, especially when using the command line interface (CLI) went viral. I have not had the chance to test it out myself, as I am pre-occupied with the family's upcoming relocation. However, after that, this is top of the list for me now and all links but two below are on this topic. I recommend everyone go down this rabbit hole.
 
 1. [Can Timothée Chalamet Break This Oscar Curse? (NYT)](https://www.nytimes.com/2026/01/07/movies/timothee-chalamet-michael-b-jordan-oscar-curse.html): Woke comes full-circle with NYT worrying about unfair treatment of young, white, male actors?
     > For nearly a century, Oscar voters have been reluctant to hand the best-actor prize to young men, almost always opting to reward more seasoned performers.
