@@ -49,17 +49,15 @@ For the last 2-3 weeks I had been noticing a "vibe-shift" about a jump in the ab
 
 7. [Among the Agents](https://www.hyperdimensional.co/p/among-the-agents?): Examples and implications. 
 
-8. [Andrej Karpathy](https://x.com/karpathy/status/2004607146781278521?s=20): Don't worry if you feel you are behind. So does Andrej and he's among the best out there. 
+8. [Andrej Karpathy](https://x.com/karpathy/status/2004607146781278521?s=20): Don't worry if you feel you are behind. So does Andrej and he's among the best out there.
+    ![embed](https://x.com/karpathy/status/2004607146781278521?s=20)
 
 9. [Self-Driving Cars](https://thezvi.substack.com/p/advancements-in-self-driving-cars): The robots are coming too. What a time. 
 
 10. [The Final Offshoring](https://finaloffshoring.com/The_Final_Offshoring.pdf): More on robots. 
-    > Thus, why should the future be any different? Why should one expect a sudden, dramatic wave of robotics working not just in the coming decade, but the coming handful of years? Why should
-the curse of Moravec’s Paradox suddenly break? 
+    > Thus, why should the future be any different? Why should one expect a sudden, dramatic wave of robotics working not just in the coming decade, but the coming handful of years? Why should the curse of Moravec’s Paradox suddenly break? 
 
-    > The standard answer a savvy technologist would give is that increasingly capable AI video and world models will serve as a “base,” providing real-world understanding, while deployments,
-whether through teleoperation, data gloves, or egocentric capture, will generate an additional data flywheel. This has already led to interesting emergent behaviors: absorbing egocentric data,
-tactile sensing, and generalization across environments. And we’re about to scale everything up by 100x. Long robotics. Things will be big soon.
+    > The standard answer a savvy technologist would give is that increasingly capable AI video and world models will serve as a “base,” providing real-world understanding, while deployments, whether through teleoperation, data gloves, or egocentric capture, will generate an additional data flywheel. This has already led to interesting emergent behaviors: absorbing egocentric data, tactile sensing, and generalization across environments. And we’re about to scale everything up by 100x. Long robotics. Things will be big soon.
 
- > I think this is mostly correct, but let me add some nuance around both why to be bullish and two of the challenges that robotics faces today. 
+    > I think this is mostly correct, but let me add some nuance around both why to be bullish and two of the challenges that robotics faces today. 
 
