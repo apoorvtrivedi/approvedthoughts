@@ -7,7 +7,7 @@ tags: ["links"]
 draft: false
 ---
 
-#### AI Links
+##### AI Links
 1. [The singularity won't be gentle](https://www.natesilver.net/p/the-singularity-wont-be-gentle): 
     > If AI has even a fraction of the impact that many people in Silicon Valley now expect on the fabric of work and daily life, it’s going to have profound and unpredictable political impacts.
 
@@ -52,7 +52,7 @@ draft: false
 9. [Agent Skills with Anthropic](https://x.com/andrewyng/status/2016564878098780245)
 
 
-#### Other Stuff
+##### Other Stuff
 
 1. [‘They All Tried to Break Me’: Gisèle Pelicot Shares Her Story](https://www.nytimes.com/2026/02/13/magazine/gisele-pelicot-france-rape-case-story.html?unlocked_article_code=1.MVA.Q6_h.VC-GNEuOSqZt&smid=nytcore-ios-share): Words fail me. 
     > I think we’re going to do great things together. I think we’ll make the most of these beautiful years we have left, and I hope they’ll last very long.
