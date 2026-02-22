@@ -66,9 +66,6 @@ draft: false
 
     > The stakes are probably higher than you think.  
 
-3. 
-     ![embed](https://x.com/FreeRangeLawyer/status/2011077281041744275)
-
 4. [The Economics of a Super Bowl Ad](https://x.com/ZReitano/status/2016862026501378535):
     ![embed](https://x.com/ZReitano/status/2016862026501378535)
 
