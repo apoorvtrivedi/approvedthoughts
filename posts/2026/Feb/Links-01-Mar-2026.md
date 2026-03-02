@@ -54,7 +54,7 @@ draft: false
 
     Going back to the title of my [last post](https://approvedthoughts.com/posts/2026/links-10-jan-2026.html) from Singapore, there's clearly been a vibe-shift when it comes to what the latest models can do. In early Jan only those focused on AI were feeling it and now it is going more mainstream. But that's no reason to fall prey to half-baked thinking. Let Claude taste it and cook it for you. 
 
-    Note: I haven't posted anything other than links here for the most part. So I didn't notice the bug in the code which messed up the formatting of quoted portions that are not in a bulleted list. The portion above wasn't formatting correctly without the bullets. A project for next weekend, to get Claude to fix this. 
+    **Note:** I haven't posted anything other than links here for the most part. So I didn't notice the bug in the code which messed up the formatting of quoted portions that are not in a bulleted list. The portion above wasn't formatting correctly without the bullets. A project for next weekend, to get Claude to fix this. 
 
 ##### Links
 
