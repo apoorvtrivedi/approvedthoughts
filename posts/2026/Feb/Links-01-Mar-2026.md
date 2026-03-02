@@ -7,6 +7,8 @@ tags: ["links"]
 draft: false
 ---
 
+#### Thoughts
+
 1. The big news in markets this week was [this report](https://www.citriniresearch.com/p/2028gic) from Citrini Research & Alap Shah that apparently crashed the markets and led to a lot of debate in our office. It lays out a "fast take-off" scenario for AI, which causes mass layoffs of white-collar emplopyees as AI replaces intelligence work and starts off an economic downward spiral as demand collapses. 
 
     > It should have been clear all along that a single GPU cluster in North Dakota generating the output previously attributed to 10,000 white-collar workers in midtown Manhattan is more economic pandemic than economic panacea. The velocity of money flatlined. The human-centric consumer economy, 70% of GDP at the time, withered. We probably could have figured this out sooner if we just asked how much money machines spend on discretionary goods. (Hint: it’s zero.)
@@ -56,7 +58,7 @@ draft: false
 
     **Note:** I haven't posted anything other than links here for the most part. So I didn't notice the bug in the code which messed up the formatting of quoted portions that are not in a bulleted list. The portion above wasn't formatting correctly without the bullets. A project for next weekend, to get Claude to fix this. 
 
-##### Links
+#### Links
 
 1. [Mathematics in the Library of Babel](https://www.daniellitt.com/blog/2026/2/20/mathematics-in-the-library-of-babel): Speaking of vibe-shifts...Daniel Litt is a professor of mathematics at the University of Toronto.
     > I think I have been underrating the pace of model improvements. In March 2025 I made a bet with Tamay Besiroglu, cofounder of RL environment company Mechanize, that AI tools would not be able to autonomously produce papers I judge to be at a level comparable to that of the best few papers published in 2025, at comparable cost to human experts, by 2030. I gave him 3:1 odds at the time; I now expect to lose this bet.
