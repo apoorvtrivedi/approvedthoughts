@@ -9,7 +9,7 @@ draft: false
 
 ![SavithaShan](/assets/images/2026/Mar/Moar%20Updatez.webp)
 
-"Savitha Shan, an undergrad double major here in economics and information systems, who was [murdered over the weekend](https://scottaaronson.blog/?p=9606) by an Islamist terrorist who started randomly shooting people on Sixth Street, apparently angry about the war in Iran. Two other innocents were also killed."
+"Savitha Shan, an undergrad double major here in economics and information systems, who was [murdered over the weekend](https://scottaaronson.blog/?p=9606) by an Islamist terrorist who started randomly shooting people on Sixth Street, apparently angry about the war in Iran. Two other innocents were also killed."  - [Scott Aaronson](https://scottaaronson.blog/?p=9606)
 
 So senseless. And the 180 schoolgirls Minab, Iran. Did any of them know it was their time? Did they get to live a full life? Will I? It's one thing to know this and another to feel it in your bones. But the worst is when you start feeling it and your self-preservation instinct kicks in - allowing the feelings to only go in so deep and no more. RIP.
 
