@@ -7,31 +7,33 @@ tags: ["links"]
 draft: false
 ---
 
+![SavithaShan](/assets/images/2026/Mar/Moar%20Updatez.webp)
+
+Savitha Shan, an undergrad double major here in economics and information systems, who was [murdered over the weekend](https://scottaaronson.blog/?p=9606) by an Islamist terrorist who started randomly shooting people on Sixth Street, apparently angry about the war in Iran. Two other innocents were also killed.
+
+So senseless. And the 180 schoolgirls Minab, Iran. Did any of them know it was their time? Did they get to live a full life? Will I? It's one thing to know this and another to feel it in your bones. But the worst is when you start feeling it and your instinct kicks in - allowing the feelings to only go in so deep and no more. RIP.
+
 #### Links
-1. 
-    ![SavithaShan](/assets/images/2026/Mar/Moar%20Updatez.webp)
 
-    > Savitha Shan, an undergrad double major here in economics and information systems, who was [murdered over the weekend](https://scottaaronson.blog/?p=9606) by an Islamist terrorist who started randomly shooting people on Sixth Street, apparently angry about the war in Iran. Two other innocents were also killed.
-
-    So senseless. And the 180 schoolgirls Minab, Iran. Did any of them know it was their time? Did they get to live a full life? Will I? It's one thing to know this and another to feel it in your bones. But the worst is when you start feeling it and your instinct kicks in - allowing the feelings to only go in so deep and no more. RIP.
-
-2. [The Brand Age](https://paulgraham.com/brandage.html): Worth reading the whole thing just for this sentence but there's a lot more and it ends in a very different place from where it starts. 
+1. [The Brand Age](https://paulgraham.com/brandage.html): Worth reading the whole thing just for this sentence but there's a lot more and it ends in a very different place from where it starts. 
     > This is an instance of what I call the comb-over effect: when a series of individually small changes takes you from something that's a little bit off to something that's freakishly wrong.
 
-3. [The Hidden Advantage of Being Over 50 in the Age of AI](https://www.inc.com/joel-comm/the-hidden-advantage-of-being-over-50-in-the-age-of-ai/91312602): Hope & cope?
+2. [The Hidden Advantage of Being Over 50 in the Age of AI](https://www.inc.com/joel-comm/the-hidden-advantage-of-being-over-50-in-the-age-of-ai/91312602): Hope & cope?
     > The leaders who win this era won’t just be 22‑year‑olds building AI‑native startups. They’ll also be experienced operators who integrate AI quietly and intelligently into systems they already understand. If you’re over 50 and feeling behind, you might actually be early. Because when the tools get easier, experience becomes more powerful—not less. And this time, that experience may finally be the competitive edge.
 
-4. 
+3. 
     ![embed](https://x.com/FundamentEdge/status/2029726670375317624)
 
     ![embed](https://x.com/fundamentedge/status/2029991048806883480)
 
 
-5. 
+4. 
     ![embed](https://x.com/chapinc/status/2028156012511846733)
 
-6. I wouldn't stand there.
+5. I wouldn't stand there.
+
     ![IWouldntStandThere](/assets/images/2026/Mar/I%20wouldn't%20stand%20there.jpeg)
+
 
 
 #### Feeling the AGI
