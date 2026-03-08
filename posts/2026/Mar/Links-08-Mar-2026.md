@@ -22,8 +22,6 @@ So senseless. And the 180 schoolgirls Minab, Iran. Did any of them know it was t
     > The leaders who win this era won’t just be 22‑year‑olds building AI‑native startups. They’ll also be experienced operators who integrate AI quietly and intelligently into systems they already understand. If you’re over 50 and feeling behind, you might actually be early. Because when the tools get easier, experience becomes more powerful—not less. And this time, that experience may finally be the competitive edge.
 
 3. 
-    ![embed](https://x.com/FundamentEdge/status/2029726670375317624)
-
     ![embed](https://x.com/fundamentedge/status/2029991048806883480)
 
 
