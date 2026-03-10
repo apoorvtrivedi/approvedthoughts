@@ -520,6 +520,7 @@ pre code {
     background-color: var(--color-bg-secondary);
     padding: var(--space-md) var(--space-lg);
     margin: var(--space-md) 0 var(--space-xl) 0;
+    margin-bottom: var(--space-xl);
     border-radius: var(--border-radius);
     font-style: normal;
     color: var(--color-text); /* Normal text color for better readability */
