@@ -544,8 +544,7 @@ pre code {
 
 /* Empty paragraphs in blockquotes (for spacing between quote sections) */
 .post-content blockquote p:empty {
-    margin-bottom: var(--space-md);
-    height: var(--space-xs);
+    display: none;
 }
 
 /* Lists inside blockquotes */
