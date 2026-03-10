@@ -12,11 +12,11 @@ draft: false
 1. The big news in markets this week was [this report](https://www.citriniresearch.com/p/2028gic) from Citrini Research & Alap Shah that apparently crashed the markets and led to a lot of debate in our office. It lays out a "fast take-off" scenario for AI, which causes mass layoffs of white-collar emplopyees as AI replaces intelligence work and starts off an economic downward spiral as demand collapses. 
 
     > It should have been clear all along that a single GPU cluster in North Dakota generating the output previously attributed to 10,000 white-collar workers in midtown Manhattan is more economic pandemic than economic panacea. The velocity of money flatlined. The human-centric consumer economy, 70% of GDP at the time, withered. We probably could have figured this out sooner if we just asked how much money machines spend on discretionary goods. (Hint: it’s zero.)
-
+    >
     > AI capabilities improved, companies needed fewer workers, white collar layoffs increased, displaced workers spent less, margin pressure pushed firms to invest more in AI, AI capabilities improved…
-
+    >
     > It was a negative feedback loop with no natural brake. The human intelligence displacement spiral. White-collar workers saw their earnings power (and, rationally, their spending) structurally impaired. Their incomes were the bedrock of the $13 trillion mortgage market - forcing underwriters to reassess whether prime mortgages are still money good.
-
+    
     The report found many believers in markets but I find myself on the skeptical side, much more pusuaded by the many pushback articles which are grounded in conventional economic theory. And they came from many sources. 
 
     Here's [Tyler Cowen](https://marginalrevolution.com/marginalrevolution/2026/02/is-there-an-aggregate-demand-problem-in-an-agi-world.html) in his cryptic style. Here's [Zvi](https://thezvi.substack.com/p/citrinis-scenario-is-a-great-but) with the inverse. And finally here's [Citadel](https://www.citadelsecurities.com/news-and-insights/2026-global-intelligence-crisis/). 
