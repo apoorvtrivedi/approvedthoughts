@@ -24,11 +24,11 @@ draft: false
 2. And lastly, here's Claude summarizing it all and adding its own perspective:
 
     > **Why Citrini's Scenario Doesn't Add Up**
- 
+    >
     > The piece is an excellent thought experiment and a useful sector-level vulnerability map. The macro conclusion — that AI abundance causes a demand collapse and systemic crisis — is built on a fundamental accounting error.
-
+    >
     > **The Core Contradiction: Every Loss Is Someone Else's Gain**
-
+    >
     > The entire scenario rests on a demand collapse: AI replaces workers, workers stop spending, the economy spirals. But the same force destroying jobs is also destroying prices. If a Claude agent does the work of a $180K PM for $200/month, then everything that PM helped produce also gets dramatically cheaper. The piece catalogs agents slashing insurance premiums, SaaS costs, delivery fees, real estate commissions, and interchange — then claims displaced workers can't afford things. Which things? The things that just got 80% cheaper?
     >
     > Every corporate revenue loss in the piece is a gain on the other side. ServiceNow loses $500K in licenses — that's $500K freed for the client. DoorDash loses its 30% take rate — drivers earn more, consumers pay less. Real estate commissions drop from 6% to 1% — that's a 5% stimulus to every home purchase. SaaS fees are a tax on business. That tax went down.
