@@ -9,7 +9,7 @@ draft: false
 
 #### Thoughts
 
-1. The big news in markets this week was [this report](https://www.citriniresearch.com/p/2028gic) from Citrini Research & Alap Shah that apparently crashed the markets and led to a lot of debate in our office. It lays out a "fast take-off" scenario for AI, which causes mass layoffs of white-collar emplopyees as AI replaces intelligence work and starts off an economic downward spiral as demand collapses. 
+The big news in markets this week was [this report](https://www.citriniresearch.com/p/2028gic) from Citrini Research & Alap Shah that apparently crashed the markets and led to a lot of debate in our office. It lays out a "fast take-off" scenario for AI, which causes mass layoffs of white-collar emplopyees as AI replaces intelligence work and starts off an economic downward spiral as demand collapses. 
 
     > It should have been clear all along that a single GPU cluster in North Dakota generating the output previously attributed to 10,000 white-collar workers in midtown Manhattan is more economic pandemic than economic panacea. The velocity of money flatlined. The human-centric consumer economy, 70% of GDP at the time, withered. We probably could have figured this out sooner if we just asked how much money machines spend on discretionary goods. (Hint: it’s zero.)
     >
@@ -21,7 +21,7 @@ draft: false
 
     Here's [Tyler Cowen](https://marginalrevolution.com/marginalrevolution/2026/02/is-there-an-aggregate-demand-problem-in-an-agi-world.html) in his cryptic style. Here's [Zvi](https://thezvi.substack.com/p/citrinis-scenario-is-a-great-but) with the inverse. And finally here's [Citadel](https://www.citadelsecurities.com/news-and-insights/2026-global-intelligence-crisis/). 
 
-2. And lastly, here's Claude summarizing it all and adding its own perspective:
+And lastly, here's Claude summarizing it all and adding its own perspective:
 
     > **Why Citrini's Scenario Doesn't Add Up**
     >
@@ -55,7 +55,6 @@ draft: false
 
     Going back to the title of my [last post](https://approvedthoughts.com/posts/2026/links-10-jan-2026.html) from Singapore, there's clearly been a vibe-shift when it comes to what the latest models can do. In early Jan only those focused on AI were feeling it and now it is going more mainstream. But that's no reason to fall prey to half-baked thinking. Let Claude taste it and cook it for you. 
 
-    **Note:** I haven't posted anything other than links here for the most part. So I didn't notice the bug in the code which messed up the formatting of quoted portions that are not in a bulleted list. The portion above wasn't formatting correctly without the bullets. A project for next weekend, to get Claude to fix this. 
 
 #### Links
 
