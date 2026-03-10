@@ -80,20 +80,26 @@ function calculateReadingTime(content) {
 }
 
 // Format date
+function parseDate(date) {
+    // If it's a string like "2025-01-15", treat it as local noon to avoid timezone shifts
+    if (typeof date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(date)) {
+        return new Date(date + 'T12:00:00');
+    }
+    return new Date(date);
+}
+
 function formatDate(date) {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    return new Date(date).toLocaleDateString('en-US', options);
+    return parseDate(date).toLocaleDateString('en-US', options);
 }
 
-// Format date for datetime attribute
 function formatDateISO(date) {
-    return new Date(date).toISOString().split('T')[0];
+    return parseDate(date).toISOString().split('T')[0];
 }
 
-// Format date for archive (shorter format)
 function formatDateArchive(date) {
     const options = { month: 'short', day: 'numeric' };
-    return new Date(date).toLocaleDateString('en-US', options);
+    return parseDate(date).toLocaleDateString('en-US', options);
 }
 
 // Create slug from filename
@@ -196,86 +202,6 @@ function decorateImagesInHtml(html) {
   );
 
   return html;
-}
-
-
-// ====================================
-// 3. SEARCH INDEX FUNCTIONS
-// ====================================
-
-// Create searchable text from content
-function createSearchableText(content) {
-    // Remove HTML tags
-    let text = content.replace(/<[^>]*>/g, ' ');
-    
-    // Remove special characters but keep basic punctuation
-    text = text.replace(/[^\w\s\-.,!?]/g, ' ');
-    
-    // Normalize whitespace
-    text = text.replace(/\s+/g, ' ').trim();
-    
-    return text.toLowerCase();
-}
-
-// Create search keywords from text
-function extractKeywords(text, title) {
-    const stopWords = new Set([
-        'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 
-        'of', 'with', 'by', 'is', 'are', 'was', 'were', 'be', 'been', 'have', 
-        'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could', 'should',
-        'this', 'that', 'these', 'those', 'i', 'you', 'he', 'she', 'it', 'we',
-        'they', 'me', 'him', 'her', 'us', 'them', 'my', 'your', 'his', 'her',
-        'its', 'our', 'their', 'from', 'into', 'about', 'through', 'during',
-        'before', 'after', 'above', 'below', 'up', 'down', 'out', 'off', 'over',
-        'under', 'again', 'further', 'then', 'once'
-    ]);
-    
-    // Extract words from title and content
-    const allText = `${title} ${text}`.toLowerCase();
-    const words = allText.match(/\b\w{2,}\b/g) || [];
-    
-    // Filter out stop words and short words
-    const keywords = words.filter(word => 
-        word.length >= 3 && !stopWords.has(word)
-    );
-    
-    // Count frequency and return unique words
-    const wordCount = {};
-    keywords.forEach(word => {
-        wordCount[word] = (wordCount[word] || 0) + 1;
-    });
-    
-    // Return words sorted by frequency (most common first)
-    return Object.keys(wordCount)
-        .sort((a, b) => wordCount[b] - wordCount[a])
-        .slice(0, 50); // Limit to top 50 keywords
-}
-
-// Generate enhanced search index
-async function generateSearchIndex(posts) {
-    const searchIndex = posts.map(post => {
-        const searchableContent = createSearchableText(post.content);
-        const keywords = extractKeywords(searchableContent, post.title);
-        
-        return {
-            id: post.slug,
-            title: post.title,
-            url: post.url,
-            date: post.date,
-            dateFormatted: post.dateFormatted,
-            excerpt: post.excerpt,
-            type: post.type,
-            tags: post.tags || [],
-            keywords: keywords,
-            searchableText: searchableContent,
-            // Include first 200 characters for preview
-            preview: searchableContent.substring(0, 200) + '...'
-        };
-    });
-    
-    await fs.ensureDir('data');
-    await fs.writeFile('data/search-index.json', JSON.stringify(searchIndex, null, 2));
-    console.log('  ✓ Generated: data/search-index.json');
 }
 
 // ====================================
@@ -1312,16 +1238,14 @@ async function generateAboutPage(posts) {
  * This processes the HTML after markdown conversion to merge adjacent blockquotes
  */
 function mergeConsecutiveBlockquotes(htmlContent) {
-    // Use a simple approach to merge consecutive blockquotes
-    // This regex finds patterns like: </blockquote>\s*<blockquote>
-    
-    // First, let's handle the case where blockquotes are separated only by whitespace
-    let processedContent = htmlContent.replace(
-        /<\/blockquote>\s*<blockquote>/g, 
-        '\n\n' // Replace the blockquote boundaries with paragraph breaks
-    );
-    
-    return processedContent;
+    // Merge adjacent <blockquote> elements into one by removing the boundary tags
+    let result = htmlContent;
+    let previous;
+    do {
+        previous = result;
+        result = result.replace(/<\/blockquote>(\s*)<blockquote>/g, '<p>&nbsp;</p>');
+    } while (result !== previous);
+    return result;
 }
 
 
