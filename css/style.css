@@ -569,6 +569,21 @@ pre code {
     font-size: var(--font-size-small);
 }
 
+/* Ensure pre blocks wrap and don't bleed into content */
+.post-content pre {
+    white-space: pre-wrap;       /* Wraps long lines instead of overflowing */
+    word-break: break-word;
+    overflow-x: auto;
+}
+
+/* Prevent blockquotes from ever looking like code blocks */
+.post-content blockquote {
+    font-family: var(--font-primary);   /* Force body font, never monospace */
+    white-space: normal;                /* Force normal text wrapping */
+    word-wrap: break-word;
+    overflow-x: visible;
+}
+
 /* Footnotes styling */
 .post-content .footnotes {
     margin-top: calc(var(--space-xl) / 2);
