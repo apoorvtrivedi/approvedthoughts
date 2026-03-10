@@ -680,8 +680,14 @@ async function processMarkdownFile(filePath) {
         data.date = new Date(); // Default to today if no date
     }
 
+    // 0. Normalize 4-space-indented blockquotes to 3-space (tab-indented quotes)
+    let normalizedContent = content.replace(
+        /(^```[\s\S]*?^```)|^ {1,4}(>)/gm,
+        (match, codeBlock, quote) => codeBlock ? codeBlock : '   ' + quote
+    );
+
     // 1. Convert only our “![embed](…)” links into blockquotes/iframes
-    let processedContent = processTwitterLinks(content);
+    let processedContent = processTwitterLinks(normalizedContent);
     processedContent       = processYouTubeLinks(processedContent);
 
     // 2. Convert to HTML first

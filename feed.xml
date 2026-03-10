@@ -10,7 +10,7 @@
         <language>en-us</language>
         <managingEditor>noreply@approvedthoughts.com (Apoorv Trivedi)</managingEditor>
         <webMaster>noreply@approvedthoughts.com (Apoorv Trivedi)</webMaster>
-        <lastBuildDate>Tue, 10 Mar 2026 01:45:52 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Mar 2026 01:58:50 GMT</lastBuildDate>
         <pubDate>Sun, 08 Mar 2026 00:00:00 GMT</pubDate>
         <generator>Approved Thoughts Static Site Generator</generator>
         <docs>https://www.rssboard.org/rss-specification</docs>
@@ -817,14 +817,16 @@ The sector-level analysis of which business models are vulnerable is genuinely g
 <li><p><a href="https://www.approvedthoughts.com/https://www.nytimes.com/2025/11/14/business/charlie-javice-jpmorgan-legal-bills.html" target="_blank" rel="noopener">She Took JPMorgan for $175 Million. That Doesn’t Include Her Restaurant Bills.</a>: </p>
 <blockquote>
 <p>In September, Ms. Javice, 33, was sentenced to more than seven years in prison for fraud. In 2021, JPMorgan Chase acquired her start-up, Frank, for $175 million. Ms. Javice had claimed her company helped millions of people fill out their federal financial aid forms.</p>
-<p>&nbsp;</p>
+</blockquote>
+</li>
+</ol>
+<blockquote>
 <p>After the acquisition, however, the bank discovered that she had lied about most of Frank’s customers. JPMorgan sued, and then prosecutors put Ms. Javice on trial. A jury convicted her this year.</p>
 <p>&nbsp;</p>
 <p>Along the way, Ms. Javice won a ruling that required the bank to pay her legal fees. JPMorgan has objected to the size of the fees in the past, and after her sentencing it decided to try to cut her off. The bank is trying the same maneuver with her former chief growth and acquisition officer, Olivier Amar, who was also convicted of fraud.    </p>
 </blockquote>
-</li>
-<li><p><a href="https://www.nytimes.com/2025/11/14/us/dog-shoots-owner-pennsylvania.html?smid=nytcore-ios-share" target="_blank" rel="noopener">Dog Accidentally Shoots and Injures a Pennsylvania Man, the Police Say</a>: No comment.</p>
-<blockquote>
+<ol start="11">
+<li><a href="https://www.nytimes.com/2025/11/14/us/dog-shoots-owner-pennsylvania.html?smid=nytcore-ios-share" target="_blank" rel="noopener">Dog Accidentally Shoots and Injures a Pennsylvania Man, the Police Say</a>: No comment.<blockquote>
 <p>The man had been cleaning a shotgun and placed it on the bed shortly before it was fired. He received treatment at an area hospital.</p>
 </blockquote>
 </li>
@@ -1421,7 +1423,10 @@ The sector-level analysis of which business models are vulnerable is genuinely g
 <li><p><a href="https://www.approvedthoughts.com/https://marginalrevolution.com/marginalrevolution/2025/09/how-to-think-about-ai-progress.html" target="_blank" rel="noopener">How to think about AI progress</a>: Reproducing the entire post as it really is worth reading: </p>
 <blockquote>
 <p>The Zvi has <a href="https://thezvi.substack.com/p/reports-of-ai-not-progressing-or" target="_blank" rel="noopener">a good survey post</a> on what is going on with the actual evidence.  I have a more general point to make, which I am drawing from my background in Austrian capital theory.</p>
-<p>&nbsp;</p>
+</blockquote>
+</li>
+</ol>
+<blockquote>
 <p>There are easy projects, and there are hard projects.  You might also say short-term vs. long-term investments.</p>
 <p>&nbsp;</p>
 <p>The easier, shorter-term projects get done first.  For instance, the best LLMs now have near-perfect answers for a wide range of queries.  Those answers will not be getting much better, though they may be integrated into different services in higher productivity ways.</p>
@@ -1438,9 +1443,8 @@ The sector-level analysis of which business models are vulnerable is genuinely g
 <p>&nbsp;</p>
 <p>And so people will complain that AI progress is failing us, but mostly they will be wrong.  They will be the victim of cognitive error and biases.  The reality is that progress is continuing apace, but it swallows up and renders ordinary some of its more visible successes.  What is left behind for future progress can be pretty slow.</p>
 </blockquote>
-<p>Yet another periodic reminder that <a href="https://marginalrevolution.com" target="_blank" rel="noopener">MR</a> and <a href="https://thezvi.substack.com/" target="_blank" rel="noopener">The Zvi</a> are both must-read for everyone.</p>
-</li>
-</ol>]]></content:encoded>
+<pre><code>Yet another periodic reminder that [MR](https://marginalrevolution.com) and [The Zvi](https://thezvi.substack.com/) are both must-read for everyone. 
+</code></pre>]]></content:encoded>
             <author>noreply@approvedthoughts.com (Apoorv Trivedi)</author>
             <category><![CDATA[links]]></category>
         </item>
