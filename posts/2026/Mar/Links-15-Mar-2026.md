@@ -19,7 +19,7 @@ The first two stories this week are mindblowing. Huge if true, as they say.
 
    > The digital fly appears to behave in the digital environment in reasonably fly like ways–this is not a simulation, the fly’s “sensors” are being activated by the digital environment and the neurons are responding.
 
-   ![embed](Video [here](https://www.youtube.com/watch?v=e21OUXPlnhk&t=2s))
+   ![embed](https://www.youtube.com/watch?v=e21OUXPlnhk&t=2s))
 
 3. Some [more](https://x.com/Afinetheorem/status/2031566775230279815?s=20) AI [tutorials](https://x.com/garrytan/status/2032014570118922347). 
 
