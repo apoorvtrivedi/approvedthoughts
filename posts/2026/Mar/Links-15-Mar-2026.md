@@ -21,7 +21,7 @@ The first two stories this week are mindblowing. Huge if true, as they say.
 
    ![embed](https://www.youtube.com/watch?v=e21OUXPlnhk&t=2s)
 
-3. Some [more](https://x.com/Afinetheorem/status/2031566775230279815?s=20) AI [tutorials](https://x.com/garrytan/status/2032014570118922347). 
+3. Some [more](https://x.com/Afinetheorem/status/2031566775230279815?s=20) AI [tutorials](https://x.com/garrytan/status/2032014570118922347). So many tutorials, so little time. 
 
 4. 
    ![embed](https://x.com/i_zzzzzz/status/2032422897764196858)
