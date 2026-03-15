@@ -1,8 +1,8 @@
 ---
 title: "Newsletter vs. Website"
 date: 2025-01-19
-type: 
-description: 
+type: post
+description:
 tags: ["post"]
 draft: false
 ---

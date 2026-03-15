@@ -3,7 +3,7 @@ title: "Links: Week of 03 Feb 2025"
 date: 2025-02-03
 type: links
 description:
-tags: ["links"]
+tags: ["links", "ai", "agency", "learning"]
 draft: false
 ---
 
@@ -12,12 +12,12 @@ draft: false
 Another set of AI-heavy links. I can’t help myself right now.
 
 1. [Set up a fake cricket league](https://www.esquire.com/uk/culture/a63009827/fake-cricket-league/): 
-    > These arrangements might have suggested that the league featured professional-grade cricket that an online audience would find worth watching, but in fact, the players weren’t established cricketers or even skilled amateurs. They were locals that Davda had recruited with the promise of paying 400 rupees (about £3.50) per day — twice what people in the area make in daily wages working on farms and for local businesses.
+   > These arrangements might have suggested that the league featured professional-grade cricket that an online audience would find worth watching, but in fact, the players weren’t established cricketers or even skilled amateurs. They were locals that Davda had recruited with the promise of paying 400 rupees (about £3.50) per day — twice what people in the area make in daily wages working on farms and for local businesses.
 
      Respect.
 
 2. [How to choose a religion (NYT Paywall)](https://www.nytimes.com/2025/02/01/opinion/religion-faith-choose.html): 
-    > But for the general obligation imposed upon us all, as time-bound creatures in a world shot through with intimations of transcendence, a different Eliot line is apt: “For us, there is only the trying. The rest is not our business.” 
+   > But for the general obligation imposed upon us all, as time-bound creatures in a world shot through with intimations of transcendence, a different Eliot line is apt: “For us, there is only the trying. The rest is not our business.” 
 
     I didn’t know Eliot plagiarized The Gita. The book is called [Believe: Why Everyone Should Be Religious](https://www.zondervan.com/p/believe/). I hope to read this book.
 

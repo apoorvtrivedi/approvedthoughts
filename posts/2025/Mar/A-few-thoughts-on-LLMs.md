@@ -1,9 +1,9 @@
 ---
 title: "A few thoughts on LLMs"
 date: 2025-03-01
-type: 
+type: post
 description:
-tags: ["post", "LLM"]
+tags: ["post", "ai", "economics"]
 draft: false
 ---
 
@@ -13,7 +13,7 @@ I need to sit down and combine some of these thoughts into a coherent piece but 
 2. An LLM with an infinite context window, one that can contain all my life, will be an entirely different product than an LLM with a limited context window. You can never have enough when it comes to context windows. 
 3. Notwithstanding 1, "personality" makes a huge difference in the experience of working with an LLM and the ability to create the right one could determine whether a model can dominate a market or a niche. Claude Sonnet 3.5 absolutely had than special sauce in my experience. We need a lot more of it. 
 4. [This.](https://x.com/thestalwart/status/1894704594535551334?s=46): 
-    > I don’t see how we’re going to avoid a situation where the internet become lousy with AI-created, pseudo academic writing filled with made up facts and quotes, which will then get cemented into “knowledge” as those articles become the training fodder for future models.
+   > I don’t see how we’re going to avoid a situation where the internet become lousy with AI-created, pseudo academic writing filled with made up facts and quotes, which will then get cemented into “knowledge” as those articles become the training fodder for future models.
 
     But combine it with the fact that if we all start getting our answers from LLMs, the online content & ad based [business model goes caput](https://x.com/a16z/status/1892612797948952863) and then what is the incentive for people to put up good content on the web? None.
 

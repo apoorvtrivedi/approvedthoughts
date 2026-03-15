@@ -3,7 +3,7 @@ title: "Links: Week of 19 Jan 2025"
 date: 2025-01-19
 type: links
 description: 
-tags: ["links"]
+tags: ["links", "ai", "health", "india"]
 draft: false
 ---
 
@@ -27,7 +27,7 @@ draft: false
     Committing to writing this newsletter has also been great. Now instead of mindlessly flicking my finger and consuming, I have a purpose every time I open Twitter. Its almost energising to engage actively with each tweet, thoughtfully considering whether its fit to be served to my exceptionally smart and good-looking audience.
 
 1. [E(X)>0: An Open Letter to Elon](https://open.substack.com/pub/betonit/p/ex0-an-open-letter-to-elon): 
-    > “Your top engineers and programmers are only able to work 80-hour weeks because they can hire nannies and maids, ride in Ubers, and order food delivery. High-skill productivity depends on an abundance of complementary low-skill productivity.”
+   > “Your top engineers and programmers are only able to work 80-hour weeks because they can hire nannies and maids, ride in Ubers, and order food delivery. High-skill productivity depends on an abundance of complementary low-skill productivity.”
 
     
     As a repeat immigrant, I have many thoughts on this debate going on in US right now. There’s a lot that is wrong with a policy of focusing exclusively on so called Skill or Merit based immigration. This piece from Bryan Caplan makes some good points.
@@ -46,11 +46,11 @@ Here’s another one from Derek:
 
 8. [Fix Your Glutes. (NYT Paywall)](https://www.nytimes.com/2025/01/14/magazine/glutes-running.html) Strongly endorse. Really helps when trying to hold a fart but many other benefits too.
 
-    > My frail-as-porcelain glutes — the cluster of tissue from hip to thigh tasked with keeping the body upright and on occasion propelling it forward — were causing a domino chain of damage, and had most likely been doing so for some time. To compensate for the glutes’ infirmity, my ankles, knees, hips and even my shoulders and arms had to thrash madly, taking on vast and uneven amounts of pressure, often far more than they were structurally fit to bear
+   > My frail-as-porcelain glutes — the cluster of tissue from hip to thigh tasked with keeping the body upright and on occasion propelling it forward — were causing a domino chain of damage, and had most likely been doing so for some time. To compensate for the glutes’ infirmity, my ankles, knees, hips and even my shoulders and arms had to thrash madly, taking on vast and uneven amounts of pressure, often far more than they were structurally fit to bear
 
     and
 
-    > Only after I started remedying my “gluteal amnesia” (real medical term) did it become clear how little I knew about basic affairs like walking, standing and sitting (or living, for that matter). Within a week of the mandated twisting and shimmying and clam-shelling, my spine was noticeably straighter, smoother. Four weeks later and I could finally walk without pain again. It took three months more to fully rebalance my loopy musculature and break into a manageable jog — but when I did, I noticed a wondrous new power to each step and spring. My reawakened haunch muscles were doing their job.
+   > Only after I started remedying my “gluteal amnesia” (real medical term) did it become clear how little I knew about basic affairs like walking, standing and sitting (or living, for that matter). Within a week of the mandated twisting and shimmying and clam-shelling, my spine was noticeably straighter, smoother. Four weeks later and I could finally walk without pain again. It took three months more to fully rebalance my loopy musculature and break into a manageable jog — but when I did, I noticed a wondrous new power to each step and spring. My reawakened haunch muscles were doing their job.
 
     For the last two months, I have been doing a core workout formulated personally for me by (who else?) ChatGPT, with a special focus on glutes and I can feel the difference, not just in my ability, but my willingness to do things. Core strength is underrated and it isn’t just about the abs. You can have a six-pack and a weak core. I happen to have one of those.
 

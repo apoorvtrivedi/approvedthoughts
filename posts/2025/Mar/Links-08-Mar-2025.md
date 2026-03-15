@@ -3,7 +3,7 @@ title: "Links: Week of Mar 08 2025"
 date: 2025-03-08
 type: links
 description:
-tags: ["links"]
+tags: ["links", "learning", "health"]
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "Links: Week of 06 Apr 2025"
 date: 2025-04-06
 type: links
 description:
-tags: ["links"]
+tags: ["links", "ai"]
 draft: false
 ---
 1. [Myanmar Earthquake passing through Europe](https://x.com/zaibatsu/status/1905813574930382865?s=48): I experienced the shaking in Bangkok. First, I thought I was getting dizzy before the realization struck. It was kind of disorienting walking down the stairs of the building, periodically feeling dizzy. It didn't feel real, almost as if it was just a drill or a joke. 

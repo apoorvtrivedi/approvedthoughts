@@ -1,9 +1,9 @@
 ---
 title: "Spaced Repetition"
 date: 2025-01-12
-type:
-description: 
-tags: ["post"]
+type: post
+description:
+tags: ["post", "learning", "ai"]
 draft: false
 ---
 
@@ -11,9 +11,9 @@ draft: false
 
 Claude says:
 > Spaced repetition is a learning technique that involves reviewing information at gradually increasing intervals. Here's how it works:
-
+>
 > When you first learn something new, you review it fairly soon (like the next day). If you remember it well, you wait a bit longer before the next review (maybe 3 days). If you still remember it well, you extend the interval further (perhaps a week, then two weeks, then a month).
-
+>
 > The key principles behind spaced repetition are:
 >    1. The spacing effect: Information is better remembered when studying is spread out over time rather than crammed into a single session.
 >    2. The testing effect: Actively recalling information strengthens memory more effectively than passive review.
@@ -34,9 +34,9 @@ While researching this piece, I revisited Alexey Guzey’s [original post](https
 
 > Front card:
 >   saying no
-
+>
 > Back card: If I want to say no, I will stop and make sure this is not just status quo bias (coz it probably is)
-
+>
 > Status quo bias sucks. Does this one solve it? Beautifully so. Although several months had passed before it finally kicked in, the number of times I noticed saying “no” out of status quo bias, then having this thought come up and make me retroactively reverse the initial “no” is in the tens already.
 
 Will this work? I am not sure, but between how Dwarkesh is using SR and this, I feel the case for having my own SR system is growing stronger. Hopefully, I’ll have an update in a few weeks.
@@ -46,9 +46,9 @@ Will this work? I am not sure, but between how Dwarkesh is using SR and this, I 
 [Tyler Cowen’s post](https://marginalrevolution.com/marginalrevolution/2019/07/learn-like-an-athlete-knowledge-workers-should-train.html) inspired by [David Perell](https://www.perell.com/blog/learn-like-an-athlete) planted another bug in my brain.
 
 > “Athletes train. Musicians train. Performers train. But knowledge workers don’t.”
-
+>
 > Recently, one of my favorite questions to bug people with has been “What is it you do to train that is comparable to a pianist practicing scales?”
-
+>
 > If you don’t know the answer to that one, maybe you are doing something wrong or not doing enough. Or maybe you are (optimally?) not very ambitious?
 
 [Here’s his answer](https://marginalrevolution.com/marginalrevolution/2019/07/how-i-practice-at-what-i-do.html). Of course, I didn’t know the answer to that one.

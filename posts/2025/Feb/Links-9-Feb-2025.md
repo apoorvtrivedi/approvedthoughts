@@ -3,7 +3,7 @@ title: "Links: Week of 09 Feb 2025"
 date: 2025-02-09
 type: links
 description:
-tags: ["links"]
+tags: ["links", "ai", "economics"]
 draft: false
 ---
 
@@ -21,14 +21,14 @@ draft: false
 
 5. [How My Dad Reconciled His God and His Gay Son](https://www.nytimes.com/interactive/2025/02/05/opinion/coming-out-evangelical-pastor.html?smid=nytcore-ios-share): Beautiful. 
 
-    >This is me with my dad, Bill White. For decades, he has been an evangelical pastor. Before I was born, he wrote a letter to my future wife. He didn’t know what we both do now: that I’m gay. When I came out nearly 16 years later, it shook his faith and fractured his church. But it never separated us. I wanted to understand how. So I read his journals.
+   >This is me with my dad, Bill White. For decades, he has been an evangelical pastor. Before I was born, he wrote a letter to my future wife. He didn’t know what we both do now: that I’m gay. When I came out nearly 16 years later, it shook his faith and fractured his church. But it never separated us. I wanted to understand how. So I read his journals.
 
 6. [Strongly endorse](https://x.com/fchollet/status/1888381515001995685): 
-    > One of the reasons making things is satisfying is that it's a concrete demonstration of the notion that you can have some amount of control over your environment and circumstances. Passive media consumption is the opposite of that. 
+   > One of the reasons making things is satisfying is that it's a concrete demonstration of the notion that you can have some amount of control over your environment and circumstances. Passive media consumption is the opposite of that. 
 
 7. [Should you value the life of your brother more than that of a stranger?](https://www.astralcodexten.com/p/money-saved-by-canceling-programs?r=3a7g0&triedRedirect=true): 
-    >But again, this is a distraction from any real issue! Oh, you should value the life of your brother more than a stranger? You don’t say? I’m hearing this for the first time! Now let’s kill five million foreign children to fund one sixth of a broadband boondoggle.
-
-    >I am happy to “concede” that if you face a choice between saving a stranger and saving your brother, save your brother! Or your cousin, or your great-uncle, or your seven-times-great-grand-nephew-twice-removed. I’ll “concede” all of this, immediately, because it’s all fake; none of your relatives were ever in any danger. The only point of this whole style of philosophical discussion is so that you can sound wise as you say “Ah, but is not saving your brother more important than saving a complete stranger?” then sentence five million strangers to death for basically no benefit while your brother continues to be a successful real estate agent in Des Moines.
+   >But again, this is a distraction from any real issue! Oh, you should value the life of your brother more than a stranger? You don’t say? I’m hearing this for the first time! Now let’s kill five million foreign children to fund one sixth of a broadband boondoggle.
+   >
+   >I am happy to “concede” that if you face a choice between saving a stranger and saving your brother, save your brother! Or your cousin, or your great-uncle, or your seven-times-great-grand-nephew-twice-removed. I’ll “concede” all of this, immediately, because it’s all fake; none of your relatives were ever in any danger. The only point of this whole style of philosophical discussion is so that you can sound wise as you say “Ah, but is not saving your brother more important than saving a complete stranger?” then sentence five million strangers to death for basically no benefit while your brother continues to be a successful real estate agent in Des Moines.
 
     When will I be able to write so well?
