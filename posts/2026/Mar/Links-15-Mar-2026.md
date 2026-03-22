@@ -16,7 +16,7 @@ The first two stories this week are mindblowing. Huge if true, as they say.
 2. [A Fly Has Been Uploaded](https://marginalrevolution.com/marginalrevolution/2026/03/a-fly-has-been-uploaded.html): 
 
    > In 2024, the entire neuronal diagram of the fruit-fly brain–some 140,000 neurons and 50 million connections–was mapped. Later research showed that the map could be used to predict behavior. Now, Eon Systems a firm with some of the scientists involved in the fruit-fly research and with the goal of uploading a human brain has announced that they uploaded the fruit fly brain to a digital environment.
-
+   >
    > The digital fly appears to behave in the digital environment in reasonably fly like ways–this is not a simulation, the fly’s “sensors” are being activated by the digital environment and the neurons are responding.
 
    ![embed](https://www.youtube.com/watch?v=e21OUXPlnhk&t=2s)
