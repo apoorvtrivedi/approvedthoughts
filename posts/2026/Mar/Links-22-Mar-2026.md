@@ -26,7 +26,7 @@ Its advice well received, since that story did trigger some red-flags at the bac
 
    > Microsoft is admitting, at least for now, that delivering a truly compelling agentic product that enterprises are willing to pay for means abandoning their stated goal of being model agnostic; that, by extension, raises the possibility that models are not and will not be commodities, because agents require more than models.
 
-   Food for thought as my framework so far was that models will become commodities but the recent developments are pointing away from that direction. There is a lot more of interest in this artcle.
+   Food for thought as my framework so far was that models will become commodities but the recent developments are pointing away from that direction. There is a lot more of interest in this article.
 
 3. [Why Fraud Is The Boring Problem](https://om.co/2026/03/21/manufacturing-legitimacy-in-the-ai-era/): 
    
@@ -39,9 +39,7 @@ Its advice well received, since that story did trigger some red-flags at the bac
    > Nothing you own is finished. Everything exists in a state of permanent incompletion, permanently needing. Your phone needs updates, needs charging, needs storage cleared, needs passwords rotated.
 
    > Your apps need permissions reviewed, terms accepted, preferences re-configured after every update.
-
    > Your subscriptions need evaluating, need renewing, need canceling, need justifying to yourself every month when the charge appears. The purchase isn't the end of anything. It's the first day of a relationship you didn't agree to, with no clean way out.
-
    > You live in a house full of dependents.
 
 
