@@ -500,7 +500,7 @@ pre code {
 
 /* Full post page gets slightly larger body text */
 .post-full .post-content {
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-small);
     line-height: 1.8;
 }
 
