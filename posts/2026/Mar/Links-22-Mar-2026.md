@@ -13,7 +13,9 @@ draft: false
 
    > Gebru and Torres argue that these ideologies should be treated as an "interconnected and overlapping" group with shared origins. They claim these constitute a movement that allows its proponents to use the threat of human extinction to justify expensive or detrimental projects and consider it pervasive in social and academic circles in Silicon Valley centered on artificial intelligence. As such, the acronym is sometimes used to criticize a perceived belief system associated with Big Tech.
 
-A regular reader of the blog pointed this word out to me, as a message that blind cheerleading for big-tech was something for me to guard against. The link last week to the story about the Sydney Data Engineer developing a vaccine for his dogs cancer was the trigger for sharing this. Its advice well received, since that story did trigger some red-flags at the back of my mind but I over-rode those signals with little thought as I continue to be very excited by the developments in AI space. However that is no reason to throw caution and skepticism to the wind. The story has held up so far but I continue to watch with interest. 
+A regular reader of the blog pointed this word out to me, as a message that blind cheerleading for big-tech was something for me to guard against. The link last week to the story about the Sydney Data Engineer developing a vaccine for his dogs cancer was the trigger for sharing this. 
+
+Its advice well received, since that story did trigger some red-flags at the back of my mind but I over-rode those signals with little thought as I continue to be very excited by the developments in AI space. However that is no reason to throw caution and skepticism to the wind. The story has held up so far but I continue to watch with interest. 
 
 #### Links
 1. The H1B Fees: 
