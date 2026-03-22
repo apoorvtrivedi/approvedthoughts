@@ -37,9 +37,11 @@ Its advice well received, since that story did trigger some red-flags at the bac
 4. [The Last Quiet Thing](https://www.terrygodier.com/the-last-quiet-thing): 
 
    > Nothing you own is finished. Everything exists in a state of permanent incompletion, permanently needing. Your phone needs updates, needs charging, needs storage cleared, needs passwords rotated.
-
+   >
    > Your apps need permissions reviewed, terms accepted, preferences re-configured after every update.
+   >
    > Your subscriptions need evaluating, need renewing, need canceling, need justifying to yourself every month when the charge appears. The purchase isn't the end of anything. It's the first day of a relationship you didn't agree to, with no clean way out.
+   >
    > You live in a house full of dependents.
 
 
