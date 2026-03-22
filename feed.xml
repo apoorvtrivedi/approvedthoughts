@@ -10,13 +10,68 @@
         <language>en-us</language>
         <managingEditor>noreply@approvedthoughts.com (Apoorv Trivedi)</managingEditor>
         <webMaster>noreply@approvedthoughts.com (Apoorv Trivedi)</webMaster>
-        <lastBuildDate>Sun, 15 Mar 2026 21:00:51 GMT</lastBuildDate>
-        <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
+        <lastBuildDate>Sun, 22 Mar 2026 18:22:33 GMT</lastBuildDate>
+        <pubDate>Sun, 22 Mar 2026 00:00:00 GMT</pubDate>
         <generator>Approved Thoughts Static Site Generator</generator>
         <docs>https://www.rssboard.org/rss-specification</docs>
         <ttl>1440</ttl>
         <atom:link href="https://www.approvedthoughts.com/feed.xml" rel="self" type="application/rss+xml" />
         
+        <item>
+            <title><![CDATA[Links: Weeks of 22 Mar 2026]]></title>
+            <link>https://www.approvedthoughts.com/posts/2026/links-22-mar-2026.html</link>
+            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-22-mar-2026.html</guid>
+            <pubDate>Sun, 22 Mar 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Word of The Day: [TESCREAL](https://en.wikipedia.org/wiki/TESCREAL)...]]></description>
+            <content:encoded><![CDATA[<p><strong>Word of The Day</strong>: <a href="https://en.wikipedia.org/wiki/TESCREAL" target="_blank" rel="noopener">TESCREAL</a></p>
+<p><strong>Meaning</strong>: A neologism and a acronym, it stands for Transhumanism, Extropianism, Singularitarianism, (modern) Cosmism, Rationalists (the internet community, not to be confused with other uses of the term), Effective Altruism, and Longtermism. </p>
+<blockquote>
+<p>Gebru and Torres argue that these ideologies should be treated as an &quot;interconnected and overlapping&quot; group with shared origins. They claim these constitute a movement that allows its proponents to use the threat of human extinction to justify expensive or detrimental projects and consider it pervasive in social and academic circles in Silicon Valley centered on artificial intelligence. As such, the acronym is sometimes used to criticize a perceived belief system associated with Big Tech.</p>
+</blockquote>
+<p>A regular reader of the blog pointed this word out to me, as a message that blind cheerleading for big-tech was something for me to guard against. The link last week to the story about the Sydney Data Engineer developing a vaccine for his dogs cancer was the trigger for sharing this. Its advice well received, since that story did trigger some red-flags at the back of my mind but I over-rode those signals with little thought as I continue to be very excited by the developments in AI space. However that is no reason to throw caution and skepticism to the wind. The story has held up so far but I continue to watch with interest. </p>
+<h4>Links</h4>
+<ol>
+<li>The H1B Fees:</li>
+</ol>
+<div class="tweet-container" >
+  <blockquote class="twitter-tweet" data-width="350">
+    <a href="https://twitter.com/cojobrien/status/2032192078546182577" target="_blank" rel="noopener"></a>
+  </blockquote>
+</div>
+
+<ol start="2">
+<li><p><a href="https://stratechery.com/2026/agents-over-bubbles/" target="_blank" rel="noopener">Agents over Bubbles</a></p>
+<blockquote>
+<p>Microsoft is admitting, at least for now, that delivering a truly compelling agentic product that enterprises are willing to pay for means abandoning their stated goal of being model agnostic; that, by extension, raises the possibility that models are not and will not be commodities, because agents require more than models.</p>
+</blockquote>
+<p>Food for thought as my framework so far was that models will become commodities but the recent developments are pointing away from that direction. There is a lot more of interest in this artcle.</p>
+</li>
+<li><p><a href="https://om.co/2026/03/21/manufacturing-legitimacy-in-the-ai-era/" target="_blank" rel="noopener">Why Fraud Is The Boring Problem</a>: </p>
+<blockquote>
+<p>Michael Smith used AI to create music, and then used AI to create bots to get the “plays” and took the smartest technology companies, including Spotify and Amazon, who should know better, for about $8 million. He is going to jail for his crimes. It is easy to dismiss this as one-and-done fraud. It is anything but. It is an early warning of how AI will disrupt the systems that power our digital society: how culture gets discovered, how commerce gets directed, and how conversations get shaped.</p>
+</blockquote>
+<p>Will AI break all recommendation algorithms, from YouTube to Tik Tok?</p>
+</li>
+<li><p><a href="https://www.terrygodier.com/the-last-quiet-thing" target="_blank" rel="noopener">The Last Quiet Thing</a>: </p>
+<blockquote>
+<p>Nothing you own is finished. Everything exists in a state of permanent incompletion, permanently needing. Your phone needs updates, needs charging, needs storage cleared, needs passwords rotated.</p>
+<p>&nbsp;</p>
+<p>Your apps need permissions reviewed, terms accepted, preferences re-configured after every update.</p>
+<p>&nbsp;</p>
+<p>Your subscriptions need evaluating, need renewing, need canceling, need justifying to yourself every month when the charge appears. The purchase isn&#39;t the end of anything. It&#39;s the first day of a relationship you didn&#39;t agree to, with no clean way out.</p>
+<p>&nbsp;</p>
+<p>You live in a house full of dependents.</p>
+</blockquote>
+</li>
+<li><p>More <a href="https://simonwillison.net/2026/Mar/16/coding-agents-for-data-analysis/#atom-everything" target="_blank" rel="noopener">guides</a> and <a href="https://jelinbra.substack.com/p/scattered-focus-d3a" target="_blank" rel="noopener">ideas</a> for how to use LLMs.</p>
+</li>
+</ol>]]></content:encoded>
+            <author>noreply@approvedthoughts.com (Apoorv Trivedi)</author>
+            <category><![CDATA[links]]></category>
+            <category><![CDATA[ai]]></category>
+            <category><![CDATA[medicine]]></category>
+        </item>
+
         <item>
             <title><![CDATA[Links: Weeks of 15 Mar 2026]]></title>
             <link>https://www.approvedthoughts.com/posts/2026/links-15-mar-2026.html</link>
@@ -1177,75 +1232,6 @@ The sector-level analysis of which business models are vulnerable is genuinely g
             <category><![CDATA[india]]></category>
             <category><![CDATA[health]]></category>
             <category><![CDATA[economics]]></category>
-        </item>
-
-        <item>
-            <title><![CDATA[Links: Week of 04 Oct 2025]]></title>
-            <link>https://www.approvedthoughts.com/posts/2025/links-04-oct-2025.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2025/links-04-oct-2025.html</guid>
-            <pubDate>Sat, 04 Oct 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[1. [Your Review: The Russo-Ukrainian War - Astral Codex Ten](https://www.astralcodexten.com/p/your-review-the-russo-ukrainian-war): 
-   > One day as I...]]></description>
-            <content:encoded><![CDATA[<ol>
-<li><p><a href="https://www.astralcodexten.com/p/your-review-the-russo-ukrainian-war" target="_blank" rel="noopener">Your Review: The Russo-Ukrainian War - Astral Codex Ten</a>: </p>
-<blockquote>
-<p>One day as I was being lectured by a female HR representative for leaving my (cloth, non-medical) mask off for too long during lunch, I could barely hear what she was saying. All I could think of were the uncounted men across untold generations who had lived and died as warriors, with all the honor and pain that entailed. I thought of how men in Ukraine right now lived a modern version of that, while I allowed myself to be subject to the feminized safteyist ideology of everyday civilization.</p>
-<p>The spiritual offensiveness of this contrast hit me like a ton of bricks, more vividly than ever. At that moment I silently made my final decision. I wasn’t going to wait around to hear back from the Ukrainian Government. It was time, in the immortal words of an ISIS recruiter on Twitter to “put down the chicken wings n come to jihad, bro”.</p>
-</blockquote>
-<p> The entire <a href="https://www.astralcodexten.com/p/vote-in-the-2025-non-book-review" target="_blank" rel="noopener">non-book review contest</a> at <a href="https://www.astralcodexten.com/" target="_blank" rel="noopener">Astral Codex Ten</a> has been fantastic. </p>
-</li>
-<li><p><a href="https://scottsumner.substack.com/p/subjective-time" target="_blank" rel="noopener">Subjective Time</a>: </p>
-<blockquote>
-<p>Like most people, I’ve noticed that time seems to speed up as one gets older. I moved to California in 2017, and the past 8 years seemed to pass by very quickly. I feel like time is moving twice as fast as when I was 35. Even as a 16-year old high school student I had already noticed that those “long summer vacations” seemed to pass by at twice the speed as when I was only 8 years old.</p>
-<p>In mathematical terms, subjective time seems roughly proportional to the inverse of one’s age. (At least since age 3 or 4, before that I recall nothing.) At age N, each lived year represents 1/nth of our life. If this is true, then this has some fairly startling implications.</p>
-</blockquote>
-</li>
-<li><p><a href="https://x.com/leading_nowhere/status/1973642925885325336" target="_blank" rel="noopener">Jane Goodall: A life well lived, can anyone ask for more</a></p>
-</li>
-</ol>
-<div class="tweet-container" >
-  <blockquote class="twitter-tweet" data-width="350">
-    <a href="https://twitter.com/leading_nowhere/status/1973642925885325336" target="_blank" rel="noopener"></a>
-  </blockquote>
-</div>
-
-<ol start="4">
-<li><a href="https://x.com/Noahpinion/status/1649686441012895747" target="_blank" rel="noopener">Democracy vs. Dictatorship</a></li>
-</ol>
-<div class="tweet-container" >
-  <blockquote class="twitter-tweet" data-width="350">
-    <a href="https://twitter.com/Noahpinion/status/1649820013522735104" target="_blank" rel="noopener"></a>
-  </blockquote>
-</div>
-
-<ol start="5">
-<li><p><a href="https://www.atvbt.com/21-facts-about-throwing-good-parties/" target="_blank" rel="noopener">21 Facts About Throwing Good Parties</a>: </p>
-<blockquote>
-<p>Let me repeat that: Parties are a public service, you’re doing people a favor by throwing them. Someone might meet their new best friend or future lover at your gathering. In the short term, lovely people may feel less lonely, and that&#39;s thanks to you. In the long term, whole new children may ultimately exist in the world because you bothered to throw a party. Throwing parties is stressful for most people, but a great kindness to the community, so genuinely pat yourself on the back for doing this.</p>
-</blockquote>
-<p> Not so much facts, as very good opinions, but still. </p>
-</li>
-<li><p><a href="https://www.approvedthoughts.com/https://marginalrevolution.com/marginalrevolution/2025/10/new-data-on-social-media.html" target="_blank" rel="noopener">New data on social media (MR)</a>: </p>
-<blockquote>
-<p>It has gone largely unnoticed that time spent on social media peaked in 2022 and has since gone into steady decline, according to an analysis of the online habits of 250,000 adults in more than 50 countries carried out for the FT by the digital audience insights company GWI. And this is not just the unwinding of a bump in screen time during pandemic lockdowns — usage has traced a smooth curve up and down over the past decade-plus.</p>
-</blockquote>
-<p> Societies, generations tend to develop immunity from toxic trends over time. </p>
-</li>
-<li><p><a href="https://www.approvedthoughts.com/https://marginalrevolution.com/marginalrevolution/2025/10/do-llms-favor-outputs-created-by-themselves.html" target="_blank" rel="noopener">Do LLMs favor outputs created by themselves? (MR)</a></p>
-<blockquote>
-<p>It has gone largely unnoticed that time spent on social media peaked in 2022 and has since gone into steady decline, according to an analysis of the online habits of 250,000 adults in more than 50 countries carried out for the FT by the digital audience insights company GWI. And this is not just the unwinding of a bump in screen time during pandemic lockdowns — usage has traced a smooth curve up and down over the past decade-plus.</p>
-</blockquote>
-<p> Is it surprising that a system trained on human output is tribal, favoring in-group over out-group?</p>
-</li>
-<li><p><a href="https://blog.samaltman.com/sora-update-number-1" target="_blank" rel="noopener">Sora update #1</a>: </p>
-<blockquote>
-<p>Please expect a very high rate of change from us; <strong>it reminds me of the early days of ChatGPT</strong>. We will make some good decisions and some missteps, but we will take feedback and try to fix the missteps very quickly. We plan to do our iteration on different approaches in Sora, but then apply it consistently across our products.</p>
-</blockquote>
-</li>
-</ol>]]></content:encoded>
-            <author>noreply@approvedthoughts.com (Apoorv Trivedi)</author>
-            <category><![CDATA[links]]></category>
-            <category><![CDATA[ai]]></category>
         </item>
     </channel>
 </rss>
