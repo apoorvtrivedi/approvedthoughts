@@ -3,7 +3,7 @@ title: "Links: Weeks of 22 Mar 2026"
 date: 2026-03-22
 type: links
 description: 
-tags: ["links", "ai", "medicine"]
+tags: ["links", "ai", "policy"]
 draft: false
 ---
 
