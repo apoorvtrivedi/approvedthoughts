@@ -10,7 +10,7 @@
         <language>en-us</language>
         <managingEditor>noreply@approvedthoughts.com (Apoorv Trivedi)</managingEditor>
         <webMaster>noreply@approvedthoughts.com (Apoorv Trivedi)</webMaster>
-        <lastBuildDate>Sun, 12 Apr 2026 11:47:59 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 12 Apr 2026 11:50:28 GMT</lastBuildDate>
         <pubDate>Sun, 12 Apr 2026 00:00:00 GMT</pubDate>
         <generator>Approved Thoughts Static Site Generator</generator>
         <docs>https://www.rssboard.org/rss-specification</docs>
@@ -85,6 +85,7 @@
             <author>noreply@approvedthoughts.com (Apoorv Trivedi)</author>
             <category><![CDATA[links]]></category>
             <category><![CDATA[ai]]></category>
+            <category><![CDATA[medicine]]></category>
         </item>
 
         <item>

@@ -3,7 +3,7 @@ title: "Links: Weeks of 12 Apr 2026"
 date: 2026-04-12
 type: links
 description: 
-tags: ["links", "ai"]
+tags: ["links", "ai", "medicine"]
 draft: false
 ---
 
