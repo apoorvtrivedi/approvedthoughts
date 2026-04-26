@@ -10,7 +10,7 @@
         <language>en-us</language>
         <managingEditor>noreply@approvedthoughts.com (Apoorv Trivedi)</managingEditor>
         <webMaster>noreply@approvedthoughts.com (Apoorv Trivedi)</webMaster>
-        <lastBuildDate>Sun, 26 Apr 2026 02:39:28 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 26 Apr 2026 02:43:50 GMT</lastBuildDate>
         <pubDate>Sat, 25 Apr 2026 00:00:00 GMT</pubDate>
         <generator>Approved Thoughts Static Site Generator</generator>
         <docs>https://www.rssboard.org/rss-specification</docs>
@@ -47,7 +47,7 @@
 <p>when something becomes dramatically cheaper to use, we don&#39;t use less of it. We find a million new uses for it — because applications that were previously unthinkable become affordable. </p>
 </blockquote>
 <p>The intuition here is that if a company was willing to pay $100K for a software engineer, it was because the average engineer was generating more than that much in value for the company. If the same engineer can now be 10x as productive i.e. if they can now generate $1m in value for the company, would the company hire more or less software engineers? Unless you assume that there is only a fixed amount of work to be done, they would hire more. Historically that assumption has been wrong. </p>
-<p>This a &quot;paper&quot; but reads very much like an article. Recommended. </p>
+<p>This is a &quot;paper&quot; but reads very much like an article. Recommended. </p>
 </li>
 <li><p><a href="https://simonwillison.net/2026/Apr/22/bobby-holley/#atom-everything" target="_blank" rel="noopener">Is Mythos for real? It seems so</a>: </p>
 <blockquote>
@@ -59,19 +59,21 @@
 <p>But soon, the entire debate over internet anonymity will be as anachronistic as an iPod Touch. That’s because Claude Opus 4.7 is here, and last week, I discovered it could identify me from text I had never published, text from when I was in high school, text from genres I have never publicly written in. And if it can identify me, soon, it will be able to identify many of you.</p>
 </blockquote>
 </li>
-<li><p><a href="https://simonwillison.net/2026/Apr/25/why-are-you-like-this/#atom-everything" target="_blank" rel="noopener">Why are you like this</a>:</p>
+<li><p><a href="https://simonwillison.net/2026/Apr/25/why-are-you-like-this/#atom-everything" target="_blank" rel="noopener">Why are you like this</a>: </p>
+<blockquote>
+</blockquote>
 </li>
 </ol>
 <div class="tweet-container" >
   <blockquote class="twitter-tweet" data-width="350">
-    <a href="https://twitter.com/scottjla/status/2047535371664457863?s=20" target="_blank" rel="noopener"></a>
+    <a href="https://twitter.com/scottjla/status/2047535371664457863" target="_blank" rel="noopener"></a>
   </blockquote>
 </div>
+   > 
+   > I checked to confirm that the model (ChatGPT Images 2.0) added the "WHY ARE YOU LIKE THIS" sign of its own accord and it did - the prompt Scott used was:
+   >  
+   > Create an image of a horse riding an astronaut, where the astronaut is riding a pelican that is riding a bicycle. It looks very chaotic but they all just manage to balance on top of each other
 
-<blockquote>
-<p>I checked to confirm that the model (ChatGPT Images 2.0) added the &quot;WHY ARE YOU LIKE THIS&quot; sign of its own accord and it did - the prompt Scott used was:</p>
-<p>Create an image of a horse riding an astronaut, where the astronaut is riding a pelican that is riding a bicycle. It looks very chaotic but they all just manage to balance on top of each other</p>
-</blockquote>
 <p>   Freaky.</p>
 <ol start="8">
 <li>This will be me.</li>

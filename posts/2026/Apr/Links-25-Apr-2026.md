@@ -25,7 +25,7 @@ draft: false
    
    The intuition here is that if a company was willing to pay $100K for a software engineer, it was because the average engineer was generating more than that much in value for the company. If the same engineer can now be 10x as productive i.e. if they can now generate $1m in value for the company, would the company hire more or less software engineers? Unless you assume that there is only a fixed amount of work to be done, they would hire more. Historically that assumption has been wrong. 
 
-   This a "paper" but reads very much like an article. Recommended. 
+   This is a "paper" but reads very much like an article. Recommended. 
 
 5. [Is Mythos for real? It seems so](https://simonwillison.net/2026/Apr/22/bobby-holley/#atom-everything): 
    > As part of our continued collaboration with Anthropic, we had the opportunity to apply an early version of Claude Mythos Preview to Firefox. This week’s release of Firefox 150 includes fixes for 271 vulnerabilities identified during this initial evaluation. [...]
@@ -35,9 +35,9 @@ draft: false
    > But soon, the entire debate over internet anonymity will be as anachronistic as an iPod Touch. That’s because Claude Opus 4.7 is here, and last week, I discovered it could identify me from text I had never published, text from when I was in high school, text from genres I have never publicly written in. And if it can identify me, soon, it will be able to identify many of you.
 
 7. [Why are you like this](https://simonwillison.net/2026/Apr/25/why-are-you-like-this/#atom-everything): 
-   
-   ![embed](https://x.com/scottjla/status/2047535371664457863?s=20)
-
+   >
+   > ![embed](https://x.com/scottjla/status/2047535371664457863)
+   > 
    > I checked to confirm that the model (ChatGPT Images 2.0) added the "WHY ARE YOU LIKE THIS" sign of its own accord and it did - the prompt Scott used was:
    >  
    > Create an image of a horse riding an astronaut, where the astronaut is riding a pelican that is riding a bicycle. It looks very chaotic but they all just manage to balance on top of each other
