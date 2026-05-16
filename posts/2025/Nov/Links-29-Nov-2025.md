@@ -26,7 +26,21 @@ draft: false
    > A global group of researchers was unable to read the vote tally, after an official lost one of three secret code keys needed to unlock a hyper-secure election system.
 
 4. [AI in Education?](https://x.com/poezhao0605/status/1993525043415191566?s=20): 
-    ![embed](https://x.com/poezhao0605/status/1993525043415191566?s=20)
+    ::: tweet
+    url: https://twitter.com/poezhao0605/status/1993525043415191566
+    author: Poe Zhao
+    handle: poezhao0605
+    date: Wed Nov 26 03:39:42 +0000 2025
+    image: https://pbs.twimg.com/media/G6psbuVaEAAyvbr.jpg
+    body: |
+      😂 Chinese parents are finding a new use for AI assistants. They're deploying them as homework monitors.
+      
+      Here's the setup with ByteDance's Doubao AI. Parents start a video call and aim the camera at their child. One simple prompt: "Doubao, watch my kid. Remind him when he loses focus or his posture slips."
+      
+      The AI tutor goes to work. "Stop playing with your pen. Focus on homework." "Sit up straight. Your posture is off." "No falling asleep at the desk. Sit up and study." "Don't lean on your hand or chew your pen."
+      
+      Doubao isn't alone. Other AI apps offer similar video call features.
+    :::
 
 5. [Try a ‘fart walk’ to ease the pressure after that big Thanksgiving meal](https://wapo.st/3Xt3GNZ): Nominate for the Ignobel Prize.
    > Walking to relieve bloating and gas had long been advocated by doctors, but for years, we had no real experimental proof that it works. So in the mid-2000s, researchers from Barcelona decided to end the speculation and test whether even mild exercise could propel gas forward … and outward.
@@ -39,7 +53,15 @@ draft: false
    >
    > So after a fart walk, you’ll be better off than you started.
 
-    ![embed](https://x.com/dieworkwear/status/1994646553391501712?s=20)
+    ::: tweet
+    url: https://twitter.com/dieworkwear/status/1994646553391501712
+    author: derek guy
+    handle: dieworkwear
+    date: Sat Nov 29 05:56:11 +0000 2025
+    image: https://pbs.twimg.com/media/G65obxIbEAE5o6X.jpg
+    body: |
+      imagine posing for a photographer friend who sells your image to istock and a year later, you see this is what the washington post has done with your image
+    :::
 
 
 

@@ -33,7 +33,17 @@ draft: false
 
 4. Mad respect for whoever decided that there was a business opportunity here and then made it happen.  
 
-    ![embed](https://x.com/junkbondanalyst/status/1954520550362988867)
+    ::: tweet
+    url: https://twitter.com/junkbondanalyst/status/1954520550362988867
+    author: JUNK BOND ANALYST
+    handle: junkbondanalyst
+    date: Sun Aug 10 12:29:47 +0000 2025
+    image: https://pbs.twimg.com/media/Gx_aFMQX0AAVsO_.jpg
+    body: |
+      First time hearing about this for me. There’s platforms for buying someone else’s non-refundable vacations at a discount. 
+      
+      There’s always a trade to do.
+    :::
    
 
 5. [Space Rock That Punched Through Roof Almost Struck Resident (NYT)](https://www.nytimes.com/2025/08/11/science/meteor-georgia-older-than-earth.html): 
@@ -45,13 +55,43 @@ draft: false
 
 7. The ratio of members!
     
-    ![embed](https://x.com/reddit_lies/status/1954926000585716067)
+    ::: tweet
+    url: https://twitter.com/reddit_lies/status/1954926000585716067
+    author: Reddit Lies
+    handle: reddit_lies
+    date: Mon Aug 11 15:20:53 +0000 2025
+    image: https://pbs.twimg.com/media/GyFKnUVWQAABC23.png
+    body: |
+      Dating AI is an almost exclusively a female trait fyi.
+      
+      The movie "Her" should have been about a woman.
+    :::
 
 8.  Great thread from a master. Love how he says so much without saying anything. See the photos in the third tweet for a masterpiece (as he puts it, the 3rd and the 4th slide.). 
 
-    ![embed](https://x.com/dieworkwear/status/1955756224030630264)
+    ::: tweet
+    url: https://twitter.com/dieworkwear/status/1955756224030630264
+    author: derek guy
+    handle: dieworkwear
+    date: Wed Aug 13 22:19:54 +0000 2025
+    image: https://pbs.twimg.com/media/GyQWJlza4AENyeC.jpg
+    body: |
+      Have you ever noticed that people dressed better in the past? Even in the summer, when it was scorching hot?
+      
+      Why is this? 🧵
+    :::
 
-    ![embed](https://x.com/dieworkwear/status/1955756255668265094)
+    ::: tweet
+    url: https://twitter.com/dieworkwear/status/1955756255668265094
+    author: derek guy
+    handle: dieworkwear
+    date: Wed Aug 13 22:20:02 +0000 2025
+    image: https://pbs.twimg.com/media/GyQoGb9a4AMH0Ob.jpg
+    body: |
+      Even the details had shape: a camp collar, boat neck, or button-down. 
+      
+      Over the years, these details have shrank, if not disappeared altogether. Compare the 3rd and 4th slides. One button-down collar has a full roll; the other looks like its apologizing for its own existence.
+    :::
 
 9. [The Infinite Well: How Innovation Keeps Water Flowing](https://newsletter.humanprogress.org/p/the-infinite-well-how-innovation): 
    > Solutions from experts follow a familiar pattern, claiming that the only way to avert a crisis is to adopt radical social and behavioral changes, driven by moral proselytizing, government intervention, or both, to save the water supply. Environmentalists urge people to replace old toilets with low-flow models, avoid running faucets while brushing their teeth or washing dishes, and switch to eating less water-intensive foods. Meanwhile, activists pressure elected officials to impose usage restrictions, ban certain crops in arid regions, and regulate everything from swimming pools to car washes.
@@ -60,4 +100,13 @@ draft: false
 
     The same principles apply to many other things too. 
 
-10. ![embed](https://x.com/therealcorpbro/status/1953558541929001060)
+10.
+   ::: tweet
+   url: https://twitter.com/TheRealCorpBro/status/1953558541929001060
+   author: Ross Pomerantz
+   handle: TheRealCorpBro
+   date: Thu Aug 07 20:47:06 +0000 2025
+   image: https://pbs.twimg.com/amplify_video_thumb/1953558375465463810/img/s-o_t0Xg-L9kqsbF.jpg
+   body: |
+     Product review of my 4 month old son
+   :::

@@ -1,5 +1,5 @@
 ---
-title: "Links: Weeks of 22 Mar 2026"
+title: "Links: Week of 22 Mar 2026"
 date: 2026-03-22
 type: links
 description: 
@@ -20,7 +20,17 @@ Its advice well received, since that story did trigger some red-flags at the bac
 #### Links
 1. The H1B Fees: 
     
-    ![embed](https://x.com/cojobrien/status/2032192078546182577)
+    ::: tweet
+    url: https://twitter.com/cojobrien/status/2032192078546182577
+    author: Connor O’Brien
+    handle: cojobrien
+    date: Thu Mar 12 20:28:42 +0000 2026
+    image: https://pbs.twimg.com/media/HDPK9ITWkAAeJ2N.png
+    body: |
+      85 people have paid the $100,000 H-1B fee so far, totaling $8.5 million in revenue. But fee revenue from H-1B apps abroad is down $28 million.
+      
+      So the fee — justified by a paper claiming the revenue-maximizing fee was >$100,000! — appears to have lost the government $20 million.
+    :::
 
 2. [Agents over Bubbles](https://stratechery.com/2026/agents-over-bubbles/)
 

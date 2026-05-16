@@ -30,5 +30,22 @@ draft: false
    >
    > It's so over.
 
-    ![embed](https://x.com/basedlayer/status/1979473779131625856)
+    ::: tweet
+    url: https://twitter.com/basedlayer/status/1979473779131625856
+    author: Fernando Nikolić 🇦🇷 🟠
+    handle: basedlayer
+    date: Sat Oct 18 09:05:00 +0000 2025
+    body: |
+      Everyone under 30 is prematurely old (worried about savings, career, FIRE).
+      
+      Everyone over 50 is desperately young (Burning Man, psychedelics).
+      
+      My theory: Information abundance aged the young by showing them all future problems all at once.
+      
+      Information abundance also made the old young by showing them all missed experiences all at once.
+      
+      So now Gen Z talks like retirement planners and boomers act like teenagers.
+      
+      It's so over.
+    :::
 

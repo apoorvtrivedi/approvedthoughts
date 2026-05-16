@@ -20,11 +20,27 @@ draft: false
    > In mathematical terms, subjective time seems roughly proportional to the inverse of one’s age. (At least since age 3 or 4, before that I recall nothing.) At age N, each lived year represents 1/nth of our life. If this is true, then this has some fairly startling implications.
 
 3. [Jane Goodall: A life well lived, can anyone ask for more](https://x.com/leading_nowhere/status/1973642925885325336)
-    ![embed](https://x.com/leading_nowhere/status/1973642925885325336)
+    ::: tweet
+    url: https://twitter.com/leading_nowhere/status/1973642925885325336
+    author: Leading Nowhere
+    handle: leading_nowhere
+    date: Thu Oct 02 06:55:16 +0000 2025
+    body: |
+      A life well lived, can anyone ask for more.
+    :::
 
 4. [Democracy vs. Dictatorship](https://x.com/Noahpinion/status/1649686441012895747)
     
-    ![embed](https://x.com/Noahpinion/status/1649820013522735104)
+    ::: tweet
+    url: https://twitter.com/Noahpinion/status/1649820013522735104
+    author: Noah Smith 🐇🇺🇸🇺🇦🇹🇼
+    handle: Noahpinion
+    date: Sat Apr 22 16:58:38 +0000 2023
+    body: |
+      What's also kind of nuts about this is how spiky China's pyramid is, compared to how smooth India's is.
+      
+      Those spikes are the legacy of the Great Leap Forward famine and the One-Child Policy.
+    :::
 
 5. [21 Facts About Throwing Good Parties](https://www.atvbt.com/21-facts-about-throwing-good-parties/): 
    > Let me repeat that: Parties are a public service, you’re doing people a favor by throwing them. Someone might meet their new best friend or future lover at your gathering. In the short term, lovely people may feel less lonely, and that's thanks to you. In the long term, whole new children may ultimately exist in the world because you bothered to throw a party. Throwing parties is stressful for most people, but a great kindness to the community, so genuinely pat yourself on the back for doing this.

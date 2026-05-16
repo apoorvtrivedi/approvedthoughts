@@ -8,7 +8,15 @@ draft: false
 ---
 
 1. [5'11"?](https://x.com/statisticurban/status/1982995821655405017):
-    ![embed](https://x.com/statisticurban/status/1982995821655405017)
+    ::: tweet
+    url: https://twitter.com/StatisticUrban/status/1982995821655405017
+    author: Hunter📈🌈📊
+    handle: StatisticUrban
+    date: Tue Oct 28 02:20:20 +0000 2025
+    image: https://pbs.twimg.com/media/G4UEHVnbEAAmJRl.jpg
+    body: |
+      Objectively one of the funnier graphs out there. Measured vs. reported male height.
+    :::
 
 2. [Pumpkin Stylists Are Making a Killing This Fall](https://www.wsj.com/style/pumpkinscapers-are-making-a-killing-this-fall-ac74baa8): 
    > Her most popular package today is her smallest, which costs $325, comes with about 20 pumpkins and takes her six minutes to assemble into a display. The second-most popular is the biggest, at $1,350; that one takes her about 30 minutes. She can do the installations in the dark, wearing a headlamp. 

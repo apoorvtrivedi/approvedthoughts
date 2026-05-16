@@ -242,134 +242,117 @@ async function generateArchivePage(posts) {
     const template = getBaseTemplate();
     const rootPath = '';
     const { archive, tagCounts } = organizePostsForArchive(posts);
-    
+
     // Sort years (newest first)
     const sortedYears = Object.keys(archive).sort((a, b) => b - a);
-    
+
     // Sort tags by count (most used first)
     const sortedTags = Object.entries(tagCounts)
         .sort(([,a], [,b]) => b - a)
         .map(([tag, count]) => ({ tag, count }));
-    
-    // Calculate stats
+
     const totalPosts = posts.length;
     const totalTags = sortedTags.length;
     const totalYears = sortedYears.length;
-    
-    // Generate year sections
-    const yearSections = sortedYears.map(year => {
+    const totalCategories = new Set(posts.map(p => p.type)).size;
+
+    // Generate collapsible <details> year sections
+    const yearSections = sortedYears.map((year, i) => {
         const yearPosts = Object.values(archive[year]).flat();
         const yearPostCount = yearPosts.length;
-        
-        // Sort months within year (newest first)
+
         const months = Object.keys(archive[year]);
-        const sortedMonths = months.sort((a, b) => {
-            return new Date(`${b} 1, ${year}`) - new Date(`${a} 1, ${year}`);
-        });
-        
-        const monthSections = sortedMonths.map(month => {
-            const monthPosts = archive[year][month];
-            const monthPostCount = monthPosts.length;
-            const monthId = `month-${year}-${month.replace(/\s+/g, '-').toLowerCase()}`;
-            
-            // Sort posts within month (newest first)
-            const sortedPosts = monthPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
-            
-            const postList = sortedPosts.map(post => `
-                <li class="archive-post-item">
-                    <a href="${rootPath}${post.url}" class="archive-post-link">
-                        <span class="archive-post-date">${formatDateArchive(post.date)}</span>
-                        <span class="archive-post-title">${post.title}</span>
-                    </a>
-                </li>`).join('');
-            
+        const sortedMonths = months.sort((a, b) =>
+            new Date(`${b} 1, ${year}`) - new Date(`${a} 1, ${year}`)
+        );
+
+        const monthBlocks = sortedMonths.map(month => {
+            const monthPosts = archive[year][month]
+                .slice()
+                .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+            const items = monthPosts.map(post => {
+                const slug = `${post.title.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()}`;
+                return `
+                <li data-title="${escapeAttr(post.title.toLowerCase())}">
+                    <span class="date">${formatDateArchive(post.date)}</span>
+                    <a href="${rootPath}${post.url}"><span class="ttl">${post.title}</span></a>
+                    <span class="type">${typeLabel(post.type)}</span>
+                </li>`;
+            }).join('');
+
             return `
-                <div class="archive-month-section">
-                    <button class="archive-month-toggle" data-target="${monthId}" aria-expanded="false">
-                        <span class="toggle-icon">▶</span>
-                        <span class="month-title">${month} ${year}</span>
-                        <span class="post-count-badge">${monthPostCount} post${monthPostCount !== 1 ? 's' : ''}</span>
-                    </button>
-                    <div class="archive-section-content" id="${monthId}" data-tags='${JSON.stringify(sortedPosts.flatMap(p => p.tags || []))}'>
-                        <ul class="archive-post-list">
-                            ${postList}
-                        </ul>
-                    </div>
-                </div>`;
+            <div class="ar-month">${month}</div>
+            <ul class="ar-list">${items}
+            </ul>`;
         }).join('');
-        
+
+        // First year open by default
+        const openAttr = i === 0 ? ' open' : '';
+
         return `
-            <div class="archive-year-section">
-                <button class="archive-year-toggle" data-target="year-${year}" aria-expanded="false">
-                    <span class="year-indicator">${year}</span>
-                    <span class="post-count-badge">${yearPostCount} post${yearPostCount !== 1 ? 's' : ''}</span>
-                    <span class="toggle-icon">▶</span>
-                </button>
-                <div class="archive-section-content" id="year-${year}">
-                    ${monthSections}
-                </div>
-            </div>`;
+        <details class="ar-year-block"${openAttr}>
+            <summary>${year}<span class="ar-year-count">${yearPostCount} post${yearPostCount !== 1 ? 's' : ''}</span></summary>
+            <div class="ar-year-body">${monthBlocks}
+            </div>
+        </details>`;
     }).join('');
-    
-    // Generate tag pills
-    const tagPills = sortedTags.map(({ tag, count }) => `
-        <button class="tag-pill" data-tag="${tag}">
-            <span>${tag}</span>
-            <span class="tag-count">${count}</span>
-        </button>`).join('');
-    
+
+    // Tag cloud — size by frequency
+    const maxCount = sortedTags.length ? sortedTags[0].count : 1;
+    const tagCloud = sortedTags.map(({ tag, count }) => {
+        const sizeClass = count >= maxCount * 0.6 ? 'bigger' : count >= maxCount * 0.35 ? 'big' : '';
+        const tagSlug = tag.toLowerCase().replace(/\s+/g, '-');
+        return `<a href="${rootPath}tags/${tagSlug}.html" class="${sizeClass}">${tag} <span class="n">${count}</span></a>`;
+    }).join('\n            ');
+
+    // Inline search script (< 30 lines, no library)
+    const searchScript = `
+<script>
+(function(){
+  var inp = document.getElementById('ar-search');
+  if (!inp) return;
+  function apply(q){
+    q = (q || '').toLowerCase().trim();
+    document.querySelectorAll('.ar-list li').forEach(function(li){
+      li.hidden = q && !li.dataset.title.includes(q);
+    });
+    document.querySelectorAll('.ar-year-block').forEach(function(det){
+      var visible = det.querySelectorAll('.ar-list li:not([hidden])').length;
+      det.toggleAttribute('data-empty', q && !visible);
+      if (q && visible && !det.open) det.open = true;
+    });
+  }
+  var params = new URLSearchParams(window.location.search);
+  var initial = params.get('q');
+  if (initial) { inp.value = initial; apply(initial); }
+  inp.addEventListener('input', function(){ apply(inp.value); });
+})();
+</script>`;
+
     const archiveContent = `
-                <!-- Main Content Area -->
-                <main id="main" class="main-content">
-                    <div class="archive-page">
-                        <header class="archive-header">
-                            <h1 class="archive-title">Archives</h1>
-                            <p class="archive-description">Browse all posts by year, month, or filter by topic</p>
-                        </header>
-                        
-                        <!-- Enhanced Search -->
-                        <div class="search-container">
-                            <input type="search" class="search-input" placeholder="Search posts by title or content..." aria-label="Search posts">
-                            <div class="search-icon">🔍</div>
-                        </div>
-                        
-                        <!-- Stats Overview -->
-                        <div class="archive-stats">
-                            <div class="stat-item">
-                                <span class="stat-number">${totalPosts}</span>
-                                <span class="stat-label">Total Posts</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">${totalTags}</span>
-                                <span class="stat-label">Categories</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">${totalYears}</span>
-                                <span class="stat-label">Year${totalYears !== 1 ? 's' : ''} Active</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Tag Filter Bar -->
-                        <div class="tag-filter-bar">
-                            <div class="filter-label">
-                                Filter by Topic
-                            </div>
-                            <div class="tag-pills">
-                                <button class="tag-pill active" data-tag="">
-                                    <span>All Posts</span>
-                                </button>
-                                ${tagPills}
-                            </div>
-                        </div>
-                        
-                        <!-- Archive Timeline -->
-                        <div class="archive-timeline">
-                            ${yearSections}
-                        </div>
-                    </div>
-                </main>
-                
-                ${generateSidebar(posts, rootPath)}`;
+        <div class="at-body archive">
+            <div>
+                <h1 class="ar-h1">Archives</h1>
+                <div class="ar-search">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="20" y1="20" x2="16.5" y2="16.5"/></svg>
+                    <input id="ar-search" type="search" placeholder="Search posts, links and notes…" aria-label="Search archive">
+                </div>
+                <div class="ar-stats">
+                    <div class="stat"><span class="n">${totalYears}</span><span class="l">Years</span></div>
+                    <div class="stat"><span class="n">${totalPosts}</span><span class="l">Posts</span></div>
+                    <div class="stat"><span class="n">${totalCategories}</span><span class="l">Categories</span></div>
+                    <div class="stat"><span class="n">${totalTags}</span><span class="l">Tags</span></div>
+                </div>
+                <div class="ar-section-label">Common tags</div>
+                <div class="ar-tagcloud">
+                    ${tagCloud}
+                </div>
+                <div class="ar-section-label">By year</div>
+                ${yearSections}
+            </div>
+        </div>
+        ${searchScript}`;
     
     const html = template
         .replace(/{{title}}/g, `Archives - ${config.siteTitle}`)
@@ -380,9 +363,10 @@ async function generateArchivePage(posts) {
         .replace('{{url}}', `${config.siteUrl}/archives.html`)
         .replace('{{homeActive}}', '')
         .replace('{{aboutActive}}', '')
-        .replace('{{archivesActive}}', 'active');
+        .replace('{{archivesActive}}', 'class="active"');
     
-    await fs.writeFile('archives.html', html);
+    const relHtml = relativizeAbsolutePaths(html, rootPath);
+    await fs.writeFile('archives.html', relHtml);
     console.log('  ✓ Generated: archives.html');
 }
 
@@ -391,230 +375,330 @@ async function generateArchivePage(posts) {
 // 5. TEMPLATE FUNCTIONS
 // ====================================
 
+// Rewrite site-internal absolute paths (src="/foo", href="/foo") so the
+// generated HTML works when opened directly via file:// or served from a
+// subdirectory. Protocol-relative ("//cdn.example.com") and fragment ("#x")
+// hrefs are untouched.
+function relativizeAbsolutePaths(html, rootPath) {
+  return html.replace(/(\s(?:src|href|data-url)=["'])\/(?!\/)/g, '$1' + rootPath);
+}
+
+// SVG icon for RSS feed (reused across header, footer, subscribe sidebar)
+const RSS_SVG = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3a16 16 0 0 1 16 16h-3A13 13 0 0 0 5 6V3zm0 7a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm1.5 7.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>`;
+
 // Get base template
 function getBaseTemplate() {
-    return `<!DOCTYPE html>
+    return `<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{description}}">
-    
     <title>{{title}}</title>
-    
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="{{rootPath}}css/style.css?v=1.3">
-    <link rel="stylesheet" href="{{rootPath}}css/responsive.css?v=1.3">
-    
-    <!-- Favicon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{rootPath}}css/style.css?v=2.0">
     <link rel="icon" type="image/x-icon" href="{{rootPath}}assets/icons/favicon.ico">
-    
-    <!-- RSS Feed -->
     <link rel="alternate" type="application/rss+xml" title="${config.siteTitle} RSS Feed" href="{{rootPath}}feed.xml">
     <link rel="alternate" type="application/feed+json" title="${config.siteTitle} JSON Feed" href="{{rootPath}}feed.json">
-
-    <!-- Sitemap -->
     <link rel="sitemap" type="application/xml" title="Sitemap" href="{{rootPath}}sitemap.xml">
-
-    
-    <!-- Open Graph Tags -->
     <meta property="og:title" content="{{title}}">
     <meta property="og:description" content="{{description}}">
     <meta property="og:type" content="{{ogType}}">
     <meta property="og:url" content="{{url}}">
 </head>
 <body>
-    <!-- Skip to main content for accessibility -->
     <a href="#main" class="skip-link">Skip to main content</a>
-    
-    <!-- Header Banner -->
-    <header class="site-header">
-        <div class="container">
-            <div class="header-content">
-                <!-- Logo/Site Name -->
-                <div class="site-branding">
-                    <a href="{{rootPath}}index.html" class="site-logo">
-                        <h1 class="site-title">${config.siteTitle}</h1>
-                    </a>
-                </div>
-                
-                <!-- Navigation -->
-                <nav class="main-navigation" aria-label="Main navigation">
-                    <button class="menu-toggle" aria-label="Toggle navigation menu">
-                        <span class="hamburger"></span>
-                    </button>
-                    <ul class="nav-menu">
-                        <li><a href="{{rootPath}}index.html" class="nav-link {{homeActive}}">Home</a></li>
-                        <li><a href="{{rootPath}}about.html" class="nav-link {{aboutActive}}">About</a></li>
-                        <li><a href="{{rootPath}}archives.html" class="nav-link {{archivesActive}}">Archives</a></li>
-                    </ul>
+
+    <header class="at-header">
+        <div class="at-header-inner">
+            <div class="at-header-col">
+                <a href="{{rootPath}}index.html" class="at-name-link">
+                    <div class="at-name">Approved <em>Thoughts</em></div>
+                </a>
+                <nav class="at-nav">
+                    <a href="{{rootPath}}index.html" {{homeActive}}>Home</a>
+                    <a href="{{rootPath}}about.html" {{aboutActive}}>About</a>
+                    <a href="{{rootPath}}archives.html" {{archivesActive}}>Archives</a>
+                    <a href="{{rootPath}}feed.xml" class="rss-nav" title="RSS feed">${RSS_SVG}RSS</a>
                 </nav>
             </div>
+            <div></div>
         </div>
     </header>
-    
-    <!-- Main Layout Container -->
-    <div class="site-container">
-        <div class="container">
-            <div class="content-wrapper">
-                {{content}}
-            </div>
+
+    <main id="main">
+        {{content}}
+    </main>
+
+    <footer class="at-footer">
+        <span class="seal">Approved Thoughts · MMXXVI</span>
+        <div class="links">
+            <a href="{{rootPath}}feed.xml" class="at-rss">${RSS_SVG}RSS</a>
+            <a href="{{rootPath}}feed.json">JSON</a>
+            <a href="{{rootPath}}sitemap.xml">Sitemap</a>
         </div>
-    </div>
-    
-    <!-- Image Modal for Click-to-Enlarge -->
+    </footer>
+
     <div id="imageModal" class="image-modal" onclick="closeImageModal()">
         <span class="modal-close">&times;</span>
-        <img class="modal-image" id="modalImage">
+        <img class="modal-image" id="modalImage" alt="">
         <div class="modal-caption" id="modalCaption"></div>
     </div>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <p class="copyright">© ${new Date().getFullYear()} ${config.siteTitle}. All rights reserved.</p>
-                <p class="footer-links">
-                    <a href="{{rootPath}}feed.xml">RSS Feed</a>
-                    <span class="separator">•</span>
-                    <a href="{{rootPath}}sitemap.xml">Sitemap</a>
-                </p>
-            </div>
-        </div>
-    </footer>
-    
-    <!-- JavaScript -->
     <script src="{{rootPath}}js/main.js" defer></script>
-    <script src="{{rootPath}}js/search.js" defer></script>
-    <!-- Twitter embed library -->
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>`;
 }
 
-// Generate post card HTML
+// Human-readable type label
+function typeLabel(type) {
+    const map = {
+        'linkList':    'Links',
+        'thoughtPiece': 'Thought Piece',
+        'notes':       'Notes',
+        'post':        'Post',
+    };
+    return map[type] || capitalize(type);
+}
+
+// Tag chips HTML for homepage entries and post pages
+function entryTagsHtml(tags, rootPath) {
+    if (!tags || !tags.length) return '';
+    return tags.map(tag =>
+        `<a href="${rootPath}tags/${tag.toLowerCase().replace(/\s+/g, '-')}.html">#${tag}</a>`
+    ).join('');
+}
+
+// Generate post card HTML (homepage / tag-page stream)
 function generatePostCard(post, rootPath = '') {
-    const readingTime = post.type === 'notes' ? '' : `<span class="read-time">${post.readingTime}</span>`;
-    const postClass = post.type === 'notes' ? 'post-card post-card-notes' : 'post-card';
-    const contentSection = `<div class="post-content">
-        ${post.content}
-    </div>`;
+    const tagsHtml = entryTagsHtml(post.tags, rootPath);
+    const tagsBlock = tagsHtml
+        ? `<div class="hy-tags">${tagsHtml}</div>`
+        : '';
+
+    // Left rail
+    const readRow = (post.type !== 'notes' && post.readingTime)
+        ? `<span class="read">${post.readingTime}</span>`
+        : '';
+    const rail = `
+        <div class="hy-rail">
+            <span class="date">${post.dateFormatted}</span>
+            ${readRow}
+        </div>`;
+
+    // Right content column — varies by post type
+    let bodyHtml;
+    if (post.type === 'notes') {
+        // Notes: show full inline body
+        bodyHtml = `<div class="hy-prose">${post.content}</div>`;
+    } else if (post.type === 'linkList') {
+        // Links: show full rendered content (list of curated links)
+        bodyHtml = `
+        <h2 class="hy-title"><a href="${rootPath}${post.url}">${post.title}</a></h2>
+        <div class="hy-content">${post.content}</div>`;
+    } else {
+        // Post / Thought Piece: full title + full content
+        bodyHtml = `
+        <h2 class="hy-title"><a href="${rootPath}${post.url}">${post.title}</a></h2>
+        <div class="hy-content">${post.content}</div>`;
+    }
+
+    const linkIcon = '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg>';
 
     return `
-      <article class="${postClass}">
-        <header class="post-header">
-          <h3 class="post-title">
-            <a href="${rootPath}${post.url}">${post.title}</a>
-          </h3>
-          <div class="post-meta">
-            <time datetime="${post.dateISO}">${post.dateFormatted}</time>
-            <span class="post-meta-separator">•</span>
-            <span class="post-type ${getPostTypeClass(post.type)}">
-              ${post.type === 'linkList' ? 'Links' : 
-                post.type === 'thoughtPiece' ? 'Thought Piece' : 
-                post.type === 'notes' ? 'Notes' : 
-                capitalize(post.type)}
-            </span>
-            ${readingTime ? `<span class="post-meta-separator">•</span>${readingTime}` : ''}
-          </div>
-        </header>
-        ${contentSection}
-        
-        <footer class="post-footer">
-          <div class="post-tags">
-            ${post.tags.map(tag => `<a href="${rootPath}tags/${tag.toLowerCase().replace(/\s+/g, '-')}.html" class="tag">#${tag}</a>`).join('')}
-          </div>
-          <div class="post-actions">
-            <button class="copy-link-btn" onclick="copyPostLink('${config.siteUrl}/${post.url}')" title="Copy link to this post">
-              <span class="copy-icon">🔗</span>
-              <span class="copy-text">Copy Link</span>
-            </button>
-          </div>
-        </footer>
-      </article>`;
+    <article class="hy-entry">
+        ${rail}
+        <div>
+            ${bodyHtml}
+            <div class="hy-footer">
+                ${tagsBlock}
+                <button type="button" class="hy-copy" data-url="${post.url}" aria-label="Copy link to ${post.title.replace(/"/g, '&quot;')}">${linkIcon}<span>Copy Link</span></button>
+            </div>
+        </div>
+    </article>`;
 }
 
 // Generate sidebar HTML
 function generateSidebar(recentPosts, rootPath = '') {
+    const recentItems = recentPosts.slice(0, 5).map(post => `
+                <li>
+                    <a href="${rootPath}${post.url}">
+                        <span class="at-recent-title">${post.title}</span>
+                        <span class="at-recent-date">${post.dateFormatted}</span>
+                    </a>
+                </li>`).join('');
+
     return `
-                <!-- Sidebar -->
-                <aside class="sidebar" aria-label="Sidebar">
-                    <!-- Recent Posts Section -->
-                    <section class="sidebar-section">
-                        <h3 class="sidebar-title">Recent Posts</h3>
-                        <ul class="recent-posts-list">
-                            ${recentPosts.slice(0, 5).map(post => `
-                            <li class="recent-post-item">
-                                <a href="${rootPath}${post.url}" class="recent-post-link">
-                                    <span class="recent-post-title">${post.title}</span>
-                                    <span class="recent-post-date">${new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
-                                </a>
-                            </li>`).join('')}
-                        </ul>
-                    </section>
-                    
-                    <!-- External Links Section -->
-                    <section class="sidebar-section">
-                        <h3 class="sidebar-title">Elsewhere</h3>
-                        <ul class="external-links-list">
-                            <li class="external-link-item">
-                                <a href="https://marginalrevolution.com" class="external-link" target="_blank" rel="noopener">
-                                    <span class="link-text">Marginal Revolution</span>
-                                </a>
-                            </li>
-                            <li class="external-link-item">
-                                <a href="https://thezvi.substack.com" class="external-link" target="_blank" rel="noopener">
-                                    <span class="link-text">Zvi Mowshowitz</span>
-                                </a>
-                            </li>
-                            <li class="external-link-item">
-                                <a href="https://simonwillison.net" class="external-link" target="_blank" rel="noopener">
-                                    <span class="link-text">Simon Willison</span>
-                                </a>
-                            </li>
-                            <li class="external-link-item">
-                                <a href="https://www.s-anand.net/blog/" class="external-link" target="_blank" rel="noopener">
-                                    <span class="link-text">S Anand</span>
-                                </a>
-                            </li>
-                            <li class="external-link-item">
-                                <a href="https://www.oneusefulthing.org" class="external-link" target="_blank" rel="noopener">
-                                    <span class="link-text">Ethan Mollick</span>
-                                </a>
-                            </li>
-                            <li class="external-link-item">
-                                <a href="https://karpathy.bearblog.dev/blog/" class="external-link" target="_blank" rel="noopener">
-                                    <span class="link-text">Andrej Karpathy</span>
-                                </a>
-                            </li>
-                            <li class="external-link-item">
-                                <a href="https://astralcodexten.substack.com" class="external-link" target="_blank" rel="noopener">
-                                    <span class="link-text">Astral Codex Ten</span>
-                                </a>
-                            </li>
-                            <li class="external-link-item">
-                                <a href="https://stratechery.com" class="external-link" target="_blank" rel="noopener">
-                                    <span class="link-text">Stratechery</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
-                    
-                    <!-- Search Box -->
-                    <section class="sidebar-section">
-                        <h3 class="sidebar-title">Search</h3>
-                        <form class="search-form" action="#" method="get">
-                            <label for="search-input" class="visually-hidden">Search posts</label>
-                            <input type="search" id="search-input" class="search-input" placeholder="Search posts..." aria-label="Search posts">
-                            <div class="search-icon">🔍</div>
-                        </form>
-                    </section>
-                </aside>`;
+            <aside class="at-side">
+                <section>
+                    <h3>Recent</h3>
+                    <ul>${recentItems}
+                    </ul>
+                </section>
+                <section>
+                    <h3>Elsewhere</h3>
+                    <div class="at-elsewhere">
+                        <a href="https://marginalrevolution.com" target="_blank" rel="noopener">Marginal Revolution</a>
+                        <a href="https://thezvi.substack.com" target="_blank" rel="noopener">Zvi Mowshowitz</a>
+                        <a href="https://simonwillison.net" target="_blank" rel="noopener">Simon Willison</a>
+                        <a href="https://www.s-anand.net/blog/" target="_blank" rel="noopener">S Anand</a>
+                        <a href="https://www.oneusefulthing.org" target="_blank" rel="noopener">Ethan Mollick</a>
+                        <a href="https://karpathy.bearblog.dev/blog/" target="_blank" rel="noopener">Andrej Karpathy</a>
+                        <a href="https://astralcodexten.substack.com" target="_blank" rel="noopener">Astral Codex Ten</a>
+                        <a href="https://stratechery.com" target="_blank" rel="noopener">Stratechery</a>
+                    </div>
+                </section>
+                <section>
+                    <h3>Subscribe</h3>
+                    <ul class="at-subscribe-list">
+                        <li>
+                            <a href="${rootPath}feed.xml" class="at-subscribe-link">
+                                ${RSS_SVG}
+                                <span>RSS feed</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="${rootPath}feed.json" class="at-subscribe-link">
+                                <span></span>
+                                <span>JSON feed</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Search</h3>
+                    <form class="at-search-box" action="${rootPath}archives.html" method="get" role="search">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="20" y1="20" x2="16.5" y2="16.5"/></svg>
+                        <input type="search" name="q" placeholder="Search posts…" aria-label="Search posts">
+                    </form>
+                </section>
+            </aside>`;
 }
 
 //  ——————————————
 // 6. PER-LINK EMBED HELPERS
 //  ——————————————
+
+// ─── Tweet metadata blocks (::: tweet ... :::) ──────────────────────────
+//
+// The fetch-tweet-metadata script inlines tweet metadata into markdown as a
+// fenced ":::tweet" block. We parse those out BEFORE marked() runs and emit
+// an inline placeholder (TWEET_CARD::...) so markdown's list parser stays
+// intact. expandEmbedPlaceholders() swaps the placeholder for the final
+// .hy-tweet HTML.
+
+function parseTweetMetadata(body, indent = '') {
+  const meta = {};
+  const stripped = body.split('\n').map((l) => (l.startsWith(indent) ? l.slice(indent.length) : l));
+  let i = 0;
+  while (i < stripped.length) {
+    const line = stripped[i];
+    const m = line.match(/^(\w+):\s*(.*)$/);
+    if (!m) { i++; continue; }
+    const [, key, val] = m;
+    if (val === '|') {
+      const blockLines = [];
+      i++;
+      while (i < stripped.length) {
+        const next = stripped[i];
+        if (next === '') { blockLines.push(''); i++; continue; }
+        if (/^  /.test(next)) { blockLines.push(next.slice(2)); i++; continue; }
+        break;
+      }
+      // Trim trailing blank lines that come from formatting only.
+      while (blockLines.length && blockLines[blockLines.length - 1] === '') blockLines.pop();
+      meta[key] = blockLines.join('\n');
+    } else {
+      meta[key] = val;
+      i++;
+    }
+  }
+  return meta;
+}
+
+function processTweetMetadataBlocks(md) {
+  // Allow optional leading indent (so blocks inside list items work). The
+  // closing ":::" must match the same indent.
+  return md.replace(
+    /^([ \t]*):::[ \t]*tweet[ \t]*\n([\s\S]*?)\n\1:::[ \t]*$/gm,
+    (_, indent, body) => {
+      const meta = parseTweetMetadata(body, indent);
+      // base64url avoids any character marked might transform (apostrophes,
+      // smart quotes, URL escapes). Pure A–Z a–z 0–9 - _ — markdown passthrough.
+      const encoded = Buffer.from(JSON.stringify(meta), 'utf-8').toString('base64url');
+      return `${indent}{{TWEET_CARD::${encoded}}}`;
+    }
+  );
+}
+
+function tweetInitials(name) {
+  return String(name || '?')
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((w) => w[0].toUpperCase())
+    .join('');
+}
+
+function formatTweetDate(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return iso;
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+function escapeHtml(s) {
+  return String(s || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function linkifyTweetBody(text) {
+  // text is already HTML-escaped; turn bare URLs into <a>, and @handles into
+  // x.com profile links. target/rel attrs are added later by the external-
+  // link rewriter step in processMarkdownFile, so omit them here.
+  let out = text;
+  out = out.replace(/(^|\s)(https?:\/\/[^\s<]+)/g, (_, sp, url) => {
+    const u = url.replace(/[.,;:!?)]+$/, '');
+    const trail = url.slice(u.length);
+    return `${sp}<a href="${u}">${u}</a>${trail}`;
+  });
+  out = out.replace(/(^|\s)@([A-Za-z0-9_]{1,15})/g, (_, sp, h) =>
+    `${sp}<a href="https://x.com/${h}">@${h}</a>`
+  );
+  return out;
+}
+
+function renderTweetCard(meta) {
+  const initials = tweetInitials(meta.author);
+  const dateStr = formatTweetDate(meta.date);
+  const bodyEscaped = escapeHtml(meta.body || '').replace(/\n/g, '<br>');
+  const bodyLinked = linkifyTweetBody(bodyEscaped);
+  const imgHtml = meta.image
+    ? `<div class="hy-tweet-img"><img src="${escapeHtml(meta.image)}" alt="" loading="lazy"></div>`
+    : '';
+  const handleSep = dateStr ? ' · ' : '';
+  return [
+    `<div class="hy-tweet" data-href="${escapeHtml(meta.url || '')}" role="link" tabindex="0">`,
+    `<div class="hy-tweet-avatar">${escapeHtml(initials)}</div>`,
+    '<div class="hy-tweet-body-col">',
+    '<div class="hy-tweet-meta">',
+    `<span class="name">${escapeHtml(meta.author || '')}</span>`,
+    `<span class="handle">@${escapeHtml(meta.handle || '')}${handleSep}${escapeHtml(dateStr)}</span>`,
+    '</div>',
+    `<p class="hy-tweet-body">${bodyLinked}</p>`,
+    imgHtml,
+    `<div class="hy-tweet-foot"><a href="${escapeHtml(meta.url || '')}">View on X</a></div>`,
+    '</div>',
+    '</div>',
+  ].join('');
+}
 
 /**
  * Convert ![embed](https://x.com/.../status/ID)
@@ -622,21 +706,23 @@ function generateSidebar(recentPosts, rootPath = '') {
  * into a live Tweet embed.
  */
 function processTwitterLinks(md) {
+  // Step 1: when a list item line is empty (e.g. "7." with no content) and the
+  // next non-blank line is an indented ![embed](...) OR a TWEET_CARD
+  // placeholder (output of processTweetMetadataBlocks), lift it up onto the
+  // list-item line so markdown can form a proper <li>. Otherwise marked
+  // treats "N." as plain paragraph text and the item falls out of the list.
+  md = md.replace(
+    /^([ \t]*)(\d+\.)[ \t]*\n(?:[ \t]*\n)*([ \t]+)(!\[embed\]\([^)]+\)|\{\{TWEET_CARD::[^}]+\}\})/gm,
+    (_, lineIndent, marker, _embedIndent, embed) => `${lineIndent}${marker} ${embed}`
+  );
+
+  // Step 2: replace ![embed](url) with an inline placeholder so marked's list
+  // parser doesn't see block-level HTML (which would split the surrounding
+  // <ol>). The real tweet container is swapped in after marked() runs via
+  // expandEmbedPlaceholders().
   return md.replace(
     /!\[embed\]\((https?:\/\/(?:www\.)?(?:x\.com|twitter\.com)\/[^\/]+\/status\/\d+[^\)]*)\)/g,
-    (_, url) => {
-      // If it’s an x.com link, rewrite to twitter.com
-      const canonical = url.replace(
-        /^https?:\/\/(?:www\.)?x\.com/,
-        'https://twitter.com'
-      );
-      return `
-<div class="tweet-container" style="margin:0 auto 1rem;">
-  <blockquote class="twitter-tweet" data-width="350">
-    <a href="${canonical}"></a>
-  </blockquote>
-</div>`;
-    }
+    (_, url) => `{{TWEET_EMBED::${encodeURIComponent(url)}}}`
   );
 }
 
@@ -645,17 +731,47 @@ function processTwitterLinks(md) {
  * Turn ![embed](youtu.be/ID) or ![embed](youtube.com/watch?v=ID) into a responsive iframe
  */
 function processYouTubeLinks(md) {
+  // Note: the empty-list-item lift step is performed in processTwitterLinks
+  // (which runs first); both embed types share the ![embed](...) syntax so we
+  // only need to do it once.
   return md.replace(
     /!\[embed\]\((?:https?:\/\/youtu\.be\/|https?:\/\/www\.youtube\.com\/watch\?v=)([A-Za-z0-9_-]+)[^\)]*\)/g,
-    (_, videoId) => `
-<div class="video-container">
-  <iframe
-    src="https://www.youtube.com/embed/${videoId}"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
-</div>`
+    (_, videoId) => `{{YOUTUBE_EMBED::${videoId}}}`
   );
+}
+
+// After marked() runs, swap placeholders for real embed HTML. This keeps
+// markdown list parsing intact (block-level HTML in the source would otherwise
+// terminate the surrounding <ol>/<li>).
+function expandEmbedPlaceholders(html) {
+  return html
+    .replace(/\{\{TWEET_CARD::([A-Za-z0-9_-]+)\}\}/g, (_, encoded) => {
+      try {
+        const json = Buffer.from(encoded, 'base64url').toString('utf-8');
+        return renderTweetCard(JSON.parse(json));
+      } catch (err) {
+        return '';
+      }
+    })
+    .replace(/\{\{TWEET_EMBED::([^}]+)\}\}/g, (_, encoded) => {
+      const url = decodeURIComponent(encoded);
+      const canonical = url.replace(
+        /^https?:\/\/(?:www\.)?x\.com/,
+        'https://twitter.com'
+      );
+      return `<div class="tweet-container" style="margin:0 auto 1rem;"><blockquote class="twitter-tweet" data-width="350"><a href="${canonical}"></a></blockquote></div>`;
+    })
+    .replace(/\{\{YOUTUBE_EMBED::([A-Za-z0-9_-]+)\}\}/g, (_, videoId) =>
+      // youtube-nocookie.com is the privacy-enhanced domain; it's also more
+      // permissive about embedding contexts (some videos that error 153 on
+      // youtube.com play here). referrerpolicy + title are recommended by
+      // YouTube's own embed snippet.
+      `<div class="video-container"><iframe src="https://www.youtube-nocookie.com/embed/${videoId}?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>`
+    )
+    // Tidy up: if a placeholder was wrapped in a <p> by markdown, lift it out
+    // so the embed is a block-level sibling not nested inside paragraph.
+    .replace(/<p>(\s*<div class="(?:tweet|video)-container"[\s\S]*?<\/div>\s*)<\/p>/g, '$1')
+    .replace(/<p>(\s*<div class="hy-tweet"[^>]*>[\s\S]*?<\/div><\/div>\s*)<\/p>/g, '$1');
 }
 
 
@@ -687,11 +803,16 @@ async function processMarkdownFile(filePath) {
     );
 
     // 1. Convert only our “![embed](…)” links into blockquotes/iframes
-    let processedContent = processTwitterLinks(normalizedContent);
-    processedContent       = processYouTubeLinks(processedContent);
+    // Tweet metadata blocks (::: tweet ... :::) → inline placeholder.
+    let processedContent = processTweetMetadataBlocks(normalizedContent);
+    processedContent = processTwitterLinks(processedContent);
+    processedContent = processYouTubeLinks(processedContent);
 
     // 2. Convert to HTML first
-    const htmlContent = marked(processedContent);
+    let htmlContent = marked(processedContent);
+
+    // 2a. Expand embed placeholders → real tweet/YouTube containers
+    htmlContent = expandEmbedPlaceholders(htmlContent);
 
     // 2.5 Now wrap images inside the HTML so lists/quotes stay intact
     const htmlWithImages = decorateImagesInHtml(htmlContent);
@@ -744,40 +865,53 @@ async function processMarkdownFile(filePath) {
 async function generatePostPage(post) {
     const template = getBaseTemplate();
     const rootPath = '../../'; // Posts are two levels deep
-    
+
+    // Find prev/next posts for pagination
+    const idx = allPosts.findIndex(p => p.url === post.url);
+    const olderPost = allPosts[idx + 1] || null;
+    const newerPost = allPosts[idx - 1] || null;
+
+    const paginationHtml = (olderPost || newerPost) ? `
+        <div class="pp-pagination">
+            ${olderPost ? `
+            <a href="${rootPath}${olderPost.url}" class="prev">
+                <span class="label">← Older</span>
+                <span class="ttl">${olderPost.title}</span>
+            </a>` : '<div></div>'}
+            ${newerPost ? `
+            <a href="${rootPath}${newerPost.url}" class="next">
+                <span class="label">Newer →</span>
+                <span class="ttl">${newerPost.title}</span>
+            </a>` : '<div></div>'}
+        </div>` : '';
+
+    const tagsHtml = post.tags && post.tags.length
+        ? `<div class="pp-tags">
+            <span class="label">Tagged</span>
+            ${post.tags.map(tag => `<a href="${rootPath}tags/${tag.toLowerCase().replace(/\s+/g, '-')}.html">#${tag}</a>`).join('')}
+           </div>`
+        : '';
+
+    const readRow = (post.type !== 'notes' && post.readingTime)
+        ? `<span class="read">${post.readingTime}</span>` : '';
+
     const postContent = `
-                <!-- Main Content Area -->
-                <main id="main" class="main-content">
-                    <article class="post-full">
-                        <header class="post-header">
-                            <h1 class="post-title">${post.title}</h1>
-                            <div class="post-meta">
-                                <time class="post-date" datetime="${post.dateISO}">${post.dateFormatted}</time>
-                                <span class="post-meta-separator">•</span>
-                                <span class="post-type ${getPostTypeClass(post.type)}">${post.type === 'linkList' ? 'Links' : post.type === 'thoughtPiece' ? 'Thought Piece' : post.type === 'notes' ? 'Notes' : post.type.charAt(0).toUpperCase() + post.type.slice(1)}</span>
-                                ${post.type !== 'notes' ? `<span class="post-meta-separator">•</span><span class="read-time">${post.readingTime}</span>` : ''}
-                            </div>
-                        </header>
-                        
-                        <div class="post-content">
-                            ${post.content}
-                        </div>
-                        
-                        <footer class="post-footer">
-                            <div class="post-tags">
-                                ${post.tags ? post.tags.map(tag => `<a href="${rootPath}tags/${tag.toLowerCase().replace(/\s+/g, '-')}.html" class="tag">#${tag}</a>`).join('\n                                ') : ''}
-                            </div>
-                            <div class="post-actions">
-                                <button class="copy-link-btn" onclick="copyPostLink('${config.siteUrl}/${post.url}')" title="Copy link to this post">
-                                    <span class="copy-icon">🔗</span>
-                                    <span class="copy-text">Copy Link</span>
-                                </button>
-                            </div>
-                        </footer>
-                    </article>
-                </main>
-                
-                ${generateSidebar(allPosts, rootPath)}`;
+        <div class="at-body">
+            <article>
+                <div class="pp-meta">
+                    <span class="date">${post.dateFormatted}</span>
+                    ${readRow}
+                    <span class="type">${typeLabel(post.type)}</span>
+                </div>
+                <h1 class="pp-title">${post.title}</h1>
+                <div class="pp-prose">
+                    ${post.content}
+                </div>
+                ${tagsHtml}
+                ${paginationHtml}
+            </article>
+            ${generateSidebar(allPosts, rootPath)}
+        </div>`;
     
     const html = template
         .replace(/{{title}}/g, `${post.title} - ${config.siteTitle}`)
@@ -795,7 +929,8 @@ async function generatePostPage(post) {
     await fs.ensureDir(postDir);
     
     // Write file
-    await fs.writeFile(post.url, html);
+    const relHtml = relativizeAbsolutePaths(html, rootPath);
+    await fs.writeFile(post.url, relHtml);
     console.log(`  ✓ Generated: ${post.url}`);
 }
 
@@ -811,29 +946,26 @@ async function generateIndexPage(posts, pageNum = 1) {
     const rootPath = pageNum === 1 ? '' : '../';
     const fileName = pageNum === 1 ? 'index.html' : `page/${pageNum}.html`;
     
+    const prevLink = pageNum > 1
+        ? `<a href="${pageNum === 2 ? rootPath + 'index.html' : rootPath + 'page/' + (pageNum - 1) + '.html'}">← Newer</a>`
+        : `<span class="disabled">← Newer</span>`;
+    const nextLink = pageNum < totalPages
+        ? `<a href="${rootPath}page/${pageNum + 1}.html">Older →</a>`
+        : `<span class="disabled">Older →</span>`;
+
     const indexContent = `
-                <!-- Main Content Area -->
-                <main id="main" class="main-content">
-                    <!-- Recent Posts -->
-                    <section class="posts-section">
-                        <h2 class="section-title">Recent Posts</h2>
-                        
-                        ${pagePosts.map(post => generatePostCard(post, rootPath)).join('\n')}
-                    </section>
-                    
-                    <!-- Pagination -->
-                    <nav class="pagination" aria-label="Posts pagination">
-                        ${pageNum > 1 
-                            ? `<a href="${pageNum === 2 ? rootPath + 'index.html' : rootPath + 'page/' + (pageNum - 1) + '.html'}" class="pagination-prev">← Newer Posts</a>`
-                            : '<span class="pagination-prev disabled" aria-disabled="true">← Newer Posts</span>'}
-                        <span class="pagination-current">Page ${pageNum} of ${totalPages}</span>
-                        ${pageNum < totalPages
-                            ? `<a href="${rootPath}page/${pageNum + 1}.html" class="pagination-next">Older Posts →</a>`
-                            : '<span class="pagination-next disabled" aria-disabled="true">Older Posts →</span>'}
-                    </nav>
-                </main>
-                
-                ${generateSidebar(posts, rootPath)}`;
+        <div class="at-body">
+            <section>
+                ${pagePosts.map(post => generatePostCard(post, rootPath)).join('\n')}
+                ${totalPages > 1 ? `
+                <nav class="hy-pagination" aria-label="Posts pagination">
+                    ${prevLink}
+                    <span class="current">Page ${pageNum} of ${totalPages}</span>
+                    ${nextLink}
+                </nav>` : ''}
+            </section>
+            ${generateSidebar(posts, rootPath)}
+        </div>`;
     
     const html = template
         .replace(/{{title}}/g, pageNum === 1 ? config.siteTitle : `Page ${pageNum} - ${config.siteTitle}`)
@@ -842,7 +974,7 @@ async function generateIndexPage(posts, pageNum = 1) {
         .replace('{{content}}', indexContent)
         .replace('{{ogType}}', 'website')
         .replace('{{url}}', config.siteUrl)
-        .replace('{{homeActive}}', 'active')
+        .replace('{{homeActive}}', 'class="active"')
         .replace('{{aboutActive}}', '')
         .replace('{{archivesActive}}', '');
     
@@ -851,7 +983,8 @@ async function generateIndexPage(posts, pageNum = 1) {
         await fs.ensureDir('page');
     }
     
-    await fs.writeFile(fileName, html);
+    const relHtml = relativizeAbsolutePaths(html, rootPath);
+    await fs.writeFile(fileName, relHtml);
     console.log(`  ✓ Generated: ${fileName}`);
 }
 
@@ -1070,18 +1203,16 @@ async function generateTagPages(posts) {
         const rootPath = '../';
         
         const tagContent = `
-                <!-- Main Content Area -->
-                <main id="main" class="main-content">
-                    <!-- Tag Posts -->
-                    <section class="posts-section">
-                        <h2 class="section-title">Posts tagged "${tag}"</h2>
-                        <p class="tag-count">${tagPosts.length} post${tagPosts.length !== 1 ? 's' : ''}</p>
-                        
-                        ${tagPosts.map(post => generatePostCard(post, rootPath)).join('\n')}
-                    </section>
-                </main>
-                
-                ${generateSidebar(posts, rootPath)}`;
+        <div class="at-body">
+            <section>
+                <div class="pp-meta">
+                    <span class="type">Tagged: ${tag}</span>
+                    <span class="read">${tagPosts.length} post${tagPosts.length !== 1 ? 's' : ''}</span>
+                </div>
+                ${tagPosts.map(post => generatePostCard(post, rootPath)).join('\n')}
+            </section>
+            ${generateSidebar(posts, rootPath)}
+        </div>`;
         
         const html = template
             .replace(/{{title}}/g, `Posts tagged "${tag}" - ${config.siteTitle}`)
@@ -1095,7 +1226,8 @@ async function generateTagPages(posts) {
             .replace('{{archivesActive}}', '');
         
         await fs.ensureDir('tags');
-        await fs.writeFile(`tags/${tagSlug}.html`, html);
+        const relHtml = relativizeAbsolutePaths(html, rootPath);
+        await fs.writeFile(`tags/${tagSlug}.html`, relHtml);
         console.log(`  ✓ Generated: tags/${tagSlug}.html`);
     }
 }
@@ -1201,20 +1333,14 @@ async function generateAboutPage(posts) {
         const rootPath = '';
         
         const aboutPageContent = `
-                <!-- Main Content Area -->
-                <main id="main" class="main-content">
-                    <article class="post-full">
-                        <header class="post-header">
-                            <h1 class="post-title">${data.title || 'About'}</h1>
-                        </header>
-                        
-                        <div class="post-content">
-                            ${htmlContent}
-                        </div>
-                    </article>
-                </main>
-                
-                ${generateSidebar(posts, rootPath)}`;
+        <div class="at-body single">
+            <article>
+                <h1 class="ab-h1">${data.title || 'About'}</h1>
+                <div class="ab-prose">
+                    ${htmlContent}
+                </div>
+            </article>
+        </div>`;
         
         const html = template
             .replace(/{{title}}/g, `${data.title || 'About'} - ${config.siteTitle}`)
@@ -1224,15 +1350,50 @@ async function generateAboutPage(posts) {
             .replace('{{ogType}}', 'website')
             .replace('{{url}}', `${config.siteUrl}/about.html`)
             .replace('{{homeActive}}', '')
-            .replace('{{aboutActive}}', 'active')
+            .replace('{{aboutActive}}', 'class="active"')
             .replace('{{archivesActive}}', '');
         
-        await fs.writeFile('about.html', html);
+        const relHtml = relativizeAbsolutePaths(html, rootPath);
+        await fs.writeFile('about.html', relHtml);
         console.log('  ✓ Generated: about.html');
         
     } catch (error) {
         console.error('  ❌ Error generating about page:', error.message);
     }
+}
+
+// Generate 404 page
+async function generate404Page() {
+    const html = `<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page not found">
+    <title>404 — ${config.siteTitle}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=2.0">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+</head>
+<body>
+    <div class="nf-wrap">
+        <span class="nf-mark">Approved Thoughts</span>
+        <div class="nf-num">404</div>
+        <div class="nf-line">Approved thoughts, <em>unapproved</em> URL.</div>
+        <p class="nf-sub">The page you are looking for does not exist, or has been moved, or perhaps was never written. Feel free to have unapproved thoughts at this time.</p>
+        <div class="nf-actions">
+            <a href="index.html">← Back home</a>
+            <a href="archives.html" class="muted">Browse archives</a>
+        </div>
+    </div>
+</body>
+</html>`;
+
+    const relHtml = relativizeAbsolutePaths(html, '');
+    await fs.writeFile('404.html', relHtml);
+    console.log('  ✓ Generated: 404.html');
 }
 
 // ====================================
@@ -1313,6 +1474,10 @@ async function build() {
         // 11. Generate sitemap
         console.log('\n🗺️  Generating sitemap...');
         await generateSitemap(allPosts);
+
+        // 12. Generate 404 page
+        console.log('\n🔍 Generating 404 page...');
+        await generate404Page();
         
         console.log('\n✨ Build complete! Your site is ready.\n');
         console.log(`📊 Summary:`);

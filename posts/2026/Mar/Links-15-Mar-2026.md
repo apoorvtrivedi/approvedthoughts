@@ -1,5 +1,5 @@
 ---
-title: "Links: Weeks of 15 Mar 2026"
+title: "Links: Week of 15 Mar 2026"
 date: 2026-03-15
 type: links
 description: 
@@ -24,5 +24,12 @@ The first two stories this week are mindblowing. Huge if true, as they say.
 3. Some [more](https://x.com/Afinetheorem/status/2031566775230279815?s=20) AI [tutorials](https://x.com/garrytan/status/2032014570118922347). So many tutorials, so little time. 
 
 4. 
-   ![embed](https://x.com/i_zzzzzz/status/2032422897764196858)
+   ::: tweet
+   url: https://twitter.com/i_zzzzzz/status/2032422897764196858
+   author: Brooks Otterlake
+   handle: i_zzzzzz
+   date: Fri Mar 13 11:45:54 +0000 2026
+   body: |
+     Japanese society is so civilized that the fires simply drive themselves to the fire station
+   :::
 

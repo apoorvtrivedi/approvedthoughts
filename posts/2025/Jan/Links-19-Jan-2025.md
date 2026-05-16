@@ -8,11 +8,29 @@ draft: false
 ---
 
 1. This feels accurate.  😅. He says AGI but looking at the next link I wonder if this is true for plain old AI.
-    ![embed](https://x.com/davidskrueger/status/1879632901836525754)
+    ::: tweet
+    url: https://twitter.com/DavidSKrueger/status/1879632901836525754
+    author: David Krueger 🦥 ⏸️ ⏹️ ⏪
+    handle: DavidSKrueger
+    date: Wed Jan 15 20:53:00 +0000 2025
+    image: https://pbs.twimg.com/media/GhXMKR4XwAAlIbA.jpg
+    body: |
+      99.99% of people talking about AGI
+    :::
 
 
 2. Two weeks ago, it was Will Smith eating pizza. Now its this. Click the link to see the video. WhatsApp University is about to go nuts.
-    ![embed](https://x.com/emollick/status/1878987983287967976?s=46)
+    ::: tweet
+    url: https://twitter.com/emollick/status/1878987983287967976
+    author: Ethan Mollick
+    handle: emollick
+    date: Tue Jan 14 02:10:19 +0000 2025
+    image: https://pbs.twimg.com/ext_tw_video_thumb/1878985148063985664/pu/img/-eO-D4bHXQ5LVwFG.jpg
+    body: |
+      I don't think people know that making plausible fake videos is now something that doesn't require a lot of skill or time
+      
+      I made this Veo video of a man trying out a flying skateboard at CES from a text prompt, 2nd try. Notice the shadows, green light, his body shifts for balance
+    :::
 
 3. [She Is in Love With ChatGPT (NSFW. NYT Paywall.)](https://www.nytimes.com/2025/01/15/technology/ai-chatgpt-boyfriend-companion.html?unlocked_article_code=1.qE4.UC15.fl6VLz0ieDDC&smid=url-share) And you thought K-Dramas were stealing your spouse.
 
@@ -35,14 +53,37 @@ draft: false
 6. [The War for India](https://overcast.fm/+AAb53OdmwCk): I am enjoying this talk by Prof. Sarah Paine of the Naval War College. She talks about the history of international conflict and politics in South Asia and the role to US & Russia. I did not know that India supported China’s bid for a permanent seat on the UN Security Council. 🤯 😱
 
 7. Better ways to wear a Polo: Always a pleasure to see a master in action.
-    ![embed](https://x.com/dieworkwear/status/1880103365348323582)
+    ::: tweet
+    url: https://twitter.com/dieworkwear/status/1880103365348323582
+    author: derek guy
+    handle: dieworkwear
+    date: Fri Jan 17 04:02:27 +0000 2025
+    image: https://pbs.twimg.com/media/GhduhFJacAAxDyw.jpg
+    body: |
+      I disagree. This outfit is terrible and I will show you better ways to wear a polo. 🧵
+    :::
 
-    ![embed](https://x.com/dieworkwear/status/1880103368976396505)
+    ::: tweet
+    url: https://twitter.com/dieworkwear/status/1880103368976396505
+    author: derek guy
+    handle: dieworkwear
+    date: Fri Jan 17 04:02:28 +0000 2025
+    image: https://pbs.twimg.com/media/Ghdv33_acAArvLo.jpg
+    body: |
+      Like the fedora, it's also saddled with bad social connotations: rich pricks who run on family ties, golfing uncles, and business casual guys at networking conferences where there's plated cantaloupe.
+    :::
 
 “…networking conferences where there’s plated cantaloupe.” *chef’s kiss*.
 
 Here’s another one from Derek:
-    ![embed](https://x.com/dieworkwear/status/1879026335315853613)
+    ::: tweet
+    url: https://twitter.com/dieworkwear/status/1879026335315853613
+    author: derek guy
+    handle: dieworkwear
+    date: Tue Jan 14 04:42:43 +0000 2025
+    body: |
+      when you're trying to hold a fart
+    :::
 
 8. [Fix Your Glutes. (NYT Paywall)](https://www.nytimes.com/2025/01/14/magazine/glutes-running.html) Strongly endorse. Really helps when trying to hold a fart but many other benefits too.
 

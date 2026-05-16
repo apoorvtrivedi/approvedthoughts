@@ -1,5 +1,5 @@
 ---
-title: "Links: Weeks of 29 Mar 2026"
+title: "Links: Week of 29 Mar 2026"
 date: 2026-03-30
 type: links
 description: 
@@ -11,7 +11,19 @@ draft: false
    > The Chinese party-state is fundamentally a set of goal-oriented institutions. This is not unique to China—it is in fact a distinguishing feature of all Leninist systems. I sometimes think of Leninist systems as a little bit like that bus in the movie Speed. Who here has seen it? For those who haven’t, here is basic gist of that film: an extortionist attaches a bomb to the speedometer of a bus. If the bus ever slows below 50 miles per hour, everyone blows up. So it is with your average communist system. Either it hurtles towards some clearly defined goal or things start to fall apart.
 
 2. 
-   ![embed](https://x.com/StefanFSchubert/status/2037795164186390769?s=20)
+   ::: tweet
+   url: https://twitter.com/StefanFSchubert/status/2037795164186390769
+   author: Stefan Schubert
+   handle: StefanFSchubert
+   date: Sat Mar 28 07:33:22 +0000 2026
+   image: https://pbs.twimg.com/media/HEeypMbaAAAMeG_.jpg
+   body: |
+     While social media is polarising, evidence suggests AI may nudge people towards the centre.
+     
+     This holds true of all studied models. Grok is more right-leaning than other models, but also has depolarising effects. 
+     
+     By @jburnmurdoch.
+   :::
 
 3. [I Saw Something New in San Francisco (NYT)](https://www.nytimes.com/2026/03/29/opinion/ai-claude-chatgpt-gemini-mcluhan.html?unlocked_article_code=1.XFA.gLX0.Jjb2Cae_L_lX&smid=url-share): 
    > Behind this drive is an experience of A.I. that many casual users have not yet had. An A.I. without deep knowledge of you is an upgrade, perhaps, over Google search. An A.I. with deep knowledge of you feels like something else entirely. I have heard people talk about their A.I.s in terms that bring to mind the daemons from Philip Pullman’s “His Dark Materials” trilogy: They become companions that know you deeply, that you feel safe telling things you’d never tell another person, that become a separate self that nevertheless feels like a part of your own self. That this sounds strange and disquieting does not mean it is not happening.

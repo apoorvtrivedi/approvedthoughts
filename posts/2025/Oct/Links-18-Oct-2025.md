@@ -18,7 +18,14 @@ draft: false
 
 5. There are many ways through which the LLM subscriptions pay for themselves. For me it was physiotherapy. Here it is filing tax returns. I also wish more people would share "how tos" for solving different problems with LLMs. Here's a [manual](https://fixmydocuments.com/blog/06_tax_gpt_using_ai_for_tax_prep) for tax returns. Full disclosure: I haven't tried it yet but the source is credible. 
 
-    ![embed](https://x.com/patio11/status/1978549952147083649)
+    ::: tweet
+    url: https://twitter.com/patio11/status/1978549952147083649
+    author: Patrick McKenzie
+    handle: patio11
+    date: Wed Oct 15 19:54:02 +0000 2025
+    body: |
+      @TheZvi Are you going to write an essay about that second thing or do I have to, because feels extremely obvious that there needs to be a URL “They can now successfully shake money tree for you *additively to what your highly paid advisor will do.*”
+    :::
 
 6. [Five technological achievements! (That we won’t see any time soon.)](https://crookedtimber.org/2025/09/09/five-technological-achievements-that-we-wont-see-any-time-soon/): 
 

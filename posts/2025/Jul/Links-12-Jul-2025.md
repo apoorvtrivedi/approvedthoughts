@@ -16,7 +16,23 @@ draft: false
 
     Hero.
 
-2. [Death of partying in the USA](https://twitter.com/DKThomp/status/1942932780540698741): ![embed](https://twitter.com/DKThomp/status/1942932780540698741)
+2. [Death of partying in the USA](https://twitter.com/DKThomp/status/1942932780540698741):
+   ::: tweet
+   url: https://twitter.com/DKThomp/status/1942932780540698741
+   author: Derek Thompson
+   handle: DKThomp
+   date: Wed Jul 09 13:04:07 +0000 2025
+   image: https://pbs.twimg.com/media/GvauBkmXwAA8rXd.jpg
+   body: |
+     New newsletter: The death of partying in the USA
+     
+     The latest American Time Use Survey came out last month. I wanted to follow up on @elcush's declaration that Americans need to party more. The new data confirms: America's social crisis is dire.
+     
+     - Between 2003 and 2024, the amount of time that Americans spent attending or hosting a social event declined by 50 percent. 
+     - Young people aged 15-to-24 spent 70 percent less time attending or hosting parties in 2024 than they did in 2003. 
+     
+     More charts and analysis on the 50-year collapse of the social calendar in the link below.
+   :::
 
 
 3. [The forests are coming back](https://x.com/tf_global/status/1943222161336078467): 36 countries, including India and China, gained more tress than they lost, between 2000-2020.

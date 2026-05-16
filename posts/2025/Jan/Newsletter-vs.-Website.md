@@ -13,7 +13,17 @@ I enjoyed heading down the rabbit hole of how to learn better last week. I alrea
 
 As it happens, this is also a space where a lot is changing (yes, AI, duh!) and one that is even otherwise relevant to me given the presence of two (reluctant) learners that I am (even more reluctantly) trying to support.
 
-![embed](https://x.com/emollick/status/1879633485004165375)
+::: tweet
+url: https://twitter.com/emollick/status/1879633485004165375
+author: Ethan Mollick
+handle: emollick
+date: Wed Jan 15 20:55:19 +0000 2025
+image: https://pbs.twimg.com/media/GhXLExmXUAAl4_H.jpg
+body: |
+  New randomized, controlled trial of students using GPT-4 as a tutor in Nigeria. 6 weeks of after-school AI tutoring = 2 years of typical learning gains, outperforming 80% of other educational interventions.
+  
+  And it helped all students, especially girls who were initially behind
+:::
 
 So it seemed like a natural beat to walk.
 

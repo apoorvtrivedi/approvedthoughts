@@ -589,4 +589,56 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     };
+
+    // ====================================
+    // HOMEPAGE ENTRY "COPY LINK" BUTTONS
+    // ====================================
+    document.querySelectorAll('.hy-copy').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var raw = btn.getAttribute('data-url') || '';
+            var absolute = new URL(raw, window.location.href).href;
+            var label = btn.querySelector('span');
+            var originalText = label ? label.textContent : 'Copy Link';
+            var done = function() {
+                if (label) label.textContent = 'Copied';
+                btn.classList.add('copied');
+                setTimeout(function() {
+                    if (label) label.textContent = originalText;
+                    btn.classList.remove('copied');
+                }, 1800);
+            };
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(absolute).then(done, function() {
+                    window.prompt('Copy link:', absolute);
+                });
+            } else {
+                window.prompt('Copy link:', absolute);
+            }
+        });
+    });
+
+    // ====================================
+    // TWEET CARDS — click anywhere to open the source tweet on X
+    // ====================================
+    // The card is clickable as a whole, but real interactive elements inside
+    // it (the "View on X" footer link, body links to URLs/handles, attached
+    // image) keep their normal behavior — we only open the card-level link
+    // when the click target isn't itself an <a>.
+    document.querySelectorAll('.hy-tweet[data-href]').forEach(function(card) {
+        var href = card.getAttribute('data-href');
+        if (!href) return;
+        card.addEventListener('click', function(ev) {
+            if (ev.target.closest('a')) return; // let inner links handle their own click
+            // Don't hijack text selection.
+            var sel = window.getSelection && window.getSelection().toString();
+            if (sel && sel.length) return;
+            window.open(href, '_blank', 'noopener');
+        });
+        card.addEventListener('keydown', function(ev) {
+            if (ev.key === 'Enter' || ev.key === ' ') {
+                ev.preventDefault();
+                window.open(href, '_blank', 'noopener');
+            }
+        });
+    });
 });

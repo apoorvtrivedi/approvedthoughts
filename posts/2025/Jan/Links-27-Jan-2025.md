@@ -21,12 +21,42 @@ draft: false
 
 4. Only reason I am posting this is because I am right now in the land of the great UFO scare of 2025, New Jersey. Trump appointed CIA Director? On Fox News? Former Texas Congressman? There should be an emoji for that. Here’s a [palate cleanser](https://www.theintrinsicperspective.com/p/the-ufo-craze-was-created-by-government) (via Alex Tabarrok at MR).
 
-    ![embed](https://x.com/MvonRen/status/1882514812791640436?mx=2)
+    ::: tweet
+    url: https://twitter.com/MvonRen/status/1882514812791640436
+    author: Marik vR
+    handle: MvonRen
+    date: Thu Jan 23 19:44:41 +0000 2025
+    image: https://pbs.twimg.com/amplify_video_thumb/1882514728850952193/img/29Yqf0sovEMjN89G.jpg
+    body: |
+      CIA Director John Ratcliffe:
+      
+      UAP/UFOs:
+      
+      -Exhibit “technologies that we don’t have and, frankly, that we can’t defend against” (!)
+      
+      -“Are difficult to explain”
+      
+      -*Tracked by multiple sensors, including satellites*
+      
+      KEY: “I believe there should be more transparency on this issue.”
+    :::
 
     
 
 5. Jokic. Watch till the end for the reaction.
-    ![embed](https://x.com/nbaindia/status/1882668945951596645)
+    ::: tweet
+    url: https://twitter.com/NBAIndia/status/1882668945951596645
+    author: NBA India
+    handle: NBAIndia
+    date: Fri Jan 24 05:57:09 +0000 2025
+    image: https://pbs.twimg.com/ext_tw_video_thumb/1882668504928989184/pu/img/WZCwOVjHORZ_creI.jpg
+    body: |
+      No shot is too tough for the Joker! 🃏 A 66-foot masterpiece at the buzzer! 🤯
+      
+      #ICYMI: Nikola Jokić went 3/4-court against the Kings and nailed it in style! 😮‍💨🔥
+      
+      #Jokic #MileHighBasketball | @nuggets
+    :::
 
 6. [Is it better to bribe Trump by purchasing his memecoin or his stock?](http://jpkoning.blogspot.com/2025/01/is-it-better-to-bribe-trump-by.html) Not financial advice.
 

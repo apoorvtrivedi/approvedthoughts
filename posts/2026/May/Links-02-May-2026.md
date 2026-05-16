@@ -1,5 +1,5 @@
 ---
-title: "Links: Weeks of 02 May 2026"
+title: "Links: Week of 02 May 2026"
 date: 2026-05-02
 type: links
 description: 
@@ -8,7 +8,15 @@ draft: false
 ---
 
 1. 
-   ![embed](https://x.com/yacineMTB/status/2018886083120153046)
+   ::: tweet
+   url: https://twitter.com/yacineMTB/status/2018886083120153046
+   author: kache
+   handle: yacineMTB
+   date: Wed Feb 04 03:15:25 +0000 2026
+   body: |
+     you can outsource your thinking
+     but you cannot outsource your understanding
+   :::
 
 2. [You should try contra dancing](https://www.benkuhn.net/contra/)
    > A popular icebreaker in San Francisco these days is “How would you spend your life if AGI meant nobody needed to work?” For me, I think a surprisingly big part of the answer is a dorky-sounding kind of folk dance called contra dancing.

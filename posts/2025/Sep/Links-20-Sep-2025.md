@@ -8,7 +8,21 @@ draft: false
 ---
 
 1. If you’ve got a compliment, just let it out.
-    ![embed](https://x.com/jayplemons/status/1964775529686688196)
+    ::: tweet
+    url: https://twitter.com/jayplemons/status/1964775529686688196
+    author: jay plemons
+    handle: jayplemons
+    date: Sun Sep 07 19:39:24 +0000 2025
+    image: https://pbs.twimg.com/amplify_video_thumb/1964775113875767296/img/mkwqpudfM3iLlVRR.jpg
+    body: |
+      The Power of a Compliment
+      
+      Scott Adams tells the story of a woman in a public speaking class who transforms from terrified to confident through encouraging words from her peers
+      
+      @ScottAdamsSays “If you withhold a compliment that you’re thinking, it’s almost immoral. 
+      
+      If you’ve got a compliment, just let it out.”
+    :::
 
 
 2. And the amazing thing is that [the opposite works](https://x.com/ZyMazza/status/1965054215157346739) too!
@@ -60,7 +74,19 @@ draft: false
 6. [They traveled to Thailand. They wound up cyber scam slaves in Myanmar.](https://www.reuters.com/graphics/SOUTHEASTASIA-SCAMS/mypmxwdwwvr/): Scary. I am not sure I like graphical news but an interesting experiment.
 
 7. [Teen depression has *declined* for the past 4 years, after peaking in 2021.](https://x.com/Chris_Said/status/1968460412774490591): 
-    ![embed](https://x.com/Chris_Said/status/1968460412774490591)
+    ::: tweet
+    url: https://twitter.com/Chris_Said/status/1968460412774490591
+    author: Chris Said
+    handle: Chris_Said
+    date: Wed Sep 17 23:41:49 +0000 2025
+    image: https://pbs.twimg.com/media/G1FcpvzWEAAIvhM.jpg
+    body: |
+      Teen depression has *declined* for the past 4 years, after peaking in 2021.
+      
+      People should update on this.
+      
+      The most parsimonious explanation is @glukianoff's theory that wokeness encouraged catastrophic thinking, acting as a sort of “reverse CBT”.
+    :::
 
 8. [ICPC medals for OpenAI and Gemini](https://simonwillison.net/2025/Sep/17/icpc/#atom-everything): 
    > We received the problems in the exact same PDF form, and the reasoning system selected which answers to submit with no bespoke test-time harness whatsoever. For 11 of the 12 problems, the system’s first answer was correct. For the hardest problem, it succeeded on the 9th submission. Notably, the best human team achieved 11/12.

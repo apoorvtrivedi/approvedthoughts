@@ -22,7 +22,14 @@ draft: false
 
 3. Having spent more time on LinkedIn last year than anyone should ever have to, I fully endorse this advice. via [Shaan Puri](https://shaan.beehiiv.com/).
 
-    ![embed](https://x.com/thdxr/status/1875742577196200418)
+    ::: tweet
+    url: https://twitter.com/thdxr/status/1875742577196200418
+    author: dax
+    handle: thdxr
+    date: Sun Jan 05 03:14:14 +0000 2025
+    body: |
+      the only career advice i have is make every decision that moves you closer to not having to be on linkedin
+    :::
 
 
 3. [It’s the Most Indispensable Machine in the World—and It Depends on This Woman - WSJ (Paywall)](https://www.wsj.com/tech/ai/asml-euv-machine-lithography-chips-967954d0). One can never get enough of ASML:

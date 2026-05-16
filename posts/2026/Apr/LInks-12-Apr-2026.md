@@ -1,5 +1,5 @@
 ---
-title: "Links: Weeks of 12 Apr 2026"
+title: "Links: Week of 12 Apr 2026"
 date: 2026-04-12
 type: links
 description: 

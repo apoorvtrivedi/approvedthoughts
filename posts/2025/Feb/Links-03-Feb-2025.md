@@ -24,7 +24,15 @@ Another set of AI-heavy links. I can’t help myself right now.
 3. [I am (not) a Failure: Lessons Learned From Six (and a half) Failed Startup Attempts.]() I am a sucker for these stories, having a failed startup in my recent past. The conclusion conveniently helps me feel good about the failure.
 
 4. Agency:
-    ![embed](https://x.com/paulg/status/1885001767525499301?s=48)
+    ::: tweet
+    url: https://twitter.com/paulg/status/1885001767525499301
+    author: Paul Graham
+    handle: paulg
+    date: Thu Jan 30 16:26:57 +0000 2025
+    image: https://pbs.twimg.com/media/GijfCTJXQBEE0bI.png
+    body: |
+      This may be the most inspiring sentence I've ever read. Which is interesting because it's not phrased in the way things meant to be inspiring usually are.
+    :::
 
 5. How to prepare for an AI future: Coincidentally, I ran into a number of pieces on this topic last week. The first one from [Tyler Cowen](https://x.com/chrisbarber/status/1884722769327501594) and the second from [Nate Silver](https://www.natesilver.net/p/sbsq-17-how-should-you-prepare-for). Both have the same advice in the first place: use LLMs more than you do and for more things than you do.
 

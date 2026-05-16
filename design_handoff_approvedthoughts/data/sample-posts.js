@@ -1,0 +1,87 @@
+// Sample of real posts from approvedthoughts.com — used to populate mocks realistically.
+window.SAMPLE_POSTS = [
+  {
+    title: "Links: Weeks of 02 May 2026",
+    date: "May 1, 2026",
+    dateISO: "2026-05-02",
+    type: "Links",
+    typeKey: "links",
+    readTime: "1 min read",
+    tags: ["links"],
+    excerpt: "A popular icebreaker in San Francisco these days is \u201CHow would you spend your life if AGI meant nobody needed to work?\u201D For me, I think a surprisingly big part of the answer is a dorky-sounding kind of folk dance called contra dancing.",
+    isLinks: true,
+    linkItems: [
+      { title: "You should try contra dancing", host: "benkuhn.net", quote: "A popular icebreaker in San Francisco these days is \u201CHow would you spend your life if AGI meant nobody needed to work?\u201D For me, I think a surprisingly big part of the answer is a dorky-sounding kind of folk dance called contra dancing." },
+      { title: "My year of timelessness", host: "altered.substack.com", quote: "Once I committed to my writing, life lurched forward and started moving again. I regained the ability to arrive on time. I learned how to excuse myself from conversations." },
+      { title: "The Varieties of Jhanic Experience", host: "wystan.substack.com", quote: "A remarkable, reliable means and all-round aid to the purification of mind and consequent clear seeing is the practice of jhana, what the Buddha defined as samma samadhi, right concentration." },
+    ],
+  },
+  {
+    title: "Feeling the AGI",
+    date: "March 7, 2026",
+    dateISO: "2026-03-08",
+    type: "Post",
+    typeKey: "post",
+    readTime: "8 min read",
+    tags: ["ai", "llm"],
+    excerpt: "I have been using LLMs daily for two years now, and something shifted this spring. The models stopped feeling like clever autocomplete and started feeling like a counterpart \u2014 someone who reads what I send, thinks for a moment, and writes back.",
+    isLinks: false,
+  },
+  {
+    title: "Links: Weeks of 25 Apr 2026 \u2014 Backlash Edition",
+    date: "April 24, 2026",
+    dateISO: "2026-04-25",
+    type: "Links",
+    typeKey: "links",
+    readTime: "5 min read",
+    tags: ["links"],
+    excerpt: "In fact, the polling on this is so strong, I think it\u2019s fair to say that a lot of people hate AI, and that Gen Z in particular seems to hate AI more and more as they encounter it.",
+    isLinks: true,
+    linkItems: [
+      { title: "The people do not yearn for automation", host: "theverge.com", quote: "In fact, the polling on this is so strong, I think it\u2019s fair to say that a lot of people hate AI, and that Gen Z in particular seems to hate AI more and more as they encounter it." },
+      { title: "The task is not the job", host: "siliconcontinent.com", quote: "A job is a bundle of tasks. The real question is not whether AI can perform one component of the bundle. It is whether that component can be separated from the rest at low cost." },
+      { title: "What will be scarce?", host: "aleximas.substack.com", quote: "AI won\u2019t just automate the commodity economy. It will trigger the emergence of something new: a post-commodity economy, where a growing share of expenditure goes toward goods and services whose value is inseparable from the human who provided them." },
+    ],
+  },
+  {
+    title: "On reading slowly in a fast year",
+    date: "April 18, 2026",
+    dateISO: "2026-04-18",
+    type: "Thought Piece",
+    typeKey: "thoughtPiece",
+    readTime: "6 min read",
+    tags: ["books", "learning"],
+    excerpt: "There is a particular kind of book that resists being skimmed \u2014 not because it is dense, but because it is patient. It refuses to give up its argument until you have walked the full length of it. This year I have been trying to read more of those.",
+    isLinks: false,
+  },
+  {
+    title: "Notes on a week of jhana",
+    date: "April 12, 2026",
+    dateISO: "2026-04-12",
+    type: "Notes",
+    typeKey: "notes",
+    readTime: "3 min read",
+    tags: ["health", "learning"],
+    excerpt: "Sat for two hours a day across seven days. Less mystical than I expected, more boring than I feared. The interesting part is what happens at the edges \u2014 the moments before sitting and the hour after.",
+    isLinks: false,
+  },
+];
+
+window.RECENT_POSTS = [
+  { title: "Links: Weeks of 02 May 2026", date: "May 1, 2026" },
+  { title: "Links: Weeks of 25 Apr 2026 \u2014 Backlash Edition", date: "Apr 24, 2026" },
+  { title: "Links: Weeks of 19 Apr 2026", date: "Apr 18, 2026" },
+  { title: "Links: Weeks of 12 Apr 2026", date: "Apr 11, 2026" },
+  { title: "Links: Weeks of 05 Apr 2026", date: "Apr 4, 2026" },
+];
+
+window.ELSEWHERE = [
+  { name: "Marginal Revolution", url: "https://marginalrevolution.com" },
+  { name: "Zvi Mowshowitz", url: "https://thezvi.substack.com" },
+  { name: "Simon Willison", url: "https://simonwillison.net" },
+  { name: "S Anand", url: "https://www.s-anand.net/blog/" },
+  { name: "Ethan Mollick", url: "https://www.oneusefulthing.org" },
+  { name: "Andrej Karpathy", url: "https://karpathy.bearblog.dev/blog/" },
+  { name: "Astral Codex Ten", url: "https://astralcodexten.substack.com" },
+  { name: "Stratechery", url: "https://stratechery.com" },
+];

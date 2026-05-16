@@ -1,5 +1,5 @@
 ---
-title: "Links: Weeks of 25 Apr 2026 - Backlash Edition"
+title: "Links: Week of 25 Apr 2026 - Backlash Edition"
 date: 2026-04-25
 type: links
 description: 
@@ -38,6 +38,18 @@ draft: false
 
 8. This will be me.
 
-   ![embed](https://x.com/awnihannun/status/2047748613976264835?s=20)
+   ::: tweet
+   url: https://twitter.com/awnihannun/status/2047748613976264835
+   author: Awni Hannun
+   handle: awnihannun
+   date: Fri Apr 24 18:44:49 +0000 2026
+   body: |
+     Adopting Claude speak in my regular life, episode 1:
+     
+     Partner: Did you do the dishes tonight?
+     Me: Yes they're done.
+     Partner: Why are they still dirty?
+     Me: You're right to push back. I didn't actually do them.
+   :::
 
 After last week, did you not expect mean reversion? 

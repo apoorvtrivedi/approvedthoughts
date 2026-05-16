@@ -22,7 +22,25 @@ draft: false
    >
    > Professors told me that the most common—and most contentious—accommodation is the granting of extra time on exams. For students with learning disabilities, the extra time may be necessary to complete the test. But unlike a wheelchair ramp, this kind of accommodation can be exploited. Research confirms what intuition suggests: Extra time can confer an advantage to students who don’t have a disability.
 
-    ![embed](https://x.com/DKThomp/status/1995899910009626790?s=20)
+    ::: tweet
+    url: https://twitter.com/DKThomp/status/1995899910009626790
+    author: Derek Thompson
+    handle: DKThomp
+    date: Tue Dec 02 16:56:35 +0000 2025
+    image: https://pbs.twimg.com/media/G7LcXueWUAAC2Qg.png
+    body: |
+      This is a great piece with some mind-boggling statistics.
+      
+      - At Brown and Harvard, more than 20% of undergraduates are registered as disabled
+      - At Amherst: more than 30 percent
+      - At Stanford: nearly 40 percent
+      
+      Soon, many of these schools "may have more students receiving [disability] accommodations than not, a scenario that would have seemed absurd just a decade ago."
+      
+      As students and their parents have recognized the benefits of claiming disability—extended time on tests, housing accommodations, etc—the rates of disability at colleges, and especially at elite colleges, has exploded.
+      
+      America used to stigmatize disability too severely. Now elite institutions reward it too liberally. It simply does not make any sense to have a policy that declares half of the students at Stanford cognitively disabled and in need of accommodations.
+    :::
 
 
 3. [52 things I learned in 2025](https://medium.com/@tomwhitwell/52-things-i-learned-in-2025-edeca7e3fdd8): 

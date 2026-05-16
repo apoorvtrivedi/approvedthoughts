@@ -1,0 +1,1052 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Approved Thoughts — Phase 3 Templates</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; }
+  :root {
+    --paper: #f4efe6;
+    --paper-2: color-mix(in srgb, #f4efe6 88%, #000 4%);
+    --ink: #2a241d;
+    --ink-2: #685c4d;
+    --ink-3: #9b9082;
+    --rule: #d8cfbe;
+    --rule-soft: #e3dccd;
+    --accent: #b04a2f;
+    --accent-soft: color-mix(in srgb, #b04a2f 70%, #fff 30%);
+    --f-mark: 'Atkinson Hyperlegible', sans-serif;
+    --f-body: 'Nunito Sans', sans-serif;
+    --w-body: 300;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--f-body);
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: var(--w-body);
+    font-feature-settings: "kern","liga";
+  }
+  a { color: inherit; text-decoration: none; }
+  a.inline {
+    color: var(--accent);
+    border-bottom: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  }
+  a.inline:hover { border-bottom-color: var(--accent); }
+
+  /* Review-page chrome */
+  .review-bar {
+    background: #2a241d; color: #f4efe6;
+    padding: 14px 32px;
+    font-family: var(--f-body); font-size: 11px; letter-spacing: 0.18em;
+    text-transform: uppercase; display: flex; gap: 24px; align-items: center;
+    position: sticky; top: 0; z-index: 50;
+  }
+  .review-bar .label { color: var(--accent-soft); }
+  .review-bar a { color: rgba(244,239,230,.65); }
+  .review-bar a:hover { color: var(--paper); }
+  .review-bar .spacer { flex: 1; }
+
+  .section-header {
+    max-width: 1120px; margin: 96px auto 0; padding: 0 56px 18px;
+    border-bottom: 1px solid var(--rule);
+    display: flex; align-items: baseline; gap: 18px;
+  }
+  .section-header h2 {
+    font-family: var(--f-mark); font-size: 12px; letter-spacing: 0.32em;
+    text-transform: uppercase; color: var(--accent); font-weight: 700;
+    margin: 0;
+  }
+  .section-header .desc {
+    font-family: var(--f-body); font-size: 13px; color: var(--ink-2);
+  }
+
+  /* SHARED HEADER (used by every template) */
+  .at-header {
+    padding: 56px 56px 28px;
+    border-bottom: 1px solid var(--rule);
+    position: relative;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  .at-header-inner {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) 240px;
+    gap: 64px;
+  }
+  .at-header-col {
+    text-align: center;
+    position: relative;
+    padding-bottom: 4px;
+  }
+  .at-header-col::after {
+    content:''; position: absolute; left: 50%; bottom: -30px; transform: translateX(-50%);
+    width: 56px; height: 3px; background: var(--accent);
+  }
+  .at-name {
+    font-family: var(--f-mark);
+    font-size: 44px; font-weight: 700;
+    letter-spacing: -0.005em; line-height: 1;
+    color: var(--ink);
+  }
+  .at-name em {
+    color: var(--accent);
+    font-style: normal; font-weight: 700;
+  }
+  .at-nav {
+    display: flex; gap: 32px; justify-content: center; margin-top: 26px;
+    font-family: var(--f-body); font-size: 12px; letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .at-nav a {
+    color: var(--ink-2); padding-bottom: 6px;
+    border-bottom: 1px solid transparent;
+  }
+  .at-nav a.active { color: var(--ink); border-bottom-color: var(--accent); }
+  .at-nav .rss-nav {
+    display: inline-flex; align-items: center; gap: 6px;
+    color: var(--accent);
+  }
+  .at-nav .rss-nav svg { width: 11px; height: 11px; }
+  .at-nav .rss-nav:hover { border-bottom-color: var(--accent); }
+
+  /* TEMPLATE FRAME */
+  .at-page { background: var(--paper); }
+  .at-body {
+    display: grid; grid-template-columns: minmax(0,1fr) 240px;
+    gap: 64px; max-width: 1120px; margin: 0 auto; padding: 48px 56px 56px;
+  }
+  .at-body.single {
+    grid-template-columns: minmax(0,1fr);
+    max-width: 760px;
+  }
+
+  /* SHARED SIDEBAR */
+  .at-side { font-family: var(--f-body); font-size: 14.5px; }
+  .at-side > section { margin-bottom: 36px; }
+  .at-side h3 {
+    font-family: var(--f-body); font-weight: 600; font-size: 12px;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    margin: 0 0 14px; padding-bottom: 8px;
+    border-bottom: 1px solid var(--accent);
+    color: var(--accent);
+  }
+  .at-side ul { list-style: none; padding: 0; margin: 0; }
+  .at-side li { padding: 6px 0; border-bottom: 1px dotted var(--rule); }
+  .at-side li:last-child { border-bottom: none; }
+  .at-recent-title { font-size: 13.5px; line-height: 1.3; color: var(--ink); display: block; font-weight: 600; }
+  .at-recent-date { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-top: 2px; display: block; }
+  .at-side a:hover .at-recent-title { color: var(--accent); }
+  .at-elsewhere a { display: flex; justify-content: space-between; padding: 3px 0; font-size: 13.5px; color: var(--ink); }
+  .at-elsewhere a::after { content: '↗'; color: var(--ink-3); font-size: 12px; }
+  .at-elsewhere a:hover { color: var(--accent); }
+  .at-search-box {
+    background: var(--paper-2); border: 1px solid var(--rule); padding: 10px 12px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .at-search-box input { border: none; outline: none; background: transparent; font: inherit; flex: 1; color: var(--ink); }
+  .at-search-box input::placeholder { color: var(--ink-3); }
+
+  /* SHARED FOOTER */
+  .at-footer {
+    background: var(--paper-2);
+    padding: 28px 56px;
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: var(--f-body); font-size: 11px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--ink-2);
+    border-top: 3px double var(--rule);
+  }
+  .at-footer .seal {
+    font-family: var(--f-mark); font-size: 13px; font-weight: 700;
+    letter-spacing: 0.02em; text-transform: none; color: var(--ink);
+  }
+  .at-footer .links { display: flex; gap: 22px; align-items: center; }
+  .at-footer a { color: var(--ink-2); }
+  .at-footer a:hover { color: var(--accent); }
+  .at-rss {
+    display: inline-flex; align-items: center; gap: 6px;
+    color: var(--accent);
+  }
+  .at-rss svg { width: 11px; height: 11px; }
+
+  /* ===== POST PAGE ===== */
+  .pp-meta {
+    display: flex; gap: 18px; align-items: baseline; margin-bottom: 14px;
+    font-family: var(--f-body); font-size: 11px; letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .pp-meta .date { color: var(--accent); font-weight: 600; }
+  .pp-meta .read { color: var(--ink-3); letter-spacing: 0.08em; text-transform: none; font-size: 12px; }
+  .pp-meta .type { color: var(--ink-2); }
+
+  .pp-title {
+    font-family: var(--f-body); font-weight: 700;
+    font-size: 36px; line-height: 1.15; letter-spacing: -0.015em;
+    margin: 0 0 32px; max-width: 22ch;
+  }
+
+  .pp-prose { font-family: var(--f-body); max-width: 64ch; }
+  .pp-prose p { margin: 0 0 1.1em; line-height: 1.65; }
+  .pp-prose h2 {
+    font-family: var(--f-body); font-weight: 700;
+    font-size: 22px; letter-spacing: -0.01em;
+    margin: 2.2em 0 0.6em; padding-top: 0.4em;
+  }
+  .pp-prose h3 {
+    font-family: var(--f-body); font-weight: 600;
+    font-size: 17px; margin: 2em 0 0.4em;
+    color: var(--ink);
+  }
+  .pp-prose blockquote {
+    border-left: 2px solid var(--accent-soft);
+    padding-left: 18px; margin: 1.6em 0; color: var(--ink-2);
+    font-style: italic;
+  }
+  .pp-prose strong { font-weight: 600; }
+
+  /* Footnote — INLINE variant (used in body text) */
+  .pp-prose .fnref {
+    font-size: 0.7em; vertical-align: super; line-height: 0;
+    color: var(--accent); font-weight: 600;
+    padding: 0 1px;
+  }
+  .pp-prose .fnref a { color: var(--accent); }
+  .pp-footnotes {
+    margin: 56px 0 0; padding: 24px 0 0;
+    border-top: 1px solid var(--rule);
+    font-size: 14px; line-height: 1.55;
+  }
+  .pp-footnotes .fn-label {
+    font-family: var(--f-body); font-size: 11px; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--accent); font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .pp-footnotes ol { padding-left: 1.4em; margin: 0; }
+  .pp-footnotes li { margin-bottom: 0.8em; color: var(--ink-2); }
+  .pp-footnotes li::marker { color: var(--accent); font-weight: 600; }
+  .pp-footnotes a.return { color: var(--accent); margin-left: 6px; }
+
+  /* Footnote — SIDENOTE variant (right margin) */
+  .pp-prose-sn {
+    position: relative;
+    /* Wider container needed for sidenotes */
+    max-width: none;
+  }
+  .pp-prose-sn p { max-width: 64ch; margin: 0 0 1.1em; line-height: 1.65; }
+  .pp-prose-sn h2, .pp-prose-sn h3 { max-width: 64ch; }
+  .pp-prose-sn .sidenote {
+    float: right;
+    clear: right;
+    width: 220px;
+    margin-right: -260px;
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 12.5px;
+    line-height: 1.45;
+    color: var(--ink-2);
+    padding-left: 14px;
+    border-left: 2px solid var(--accent-soft);
+  }
+  .pp-prose-sn .sidenote-num {
+    color: var(--accent); font-weight: 700; font-size: 11px;
+    letter-spacing: 0.08em; display: block; margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+  .pp-prose-sn .snref {
+    font-size: 0.7em; vertical-align: super; line-height: 0;
+    color: var(--accent); font-weight: 600; padding: 0 1px;
+  }
+  /* Hide sidenotes on narrow viewports — fall back to inline footnotes */
+  @media (max-width: 1080px) {
+    .pp-prose-sn .sidenote {
+      float: none; width: auto; margin: 1em 0;
+      padding: 12px 14px; background: var(--paper-2);
+      border-left: 2px solid var(--accent-soft);
+    }
+  }
+
+  /* Embedded image inside post */
+  .pp-figure { margin: 2em 0; }
+  .pp-figure .pp-img {
+    aspect-ratio: 16 / 10;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 20%, var(--paper)), var(--paper-2));
+    border: 1px solid var(--rule);
+    display: grid; place-items: center;
+  }
+  .pp-figure .pp-img::after {
+    content: 'IMAGE';
+    font-size: 11px; letter-spacing: 0.24em; color: var(--ink-3);
+  }
+  .pp-figure figcaption {
+    font-size: 12px; color: var(--ink-3);
+    padding-top: 10px; margin-top: 10px;
+    border-top: 1px solid var(--rule-soft);
+  }
+
+  /* Tag chips at bottom of post */
+  .pp-tags {
+    margin: 48px 0 0; padding: 24px 0 0;
+    border-top: 1px solid var(--rule);
+    display: flex; gap: 14px; align-items: baseline;
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  }
+  .pp-tags .label { color: var(--ink-3); }
+  .pp-tags a { color: var(--accent); font-weight: 600; }
+
+  /* Prev/Next */
+  .pp-pagination {
+    margin: 36px 0 0; padding: 24px 0 0;
+    border-top: 1px solid var(--rule);
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+    font-family: var(--f-body);
+  }
+  .pp-pagination a { color: var(--ink); display: block; }
+  .pp-pagination .label {
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; margin-bottom: 6px; display: block;
+  }
+  .pp-pagination .ttl { font-size: 15px; font-weight: 600; line-height: 1.35; }
+  .pp-pagination .next { text-align: right; }
+  .pp-pagination a:hover .ttl { color: var(--accent); }
+
+  /* ===== ARCHIVES ===== */
+  .ar-h1 {
+    font-family: var(--f-body); font-weight: 700;
+    font-size: 32px; letter-spacing: -0.01em;
+    margin: 0 0 24px;
+  }
+  .ar-search {
+    background: var(--paper-2); border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 12px 20px; display: flex; align-items: center; gap: 12px;
+    margin-bottom: 18px;
+  }
+  .ar-search input {
+    border: none; outline: none; background: transparent; font: inherit;
+    font-size: 16px; flex: 1; color: var(--ink);
+  }
+  .ar-search input::placeholder { color: var(--ink-3); }
+  .ar-search .icon { color: var(--accent); font-size: 14px; }
+
+  .ar-stats {
+    display: flex; gap: 28px; padding: 14px 0;
+    justify-content: space-between;
+    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+    margin-bottom: 36px;
+  }
+  .ar-stats .stat .n {
+    font-family: var(--f-body); font-weight: 700; font-size: 20px;
+    color: var(--accent); display: block; line-height: 1;
+  }
+  .ar-stats .stat .l {
+    font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--ink-3); margin-top: 4px; display: block;
+  }
+
+  .ar-section-label {
+    font-family: var(--f-body); font-weight: 600;
+    font-size: 11px; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--accent);
+    margin: 28px 0 12px; padding-bottom: 6px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  /* Tag cloud — top of page */
+  .ar-tagcloud { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+  .ar-tagcloud a {
+    font-size: 12px; padding: 5px 12px;
+    background: var(--paper-2); border: 1px solid var(--rule);
+    border-radius: 999px;
+    color: var(--accent);
+    display: inline-flex; align-items: baseline; gap: 6px;
+  }
+  .ar-tagcloud a .n {
+    color: var(--ink-3); font-size: 10px;
+  }
+  .ar-tagcloud a:hover { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--paper)); }
+  .ar-tagcloud a.big { font-size: 13px; font-weight: 500; }
+  .ar-tagcloud a.bigger { font-size: 14px; font-weight: 600; }
+
+  /* Collapsible year bars */
+  .ar-year-block { border-top: 1px solid var(--rule); }
+  .ar-year-block:last-of-type { border-bottom: 1px solid var(--rule); }
+  .ar-year-block summary {
+    list-style: none; cursor: pointer;
+    display: flex; align-items: baseline; justify-content: space-between;
+    padding: 18px 4px;
+    font-family: var(--f-body); font-weight: 700;
+    font-size: 22px; color: var(--ink);
+    letter-spacing: 0.01em;
+    position: relative;
+  }
+  .ar-year-block summary::-webkit-details-marker { display: none; }
+  .ar-year-block summary::before {
+    content: '+'; position: absolute; right: 4px;
+    font-family: var(--f-mark); font-weight: 400;
+    font-size: 22px; color: var(--accent);
+    transition: transform 0.2s ease;
+  }
+  .ar-year-block[open] > summary::before { content: '–'; }
+  .ar-year-block summary:hover { color: var(--accent); }
+  .ar-year-block .ar-year-count {
+    font-family: var(--f-body); font-weight: 400;
+    font-size: 11px; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--ink-3);
+    margin-left: 14px; padding-right: 28px;
+  }
+  .ar-year-block .ar-year-body { padding: 0 4px 18px; }
+
+  .ar-month {
+    font-family: var(--f-body); font-weight: 600;
+    font-size: 11px; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--ink-2);
+    margin: 18px 0 6px;
+  }
+  .ar-list { list-style: none; padding: 0; margin: 0; }
+  .ar-list li {
+    display: grid; grid-template-columns: 80px 1fr auto; gap: 18px;
+    padding: 8px 0; border-bottom: 1px dotted var(--rule);
+    align-items: baseline;
+  }
+  .ar-list li:last-child { border-bottom: none; }
+  .ar-list .date {
+    font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .ar-list .ttl { font-size: 15px; color: var(--ink); font-weight: 600; line-height: 1.35; }
+  .ar-list a:hover .ttl { color: var(--accent); }
+  .ar-list .type {
+    font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--ink-3); justify-self: end;
+  }
+
+  /* ===== ABOUT ===== */
+  .ab-h1 {
+    font-family: var(--f-body); font-weight: 700;
+    font-size: 36px; letter-spacing: -0.015em;
+    margin: 0 0 8px;
+  }
+  .ab-sub {
+    font-size: 13px; color: var(--ink-3); margin-bottom: 32px;
+    letter-spacing: 0.06em; text-transform: uppercase;
+  }
+  .ab-prose { font-family: var(--f-body); }
+  .ab-prose p { margin: 0 0 1.1em; line-height: 1.65; }
+  .ab-prose h2 {
+    font-family: var(--f-body); font-weight: 700;
+    font-size: 18px; letter-spacing: 0.01em;
+    margin: 2em 0 0.6em;
+  }
+  .ab-contact {
+    margin: 40px 0 0; padding: 24px 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 18px;
+  }
+  .ab-contact-item .label {
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; display: block; margin-bottom: 4px;
+  }
+  .ab-contact-item .value { font-size: 15px; color: var(--ink); }
+
+  /* ===== 404 ===== */
+  .nf-wrap {
+    max-width: 760px; margin: 0 auto; padding: 120px 56px 96px;
+    text-align: center;
+  }
+  .nf-mark {
+    font-family: var(--f-mark); font-weight: 700;
+    font-size: 18px; letter-spacing: 0.04em;
+    color: var(--accent); margin-bottom: 60px;
+    text-transform: uppercase;
+  }
+  .nf-num {
+    font-family: var(--f-mark); font-weight: 700;
+    font-size: 120px; letter-spacing: -0.01em;
+    color: var(--ink); line-height: 1;
+    position: relative; display: inline-block;
+  }
+  .nf-num::after {
+    content: ''; display: block; width: 56px; height: 3px;
+    background: var(--accent); margin: 24px auto 0;
+  }
+  .nf-line {
+    font-family: var(--f-body); font-weight: 700;
+    font-size: 28px; letter-spacing: -0.005em;
+    margin: 36px 0 18px;
+  }
+  .nf-line em { color: var(--accent); font-style: normal; }
+  .nf-sub {
+    font-family: var(--f-body); font-size: 16px; line-height: 1.6;
+    color: var(--ink-2); max-width: 48ch; margin: 0 auto 36px;
+  }
+  .nf-actions {
+    display: flex; gap: 32px; justify-content: center;
+    font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+  }
+  .nf-actions a {
+    padding-bottom: 6px; border-bottom: 1px solid var(--accent);
+    color: var(--accent); font-weight: 600;
+  }
+  .nf-actions a.muted {
+    color: var(--ink-2); border-color: var(--ink-3);
+  }
+
+  /* ===== RSS button variants ===== */
+  .rss-variants {
+    max-width: 1120px; margin: 0 auto; padding: 32px 56px 0;
+    display: grid; gap: 32px;
+  }
+  .rss-variant {
+    border: 1px solid var(--rule); padding: 18px 22px;
+  }
+  .rss-variant .vlabel {
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--accent); font-weight: 700; margin-bottom: 12px;
+  }
+  .rss-variant .vnote {
+    font-size: 12px; color: var(--ink-2); margin-top: 12px;
+  }
+  .rss-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    color: var(--accent); font-weight: 600;
+    font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase;
+  }
+  .rss-link svg { width: 12px; height: 12px; }
+  .rss-pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 12px; border: 1px solid var(--accent-soft);
+    background: color-mix(in srgb, var(--accent) 6%, var(--paper));
+    color: var(--accent); font-size: 11px; letter-spacing: 0.16em;
+    text-transform: uppercase; font-weight: 600;
+  }
+  .rss-pill svg { width: 11px; height: 11px; }
+  .rss-icon {
+    color: var(--accent); display: inline-flex; align-items: center;
+    width: 14px; height: 14px;
+  }
+</style>
+</head>
+<body>
+  <div class="review-bar">
+    <span class="label">Approved Thoughts — Phase 3</span>
+    <span class="spacer"></span>
+    <a href="#post">Post page</a>
+    <a href="#archives">Archives</a>
+    <a href="#about">About</a>
+    <a href="#404">404</a>
+    <a href="#rss">RSS</a>
+  </div>
+
+  <!-- ============== POST PAGE ============== -->
+  <div class="section-header" id="post">
+    <h2>Post page</h2>
+    <span class="desc">Single-post template. Footnotes shown inline (most posts) and as right-margin sidenotes (long-reads).</span>
+  </div>
+
+  <div class="at-page" data-screen-label="Post page">
+    <header class="at-header">
+      <div class="at-header-inner">
+        <div class="at-header-col">
+          <a href="#" class="at-name-link"><div class="at-name">Approved <em>Thoughts</em></div></a>
+          <nav class="at-nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Archives</a>
+            <a href="#" class="rss-nav" title="RSS feed"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3a16 16 0 0 1 16 16h-3A13 13 0 0 0 5 6V3zm0 7a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm1.5 7.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>RSS</a>
+          </nav>
+        </div>
+        <div></div>
+      </div>
+    </header>
+
+    <div class="at-body">
+      <main>
+        <div class="pp-meta">
+          <span class="date">March 7, 2026</span>
+          <span class="read">8 min read</span>
+          <span class="type">Post</span>
+        </div>
+        <h1 class="pp-title">Feeling the AGI</h1>
+
+        <div class="pp-prose">
+          <p>I have been using LLMs daily for two years now, and something shifted this spring. The models stopped feeling like clever autocomplete and started feeling like a counterpart — someone who reads what I send, thinks for a moment, and writes back.<sup class="fnref"><a href="#fn1" id="fnref1">1</a></sup></p>
+
+          <p>The shift wasn't about benchmarks. The benchmarks have been climbing all year. It was about a different kind of evidence — the kind that accrues quietly, in the small moments where a model surprises me by understanding what I actually meant rather than what I literally said.</p>
+
+          <h2>Three small surprises</h2>
+
+          <p>I keep a folder of these moments. Here are three from the last week.</p>
+
+          <p>The first was a planning conversation. I was thinking out loud about a book I want to write, and the model interrupted me — politely, but firmly — to point out that the question I was asking presupposed an answer to a different question I hadn't actually thought through yet.<sup class="fnref"><a href="#fn2" id="fnref2">2</a></sup> It was right.</p>
+
+          <figure class="pp-figure">
+            <div class="pp-img"></div>
+            <figcaption>Fig. 1 — A diagram of the model's response to a prompt about narrative structure.</figcaption>
+          </figure>
+
+          <p>The second was a debugging session that lasted forty-five minutes. I was stuck on a subtle bug in a build script. The model and I went back and forth, each turn narrowing the search. When we finally found it — a wrong path separator on Windows — the model said something like, <em>"I should have asked about your operating system earlier. I'm sorry for the long detour."</em> No human collaborator I have ever worked with apologizes that crisply.</p>
+
+          <p>The third was the smallest. I asked for help proofreading a paragraph and the model said, <em>"This paragraph is fine, but the one before it is doing the same work twice. Want me to merge them?"</em> I had not asked it to look at the paragraph before. <a href="#" class="inline">It had read the whole essay</a> on its own, the way a good editor would.</p>
+
+          <h2>What this isn't</h2>
+
+          <p>None of this is AGI. The models still hallucinate. They still get math wrong sometimes. They still fail in ways that would embarrass a careful undergraduate. But the texture of the daily interaction is different than it was a year ago, and I think that is the thing worth paying attention to.</p>
+
+          <blockquote>Benchmarks measure what we know to ask. The real shifts are in what we did not know to measure.</blockquote>
+
+          <p>If I had to name the change in one sentence: the models have stopped feeling like tools and started feeling like collaborators with a particular set of strengths and weaknesses, the way colleagues do.</p>
+
+          <h2>Where I think this goes</h2>
+
+          <p>The next step is not "AGI" in the dramatic sense. It is something more boring and more profound — the slow, distributed integration of these systems into how knowledge work actually gets done. Not a single moment of takeoff, but a thousand small moments where something that used to take an hour now takes ten minutes.<sup class="fnref"><a href="#fn3" id="fnref3">3</a></sup></p>
+
+          <p>I am writing this slowly because I want to remember what it felt like before the shift was obvious to everyone.</p>
+        </div>
+
+        <div class="pp-footnotes">
+          <div class="fn-label">Footnotes</div>
+          <ol>
+            <li id="fn1">
+              "Counterpart" is doing a lot of work in this sentence. I do not mean a peer. I mean something more like a thoughtful research assistant who has read very widely and forgets nothing of what we have already discussed in this session. <a href="#fnref1" class="return">↩</a>
+            </li>
+            <li id="fn2">
+              The specific question was about whether the book is for people who already love the topic or for people who do not yet know they should. Different books. <a href="#fnref2" class="return">↩</a>
+            </li>
+            <li id="fn3">
+              I keep thinking of the line about how the future is already here, just unevenly distributed. The unevenness is the interesting part. <a href="#fnref3" class="return">↩</a>
+            </li>
+          </ol>
+        </div>
+
+        <div class="pp-tags">
+          <span class="label">Tagged</span>
+          <a href="#">#ai</a>
+          <a href="#">#llm</a>
+        </div>
+
+        <div class="pp-pagination">
+          <a href="#" class="prev">
+            <span class="label">← Older</span>
+            <span class="ttl">On reading slowly in a fast year</span>
+          </a>
+          <a href="#" class="next">
+            <span class="label">Newer →</span>
+            <span class="ttl">Links: Weeks of 25 Apr 2026 — Backlash Edition</span>
+          </a>
+        </div>
+      </main>
+
+      <aside class="at-side">
+        <section>
+          <h3>Recent</h3>
+          <ul>
+            <li><a href="#"><span class="at-recent-title">Links: Weeks of 02 May 2026</span><span class="at-recent-date">May 1, 2026</span></a></li>
+            <li><a href="#"><span class="at-recent-title">On reading slowly in a fast year</span><span class="at-recent-date">Apr 18, 2026</span></a></li>
+            <li><a href="#"><span class="at-recent-title">Notes on a week of jhana</span><span class="at-recent-date">Apr 12, 2026</span></a></li>
+            <li><a href="#"><span class="at-recent-title">Links: Weeks of 12 Apr 2026</span><span class="at-recent-date">Apr 11, 2026</span></a></li>
+            <li><a href="#"><span class="at-recent-title">Links: Weeks of 05 Apr 2026</span><span class="at-recent-date">Apr 4, 2026</span></a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Elsewhere</h3>
+          <div class="at-elsewhere">
+            <a href="#">Twitter</a>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Goodreads</a>
+          </div>
+        </section>
+        <section>
+          <h3>Subscribe</h3>
+          <ul style="display: flex; flex-direction: column; gap: 6px;">
+            <li style="border: none; padding: 0;">
+              <a href="#" style="color: var(--ink); display: grid; grid-template-columns: 14px 1fr; gap: 8px; align-items: center; font-size: 13.5px;">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="color: var(--accent); width: 12px; height: 12px;"><path d="M5 3a16 16 0 0 1 16 16h-3A13 13 0 0 0 5 6V3zm0 7a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm1.5 7.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>
+                <span>RSS feed</span>
+              </a>
+            </li>
+            <li style="border: none; padding: 0;">
+              <a href="#" style="color: var(--ink); display: grid; grid-template-columns: 14px 1fr; gap: 8px; align-items: center; font-size: 13.5px;">
+                <span></span>
+                <span>JSON feed</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+
+    <footer class="at-footer">
+      <span class="seal">Approved Thoughts · MMXXVI</span>
+      <div class="links">
+        <a href="#" class="at-rss">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3a16 16 0 0 1 16 16h-3A13 13 0 0 0 5 6V3zm0 7a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm1.5 7.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>
+          RSS
+        </a>
+        <a href="#">JSON</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ============== POST PAGE — SIDENOTE VARIANT (REMOVED) ==============
+  <!--
+  <div class="section-header">
+    <h2>Post page — sidenote variant</h2>
+    <span class="desc">Footnotes float in the right margin next to the paragraph that references them. Pure CSS. Falls back to inline at &lt;1080px.</span>
+  </div>
+
+  <div class="at-page">
+    <header class="at-header">
+      <div class="at-header-inner">
+        <div class="at-header-col">
+          <div class="at-name">Approved <em>Thoughts</em></div>
+          <nav class="at-nav">
+            <a href="#">Home</a><a href="#">About</a><a href="#">Archives</a>
+          </nav>
+        </div>
+        <div></div>
+      </div>
+    </header>
+
+    <div class="at-body" style="grid-template-columns: minmax(0, 1fr); max-width: 920px;">
+      <main>
+        <div class="pp-meta">
+          <span class="date">April 18, 2026</span>
+          <span class="read">6 min read</span>
+          <span class="type">Thought Piece</span>
+        </div>
+        <h1 class="pp-title">On reading slowly in a fast year</h1>
+
+        <div class="pp-prose pp-prose-sn">
+          <p>There is a particular kind of book that resists being skimmed — not because it is dense, but because it is patient. It refuses to give up its argument until you have walked the full length of it.<sup class="snref">1</sup> This year I have been trying to read more of those.</p>
+          <aside class="sidenote">
+            <span class="sidenote-num">Note 1</span>
+            The classic example is anything by Christopher Alexander. The Pattern Language only makes sense when you have walked from page one to page nine hundred.
+          </aside>
+
+          <p>The faster the world feels, the more I notice the difference between two kinds of reading. The first is reading-for-extraction — what does this say, what is the thesis, can I summarize it for someone over coffee. The second is reading-for-company<sup class="snref">2</sup> — sitting with a writer's mind as it works on a problem, watching them turn it over.</p>
+          <aside class="sidenote">
+            <span class="sidenote-num">Note 2</span>
+            I think I learned this phrase from Sven Birkerts, but I cannot find the citation, which is itself a small comment on what reading-for-extraction does to memory.
+          </aside>
+
+          <p>Most of what I read online is the first kind, and I am not sure I retain any of it. The articles vanish from my mind almost before I have finished them. The books that have stayed with me — the ones I find myself thinking about at unexpected moments — were almost all read the second way.</p>
+
+          <p>So here is a small commitment I am making, in writing, in public, so I am more likely to keep it: <a href="#" class="inline">one slow book a month</a> through the end of the year. Not skimmed. Not read on a phone. Not summarized into notes I will never re-read. Read.<sup class="snref">3</sup></p>
+          <aside class="sidenote">
+            <span class="sidenote-num">Note 3</span>
+            The list, in order: <em>The Order of Time</em>, Carlo Rovelli. <em>The Glass Bead Game</em>, Hesse. <em>Dao De Jing</em>, Le Guin's translation. Suggestions welcome.
+          </aside>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  -->
+
+  <!-- ============== ARCHIVES ============== -->
+  <div class="section-header" id="archives">
+    <h2>Archives page</h2>
+    <span class="desc">Search bar, by-year + by-month listing, tag cloud in sidebar.</span>
+  </div>
+
+  <div class="at-page" data-screen-label="Archives">
+    <header class="at-header">
+      <div class="at-header-inner">
+        <div class="at-header-col">
+          <div class="at-name">Approved <em>Thoughts</em></div>
+          <nav class="at-nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#" class="active">Archives</a>
+            <a href="#" class="rss-nav" title="RSS feed"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3a16 16 0 0 1 16 16h-3A13 13 0 0 0 5 6V3zm0 7a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm1.5 7.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>RSS</a>
+          </nav>
+        </div>
+        <div></div>
+      </div>
+    </header>
+
+    <div class="at-body single" style="max-width: 880px;">
+      <main>
+        <h1 class="ar-h1">Archives</h1>
+
+        <div class="ar-search">
+          <span class="icon">⌕</span>
+          <input placeholder="Search posts, links and notes…" />
+        </div>
+
+        <div class="ar-stats">
+          <div class="stat"><span class="n">6</span><span class="l">Years</span></div>
+          <div class="stat"><span class="n">142</span><span class="l">Posts</span></div>
+          <div class="stat"><span class="n">4</span><span class="l">Categories</span></div>
+          <div class="stat"><span class="n">38</span><span class="l">Tags</span></div>
+        </div>
+
+        <div class="ar-section-label">Common tags</div>
+        <div class="ar-tagcloud">
+          <a href="#" class="bigger">ai <span class="n">42</span></a>
+          <a href="#" class="bigger">books <span class="n">28</span></a>
+          <a href="#" class="big">llm <span class="n">22</span></a>
+          <a href="#" class="big">writing <span class="n">19</span></a>
+          <a href="#" class="big">learning <span class="n">17</span></a>
+          <a href="#">tech <span class="n">14</span></a>
+          <a href="#">health <span class="n">9</span></a>
+          <a href="#">work <span class="n">8</span></a>
+          <a href="#">india <span class="n">7</span></a>
+          <a href="#">music <span class="n">5</span></a>
+          <a href="#">cities <span class="n">4</span></a>
+          <a href="#">food <span class="n">3</span></a>
+          <a href="#">parenting <span class="n">3</span></a>
+          <a href="#">design <span class="n">2</span></a>
+        </div>
+
+        <div class="ar-section-label">By year</div>
+
+        <details class="ar-year-block" open>
+          <summary>2026<span class="ar-year-count">38 posts</span></summary>
+          <div class="ar-year-body">
+            <div class="ar-month">May</div>
+            <ul class="ar-list">
+              <li><span class="date">May 1</span><a href="#"><span class="ttl">Links: Weeks of 02 May 2026</span></a><span class="type">Links</span></li>
+            </ul>
+            <div class="ar-month">April</div>
+            <ul class="ar-list">
+              <li><span class="date">Apr 24</span><a href="#"><span class="ttl">Links: Weeks of 25 Apr 2026 — Backlash Edition</span></a><span class="type">Links</span></li>
+              <li><span class="date">Apr 18</span><a href="#"><span class="ttl">On reading slowly in a fast year</span></a><span class="type">Thought Piece</span></li>
+              <li><span class="date">Apr 12</span><a href="#"><span class="ttl">Notes on a week of jhana</span></a><span class="type">Notes</span></li>
+              <li><span class="date">Apr 11</span><a href="#"><span class="ttl">Links: Weeks of 12 Apr 2026</span></a><span class="type">Links</span></li>
+              <li><span class="date">Apr 4</span><a href="#"><span class="ttl">Links: Weeks of 05 Apr 2026</span></a><span class="type">Links</span></li>
+            </ul>
+            <div class="ar-month">March</div>
+            <ul class="ar-list">
+              <li><span class="date">Mar 28</span><a href="#"><span class="ttl">Links: Weeks of 28 Mar 2026</span></a><span class="type">Links</span></li>
+              <li><span class="date">Mar 21</span><a href="#"><span class="ttl">Links: Weeks of 21 Mar 2026</span></a><span class="type">Links</span></li>
+              <li><span class="date">Mar 14</span><a href="#"><span class="ttl">Notes on the new model release</span></a><span class="type">Notes</span></li>
+              <li><span class="date">Mar 7</span><a href="#"><span class="ttl">Feeling the AGI</span></a><span class="type">Post</span></li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="ar-year-block">
+          <summary>2025<span class="ar-year-count">52 posts</span></summary>
+          <div class="ar-year-body">
+            <div class="ar-month">December</div>
+            <ul class="ar-list">
+              <li><span class="date">Dec 28</span><a href="#"><span class="ttl">A year of links — what I learned</span></a><span class="type">Thought Piece</span></li>
+              <li><span class="date">Dec 21</span><a href="#"><span class="ttl">Links: Weeks of 21 Dec 2025</span></a><span class="type">Links</span></li>
+            </ul>
+            <div style="margin-top: 14px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-3); text-align: center; padding: 10px 0;">··· 50 more in 2025 ···</div>
+          </div>
+        </details>
+
+        <details class="ar-year-block">
+          <summary>2024<span class="ar-year-count">28 posts</span></summary>
+          <div class="ar-year-body"><div style="font-size: 12px; color: var(--ink-3); padding: 10px 0;">28 posts — click to expand.</div></div>
+        </details>
+
+        <details class="ar-year-block">
+          <summary>2023<span class="ar-year-count">14 posts</span></summary>
+          <div class="ar-year-body"><div style="font-size: 12px; color: var(--ink-3); padding: 10px 0;">14 posts — click to expand.</div></div>
+        </details>
+
+        <details class="ar-year-block">
+          <summary>2022<span class="ar-year-count">7 posts</span></summary>
+          <div class="ar-year-body"><div style="font-size: 12px; color: var(--ink-3); padding: 10px 0;">7 posts — click to expand.</div></div>
+        </details>
+
+        <details class="ar-year-block">
+          <summary>2021<span class="ar-year-count">3 posts</span></summary>
+          <div class="ar-year-body"><div style="font-size: 12px; color: var(--ink-3); padding: 10px 0;">3 posts — click to expand.</div></div>
+        </details>
+      </main>
+    </div>
+
+    <footer class="at-footer">
+      <span class="seal">Approved Thoughts · MMXXVI</span>
+      <div class="links">
+        <a href="#" class="at-rss">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3a16 16 0 0 1 16 16h-3A13 13 0 0 0 5 6V3zm0 7a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm1.5 7.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>
+          RSS
+        </a>
+        <a href="#">JSON</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ============== ABOUT ============== -->
+  <div class="section-header" id="about">
+    <h2>About page</h2>
+    <span class="desc">Single column, no sidebar, no left meta rail. Reading width.</span>
+  </div>
+
+  <div class="at-page" data-screen-label="About">
+    <header class="at-header">
+      <div class="at-header-inner">
+        <div class="at-header-col">
+          <div class="at-name">Approved <em>Thoughts</em></div>
+          <nav class="at-nav">
+            <a href="#">Home</a>
+            <a href="#" class="active">About</a>
+            <a href="#">Archives</a>
+            <a href="#" class="rss-nav" title="RSS feed"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3a16 16 0 0 1 16 16h-3A13 13 0 0 0 5 6V3zm0 7a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm1.5 7.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>RSS</a>
+          </nav>
+        </div>
+        <div></div>
+      </div>
+    </header>
+
+    <div class="at-body single">
+      <main>
+        <h1 class="ab-h1">About</h1>
+
+        <div class="ab-prose">
+          <p>I am Apoorv. I am a product person living in Bengaluru, with stops in Boston, San Francisco, and Bombay along the way. This is my notebook — a place where I think out loud about the things I read, the books I am working through, and the slow questions that don't have a fast answer.</p>
+
+          <p>The site has four kinds of writing:</p>
+
+          <p><strong>Links</strong> — a weekly digest of articles, essays, and threads that made me stop. Curated, not exhaustive. Roughly half a dozen items per week, with a sentence or two on why each one matters.</p>
+
+          <p><strong>Posts</strong> — longer-form essays on topics I am thinking through. These take me a while to write, so they appear unevenly.</p>
+
+          <p><strong>Notes</strong> — short, dated observations. Not edited heavily. The fast loop.</p>
+
+          <p><strong>Thought Pieces</strong> — when a Note grows up. Quieter than a Post; more personal than a Note.</p>
+
+          <h2>Why "Approved Thoughts"</h2>
+
+          <p>The name is a small joke at my own expense. Earlier in my career, I had a manager who would mark up draft documents with the phrase "approved thought" next to ideas she found worth pursuing. It became a private shorthand for the thing I am still trying to do — distinguish the ideas that are merely interesting from the ones that are actually true, and worth the trouble of saying out loud.</p>
+
+          <h2>How this site works</h2>
+
+          <p>Static HTML, generated from Markdown by a small Node script I wrote myself. Hosted on a CDN, no tracking, no cookies, no comments. The full source is on <a href="#" class="inline">GitHub</a>. If you find a typo, a pull request is the most flattering form of feedback.</p>
+
+          <p>If you want to follow along, the <a href="#" class="inline">RSS feed</a> is the best way. I do not have a newsletter and do not plan to start one.</p>
+        </div>
+      </main>
+    </div>
+
+    <footer class="at-footer">
+      <span class="seal">Approved Thoughts · MMXXVI</span>
+      <div class="links">
+        <a href="#" class="at-rss">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3a16 16 0 0 1 16 16h-3A13 13 0 0 0 5 6V3zm0 7a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm1.5 7.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>
+          RSS
+        </a>
+        <a href="#">JSON</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ============== 404 ============== -->
+  <div class="section-header" id="404">
+    <h2>404 page</h2>
+    <span class="desc">Quiet, witty.</span>
+  </div>
+
+  <div class="at-page" data-screen-label="404">
+    <div class="nf-wrap">
+      <div class="nf-mark">Approved Thoughts</div>
+      <div class="nf-num">404</div>
+      <div class="nf-line">Approved thoughts, <em>unapproved</em> URL.</div>
+      <p class="nf-sub">
+        The page you are looking for does not exist, or has been moved, or perhaps was never written. It is ok to have unapproved thoughts at this time.
+      </p>
+      <div class="nf-actions">
+        <a href="#">← Back home</a>
+        <a href="#" class="muted">Browse archives</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== RSS BUTTON VARIANTS ============== -->
+  <div class="section-header" id="rss">
+    <h2>RSS button placements</h2>
+    <span class="desc">Three variants, ordered most-discreet to most-visible. Pick one — or layer two for redundancy.</span>
+  </div>
+
+  <div class="rss-variants">
+    <div class="rss-variant">
+      <div class="vlabel">Variant A — Footer text link only (currently used)</div>
+      <div style="background: var(--paper-2); border-top: 3px double var(--rule); padding: 18px 28px; display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-family: var(--f-mark); font-weight: 700; font-size: 13px; color: var(--ink);">Approved Thoughts · MMXXVI</span>
+        <div style="display: flex; gap: 22px; font-family: var(--f-body); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;">
+          <a href="#" class="at-rss">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3a16 16 0 0 1 16 16h-3A13 13 0 0 0 5 6V3zm0 7a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm1.5 7.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>
+            RSS
+          </a>
+          <a href="#" style="color: var(--ink-2);">JSON</a>
+          <a href="#" style="color: var(--ink-2);">Sitemap</a>
+        </div>
+      </div>
+      <div class="vnote">Discoverable but never in the way. Best if you don't expect many RSS subscribers.</div>
+    </div>
+
+    <div class="rss-variant">
+      <div class="vlabel">Variant B — Sidebar "Subscribe" panel</div>
+      <div style="display: grid; grid-template-columns: 1fr 240px; gap: 64px; padding: 16px 0; border: 1px dashed var(--rule); padding: 24px;">
+        <div style="color: var(--ink-3); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; align-self: center;">…rest of homepage / post page sidebar above…</div>
+        <div>
+          <h3 style="font-family: var(--f-body); font-weight: 600; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin: 0 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--accent);">Subscribe</h3>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <a href="#" class="rss-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3a16 16 0 0 1 16 16h-3A13 13 0 0 0 5 6V3zm0 7a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm1.5 7.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg> RSS feed</a>
+            <a href="#" class="rss-link" style="color: var(--ink-2);">JSON feed</a>
+          </div>
+          <p style="font-size: 12px; color: var(--ink-3); margin: 12px 0 0; line-height: 1.5;">No newsletter, no algorithms. Just the feed.</p>
+        </div>
+      </div>
+      <div class="vnote">Adds a small "Subscribe" section to the right sidebar (homepage + post page). Slightly more visible. Recommended.</div>
+    </div>
+
+    <div class="rss-variant">
+      <div class="vlabel">Variant C — Header pill (most visible)</div>
+      <div style="border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 24px 28px; display: flex; justify-content: space-between; align-items: center; background: var(--paper);">
+        <div style="font-family: var(--f-mark); font-weight: 700; font-size: 24px; color: var(--ink);">Approved <em style="color: var(--accent); font-style: normal;">Thoughts</em></div>
+        <a href="#" class="rss-pill">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3a16 16 0 0 1 16 16h-3A13 13 0 0 0 5 6V3zm0 7a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm1.5 7.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>
+          Subscribe
+        </a>
+      </div>
+      <div class="vnote">Pill in the header. Most prominent — would conflict with the centered wordmark layout we picked, so this is more of a "what if" than a recommendation.</div>
+    </div>
+
+    <div class="rss-variant" style="background: var(--paper-2);">
+      <div class="vlabel">My recommendation</div>
+      <p style="margin: 0 0 8px; font-size: 14px; color: var(--ink); line-height: 1.5;">
+        <strong>A + B together:</strong> keep RSS in the footer (always available, never shouty), and add a small "Subscribe" section in the sidebar with both RSS and JSON feeds. Nothing in the header.
+      </p>
+      <p style="margin: 0; font-size: 14px; color: var(--ink-2); line-height: 1.5;">
+        On the post page (Variant B is shown there at the top of this document), readers who finish a post and want more naturally look right; the Subscribe panel is there.
+      </p>
+    </div>
+  </div>
+
+  <!-- ============== RSS WITH EMBEDDED CONTENT ============== -->
+  <div class="section-header">
+    <h2>RSS feed — embedded content fix</h2>
+    <span class="desc">Build-side note. Not a design surface.</span>
+  </div>
+
+  <div style="max-width: 1120px; margin: 0 auto; padding: 24px 56px 96px;">
+    <div style="border: 1px solid var(--rule); padding: 24px 28px; background: var(--paper-2); max-width: 760px;">
+      <p style="margin: 0 0 12px; font-size: 14px; color: var(--ink); line-height: 1.6;">
+        <strong>The problem:</strong> right now your RSS feed strips out tweets, YouTube embeds, and inline HTML — readers see only plain text or broken markup.
+      </p>
+      <p style="margin: 0 0 12px; font-size: 14px; color: var(--ink-2); line-height: 1.6;">
+        <strong>The fix (build-side, not design):</strong> in <code style="font-family: ui-monospace, monospace; font-size: 13px; background: rgba(0,0,0,.04); padding: 1px 4px;">build.js</code>, when generating <code style="font-family: ui-monospace, monospace; font-size: 13px; background: rgba(0,0,0,.04); padding: 1px 4px;">feed.xml</code>, run the same Markdown→HTML pipeline you use for post pages, then wrap the resulting HTML in <code style="font-family: ui-monospace, monospace; font-size: 13px; background: rgba(0,0,0,.04); padding: 1px 4px;">&lt;content:encoded&gt;&lt;![CDATA[ … ]]&gt;&lt;/content:encoded&gt;</code> per RSS spec. Most readers (Feedly, NetNewsWire, Reeder, Inoreader) honor CDATA-wrapped HTML and will render images, iframes, and styled blockquotes inline.
+      </p>
+      <p style="margin: 0; font-size: 14px; color: var(--ink-2); line-height: 1.6;">
+        Two caveats: <strong>(1)</strong> some feed readers strip iframes for security — your YouTube embeds may show a fallback link instead of the player; provide a styled <code style="font-family: ui-monospace, monospace; font-size: 13px; background: rgba(0,0,0,.04); padding: 1px 4px;">&lt;a&gt;</code> with the video title as the fallback. <strong>(2)</strong> use absolute URLs for everything (images especially) since the feed is read out of context.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

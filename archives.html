@@ -1,939 +1,530 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Complete archive of all posts from Approved Thoughts">
-    
     <title>Archives - Approved Thoughts</title>
-    
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/style.css?v=1.3">
-    <link rel="stylesheet" href="css/responsive.css?v=1.3">
-    
-    <!-- Favicon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=2.0">
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
-    
-    <!-- RSS Feed -->
     <link rel="alternate" type="application/rss+xml" title="Approved Thoughts RSS Feed" href="feed.xml">
     <link rel="alternate" type="application/feed+json" title="Approved Thoughts JSON Feed" href="feed.json">
-
-    <!-- Sitemap -->
     <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
-
-    
-    <!-- Open Graph Tags -->
     <meta property="og:title" content="Archives - Approved Thoughts">
     <meta property="og:description" content="Complete archive of all posts from Approved Thoughts">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.approvedthoughts.com/archives.html">
 </head>
 <body>
-    <!-- Skip to main content for accessibility -->
     <a href="#main" class="skip-link">Skip to main content</a>
-    
-    <!-- Header Banner -->
-    <header class="site-header">
-        <div class="container">
-            <div class="header-content">
-                <!-- Logo/Site Name -->
-                <div class="site-branding">
-                    <a href="index.html" class="site-logo">
-                        <h1 class="site-title">Approved Thoughts</h1>
-                    </a>
-                </div>
-                
-                <!-- Navigation -->
-                <nav class="main-navigation" aria-label="Main navigation">
-                    <button class="menu-toggle" aria-label="Toggle navigation menu">
-                        <span class="hamburger"></span>
-                    </button>
-                    <ul class="nav-menu">
-                        <li><a href="index.html" class="nav-link ">Home</a></li>
-                        <li><a href="about.html" class="nav-link ">About</a></li>
-                        <li><a href="archives.html" class="nav-link active">Archives</a></li>
-                    </ul>
+
+    <header class="at-header">
+        <div class="at-header-inner">
+            <div class="at-header-col">
+                <a href="index.html" class="at-name-link">
+                    <div class="at-name">Approved <em>Thoughts</em></div>
+                </a>
+                <nav class="at-nav">
+                    <a href="index.html" >Home</a>
+                    <a href="about.html" >About</a>
+                    <a href="archives.html" class="active">Archives</a>
+                    <a href="feed.xml" class="rss-nav" title="RSS feed"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3a16 16 0 0 1 16 16h-3A13 13 0 0 0 5 6V3zm0 7a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm1.5 7.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>RSS</a>
                 </nav>
             </div>
+            <div></div>
         </div>
     </header>
-    
-    <!-- Main Layout Container -->
-    <div class="site-container">
-        <div class="container">
-            <div class="content-wrapper">
+
+    <main id="main">
+        
+        <div class="at-body archive">
+            <div>
+                <h1 class="ar-h1">Archives</h1>
+                <div class="ar-search">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="20" y1="20" x2="16.5" y2="16.5"/></svg>
+                    <input id="ar-search" type="search" placeholder="Search posts, links and notes…" aria-label="Search archive">
+                </div>
+                <div class="ar-stats">
+                    <div class="stat"><span class="n">2</span><span class="l">Years</span></div>
+                    <div class="stat"><span class="n">70</span><span class="l">Posts</span></div>
+                    <div class="stat"><span class="n">3</span><span class="l">Categories</span></div>
+                    <div class="stat"><span class="n">14</span><span class="l">Tags</span></div>
+                </div>
+                <div class="ar-section-label">Common tags</div>
+                <div class="ar-tagcloud">
+                    <a href="tags/links.html" class="bigger">links <span class="n">60</span></a>
+            <a href="tags/ai.html" class="bigger">ai <span class="n">52</span></a>
+            <a href="tags/economics.html" class="big">economics <span class="n">21</span></a>
+            <a href="tags/health.html" class="">health <span class="n">18</span></a>
+            <a href="tags/india.html" class="">india <span class="n">12</span></a>
+            <a href="tags/learning.html" class="">learning <span class="n">12</span></a>
+            <a href="tags/post.html" class="">post <span class="n">10</span></a>
+            <a href="tags/agency.html" class="">agency <span class="n">5</span></a>
+            <a href="tags/sports.html" class="">sports <span class="n">4</span></a>
+            <a href="tags/medicine.html" class="">medicine <span class="n">2</span></a>
+            <a href="tags/books.html" class="">books <span class="n">2</span></a>
+            <a href="tags/ufo.html" class="">ufo <span class="n">1</span></a>
+            <a href="tags/policy.html" class="">policy <span class="n">1</span></a>
+            <a href="tags/alpha.html" class="">alpha <span class="n">1</span></a>
+                </div>
+                <div class="ar-section-label">By year</div>
                 
-                <!-- Main Content Area -->
-                <main id="main" class="main-content">
-                    <div class="archive-page">
-                        <header class="archive-header">
-                            <h1 class="archive-title">Archives</h1>
-                            <p class="archive-description">Browse all posts by year, month, or filter by topic</p>
-                        </header>
-                        
-                        <!-- Enhanced Search -->
-                        <div class="search-container">
-                            <input type="search" class="search-input" placeholder="Search posts by title or content..." aria-label="Search posts">
-                            <div class="search-icon">🔍</div>
-                        </div>
-                        
-                        <!-- Stats Overview -->
-                        <div class="archive-stats">
-                            <div class="stat-item">
-                                <span class="stat-number">69</span>
-                                <span class="stat-label">Total Posts</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">14</span>
-                                <span class="stat-label">Categories</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">2</span>
-                                <span class="stat-label">Years Active</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Tag Filter Bar -->
-                        <div class="tag-filter-bar">
-                            <div class="filter-label">
-                                Filter by Topic
-                            </div>
-                            <div class="tag-pills">
-                                <button class="tag-pill active" data-tag="">
-                                    <span>All Posts</span>
-                                </button>
-                                
-        <button class="tag-pill" data-tag="links">
-            <span>links</span>
-            <span class="tag-count">59</span>
-        </button>
-        <button class="tag-pill" data-tag="ai">
-            <span>ai</span>
-            <span class="tag-count">52</span>
-        </button>
-        <button class="tag-pill" data-tag="economics">
-            <span>economics</span>
-            <span class="tag-count">21</span>
-        </button>
-        <button class="tag-pill" data-tag="health">
-            <span>health</span>
-            <span class="tag-count">18</span>
-        </button>
-        <button class="tag-pill" data-tag="india">
-            <span>india</span>
-            <span class="tag-count">12</span>
-        </button>
-        <button class="tag-pill" data-tag="learning">
-            <span>learning</span>
-            <span class="tag-count">12</span>
-        </button>
-        <button class="tag-pill" data-tag="post">
-            <span>post</span>
-            <span class="tag-count">10</span>
-        </button>
-        <button class="tag-pill" data-tag="agency">
-            <span>agency</span>
-            <span class="tag-count">5</span>
-        </button>
-        <button class="tag-pill" data-tag="sports">
-            <span>sports</span>
-            <span class="tag-count">4</span>
-        </button>
-        <button class="tag-pill" data-tag="medicine">
-            <span>medicine</span>
-            <span class="tag-count">2</span>
-        </button>
-        <button class="tag-pill" data-tag="books">
-            <span>books</span>
-            <span class="tag-count">2</span>
-        </button>
-        <button class="tag-pill" data-tag="ufo">
-            <span>ufo</span>
-            <span class="tag-count">1</span>
-        </button>
-        <button class="tag-pill" data-tag="policy">
-            <span>policy</span>
-            <span class="tag-count">1</span>
-        </button>
-        <button class="tag-pill" data-tag="alpha">
-            <span>alpha</span>
-            <span class="tag-count">1</span>
-        </button>
-                            </div>
-                        </div>
-                        
-                        <!-- Archive Timeline -->
-                        <div class="archive-timeline">
-                            
-            <div class="archive-year-section">
-                <button class="archive-year-toggle" data-target="year-2026" aria-expanded="false">
-                    <span class="year-indicator">2026</span>
-                    <span class="post-count-badge">16 posts</span>
-                    <span class="toggle-icon">▶</span>
-                </button>
-                <div class="archive-section-content" id="year-2026">
-                    
-                <div class="archive-month-section">
-                    <button class="archive-month-toggle" data-target="month-2026-may" aria-expanded="false">
-                        <span class="toggle-icon">▶</span>
-                        <span class="month-title">May 2026</span>
-                        <span class="post-count-badge">2 posts</span>
-                    </button>
-                    <div class="archive-section-content" id="month-2026-may" data-tags='["links","links"]'>
-                        <ul class="archive-post-list">
-                            
-                <li class="archive-post-item">
-                    <a href="posts/2026/links-09-may-2026.html" class="archive-post-link">
-                        <span class="archive-post-date">May 8</span>
-                        <span class="archive-post-title">Links: Weeks of 09 May 2026</span>
-                    </a>
+        <details class="ar-year-block" open>
+            <summary>2026<span class="ar-year-count">17 posts</span></summary>
+            <div class="ar-year-body">
+            <div class="ar-month">May</div>
+            <ul class="ar-list">
+                <li data-title="links: weeks of 16 may 2026">
+                    <span class="date">May 15</span>
+                    <a href="posts/2026/links-16-may-2026.html"><span class="ttl">Links: Weeks of 16 May 2026</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2026/links-02-may-2026.html" class="archive-post-link">
-                        <span class="archive-post-date">May 1</span>
-                        <span class="archive-post-title">Links: Weeks of 02 May 2026</span>
-                    </a>
+                <li data-title="links: week of 09 may 2026">
+                    <span class="date">May 8</span>
+                    <a href="posts/2026/links-09-may-2026.html"><span class="ttl">Links: Week of 09 May 2026</span></a>
+                    <span class="type">Links</span>
                 </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="archive-month-section">
-                    <button class="archive-month-toggle" data-target="month-2026-april" aria-expanded="false">
-                        <span class="toggle-icon">▶</span>
-                        <span class="month-title">April 2026</span>
-                        <span class="post-count-badge">4 posts</span>
-                    </button>
-                    <div class="archive-section-content" id="month-2026-april" data-tags='["links","links","links","ai","medicine","links","ai","ufo"]'>
-                        <ul class="archive-post-list">
-                            
-                <li class="archive-post-item">
-                    <a href="posts/2026/links-25-apr-2026.html" class="archive-post-link">
-                        <span class="archive-post-date">Apr 24</span>
-                        <span class="archive-post-title">Links: Weeks of 25 Apr 2026 - Backlash Edition</span>
-                    </a>
+                <li data-title="links: week of 02 may 2026">
+                    <span class="date">May 1</span>
+                    <a href="posts/2026/links-02-may-2026.html"><span class="ttl">Links: Week of 02 May 2026</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2026/links-19-apr-2026.html" class="archive-post-link">
-                        <span class="archive-post-date">Apr 18</span>
-                        <span class="archive-post-title">Links: Weeks of 19 Apr 2026</span>
-                    </a>
+            </ul>
+            <div class="ar-month">April</div>
+            <ul class="ar-list">
+                <li data-title="links: week of 25 apr 2026 - backlash edition">
+                    <span class="date">Apr 24</span>
+                    <a href="posts/2026/links-25-apr-2026.html"><span class="ttl">Links: Week of 25 Apr 2026 - Backlash Edition</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2026/links-12-apr-2026.html" class="archive-post-link">
-                        <span class="archive-post-date">Apr 11</span>
-                        <span class="archive-post-title">Links: Weeks of 12 Apr 2026</span>
-                    </a>
+                <li data-title="links: week of 19 apr 2026">
+                    <span class="date">Apr 18</span>
+                    <a href="posts/2026/links-19-apr-2026.html"><span class="ttl">Links: Week of 19 Apr 2026</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2026/links-05-apr-2026.html" class="archive-post-link">
-                        <span class="archive-post-date">Apr 4</span>
-                        <span class="archive-post-title">Links: Weeks of 05 Apr 2026</span>
-                    </a>
+                <li data-title="links: week of 12 apr 2026">
+                    <span class="date">Apr 11</span>
+                    <a href="posts/2026/links-12-apr-2026.html"><span class="ttl">Links: Week of 12 Apr 2026</span></a>
+                    <span class="type">Links</span>
                 </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="archive-month-section">
-                    <button class="archive-month-toggle" data-target="month-2026-march" aria-expanded="false">
-                        <span class="toggle-icon">▶</span>
-                        <span class="month-title">March 2026</span>
-                        <span class="post-count-badge">5 posts</span>
-                    </button>
-                    <div class="archive-section-content" id="month-2026-march" data-tags='["links","ai","links","ai","policy","links","ai","medicine","links","ai","post","ai"]'>
-                        <ul class="archive-post-list">
-                            
-                <li class="archive-post-item">
-                    <a href="posts/2026/links-29-mar-2026.html" class="archive-post-link">
-                        <span class="archive-post-date">Mar 29</span>
-                        <span class="archive-post-title">Links: Weeks of 29 Mar 2026</span>
-                    </a>
+                <li data-title="links: week of 05 apr 2026">
+                    <span class="date">Apr 4</span>
+                    <a href="posts/2026/links-05-apr-2026.html"><span class="ttl">Links: Week of 05 Apr 2026</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2026/links-22-mar-2026.html" class="archive-post-link">
-                        <span class="archive-post-date">Mar 21</span>
-                        <span class="archive-post-title">Links: Weeks of 22 Mar 2026</span>
-                    </a>
+            </ul>
+            <div class="ar-month">March</div>
+            <ul class="ar-list">
+                <li data-title="links: week of 29 mar 2026">
+                    <span class="date">Mar 29</span>
+                    <a href="posts/2026/links-29-mar-2026.html"><span class="ttl">Links: Week of 29 Mar 2026</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2026/links-15-mar-2026.html" class="archive-post-link">
-                        <span class="archive-post-date">Mar 14</span>
-                        <span class="archive-post-title">Links: Weeks of 15 Mar 2026</span>
-                    </a>
+                <li data-title="links: week of 22 mar 2026">
+                    <span class="date">Mar 21</span>
+                    <a href="posts/2026/links-22-mar-2026.html"><span class="ttl">Links: Week of 22 Mar 2026</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2026/links-08-mar-2026.html" class="archive-post-link">
-                        <span class="archive-post-date">Mar 7</span>
-                        <span class="archive-post-title">Links: Weeks of 08 Mar 2026</span>
-                    </a>
+                <li data-title="links: week of 15 mar 2026">
+                    <span class="date">Mar 14</span>
+                    <a href="posts/2026/links-15-mar-2026.html"><span class="ttl">Links: Week of 15 Mar 2026</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2026/feeling-the-agi.html" class="archive-post-link">
-                        <span class="archive-post-date">Mar 7</span>
-                        <span class="archive-post-title">Feeling the AGI</span>
-                    </a>
+                <li data-title="links: week of 08 mar 2026">
+                    <span class="date">Mar 7</span>
+                    <a href="posts/2026/links-08-mar-2026.html"><span class="ttl">Links: Week of 08 Mar 2026</span></a>
+                    <span class="type">Links</span>
                 </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="archive-month-section">
-                    <button class="archive-month-toggle" data-target="month-2026-february" aria-expanded="false">
-                        <span class="toggle-icon">▶</span>
-                        <span class="month-title">February 2026</span>
-                        <span class="post-count-badge">3 posts</span>
-                    </button>
-                    <div class="archive-section-content" id="month-2026-february" data-tags='["post","ai","economics","links","ai","links","ai","india","economics","health"]'>
-                        <ul class="archive-post-list">
-                            
-                <li class="archive-post-item">
-                    <a href="posts/2026/the-citrini-scenario.html" class="archive-post-link">
-                        <span class="archive-post-date">Feb 28</span>
-                        <span class="archive-post-title">The Citrini Scenario</span>
-                    </a>
+                <li data-title="feeling the agi">
+                    <span class="date">Mar 7</span>
+                    <a href="posts/2026/feeling-the-agi.html"><span class="ttl">Feeling the AGI</span></a>
+                    <span class="type">Post</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2026/links-01-mar-2026.html" class="archive-post-link">
-                        <span class="archive-post-date">Feb 28</span>
-                        <span class="archive-post-title">Links: Weeks of 01 Mar 2026</span>
-                    </a>
+            </ul>
+            <div class="ar-month">February</div>
+            <ul class="ar-list">
+                <li data-title="the citrini scenario">
+                    <span class="date">Feb 28</span>
+                    <a href="posts/2026/the-citrini-scenario.html"><span class="ttl">The Citrini Scenario</span></a>
+                    <span class="type">Post</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2026/links-22-feb-2026.html" class="archive-post-link">
-                        <span class="archive-post-date">Feb 21</span>
-                        <span class="archive-post-title">Links: Weeks of 22 Feb 2026</span>
-                    </a>
+                <li data-title="links: week of 01 mar 2026">
+                    <span class="date">Feb 28</span>
+                    <a href="posts/2026/links-01-mar-2026.html"><span class="ttl">Links: Week of 01 Mar 2026</span></a>
+                    <span class="type">Links</span>
                 </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="archive-month-section">
-                    <button class="archive-month-toggle" data-target="month-2026-january" aria-expanded="false">
-                        <span class="toggle-icon">▶</span>
-                        <span class="month-title">January 2026</span>
-                        <span class="post-count-badge">2 posts</span>
-                    </button>
-                    <div class="archive-section-content" id="month-2026-january" data-tags='["links","ai","links","sports","india"]'>
-                        <ul class="archive-post-list">
-                            
-                <li class="archive-post-item">
-                    <a href="posts/2026/links-10-jan-2026.html" class="archive-post-link">
-                        <span class="archive-post-date">Jan 2</span>
-                        <span class="archive-post-title">Links: Weeks of 10 Jan 2026 - The Vibe Shift</span>
-                    </a>
+                <li data-title="links: week of 22 feb 2026">
+                    <span class="date">Feb 21</span>
+                    <a href="posts/2026/links-22-feb-2026.html"><span class="ttl">Links: Week of 22 Feb 2026</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2026/links-03-jan-2026.html" class="archive-post-link">
-                        <span class="archive-post-date">Jan 2</span>
-                        <span class="archive-post-title">Links: Weeks of 03 Jan 2026</span>
-                    </a>
+            </ul>
+            <div class="ar-month">January</div>
+            <ul class="ar-list">
+                <li data-title="links: week of 10 jan 2026 - the vibe shift">
+                    <span class="date">Jan 2</span>
+                    <a href="posts/2026/links-10-jan-2026.html"><span class="ttl">Links: Week of 10 Jan 2026 - The Vibe Shift</span></a>
+                    <span class="type">Links</span>
                 </li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
+                <li data-title="links: week of 03 jan 2026">
+                    <span class="date">Jan 2</span>
+                    <a href="posts/2026/links-03-jan-2026.html"><span class="ttl">Links: Week of 03 Jan 2026</span></a>
+                    <span class="type">Links</span>
+                </li>
+            </ul>
             </div>
-            <div class="archive-year-section">
-                <button class="archive-year-toggle" data-target="year-2025" aria-expanded="false">
-                    <span class="year-indicator">2025</span>
-                    <span class="post-count-badge">53 posts</span>
-                    <span class="toggle-icon">▶</span>
-                </button>
-                <div class="archive-section-content" id="year-2025">
-                    
-                <div class="archive-month-section">
-                    <button class="archive-month-toggle" data-target="month-2025-december" aria-expanded="false">
-                        <span class="toggle-icon">▶</span>
-                        <span class="month-title">December 2025</span>
-                        <span class="post-count-badge">3 posts</span>
-                    </button>
-                    <div class="archive-section-content" id="month-2025-december" data-tags='["links","ai","learning","india","health","links","ai","economics","links","ai","health"]'>
-                        <ul class="archive-post-list">
-                            
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-20-28-dec.html" class="archive-post-link">
-                        <span class="archive-post-date">Dec 26</span>
-                        <span class="archive-post-title">Links: Weeks of 20 & 27 Dec 2025</span>
-                    </a>
+        </details>
+        <details class="ar-year-block">
+            <summary>2025<span class="ar-year-count">53 posts</span></summary>
+            <div class="ar-year-body">
+            <div class="ar-month">December</div>
+            <ul class="ar-list">
+                <li data-title="links: weeks of 20 &amp; 27 dec 2025">
+                    <span class="date">Dec 26</span>
+                    <a href="posts/2025/links-20-28-dec.html"><span class="ttl">Links: Weeks of 20 & 27 Dec 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-13-dec-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Dec 12</span>
-                        <span class="archive-post-title">Links: Week of 13 Dec 2025</span>
-                    </a>
+                <li data-title="links: week of 13 dec 2025">
+                    <span class="date">Dec 12</span>
+                    <a href="posts/2025/links-13-dec-2025.html"><span class="ttl">Links: Week of 13 Dec 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-06-dec-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Dec 6</span>
-                        <span class="archive-post-title">Links: Week of 06 Dec 2025</span>
-                    </a>
+                <li data-title="links: week of 06 dec 2025">
+                    <span class="date">Dec 6</span>
+                    <a href="posts/2025/links-06-dec-2025.html"><span class="ttl">Links: Week of 06 Dec 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="archive-month-section">
-                    <button class="archive-month-toggle" data-target="month-2025-november" aria-expanded="false">
-                        <span class="toggle-icon">▶</span>
-                        <span class="month-title">November 2025</span>
-                        <span class="post-count-badge">3 posts</span>
-                    </button>
-                    <div class="archive-section-content" id="month-2025-november" data-tags='["links","ai","health","links","ai","learning","economics","links","ai","learning"]'>
-                        <ul class="archive-post-list">
-                            
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-29-nov-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Nov 28</span>
-                        <span class="archive-post-title">Links: Week of 29 Nov 2025</span>
-                    </a>
+            </ul>
+            <div class="ar-month">November</div>
+            <ul class="ar-list">
+                <li data-title="links: week of 29 nov 2025">
+                    <span class="date">Nov 28</span>
+                    <a href="posts/2025/links-29-nov-2025.html"><span class="ttl">Links: Week of 29 Nov 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-15-22-nov-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Nov 21</span>
-                        <span class="archive-post-title">Links: Weeks of 15 & 22 Nov 2025</span>
-                    </a>
+                <li data-title="links: weeks of 15 &amp; 22 nov 2025">
+                    <span class="date">Nov 21</span>
+                    <a href="posts/2025/links-15-22-nov-2025.html"><span class="ttl">Links: Weeks of 15 & 22 Nov 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-08-nov-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Nov 7</span>
-                        <span class="archive-post-title">Links: Week of 08 Nov 2025</span>
-                    </a>
+                <li data-title="links: week of 08 nov 2025">
+                    <span class="date">Nov 7</span>
+                    <a href="posts/2025/links-08-nov-2025.html"><span class="ttl">Links: Week of 08 Nov 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="archive-month-section">
-                    <button class="archive-month-toggle" data-target="month-2025-october" aria-expanded="false">
-                        <span class="toggle-icon">▶</span>
-                        <span class="month-title">October 2025</span>
-                        <span class="post-count-badge">6 posts</span>
-                    </button>
-                    <div class="archive-section-content" id="month-2025-october" data-tags='["links","ai","health","post","books","links","economics","links","ai","india","economics","health","links","india","health","economics","links","ai"]'>
-                        <ul class="archive-post-list">
-                            
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-01-nov-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Oct 31</span>
-                        <span class="archive-post-title">Links: Week of 01 Nov 2025</span>
-                    </a>
+            </ul>
+            <div class="ar-month">October</div>
+            <ul class="ar-list">
+                <li data-title="links: week of 01 nov 2025">
+                    <span class="date">Oct 31</span>
+                    <a href="posts/2025/links-01-nov-2025.html"><span class="ttl">Links: Week of 01 Nov 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/the-remains-of-the-day.html" class="archive-post-link">
-                        <span class="archive-post-date">Oct 24</span>
-                        <span class="archive-post-title">The Remains of the Day</span>
-                    </a>
+                <li data-title="the remains of the day">
+                    <span class="date">Oct 24</span>
+                    <a href="posts/2025/the-remains-of-the-day.html"><span class="ttl">The Remains of the Day</span></a>
+                    <span class="type">Post</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-25-oct-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Oct 24</span>
-                        <span class="archive-post-title">Links: Week of 25 Oct 2025</span>
-                    </a>
+                <li data-title="links: week of 25 oct 2025">
+                    <span class="date">Oct 24</span>
+                    <a href="posts/2025/links-25-oct-2025.html"><span class="ttl">Links: Week of 25 Oct 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-18-oct-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Oct 17</span>
-                        <span class="archive-post-title">Links: Week of 18 Oct 2025</span>
-                    </a>
+                <li data-title="links: week of 18 oct 2025">
+                    <span class="date">Oct 17</span>
+                    <a href="posts/2025/links-18-oct-2025.html"><span class="ttl">Links: Week of 18 Oct 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-11-oct-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Oct 10</span>
-                        <span class="archive-post-title">Links: Week of 11 Oct 2025</span>
-                    </a>
+                <li data-title="links: week of 11 oct 2025">
+                    <span class="date">Oct 10</span>
+                    <a href="posts/2025/links-11-oct-2025.html"><span class="ttl">Links: Week of 11 Oct 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-04-oct-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Oct 3</span>
-                        <span class="archive-post-title">Links: Week of 04 Oct 2025</span>
-                    </a>
+                <li data-title="links: week of 04 oct 2025">
+                    <span class="date">Oct 3</span>
+                    <a href="posts/2025/links-04-oct-2025.html"><span class="ttl">Links: Week of 04 Oct 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="archive-month-section">
-                    <button class="archive-month-toggle" data-target="month-2025-september" aria-expanded="false">
-                        <span class="toggle-icon">▶</span>
-                        <span class="month-title">September 2025</span>
-                        <span class="post-count-badge">3 posts</span>
-                    </button>
-                    <div class="archive-section-content" id="month-2025-september" data-tags='["links","ai","economics","links","ai","learning","health","links","ai","sports","health"]'>
-                        <ul class="archive-post-list">
-                            
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-27-sep-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Sep 26</span>
-                        <span class="archive-post-title">Links: Week of 27 Sep 2025</span>
-                    </a>
+            </ul>
+            <div class="ar-month">September</div>
+            <ul class="ar-list">
+                <li data-title="links: week of 27 sep 2025">
+                    <span class="date">Sep 26</span>
+                    <a href="posts/2025/links-27-sep-2025.html"><span class="ttl">Links: Week of 27 Sep 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-20-sep-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Sep 20</span>
-                        <span class="archive-post-title">Links: Week of 20 Sep 2025</span>
-                    </a>
+                <li data-title="links: week of 20 sep 2025">
+                    <span class="date">Sep 20</span>
+                    <a href="posts/2025/links-20-sep-2025.html"><span class="ttl">Links: Week of 20 Sep 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-14-sep-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Sep 13</span>
-                        <span class="archive-post-title">Links: Week of 6 & 14 Sep 2025</span>
-                    </a>
+                <li data-title="links: week of 6 &amp; 14 sep 2025">
+                    <span class="date">Sep 13</span>
+                    <a href="posts/2025/links-14-sep-2025.html"><span class="ttl">Links: Week of 6 & 14 Sep 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="archive-month-section">
-                    <button class="archive-month-toggle" data-target="month-2025-august" aria-expanded="false">
-                        <span class="toggle-icon">▶</span>
-                        <span class="month-title">August 2025</span>
-                        <span class="post-count-badge">5 posts</span>
-                    </button>
-                    <div class="archive-section-content" id="month-2025-august" data-tags='["links","ai","india","economics","links","ai","health","india","learning","links","links","ai","learning","links","ai","india","economics"]'>
-                        <ul class="archive-post-list">
-                            
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-30-aug-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Aug 29</span>
-                        <span class="archive-post-title">Links: Week of 30 Aug 2025</span>
-                    </a>
+            </ul>
+            <div class="ar-month">August</div>
+            <ul class="ar-list">
+                <li data-title="links: week of 30 aug 2025">
+                    <span class="date">Aug 29</span>
+                    <a href="posts/2025/links-30-aug-2025.html"><span class="ttl">Links: Week of 30 Aug 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-23-aug-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Aug 22</span>
-                        <span class="archive-post-title">Links: Week of 23 Aug 2025</span>
-                    </a>
+                <li data-title="links: week of 23 aug 2025">
+                    <span class="date">Aug 22</span>
+                    <a href="posts/2025/links-23-aug-2025.html"><span class="ttl">Links: Week of 23 Aug 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-16-aug-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Aug 15</span>
-                        <span class="archive-post-title">Links: Week of 16 Aug 2025</span>
-                    </a>
+                <li data-title="links: week of 16 aug 2025">
+                    <span class="date">Aug 15</span>
+                    <a href="posts/2025/links-16-aug-2025.html"><span class="ttl">Links: Week of 16 Aug 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-09-aug-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Aug 8</span>
-                        <span class="archive-post-title">Links: Week of 09 Aug 2025</span>
-                    </a>
+                <li data-title="links: week of 09 aug 2025">
+                    <span class="date">Aug 8</span>
+                    <a href="posts/2025/links-09-aug-2025.html"><span class="ttl">Links: Week of 09 Aug 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-02-aug-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Aug 1</span>
-                        <span class="archive-post-title">Links: Week of 02 Aug 2025</span>
-                    </a>
+                <li data-title="links: week of 02 aug 2025">
+                    <span class="date">Aug 1</span>
+                    <a href="posts/2025/links-02-aug-2025.html"><span class="ttl">Links: Week of 02 Aug 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="archive-month-section">
-                    <button class="archive-month-toggle" data-target="month-2025-july" aria-expanded="false">
-                        <span class="toggle-icon">▶</span>
-                        <span class="month-title">July 2025</span>
-                        <span class="post-count-badge">4 posts</span>
-                    </button>
-                    <div class="archive-section-content" id="month-2025-july" data-tags='["links","ai","economics","links","ai","health","india","links","links","ai","health"]'>
-                        <ul class="archive-post-list">
-                            
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-26-jul-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Jul 25</span>
-                        <span class="archive-post-title">Links: Week of 26 Jul 2025</span>
-                    </a>
+            </ul>
+            <div class="ar-month">July</div>
+            <ul class="ar-list">
+                <li data-title="links: week of 26 jul 2025">
+                    <span class="date">Jul 25</span>
+                    <a href="posts/2025/links-26-jul-2025.html"><span class="ttl">Links: Week of 26 Jul 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-21-jul-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Jul 20</span>
-                        <span class="archive-post-title">Links: Week of 19 Jul 2025</span>
-                    </a>
+                <li data-title="links: week of 19 jul 2025">
+                    <span class="date">Jul 20</span>
+                    <a href="posts/2025/links-21-jul-2025.html"><span class="ttl">Links: Week of 19 Jul 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-12-jul-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Jul 11</span>
-                        <span class="archive-post-title">Links: Week of 12 Jul 2025</span>
-                    </a>
+                <li data-title="links: week of 12 jul 2025">
+                    <span class="date">Jul 11</span>
+                    <a href="posts/2025/links-12-jul-2025.html"><span class="ttl">Links: Week of 12 Jul 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-05-jul-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Jul 4</span>
-                        <span class="archive-post-title">Links: Week of 05 Jul 2025</span>
-                    </a>
+                <li data-title="links: week of 05 jul 2025">
+                    <span class="date">Jul 4</span>
+                    <a href="posts/2025/links-05-jul-2025.html"><span class="ttl">Links: Week of 05 Jul 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="archive-month-section">
-                    <button class="archive-month-toggle" data-target="month-2025-june" aria-expanded="false">
-                        <span class="toggle-icon">▶</span>
-                        <span class="month-title">June 2025</span>
-                        <span class="post-count-badge">2 posts</span>
-                    </button>
-                    <div class="archive-section-content" id="month-2025-june" data-tags='["links","ai","agency","links","ai","health","learning"]'>
-                        <ul class="archive-post-list">
-                            
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-28-jun-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Jun 27</span>
-                        <span class="archive-post-title">Links: Week of 28 Jun 2025</span>
-                    </a>
+            </ul>
+            <div class="ar-month">June</div>
+            <ul class="ar-list">
+                <li data-title="links: week of 28 jun 2025">
+                    <span class="date">Jun 27</span>
+                    <a href="posts/2025/links-28-jun-2025.html"><span class="ttl">Links: Week of 28 Jun 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-01-08-jun-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Jun 7</span>
-                        <span class="archive-post-title">Links: Week of 01 & 08 Jun 2025</span>
-                    </a>
+                <li data-title="links: week of 01 &amp; 08 jun 2025">
+                    <span class="date">Jun 7</span>
+                    <a href="posts/2025/links-01-08-jun-2025.html"><span class="ttl">Links: Week of 01 & 08 Jun 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="archive-month-section">
-                    <button class="archive-month-toggle" data-target="month-2025-may" aria-expanded="false">
-                        <span class="toggle-icon">▶</span>
-                        <span class="month-title">May 2025</span>
-                        <span class="post-count-badge">4 posts</span>
-                    </button>
-                    <div class="archive-section-content" id="month-2025-may" data-tags='["links","ai","learning","health","economics","links","alpha","sports","economics","links","ai","economics","india","links","ai","health","economics"]'>
-                        <ul class="archive-post-list">
-                            
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-25-may-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">May 24</span>
-                        <span class="archive-post-title">Links: Week of 25 May 2025</span>
-                    </a>
+            </ul>
+            <div class="ar-month">May</div>
+            <ul class="ar-list">
+                <li data-title="links: week of 25 may 2025">
+                    <span class="date">May 24</span>
+                    <a href="posts/2025/links-25-may-2025.html"><span class="ttl">Links: Week of 25 May 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-18-may-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">May 17</span>
-                        <span class="archive-post-title">Links: Week of 18 May 2025</span>
-                    </a>
+                <li data-title="links: week of 18 may 2025">
+                    <span class="date">May 17</span>
+                    <a href="posts/2025/links-18-may-2025.html"><span class="ttl">Links: Week of 18 May 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-10-may-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">May 9</span>
-                        <span class="archive-post-title">Links: Week of 10 May 2025</span>
-                    </a>
+                <li data-title="links: week of 10 may 2025">
+                    <span class="date">May 9</span>
+                    <a href="posts/2025/links-10-may-2025.html"><span class="ttl">Links: Week of 10 May 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-04-may-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">May 3</span>
-                        <span class="archive-post-title">Links: Week of 04 May 2025</span>
-                    </a>
+                <li data-title="links: week of 04 may 2025">
+                    <span class="date">May 3</span>
+                    <a href="posts/2025/links-04-may-2025.html"><span class="ttl">Links: Week of 04 May 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="archive-month-section">
-                    <button class="archive-month-toggle" data-target="month-2025-april" aria-expanded="false">
-                        <span class="toggle-icon">▶</span>
-                        <span class="month-title">April 2025</span>
-                        <span class="post-count-badge">5 posts</span>
-                    </button>
-                    <div class="archive-section-content" id="month-2025-april" data-tags='["links","ai","agency","links","ai","economics","post","links","ai","books","links","ai"]'>
-                        <ul class="archive-post-list">
-                            
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-26-apr-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Apr 25</span>
-                        <span class="archive-post-title">Links: Week of 26 Apr 2025</span>
-                    </a>
+            </ul>
+            <div class="ar-month">April</div>
+            <ul class="ar-list">
+                <li data-title="links: week of 26 apr 2025">
+                    <span class="date">Apr 25</span>
+                    <a href="posts/2025/links-26-apr-2025.html"><span class="ttl">Links: Week of 26 Apr 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-19-apr-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Apr 18</span>
-                        <span class="archive-post-title">Links: Week of 19 Apr 2025</span>
-                    </a>
+                <li data-title="links: week of 19 apr 2025">
+                    <span class="date">Apr 18</span>
+                    <a href="posts/2025/links-19-apr-2025.html"><span class="ttl">Links: Week of 19 Apr 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/update-12-apr-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Apr 11</span>
-                        <span class="archive-post-title">Update: 12 Apr 2025</span>
-                    </a>
+                <li data-title="update: 12 apr 2025">
+                    <span class="date">Apr 11</span>
+                    <a href="posts/2025/update-12-apr-2025.html"><span class="ttl">Update: 12 Apr 2025</span></a>
+                    <span class="type">Notes</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-12-apr-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Apr 11</span>
-                        <span class="archive-post-title">Links: Week of 12 Apr 2025</span>
-                    </a>
+                <li data-title="links: week of 12 apr 2025">
+                    <span class="date">Apr 11</span>
+                    <a href="posts/2025/links-12-apr-2025.html"><span class="ttl">Links: Week of 12 Apr 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-06-apr-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Apr 5</span>
-                        <span class="archive-post-title">Links: Week of 06 Apr 2025</span>
-                    </a>
+                <li data-title="links: week of 06 apr 2025">
+                    <span class="date">Apr 5</span>
+                    <a href="posts/2025/links-06-apr-2025.html"><span class="ttl">Links: Week of 06 Apr 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="archive-month-section">
-                    <button class="archive-month-toggle" data-target="month-2025-march" aria-expanded="false">
-                        <span class="toggle-icon">▶</span>
-                        <span class="month-title">March 2025</span>
-                        <span class="post-count-badge">4 posts</span>
-                    </button>
-                    <div class="archive-section-content" id="month-2025-march" data-tags='["links","ai","agency","learning","links","india","ai","links","health","economics","links","learning","health"]'>
-                        <ul class="archive-post-list">
-                            
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-30-mar-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Mar 29</span>
-                        <span class="archive-post-title">Links: Week of 30 Mar 2025</span>
-                    </a>
+            </ul>
+            <div class="ar-month">March</div>
+            <ul class="ar-list">
+                <li data-title="links: week of 30 mar 2025">
+                    <span class="date">Mar 29</span>
+                    <a href="posts/2025/links-30-mar-2025.html"><span class="ttl">Links: Week of 30 Mar 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-22-mar-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Mar 21</span>
-                        <span class="archive-post-title">Links: Week of 22 Mar 2025</span>
-                    </a>
+                <li data-title="links: week of 22 mar 2025">
+                    <span class="date">Mar 21</span>
+                    <a href="posts/2025/links-22-mar-2025.html"><span class="ttl">Links: Week of 22 Mar 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-15-mar-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Mar 14</span>
-                        <span class="archive-post-title">Links: Week of Mar 15 2025</span>
-                    </a>
+                <li data-title="links: week of mar 15 2025">
+                    <span class="date">Mar 14</span>
+                    <a href="posts/2025/links-15-mar-2025.html"><span class="ttl">Links: Week of Mar 15 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-08-mar-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Mar 7</span>
-                        <span class="archive-post-title">Links: Week of Mar 08 2025</span>
-                    </a>
+                <li data-title="links: week of mar 08 2025">
+                    <span class="date">Mar 7</span>
+                    <a href="posts/2025/links-08-mar-2025.html"><span class="ttl">Links: Week of Mar 08 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="archive-month-section">
-                    <button class="archive-month-toggle" data-target="month-2025-february" aria-expanded="false">
-                        <span class="toggle-icon">▶</span>
-                        <span class="month-title">February 2025</span>
-                        <span class="post-count-badge">6 posts</span>
-                    </button>
-                    <div class="archive-section-content" id="month-2025-february" data-tags='["links","ai","post","post","ai","economics","links","ai","economics","links","ai","economics","links","ai","agency","learning"]'>
-                        <ul class="archive-post-list">
-                            
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-01-mar-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Feb 28</span>
-                        <span class="archive-post-title">Links: Week of Mar 01 2025</span>
-                    </a>
+            </ul>
+            <div class="ar-month">February</div>
+            <ul class="ar-list">
+                <li data-title="links: week of mar 01 2025">
+                    <span class="date">Feb 28</span>
+                    <a href="posts/2025/links-01-mar-2025.html"><span class="ttl">Links: Week of Mar 01 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/characters-vs-actors.html" class="archive-post-link">
-                        <span class="archive-post-date">Feb 28</span>
-                        <span class="archive-post-title">Characters vs. Actors</span>
-                    </a>
+                <li data-title="characters vs. actors">
+                    <span class="date">Feb 28</span>
+                    <a href="posts/2025/characters-vs-actors.html"><span class="ttl">Characters vs. Actors</span></a>
+                    <span class="type">Post</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/a-few-thoughts-on-llms.html" class="archive-post-link">
-                        <span class="archive-post-date">Feb 28</span>
-                        <span class="archive-post-title">A few thoughts on LLMs</span>
-                    </a>
+                <li data-title="a few thoughts on llms">
+                    <span class="date">Feb 28</span>
+                    <a href="posts/2025/a-few-thoughts-on-llms.html"><span class="ttl">A few thoughts on LLMs</span></a>
+                    <span class="type">Post</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-23-feb-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Feb 22</span>
-                        <span class="archive-post-title">Links: Week of 23 Feb 2025</span>
-                    </a>
+                <li data-title="links: week of 23 feb 2025">
+                    <span class="date">Feb 22</span>
+                    <a href="posts/2025/links-23-feb-2025.html"><span class="ttl">Links: Week of 23 Feb 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-9-feb-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Feb 8</span>
-                        <span class="archive-post-title">Links: Week of 09 Feb 2025</span>
-                    </a>
+                <li data-title="links: week of 09 feb 2025">
+                    <span class="date">Feb 8</span>
+                    <a href="posts/2025/links-9-feb-2025.html"><span class="ttl">Links: Week of 09 Feb 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-03-feb-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Feb 2</span>
-                        <span class="archive-post-title">Links: Week of 03 Feb 2025</span>
-                    </a>
+                <li data-title="links: week of 03 feb 2025">
+                    <span class="date">Feb 2</span>
+                    <a href="posts/2025/links-03-feb-2025.html"><span class="ttl">Links: Week of 03 Feb 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="archive-month-section">
-                    <button class="archive-month-toggle" data-target="month-2025-january" aria-expanded="false">
-                        <span class="toggle-icon">▶</span>
-                        <span class="month-title">January 2025</span>
-                        <span class="post-count-badge">8 posts</span>
-                    </button>
-                    <div class="archive-section-content" id="month-2025-january" data-tags='["links","sports","economics","post","ai","post","links","ai","health","india","post","learning","ai","links","ai","post","ai","links","ai","agency"]'>
-                        <ul class="archive-post-list">
-                            
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-27-jan-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Jan 26</span>
-                        <span class="archive-post-title">Links: Week of 27 Jan 2025</span>
-                    </a>
+            </ul>
+            <div class="ar-month">January</div>
+            <ul class="ar-list">
+                <li data-title="links: week of 27 jan 2025">
+                    <span class="date">Jan 26</span>
+                    <a href="posts/2025/links-27-jan-2025.html"><span class="ttl">Links: Week of 27 Jan 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/the-one-where-i-set-up-a-website.html" class="archive-post-link">
-                        <span class="archive-post-date">Jan 25</span>
-                        <span class="archive-post-title">The One Where I(?) Set Up a Website</span>
-                    </a>
+                <li data-title="the one where i(?) set up a website">
+                    <span class="date">Jan 25</span>
+                    <a href="posts/2025/the-one-where-i-set-up-a-website.html"><span class="ttl">The One Where I(?) Set Up a Website</span></a>
+                    <span class="type">Post</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/newsletter-vs-website.html" class="archive-post-link">
-                        <span class="archive-post-date">Jan 18</span>
-                        <span class="archive-post-title">Newsletter vs. Website</span>
-                    </a>
+                <li data-title="newsletter vs. website">
+                    <span class="date">Jan 18</span>
+                    <a href="posts/2025/newsletter-vs-website.html"><span class="ttl">Newsletter vs. Website</span></a>
+                    <span class="type">Post</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-19-jan-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Jan 18</span>
-                        <span class="archive-post-title">Links: Week of 19 Jan 2025</span>
-                    </a>
+                <li data-title="links: week of 19 jan 2025">
+                    <span class="date">Jan 18</span>
+                    <a href="posts/2025/links-19-jan-2025.html"><span class="ttl">Links: Week of 19 Jan 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/spaced-repetition.html" class="archive-post-link">
-                        <span class="archive-post-date">Jan 11</span>
-                        <span class="archive-post-title">Spaced Repetition</span>
-                    </a>
+                <li data-title="spaced repetition">
+                    <span class="date">Jan 11</span>
+                    <a href="posts/2025/spaced-repetition.html"><span class="ttl">Spaced Repetition</span></a>
+                    <span class="type">Post</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-12-jan-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Jan 11</span>
-                        <span class="archive-post-title">Links: Week of 12 Jan 2025</span>
-                    </a>
+                <li data-title="links: week of 12 jan 2025">
+                    <span class="date">Jan 11</span>
+                    <a href="posts/2025/links-12-jan-2025.html"><span class="ttl">Links: Week of 12 Jan 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/using-ai-to-answer-questions.html" class="archive-post-link">
-                        <span class="archive-post-date">Jan 4</span>
-                        <span class="archive-post-title">Using AI to Answer Questions</span>
-                    </a>
+                <li data-title="using ai to answer questions">
+                    <span class="date">Jan 4</span>
+                    <a href="posts/2025/using-ai-to-answer-questions.html"><span class="ttl">Using AI to Answer Questions</span></a>
+                    <span class="type">Post</span>
                 </li>
-                <li class="archive-post-item">
-                    <a href="posts/2025/links-05-jan-2025.html" class="archive-post-link">
-                        <span class="archive-post-date">Jan 4</span>
-                        <span class="archive-post-title">Links: Week of 05 Jan 2025</span>
-                    </a>
+                <li data-title="links: week of 05 jan 2025">
+                    <span class="date">Jan 4</span>
+                    <a href="posts/2025/links-05-jan-2025.html"><span class="ttl">Links: Week of 05 Jan 2025</span></a>
+                    <span class="type">Links</span>
                 </li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
+            </ul>
             </div>
-                        </div>
-                    </div>
-                </main>
-                
-                
-                <!-- Sidebar -->
-                <aside class="sidebar" aria-label="Sidebar">
-                    <!-- Recent Posts Section -->
-                    <section class="sidebar-section">
-                        <h3 class="sidebar-title">Recent Posts</h3>
-                        <ul class="recent-posts-list">
-                            
-                            <li class="recent-post-item">
-                                <a href="posts/2026/links-09-may-2026.html" class="recent-post-link">
-                                    <span class="recent-post-title">Links: Weeks of 09 May 2026</span>
-                                    <span class="recent-post-date">May 8, 2026</span>
-                                </a>
-                            </li>
-                            <li class="recent-post-item">
-                                <a href="posts/2026/links-02-may-2026.html" class="recent-post-link">
-                                    <span class="recent-post-title">Links: Weeks of 02 May 2026</span>
-                                    <span class="recent-post-date">May 1, 2026</span>
-                                </a>
-                            </li>
-                            <li class="recent-post-item">
-                                <a href="posts/2026/links-25-apr-2026.html" class="recent-post-link">
-                                    <span class="recent-post-title">Links: Weeks of 25 Apr 2026 - Backlash Edition</span>
-                                    <span class="recent-post-date">Apr 24, 2026</span>
-                                </a>
-                            </li>
-                            <li class="recent-post-item">
-                                <a href="posts/2026/links-19-apr-2026.html" class="recent-post-link">
-                                    <span class="recent-post-title">Links: Weeks of 19 Apr 2026</span>
-                                    <span class="recent-post-date">Apr 18, 2026</span>
-                                </a>
-                            </li>
-                            <li class="recent-post-item">
-                                <a href="posts/2026/links-12-apr-2026.html" class="recent-post-link">
-                                    <span class="recent-post-title">Links: Weeks of 12 Apr 2026</span>
-                                    <span class="recent-post-date">Apr 11, 2026</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
-                    
-                    <!-- External Links Section -->
-                    <section class="sidebar-section">
-                        <h3 class="sidebar-title">Elsewhere</h3>
-                        <ul class="external-links-list">
-                            <li class="external-link-item">
-                                <a href="https://marginalrevolution.com" class="external-link" target="_blank" rel="noopener">
-                                    <span class="link-text">Marginal Revolution</span>
-                                </a>
-                            </li>
-                            <li class="external-link-item">
-                                <a href="https://thezvi.substack.com" class="external-link" target="_blank" rel="noopener">
-                                    <span class="link-text">Zvi Mowshowitz</span>
-                                </a>
-                            </li>
-                            <li class="external-link-item">
-                                <a href="https://simonwillison.net" class="external-link" target="_blank" rel="noopener">
-                                    <span class="link-text">Simon Willison</span>
-                                </a>
-                            </li>
-                            <li class="external-link-item">
-                                <a href="https://www.s-anand.net/blog/" class="external-link" target="_blank" rel="noopener">
-                                    <span class="link-text">S Anand</span>
-                                </a>
-                            </li>
-                            <li class="external-link-item">
-                                <a href="https://www.oneusefulthing.org" class="external-link" target="_blank" rel="noopener">
-                                    <span class="link-text">Ethan Mollick</span>
-                                </a>
-                            </li>
-                            <li class="external-link-item">
-                                <a href="https://karpathy.bearblog.dev/blog/" class="external-link" target="_blank" rel="noopener">
-                                    <span class="link-text">Andrej Karpathy</span>
-                                </a>
-                            </li>
-                            <li class="external-link-item">
-                                <a href="https://astralcodexten.substack.com" class="external-link" target="_blank" rel="noopener">
-                                    <span class="link-text">Astral Codex Ten</span>
-                                </a>
-                            </li>
-                            <li class="external-link-item">
-                                <a href="https://stratechery.com" class="external-link" target="_blank" rel="noopener">
-                                    <span class="link-text">Stratechery</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
-                    
-                    <!-- Search Box -->
-                    <section class="sidebar-section">
-                        <h3 class="sidebar-title">Search</h3>
-                        <form class="search-form" action="#" method="get">
-                            <label for="search-input" class="visually-hidden">Search posts</label>
-                            <input type="search" id="search-input" class="search-input" placeholder="Search posts..." aria-label="Search posts">
-                            <div class="search-icon">🔍</div>
-                        </form>
-                    </section>
-                </aside>
+        </details>
             </div>
         </div>
-    </div>
-    
-    <!-- Image Modal for Click-to-Enlarge -->
+        
+<script>
+(function(){
+  var inp = document.getElementById('ar-search');
+  if (!inp) return;
+  function apply(q){
+    q = (q || '').toLowerCase().trim();
+    document.querySelectorAll('.ar-list li').forEach(function(li){
+      li.hidden = q && !li.dataset.title.includes(q);
+    });
+    document.querySelectorAll('.ar-year-block').forEach(function(det){
+      var visible = det.querySelectorAll('.ar-list li:not([hidden])').length;
+      det.toggleAttribute('data-empty', q && !visible);
+      if (q && visible && !det.open) det.open = true;
+    });
+  }
+  var params = new URLSearchParams(window.location.search);
+  var initial = params.get('q');
+  if (initial) { inp.value = initial; apply(initial); }
+  inp.addEventListener('input', function(){ apply(inp.value); });
+})();
+</script>
+    </main>
+
+    <footer class="at-footer">
+        <span class="seal">Approved Thoughts · MMXXVI</span>
+        <div class="links">
+            <a href="feed.xml" class="at-rss"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3a16 16 0 0 1 16 16h-3A13 13 0 0 0 5 6V3zm0 7a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm1.5 7.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>RSS</a>
+            <a href="feed.json">JSON</a>
+            <a href="sitemap.xml">Sitemap</a>
+        </div>
+    </footer>
+
     <div id="imageModal" class="image-modal" onclick="closeImageModal()">
         <span class="modal-close">&times;</span>
-        <img class="modal-image" id="modalImage">
+        <img class="modal-image" id="modalImage" alt="">
         <div class="modal-caption" id="modalCaption"></div>
     </div>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <p class="copyright">© 2026 Approved Thoughts. All rights reserved.</p>
-                <p class="footer-links">
-                    <a href="feed.xml">RSS Feed</a>
-                    <span class="separator">•</span>
-                    <a href="sitemap.xml">Sitemap</a>
-                </p>
-            </div>
-        </div>
-    </footer>
-    
-    <!-- JavaScript -->
     <script src="js/main.js" defer></script>
-    <script src="js/search.js" defer></script>
-    <!-- Twitter embed library -->
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
