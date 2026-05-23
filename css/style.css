@@ -85,13 +85,12 @@ a.inline:hover { border-bottom-color: var(--accent); }
   margin: 0;
 }
 .at-header-inner {
-  display: grid;
-  grid-template-columns: minmax(0,1fr) 240px;
-  gap: 64px;
+  display: block;
   max-width: 1120px;
   margin: 0 auto;
   padding: 0 56px;
 }
+.at-header-inner > div:last-child { display: none; }
 .at-header-col {
   text-align: center;
   position: relative;
