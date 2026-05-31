@@ -64,5 +64,3 @@ draft: false
 8. The obligatory AI tutorials of the week: [Tufte Skill](https://x.com/draparente/status/2057937428531568866) and [Marc Andreessen](https://x.com/itsolelehmann/status/2057909733491937555)
 
 I was able to create this post using the complimentary wi-fi on the Air India flight to Mumbai, including checking all the links and re-reading some of the pieces. I was even able to use Claude Code to make minor UI edits to the code. However, I wasn't able to push the updated site to Github / Cloudflare. The wi-fi was probably too slow for that. So that had to wait till I landed and got access to a better wi-fi. 
-
- 
