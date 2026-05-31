@@ -328,13 +328,11 @@ a.inline:hover { border-bottom-color: var(--accent); }
 .hy-content > ol > li:first-child::before { top: 12px; }
 .hy-content > ol > li > p:first-child,
 .hy-content > ul > li > p:first-child { margin: 0 0 8px; }
-.hy-content > ol > li > p:first-child > a,
-.hy-content > ul > li > p:first-child > a {
-  font-weight: 500; color: var(--ink);
+.hy-content > ol > li > p.hy-link-headline > a:first-of-type,
+.hy-content > ul > li > p.hy-link-headline > a:first-of-type {
+  font-weight: 500;
   font-size: 16.5px;
 }
-.hy-content > ol > li > p:first-child > a:hover,
-.hy-content > ul > li > p:first-child > a:hover { color: var(--accent); }
 .hy-content li p { color: var(--ink-2); margin: 0 0 0.6em; }
 .hy-content li p:last-child { margin-bottom: 0; }
 .hy-content a { color: var(--accent); }

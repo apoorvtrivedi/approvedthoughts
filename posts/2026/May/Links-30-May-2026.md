@@ -1,5 +1,5 @@
 ---
-title: "Links: Weeks of 30 May 2026 - Air India Wifi Edition"
+title: "Links: Weeks of 30 May 2026 - Air India Wi-Fi Edition"
 date: 2026-05-30
 type: links
 description: 
@@ -62,3 +62,7 @@ draft: false
    > Take a lesson from your Gilded Age predecessors, and treat beauty as a central charitable pursuit. Build monuments, statues, museums, universities, cathedrals, public gardens — and yes, even mansions for yourselves. Leave a physical legacy to future generations, not just a record of programs and disbursements. Recognize that meaning inheres in architecture, art and landscape as much as in more measurable goods.
 
 8. The obligatory AI tutorials of the week: [Tufte Skill](https://x.com/draparente/status/2057937428531568866) and [Marc Andreessen](https://x.com/itsolelehmann/status/2057909733491937555)
+
+I was able to create this post using the complimentary wi-fi on the Air India flight to Mumbai, including checking all the links and re-reading some of the pieces. I was even able to use Claude Code to make minor UI edits to the code. However, I wasn't able to push the updated site to Github / Cloudflare. The wi-fi was probably too slow for that. So that had to wait till I landed and got access to a better wi-fi. 
+
+ 

@@ -814,6 +814,15 @@ async function processMarkdownFile(filePath) {
     // 2a. Expand embed placeholders → real tweet/YouTube containers
     htmlContent = expandEmbedPlaceholders(htmlContent);
 
+    // 2b. Mark <li><p>…</p> where the <p> immediately starts with <a>. CSS
+    // styles only those first anchors as link-list "headlines" (bolder, a
+    // touch larger). Items whose first paragraph starts with text (and have
+    // inline <a>s later in the sentence) stay as ordinary inline links.
+    htmlContent = htmlContent.replace(
+      /<li>(\s*)<p>(\s*)<a\b/g,
+      '<li>$1<p class="hy-link-headline">$2<a'
+    );
+
     // 2.5 Now wrap images inside the HTML so lists/quotes stay intact
     const htmlWithImages = decorateImagesInHtml(htmlContent);
 

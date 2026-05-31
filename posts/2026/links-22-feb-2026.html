@@ -55,12 +55,12 @@
                 <div class="pp-prose">
                     <h5>AI Links</h5>
 <ol>
-<li><p><a href="https://www.natesilver.net/p/the-singularity-wont-be-gentle" target="_blank" rel="noopener">The singularity won&#39;t be gentle</a>: </p>
+<li><p class="hy-link-headline"><a href="https://www.natesilver.net/p/the-singularity-wont-be-gentle" target="_blank" rel="noopener">The singularity won&#39;t be gentle</a>: </p>
 <blockquote>
 <p>If AI has even a fraction of the impact that many people in Silicon Valley now expect on the fabric of work and daily life, it’s going to have profound and unpredictable political impacts.</p>
 </blockquote>
 </li>
-<li><p><a href="https://marginalrevolution.com/marginalrevolution/2026/02/rebuilding-our-world-with-reference-to-strong-ai.html" target="_blank" rel="noopener">Rebuilding our world, with reference to strong AI</a>: </p>
+<li><p class="hy-link-headline"><a href="https://marginalrevolution.com/marginalrevolution/2026/02/rebuilding-our-world-with-reference-to-strong-ai.html" target="_blank" rel="noopener">Rebuilding our world, with reference to strong AI</a>: </p>
 <blockquote>
 <p>When 2012 passed into 2013, we did not have to rebuild our world, not in most countries at least.  It sufficed to make adjustments at the margin.</p>
 <p>After the Roman Empire fell, parts of Europe had to rebuild their worlds.  It took a long time, but they ended up doing pretty well.</p>
@@ -74,55 +74,55 @@
 <p>In any case, it all will be quite something to witness.</p>
 </blockquote>
 </li>
-<li><p><a href="https://x.com/stevesi/status/2019167552794948020" target="_blank" rel="noopener">Death of Software. nah.</a>: </p>
+<li><p class="hy-link-headline"><a href="https://x.com/stevesi/status/2019167552794948020" target="_blank" rel="noopener">Death of Software. nah.</a>: </p>
 <blockquote>
 <p>Strap in. This is the most exciting time for business and technology, ever.</p>
 </blockquote>
 </li>
-<li><p><a href="https://simonwillison.net/2026/Feb/9/ai-intensifies-work/#atom-everything" target="_blank" rel="noopener">AI Doesn&#39;t Reduce Work - It Intensifies It</a>:</p>
+<li><p class="hy-link-headline"><a href="https://simonwillison.net/2026/Feb/9/ai-intensifies-work/#atom-everything" target="_blank" rel="noopener">AI Doesn&#39;t Reduce Work - It Intensifies It</a>:</p>
 <blockquote>
 <p>I think we&#39;ve just disrupted decades of existing intuition about sustainable working practices. It&#39;s going to take a while and some discipline to find a good new balance.</p>
 </blockquote>
 </li>
-<li><p><a href="https://x.com/sebkrier/status/2020561261751062664" target="_blank" rel="noopener">Seb Krier</a>: Some of this was weirdly scary.</p>
+<li><p class="hy-link-headline"><a href="https://x.com/sebkrier/status/2020561261751062664" target="_blank" rel="noopener">Seb Krier</a>: Some of this was weirdly scary.</p>
  <div class="hy-tweet" data-href="https://twitter.com/sebkrier/status/2020561261751062664" role="link" tabindex="0"><div class="hy-tweet-avatar">SK</div><div class="hy-tweet-body-col"><div class="hy-tweet-meta"><span class="name">Séb Krier</span><span class="handle">@sebkrier · Feb 8</span></div><p class="hy-tweet-body">Every time a model card drops, a lot of people screenshot scary parts - blackmail, evaluation awareness, misalignment etc. Now this is happening again, but instead of it being confined to a niche part of the safety community, it’s established commentators who are looking for things to say about AI.<br><br>I want to make an honest attempt at demystifying a few things about language models and unpacking what I think people are getting wrong. This is based on a mixture of my own experimentation with models over the years, and also the excellent writing from <a href="https://x.com/nostalgebraist" target="_blank" rel="noopener">@nostalgebraist</a>, <a href="https://x.com/lumpenspace" target="_blank" rel="noopener">@lumpenspace</a>, <a href="https://x.com/repligate" target="_blank" rel="noopener">@repligate</a>, <a href="https://x.com/mpshanahan" target="_blank" rel="noopener">@mpshanahan</a> and many parts of the model whisperer communities (who may or may not agree with some of my claims). Sources at the bottom.<br><br>In short: many public readings of some evaluations implicitly treat chat outputs as direct evidence of properties inherent to models, while LLM behavior is often strongly role- and context-conditioned. As a result commentators sometimes miss what the model is actually doing (simulating a role given textual context), design tests that are highly stylized (because they don&#39;t bother to make the scenarios psychologically plausible to the model), and interpret the results through a framework (goal-directed rational agency) that doesn&#39;t match the underlying mechanism (text prediction via theory-of-mind-like inference).<br><br>Here I want to make these contrasts more explicit with 5 key principles that I think people should keep in mind:<br><br>1. The model is completing a text, not answering a question<br><br>What might look like &quot;the AI responding&quot; is actually a prediction engine inferring what text would plausibly follow the prompt, given everything it has learned about the distribution of human text. Saying a model is &quot;answering&quot; is practically useful to use, but too low resolution to give you a good understanding of what is actually going on.<br><br>Lumpenspace describes prompting as &quot;asking the writer to expand on some fragment.&quot; Nostalgebraist notes that even when the model appears to be &quot;writing by itself,&quot; it is still guessing what &quot;the author would say.&quot;<br><br>Safety researchers sometimes treat model outputs as expressions of the model&#39;s dispositions, goals, or values — things the model &quot;believes&quot; or &quot;wants.&quot; When a model says something alarming in a test scenario, the safety framing interprets this as evidence about the model&#39;s internal alignment. But what is actually happening is that the model is simply producing text consistent with the genre and context it has been placed in. The distinction is important because you get a richer way of understanding what causes a model to act in a particular way.<br><br>A model placed in a scenario about a rogue AI will produce rogue-AI-consistent text, just as it would produce romance-consistent text if placed in a romance novel. This doesn&#39;t tell you about the model&#39;s &quot;goals&quot; any more than a novelist writing a villain reveals their own criminal intentions. Consider how models write differently on 4claw (a 4chan clone) vs Moltbook (a Facebook clone) in the OpenClaw experiments.<br><br>2. The assistant persona is a fictional character, not the model itself<br><br>In practice we should distinguish between (a) the base model (pretrained next-token predictor), and (b) the assistant persona policy (a post-hoc fiction layered on through instruction tuning + preference optimization like RLHF/RLAIF). Post-training creates a relatively stable assistant-like attractor, but it’s still a role: the same underlying model family can be steered into different &quot;characters&quot; under different system prompts, fine-tunes, and reward models.<br><br>In their ‘The Void’ essay, Nostalgebraist also specifies that the character remains fundamentally under-specified, a &quot;void&quot; that the base model must fill on every turn by making reasonable inferences. I think characters today are getting more coherent and the void is not as large, partly because each successive base model trains on exponentially more material about what &quot;an AI assistant&quot; is like - curated HHH-style dialogues, but also millions of real conversations, blog posts analyzing model behavior, AI twitter discourse, academic papers, system cards, and so on. The character stabilizes the same way any cultural archetype does, i.e. through sheer accumulation of description.<br><br>In practice, evaluating the character for its various propensities and dispositions remains useful! These simulated behaviours matter a lot, particularly if you&#39;re giving these simulators tools and access to real world platforms. But many discussions and papers just take the persona at face value and make all sorts of claims about &#39;models&#39; or &#39;AI&#39; in general, rather than the specific character that is being crafted during post-training. The counter-claim is that there is no stable agent there to evaluate. The assistant is a role the model plays, and it plays it differently depending on context, just as a base model would produce different continuations for different text fragments. Evaluating the model for &quot;alignment&quot; is like evaluating an actor for the moral character of their roles.<br><br>3. Apparent errors are often correct completions of the world implied by the prompt<br><br>This is increasingly less of an issue as we&#39;re getting much better at reducing &#39;mistakes&#39; and &#39;hallucination&#39; through post-training, retrieval, tool use, and decoding/verification. But it&#39;s helpful to take a step back and remember what it was like when these errors were omnipresent.<br><br>Lumpenspace demonstrates this with the Gary Marcus bathing-suit example (see here:</p><div class="hy-tweet-img"><img src="https://pbs.twimg.com/media/HAp1vYGacAAYDkJ.jpg" alt="" loading="lazy"></div><div class="hy-tweet-foot"><a href="https://twitter.com/sebkrier/status/2020561261751062664" target="_blank" rel="noopener">View on X</a></div></div></div>
 </li>
-<li><p><a href="https://restofworld.org/2026/ai-deepfakes-grief-celebrations-india/" target="_blank" rel="noopener">Family deepfakes help people celebrate and grieve in India</a>: </p>
+<li><p class="hy-link-headline"><a href="https://restofworld.org/2026/ai-deepfakes-grief-celebrations-india/" target="_blank" rel="noopener">Family deepfakes help people celebrate and grieve in India</a>: </p>
 <blockquote>
 <p>When the lights dimmed at Jaideep Sharma’s wedding reception in the north Indian city of Ajmer, guests expected to see a cheesy montage of the young couple in various attractive locations. Instead, they saw Sharma’s father — dead for more than a year — on the screen, smiling and blessing the newlyweds.</p>
 </blockquote>
 </li>
-<li><p><a href="https://x.com/kareldoostrlnck/status/2019477361557926281" target="_blank" rel="noopener">I spent $10,000 to automate my research at OpenAI with Codex</a></p>
+<li><p class="hy-link-headline"><a href="https://x.com/kareldoostrlnck/status/2019477361557926281" target="_blank" rel="noopener">I spent $10,000 to automate my research at OpenAI with Codex</a></p>
 </li>
-<li><p><a href="https://mitchellh.com/writing/my-ai-adoption-journey" target="_blank" rel="noopener">My AI Adoption Journey</a></p>
+<li><p class="hy-link-headline"><a href="https://mitchellh.com/writing/my-ai-adoption-journey" target="_blank" rel="noopener">My AI Adoption Journey</a></p>
 </li>
-<li><p><a href="https://x.com/andrewyng/status/2016564878098780245" target="_blank" rel="noopener">Agent Skills with Anthropic</a></p>
+<li><p class="hy-link-headline"><a href="https://x.com/andrewyng/status/2016564878098780245" target="_blank" rel="noopener">Agent Skills with Anthropic</a></p>
 </li>
 </ol>
 <h5>Other Stuff</h5>
 <ol>
-<li><p><a href="https://www.nytimes.com/2026/02/13/magazine/gisele-pelicot-france-rape-case-story.html?unlocked_article_code=1.MVA.Q6_h.VC-GNEuOSqZt&smid=nytcore-ios-share" target="_blank" rel="noopener">‘They All Tried to Break Me’: Gisèle Pelicot Shares Her Story</a>: Words fail me. </p>
+<li><p class="hy-link-headline"><a href="https://www.nytimes.com/2026/02/13/magazine/gisele-pelicot-france-rape-case-story.html?unlocked_article_code=1.MVA.Q6_h.VC-GNEuOSqZt&smid=nytcore-ios-share" target="_blank" rel="noopener">‘They All Tried to Break Me’: Gisèle Pelicot Shares Her Story</a>: Words fail me. </p>
 <blockquote>
 <p>I think we’re going to do great things together. I think we’ll make the most of these beautiful years we have left, and I hope they’ll last very long.</p>
 </blockquote>
 <p> Amen.</p>
 </li>
-<li><p><a href="https://x.com/realgenekim/status/1975707331129450559" target="_blank" rel="noopener">Navigating ER / Hostpital in US</a>:</p>
+<li><p class="hy-link-headline"><a href="https://x.com/realgenekim/status/1975707331129450559" target="_blank" rel="noopener">Navigating ER / Hostpital in US</a>:</p>
 <blockquote>
 <p>The most important thing I&#39;ve learned about hospitals over the last decade: if your loved one needs to be admitted to the hospital, chances are they will get incredible care... as long as that care can be immediately administered in the ED.  </p>
 <p>However, if they need to move outside the ED, you must learn as much as you can so you can help expedite the process, advocating to them to get to where they need to go — usually an inpatient floor, as quickly as possible. </p>
 <p>The stakes are probably higher than you think.  </p>
 </blockquote>
 </li>
-<li><p><a href="https://x.com/ZReitano/status/2016862026501378535" target="_blank" rel="noopener">The Economics of a Super Bowl Ad</a>:
+<li><p class="hy-link-headline"><a href="https://x.com/ZReitano/status/2016862026501378535" target="_blank" rel="noopener">The Economics of a Super Bowl Ad</a>:
  <div class="hy-tweet" data-href="https://twitter.com/ZReitano/status/2016862026501378535" role="link" tabindex="0"><div class="hy-tweet-avatar">ZR</div><div class="hy-tweet-body-col"><div class="hy-tweet-meta"><span class="name">Z Reitano</span><span class="handle">@ZReitano · Jan 29</span></div><p class="hy-tweet-body"><a href="http://x.com/i/article/2015803862930587648" target="_blank" rel="noopener">http://x.com/i/article/2015803862930587648</a></p><div class="hy-tweet-foot"><a href="https://twitter.com/ZReitano/status/2016862026501378535" target="_blank" rel="noopener">View on X</a></div></div></div></p>
 </li>
-<li><p><a href="https://marginalrevolution.com/marginalrevolution/2026/02/codex.html" target="_blank" rel="noopener">Codex</a>:</p>
+<li><p class="hy-link-headline"><a href="https://marginalrevolution.com/marginalrevolution/2026/02/codex.html" target="_blank" rel="noopener">Codex</a>:</p>
 <blockquote>
 <p>No, this is not an AI post.  Codex is a NYC bookshop at 1 Bleecker St., at Bowery.  It is quite extraordinary in its curation of used books.  The fiction section is large, yet you can pick up virtually any title on the shelves and it is worth reading.  A wonderful place to go to get reading ideas, plus the prices are reasonable and the used books are in decent shape.  Such achievements should be praised.</p>
 </blockquote>
 </li>
-<li><p><a href="https://www.astralcodexten.com/p/record-low-crime-rates-are-real-not?publication_id=89120&r=3o9" target="_blank" rel="noopener">Record Low Crime Rates Are Real, Not Just Reporting Bias Or Improved Medical Care</a>: </p>
+<li><p class="hy-link-headline"><a href="https://www.astralcodexten.com/p/record-low-crime-rates-are-real-not?publication_id=89120&r=3o9" target="_blank" rel="noopener">Record Low Crime Rates Are Real, Not Just Reporting Bias Or Improved Medical Care</a>: </p>
 <blockquote>
 <p>This post will do two things:</p>
 <ol>
@@ -133,10 +133,10 @@
 </ol>
 </blockquote>
 </li>
-<li><p><a href="https://x.com/FreeRangeLawyer/status/2011077281041744275" target="_blank" rel="noopener">Rob Johnson</a>: 
+<li><p class="hy-link-headline"><a href="https://x.com/FreeRangeLawyer/status/2011077281041744275" target="_blank" rel="noopener">Rob Johnson</a>: 
  <div class="hy-tweet" data-href="https://twitter.com/FreeRangeLawyer/status/2011077281041744275" role="link" tabindex="0"><div class="hy-tweet-avatar">RJ</div><div class="hy-tweet-body-col"><div class="hy-tweet-meta"><span class="name">Rob Johnson</span><span class="handle">@FreeRangeLawyer · Jan 13</span></div><p class="hy-tweet-body">Housing permits for new multifamily construction in Montgomery County, MD, before and after rent control.</p><div class="hy-tweet-img"><img src="https://pbs.twimg.com/media/G-jH9vvWgAABjEv.png" alt="" loading="lazy"></div><div class="hy-tweet-foot"><a href="https://twitter.com/FreeRangeLawyer/status/2011077281041744275" target="_blank" rel="noopener">View on X</a></div></div></div></p>
 </li>
-<li><p><a href="https://www.nbcnews.com/pop-culture/music/super-bowl-bushes-people-rcna258256" target="_blank" rel="noopener">What it was like to be a bush at Bad Bunny’s Super Bowl performance</a>:</p>
+<li><p class="hy-link-headline"><a href="https://www.nbcnews.com/pop-culture/music/super-bowl-bushes-people-rcna258256" target="_blank" rel="noopener">What it was like to be a bush at Bad Bunny’s Super Bowl performance</a>:</p>
 <blockquote>
 <p>Some of the biggest stars to emerge from this year&#39;s Super Bowl halftime show never even showed their faces on camera. They were the ones who dressed as bunches of grass to transform a football stadium into the sugarcane fields of Puerto Rico.</p>
 </blockquote>
@@ -169,13 +169,13 @@
                     <ul>
                 <li>
                     <a href="../../posts/2026/links-30-may-2026.html">
-                        <span class="at-recent-title">Links: Weeks of 30 May 2026 - Air India Wifi Edition</span>
+                        <span class="at-recent-title">Links: Weeks of 30 May 2026 - Air India Wi-Fi Edition</span>
                         <span class="at-recent-date">May 29, 2026</span>
                     </a>
                 </li>
                 <li>
                     <a href="../../posts/2026/links-23-may-2026.html">
-                        <span class="at-recent-title">Links: Weeks of 16 May 2026</span>
+                        <span class="at-recent-title">Links: Weeks of 23 May 2026</span>
                         <span class="at-recent-date">May 22, 2026</span>
                     </a>
                 </li>
