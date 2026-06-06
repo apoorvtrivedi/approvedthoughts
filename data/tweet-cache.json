@@ -1048,5 +1048,33 @@
     "retweets": 139,
     "replies": 27,
     "_fetched_at": "2026-05-30T23:02:12.129Z"
+  },
+  "2062689083948748879": {
+    "url": "https://twitter.com/gucaslelfond/status/2062689083948748879",
+    "id": "2062689083948748879",
+    "author": "lucas gelfond",
+    "handle": "gucaslelfond",
+    "text": "once you notice claude design websites you will see them everywhere",
+    "created_at": "Fri Jun 05 00:12:55 +0000 2026",
+    "timestamp": 1780618375,
+    "image": "https://pbs.twimg.com/media/HKAkyn0WYAAYlDI.jpg",
+    "likes": 3028,
+    "retweets": 174,
+    "replies": 54,
+    "_fetched_at": "2026-06-06T06:27:46.888Z"
+  },
+  "2062548955234185700": {
+    "url": "https://twitter.com/noam_dworman/status/2062548955234185700",
+    "id": "2062548955234185700",
+    "author": "Noam Dworman",
+    "handle": "noam_dworman",
+    "text": "Second for second, @tylercowen packs more substance into a talk than anyone I'm aware of. This is a clear, non-hysterical, and somewhat soothing discussion of our AI future.",
+    "created_at": "Thu Jun 04 14:56:05 +0000 2026",
+    "timestamp": 1780584965,
+    "image": "https://pbs.twimg.com/amplify_video_thumb/2062547890988359681/img/FKrb9Gdju4SHPlsz.jpg",
+    "likes": 2040,
+    "retweets": 235,
+    "replies": 41,
+    "_fetched_at": "2026-06-06T06:27:47.852Z"
   }
 }
