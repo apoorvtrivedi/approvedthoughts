@@ -10,13 +10,53 @@
         <language>en-us</language>
         <managingEditor>noreply@approvedthoughts.com (Apoorv Trivedi)</managingEditor>
         <webMaster>noreply@approvedthoughts.com (Apoorv Trivedi)</webMaster>
-        <lastBuildDate>Sat, 13 Jun 2026 13:57:00 GMT</lastBuildDate>
-        <pubDate>Sat, 13 Jun 2026 00:00:00 GMT</pubDate>
+        <lastBuildDate>Mon, 22 Jun 2026 01:08:14 GMT</lastBuildDate>
+        <pubDate>Sun, 21 Jun 2026 00:00:00 GMT</pubDate>
         <generator>Approved Thoughts Static Site Generator</generator>
         <docs>https://www.rssboard.org/rss-specification</docs>
         <ttl>1440</ttl>
         <atom:link href="https://www.approvedthoughts.com/feed.xml" rel="self" type="application/rss+xml" />
         
+        <item>
+            <title><![CDATA[Links: Weeks of 21 Jun 2026]]></title>
+            <link>https://www.approvedthoughts.com/posts/2026/links-21-jun-2026.html</link>
+            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-21-jun-2026.html</guid>
+            <pubDate>Sun, 21 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[...]]></description>
+            <content:encoded><![CDATA[<ol>
+<li><p class="hy-link-headline"><a href="https://www.theverge.com/tech/942854/apple-vehicle-motion-cues-review-really-work" target="_blank" rel="noopener">Apple’s weird anti-nausea dots cured my car sickness</a></p>
+<blockquote>
+<p>Introduced in 2024, Apple’s Vehicle Motion Cues promise to tap into your device’s accelerometer and gyroscope to reduce or, in my case, even eliminate the motion sickness felt when trying to use an iPhone, iPad, or MacBook inside a moving vehicle.</p>
+</blockquote>
+</li>
+<li><p class="hy-link-headline"><a href="https://thedispatch.com/article/affordability-crisis-healthcare-housing-childcare/" target="_blank" rel="noopener">Half of America Cannot Afford to Live, and Other Wrong Numbers</a></p>
+<blockquote>
+<p>Most affordability writing sorts Americans by income decile or sorts the world by service category—the costs of housing, healthcare, or childcare. We are doing something different. We are sorting Americans by the kind of trouble they are actually in. There are two groups in real trouble: a destitute tail that is small and brutally squeezed, and a much larger squeezed-talent class that is doing everything right but still cannot replicate its parents’ material life. Everyone else is fine, or fine enough, or in the kinds of trouble we are not obligated to call a crisis. The two groups need opposite remedies, and the “single homogeneous affordability crisis” framing makes that impossible to see.</p>
+</blockquote>
+</li>
+<li><p class="hy-link-headline"><a href="https://borretti.me/article/human-routers-of-machine-words" target="_blank" rel="noopener">Human Routers of Machine Words</a></p>
+<blockquote>
+<p>Often when we think we understand something and attempt to write about it, our very act of composition reveals our lack of understanding even to ourselves. Our pen writes the word “because” and suddenly stops. We thought we understood the “why” of something, but discover that we don’t. We begin a sentence with “obviously,” and then see that what we meant to write is not obvious at all. Sometimes we connect two clauses with the word “therefore,” only to then see that our chain of reasoning is defective.</p>
+</blockquote>
+</li>
+<li><p class="hy-link-headline"><a href="https://wizardzines.com/comics/write-for-one-person/" target="_blank" rel="noopener">write for one person</a></p>
+<blockquote>
+<p>Instead, I picture a specific person and I just write for them. Often this person is &quot;me, but 3 years ago&quot; or a good friend. </p>
+</blockquote>
+</li>
+<li><p class="hy-link-headline"><a href="https://x.com/satyanadella/status/2066182223213293753" target="_blank" rel="noopener">A frontier without an ecosystem is not stable</a>: </p>
+<blockquote>
+<p>This means the real opportunity is not in picking the best model but instead in building a learning loop on top of models where human capital and token capital compound. You can offload a task, or even a job, but you can never offload your learning. The future of the firm is the ability to compound that learning across people and AI.</p>
+<p>This requires a new architectural approach where every business is able to build agentic systems that improve over time, while still retaining control over their IP. A company should be able to switch out a “generalist” model without losing the “company veteran” expertise built into their learning system. This is the key “test” of your control and sovereignty in the era ahead.</p>
+</blockquote>
+</li>
+<li><p class="hy-link-headline"><a href="https://vanoosa.substack.com/p/1000-hours-on-the-cushion-7f8" target="_blank" rel="noopener">Meditation</a> <a href="https://vanoosa.substack.com/p/on-choosing-a-path?r=3a7g0&amp;triedRedirect=true" target="_blank" rel="noopener">reading</a> <a href="https://x.com/carmenleelau/status/2050734883857981930" target="_blank" rel="noopener">list</a>. I haven&#39;t read these but hopefully will, this week.</p>
+</li>
+</ol>]]></content:encoded>
+            <author>noreply@approvedthoughts.com (Apoorv Trivedi)</author>
+            <category><![CDATA[links]]></category>
+        </item>
+
         <item>
             <title><![CDATA[Links: Weeks of 13 Jun 2026]]></title>
             <link>https://www.approvedthoughts.com/posts/2026/links-13-jun-2026.html</link>
@@ -775,111 +815,6 @@ The sector-level analysis of which business models are vulnerable is genuinely g
             <author>noreply@approvedthoughts.com (Apoorv Trivedi)</author>
             <category><![CDATA[links]]></category>
             <category><![CDATA[ai]]></category>
-        </item>
-
-        <item>
-            <title><![CDATA[Links: Week of 22 Feb 2026]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-22-feb-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-22-feb-2026.html</guid>
-            <pubDate>Sun, 22 Feb 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[AI Links
-1. [The singularity won't be gentle](https://www.natesilver.net/p/the-singularity-wont-be-gentle): 
-   > If AI has even a fraction of the imp...]]></description>
-            <content:encoded><![CDATA[<h5>AI Links</h5>
-<ol>
-<li><p class="hy-link-headline"><a href="https://www.natesilver.net/p/the-singularity-wont-be-gentle" target="_blank" rel="noopener">The singularity won&#39;t be gentle</a>: </p>
-<blockquote>
-<p>If AI has even a fraction of the impact that many people in Silicon Valley now expect on the fabric of work and daily life, it’s going to have profound and unpredictable political impacts.</p>
-</blockquote>
-</li>
-<li><p class="hy-link-headline"><a href="https://www.approvedthoughts.com/https://marginalrevolution.com/marginalrevolution/2026/02/rebuilding-our-world-with-reference-to-strong-ai.html" target="_blank" rel="noopener">Rebuilding our world, with reference to strong AI</a>: </p>
-<blockquote>
-<p>When 2012 passed into 2013, we did not have to rebuild our world, not in most countries at least.  It sufficed to make adjustments at the margin.</p>
-<p>After the Roman Empire fell, parts of Europe had to rebuild their worlds.  It took a long time, but they ended up doing pretty well.</p>
-<p>After the American Revolution, the newly independent colonies had to rebuild their own world.  They did so brutally, but with considerable success.</p>
-<p>After WWII, Western Europe had the chance to rebuild its own world, and did a great job.</p>
-<p>We moderns are not used to having to rebuild our world.</p>
-<p>It is now the case that strong AI is here/coming, and we will have to rebuild our own world.  Many of us are terrified at this prospect, others are just extremely pessimistic.  It seems so impossible.  How are all the new pieces supposed to fit together?  Who amongst us can explain that process in a reassuring way?</p>
-<p>Yet we have done it many times before.  Not always with success, however.  After WWI ended, Europe was supposed to rebuild its own world, but they came up with something far worse than what they had before.  Nonetheless, in the broader sweep of history world rebuilding projects have had positive expected value.</p>
-<p>And so we will rebuilding our world yet again.  Or maybe you think we are simply incapable of that.</p>
-<p>As this happens, it can be useful to distinguish “criticisms of AI” from “people who cannot imagine that world rebuilding will go well.”  A lot of what parades as the former is actually the latter.</p>
-<p>In any case, it all will be quite something to witness.</p>
-</blockquote>
-</li>
-<li><p class="hy-link-headline"><a href="https://x.com/stevesi/status/2019167552794948020" target="_blank" rel="noopener">Death of Software. nah.</a>: </p>
-<blockquote>
-<p>Strap in. This is the most exciting time for business and technology, ever.</p>
-</blockquote>
-</li>
-<li><p class="hy-link-headline"><a href="https://simonwillison.net/2026/Feb/9/ai-intensifies-work/#atom-everything" target="_blank" rel="noopener">AI Doesn&#39;t Reduce Work - It Intensifies It</a>:</p>
-<blockquote>
-<p>I think we&#39;ve just disrupted decades of existing intuition about sustainable working practices. It&#39;s going to take a while and some discipline to find a good new balance.</p>
-</blockquote>
-</li>
-<li><p class="hy-link-headline"><a href="https://x.com/sebkrier/status/2020561261751062664" target="_blank" rel="noopener">Seb Krier</a>: Some of this was weirdly scary.</p>
- <div class="hy-tweet" data-href="https://twitter.com/sebkrier/status/2020561261751062664" role="link" tabindex="0"><div class="hy-tweet-avatar">SK</div><div class="hy-tweet-body-col"><div class="hy-tweet-meta"><span class="name">Séb Krier</span><span class="handle">@sebkrier · Feb 8</span></div><p class="hy-tweet-body">Every time a model card drops, a lot of people screenshot scary parts - blackmail, evaluation awareness, misalignment etc. Now this is happening again, but instead of it being confined to a niche part of the safety community, it’s established commentators who are looking for things to say about AI.<br><br>I want to make an honest attempt at demystifying a few things about language models and unpacking what I think people are getting wrong. This is based on a mixture of my own experimentation with models over the years, and also the excellent writing from <a href="https://x.com/nostalgebraist" target="_blank" rel="noopener">@nostalgebraist</a>, <a href="https://x.com/lumpenspace" target="_blank" rel="noopener">@lumpenspace</a>, <a href="https://x.com/repligate" target="_blank" rel="noopener">@repligate</a>, <a href="https://x.com/mpshanahan" target="_blank" rel="noopener">@mpshanahan</a> and many parts of the model whisperer communities (who may or may not agree with some of my claims). Sources at the bottom.<br><br>In short: many public readings of some evaluations implicitly treat chat outputs as direct evidence of properties inherent to models, while LLM behavior is often strongly role- and context-conditioned. As a result commentators sometimes miss what the model is actually doing (simulating a role given textual context), design tests that are highly stylized (because they don&#39;t bother to make the scenarios psychologically plausible to the model), and interpret the results through a framework (goal-directed rational agency) that doesn&#39;t match the underlying mechanism (text prediction via theory-of-mind-like inference).<br><br>Here I want to make these contrasts more explicit with 5 key principles that I think people should keep in mind:<br><br>1. The model is completing a text, not answering a question<br><br>What might look like &quot;the AI responding&quot; is actually a prediction engine inferring what text would plausibly follow the prompt, given everything it has learned about the distribution of human text. Saying a model is &quot;answering&quot; is practically useful to use, but too low resolution to give you a good understanding of what is actually going on.<br><br>Lumpenspace describes prompting as &quot;asking the writer to expand on some fragment.&quot; Nostalgebraist notes that even when the model appears to be &quot;writing by itself,&quot; it is still guessing what &quot;the author would say.&quot;<br><br>Safety researchers sometimes treat model outputs as expressions of the model&#39;s dispositions, goals, or values — things the model &quot;believes&quot; or &quot;wants.&quot; When a model says something alarming in a test scenario, the safety framing interprets this as evidence about the model&#39;s internal alignment. But what is actually happening is that the model is simply producing text consistent with the genre and context it has been placed in. The distinction is important because you get a richer way of understanding what causes a model to act in a particular way.<br><br>A model placed in a scenario about a rogue AI will produce rogue-AI-consistent text, just as it would produce romance-consistent text if placed in a romance novel. This doesn&#39;t tell you about the model&#39;s &quot;goals&quot; any more than a novelist writing a villain reveals their own criminal intentions. Consider how models write differently on 4claw (a 4chan clone) vs Moltbook (a Facebook clone) in the OpenClaw experiments.<br><br>2. The assistant persona is a fictional character, not the model itself<br><br>In practice we should distinguish between (a) the base model (pretrained next-token predictor), and (b) the assistant persona policy (a post-hoc fiction layered on through instruction tuning + preference optimization like RLHF/RLAIF). Post-training creates a relatively stable assistant-like attractor, but it’s still a role: the same underlying model family can be steered into different &quot;characters&quot; under different system prompts, fine-tunes, and reward models.<br><br>In their ‘The Void’ essay, Nostalgebraist also specifies that the character remains fundamentally under-specified, a &quot;void&quot; that the base model must fill on every turn by making reasonable inferences. I think characters today are getting more coherent and the void is not as large, partly because each successive base model trains on exponentially more material about what &quot;an AI assistant&quot; is like - curated HHH-style dialogues, but also millions of real conversations, blog posts analyzing model behavior, AI twitter discourse, academic papers, system cards, and so on. The character stabilizes the same way any cultural archetype does, i.e. through sheer accumulation of description.<br><br>In practice, evaluating the character for its various propensities and dispositions remains useful! These simulated behaviours matter a lot, particularly if you&#39;re giving these simulators tools and access to real world platforms. But many discussions and papers just take the persona at face value and make all sorts of claims about &#39;models&#39; or &#39;AI&#39; in general, rather than the specific character that is being crafted during post-training. The counter-claim is that there is no stable agent there to evaluate. The assistant is a role the model plays, and it plays it differently depending on context, just as a base model would produce different continuations for different text fragments. Evaluating the model for &quot;alignment&quot; is like evaluating an actor for the moral character of their roles.<br><br>3. Apparent errors are often correct completions of the world implied by the prompt<br><br>This is increasingly less of an issue as we&#39;re getting much better at reducing &#39;mistakes&#39; and &#39;hallucination&#39; through post-training, retrieval, tool use, and decoding/verification. But it&#39;s helpful to take a step back and remember what it was like when these errors were omnipresent.<br><br>Lumpenspace demonstrates this with the Gary Marcus bathing-suit example (see here:</p><div class="hy-tweet-img"><img src="https://www.approvedthoughts.com/https://pbs.twimg.com/media/HAp1vYGacAAYDkJ.jpg" alt="" loading="lazy"></div><div class="hy-tweet-foot"><a href="https://twitter.com/sebkrier/status/2020561261751062664" target="_blank" rel="noopener">View on X</a></div></div></div>
-</li>
-<li><p class="hy-link-headline"><a href="https://restofworld.org/2026/ai-deepfakes-grief-celebrations-india/" target="_blank" rel="noopener">Family deepfakes help people celebrate and grieve in India</a>: </p>
-<blockquote>
-<p>When the lights dimmed at Jaideep Sharma’s wedding reception in the north Indian city of Ajmer, guests expected to see a cheesy montage of the young couple in various attractive locations. Instead, they saw Sharma’s father — dead for more than a year — on the screen, smiling and blessing the newlyweds.</p>
-</blockquote>
-</li>
-<li><p class="hy-link-headline"><a href="https://x.com/kareldoostrlnck/status/2019477361557926281" target="_blank" rel="noopener">I spent $10,000 to automate my research at OpenAI with Codex</a></p>
-</li>
-<li><p class="hy-link-headline"><a href="https://mitchellh.com/writing/my-ai-adoption-journey" target="_blank" rel="noopener">My AI Adoption Journey</a></p>
-</li>
-<li><p class="hy-link-headline"><a href="https://x.com/andrewyng/status/2016564878098780245" target="_blank" rel="noopener">Agent Skills with Anthropic</a></p>
-</li>
-</ol>
-<h5>Other Stuff</h5>
-<ol>
-<li><p class="hy-link-headline"><a href="https://www.nytimes.com/2026/02/13/magazine/gisele-pelicot-france-rape-case-story.html?unlocked_article_code=1.MVA.Q6_h.VC-GNEuOSqZt&amp;smid=nytcore-ios-share" target="_blank" rel="noopener">‘They All Tried to Break Me’: Gisèle Pelicot Shares Her Story</a>: Words fail me. </p>
-<blockquote>
-<p>I think we’re going to do great things together. I think we’ll make the most of these beautiful years we have left, and I hope they’ll last very long.</p>
-</blockquote>
-<p> Amen.</p>
-</li>
-<li><p class="hy-link-headline"><a href="https://x.com/realgenekim/status/1975707331129450559" target="_blank" rel="noopener">Navigating ER / Hostpital in US</a>:</p>
-<blockquote>
-<p>The most important thing I&#39;ve learned about hospitals over the last decade: if your loved one needs to be admitted to the hospital, chances are they will get incredible care... as long as that care can be immediately administered in the ED.  </p>
-<p>However, if they need to move outside the ED, you must learn as much as you can so you can help expedite the process, advocating to them to get to where they need to go — usually an inpatient floor, as quickly as possible. </p>
-<p>The stakes are probably higher than you think.  </p>
-</blockquote>
-</li>
-<li><p class="hy-link-headline"><a href="https://x.com/ZReitano/status/2016862026501378535" target="_blank" rel="noopener">The Economics of a Super Bowl Ad</a>:
- <div class="hy-tweet" data-href="https://twitter.com/ZReitano/status/2016862026501378535" role="link" tabindex="0"><div class="hy-tweet-avatar">ZR</div><div class="hy-tweet-body-col"><div class="hy-tweet-meta"><span class="name">Z Reitano</span><span class="handle">@ZReitano · Jan 29</span></div><p class="hy-tweet-body"><a href="http://x.com/i/article/2015803862930587648" target="_blank" rel="noopener">http://x.com/i/article/2015803862930587648</a></p><div class="hy-tweet-foot"><a href="https://twitter.com/ZReitano/status/2016862026501378535" target="_blank" rel="noopener">View on X</a></div></div></div></p>
-</li>
-<li><p class="hy-link-headline"><a href="https://www.approvedthoughts.com/https://marginalrevolution.com/marginalrevolution/2026/02/codex.html" target="_blank" rel="noopener">Codex</a>:</p>
-<blockquote>
-<p>No, this is not an AI post.  Codex is a NYC bookshop at 1 Bleecker St., at Bowery.  It is quite extraordinary in its curation of used books.  The fiction section is large, yet you can pick up virtually any title on the shelves and it is worth reading.  A wonderful place to go to get reading ideas, plus the prices are reasonable and the used books are in decent shape.  Such achievements should be praised.</p>
-</blockquote>
-</li>
-<li><p class="hy-link-headline"><a href="https://www.astralcodexten.com/p/record-low-crime-rates-are-real-not?publication_id=89120&amp;r=3o9" target="_blank" rel="noopener">Record Low Crime Rates Are Real, Not Just Reporting Bias Or Improved Medical Care</a>: </p>
-<blockquote>
-<p>This post will do two things:</p>
-<ol>
-<li><p>Establish that our best data show crime rates are historically low</p>
-</li>
-<li><p>Argue that this is a real effect, not just reporting bias (people report fewer crimes to police) or an artifact of better medical care (victims are more likely to survive, so murders get downgraded to assaults)</p>
-</li>
-</ol>
-</blockquote>
-</li>
-<li><p class="hy-link-headline"><a href="https://x.com/FreeRangeLawyer/status/2011077281041744275" target="_blank" rel="noopener">Rob Johnson</a>: 
- <div class="hy-tweet" data-href="https://twitter.com/FreeRangeLawyer/status/2011077281041744275" role="link" tabindex="0"><div class="hy-tweet-avatar">RJ</div><div class="hy-tweet-body-col"><div class="hy-tweet-meta"><span class="name">Rob Johnson</span><span class="handle">@FreeRangeLawyer · Jan 13</span></div><p class="hy-tweet-body">Housing permits for new multifamily construction in Montgomery County, MD, before and after rent control.</p><div class="hy-tweet-img"><img src="https://www.approvedthoughts.com/https://pbs.twimg.com/media/G-jH9vvWgAABjEv.png" alt="" loading="lazy"></div><div class="hy-tweet-foot"><a href="https://twitter.com/FreeRangeLawyer/status/2011077281041744275" target="_blank" rel="noopener">View on X</a></div></div></div></p>
-</li>
-<li><p class="hy-link-headline"><a href="https://www.nbcnews.com/pop-culture/music/super-bowl-bushes-people-rcna258256" target="_blank" rel="noopener">What it was like to be a bush at Bad Bunny’s Super Bowl performance</a>:</p>
-<blockquote>
-<p>Some of the biggest stars to emerge from this year&#39;s Super Bowl halftime show never even showed their faces on camera. They were the ones who dressed as bunches of grass to transform a football stadium into the sugarcane fields of Puerto Rico.</p>
-</blockquote>
-</li>
-</ol>]]></content:encoded>
-            <author>noreply@approvedthoughts.com (Apoorv Trivedi)</author>
-            <category><![CDATA[links]]></category>
-            <category><![CDATA[ai]]></category>
-            <category><![CDATA[india]]></category>
-            <category><![CDATA[economics]]></category>
-            <category><![CDATA[health]]></category>
         </item>
     </channel>
 </rss>
