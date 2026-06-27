@@ -10,13 +10,56 @@
         <language>en-us</language>
         <managingEditor>noreply@approvedthoughts.com (Apoorv Trivedi)</managingEditor>
         <webMaster>noreply@approvedthoughts.com (Apoorv Trivedi)</webMaster>
-        <lastBuildDate>Mon, 22 Jun 2026 01:08:14 GMT</lastBuildDate>
-        <pubDate>Sun, 21 Jun 2026 00:00:00 GMT</pubDate>
+        <lastBuildDate>Sat, 27 Jun 2026 12:13:04 GMT</lastBuildDate>
+        <pubDate>Sat, 27 Jun 2026 00:00:00 GMT</pubDate>
         <generator>Approved Thoughts Static Site Generator</generator>
         <docs>https://www.rssboard.org/rss-specification</docs>
         <ttl>1440</ttl>
         <atom:link href="https://www.approvedthoughts.com/feed.xml" rel="self" type="application/rss+xml" />
         
+        <item>
+            <title><![CDATA[Links: Weeks of 27 Jun 2026]]></title>
+            <link>https://www.approvedthoughts.com/posts/2026/links-27-jun-2026.html</link>
+            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-27-jun-2026.html</guid>
+            <pubDate>Sat, 27 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[1. [One Blood Test. Fifty Cancers. The Screening Revolution That Could Save Millions of Lives.](https://afshine.substack.com/p/one-blood-test-fifty-ca...]]></description>
+            <content:encoded><![CDATA[<ol>
+<li><p class="hy-link-headline"><a href="https://afshine.substack.com/p/one-blood-test-fifty-cancers-the?triedRedirect=true" target="_blank" rel="noopener">One Blood Test. Fifty Cancers. The Screening Revolution That Could Save Millions of Lives.</a></p>
+<blockquote>
+<p>Cancer is now the number one killer of Americans over the age of 50. Not heart disease. Cancer. And the reason it kills so many isn’t that we can’t fight it. It’s that we don’t see it coming.</p>
+</blockquote>
+<p>and </p>
+<blockquote>
+<p>Galleri captures cell-free DNA from a standard blood draw — a single vial — and sequences the methylation patterns across the genome using next-generation sequencing. An AI algorithm trained on massive datasets then analyzes these patterns to determine two things:</p>
+<p>First, whether a cancer signal is present at all.</p>
+<p>Second, where it’s likely coming from — which organ or tissue type is the probable source. This is called cancer signal origin prediction, and in studies, Galleri has achieved over 90% accuracy in identifying the tissue of origin.</p>
+<p>The test result is not a diagnosis. It is a precision compass. It tells your physician: there is a cancer signal detected, and the predicted origin is your pancreas, or your lung, or your liver. Your physician then orders targeted follow-up imaging or biopsy to confirm or rule out the finding.</p>
+</blockquote>
+</li>
+<li><p class="hy-link-headline"><a href="https://blog.interceptfund.com/p/ending-respiratory-infectionshttps://blog.interceptfund.com/p/ending-respiratory-infections" target="_blank" rel="noopener">Ending respiratory infections</a></p>
+<blockquote>
+<p>A century ago, waterborne diseases levied similar costs to those posed by respiratory viruses like colds and influenza today: endemic, periodically epidemic, and widely accepted as an inevitable feature of human life. Then, at the turn of the twentieth century, we decided they didn’t have to be. Pharmaceutical advances and clean water infrastructure made cholera, typhoid, and dysentery rare across much of the world within a matter of decades.</p>
+<p>Why haven’t we already seen the same kind of transformation with respiratory viruses?</p>
+<p>Introducing Intercept, a $500M bet to make respiratory infections like colds and flu a thing of the past.</p>
+</blockquote>
+</li>
+<li><p class="hy-link-headline"><a href="https://www.nytimes.com/athletic/7366679/2026/06/25/vaibhav-sooryavanshi-bhiar-india-cricket-15-prodigy-backgrounder/?unlocked_article_code=1.tVA.84vb.W7Qib6HHB5Sz&amp;source=athletic_user_shared_gift_article_copylink&amp;smid=url-share-ta" target="_blank" rel="noopener">The boy from Bihar: The making of Vaibhav Sooryavanshi, Indian cricket’s 15-year-old batting prodigy</a></p>
+<blockquote>
+<p>“When we took him to Patna for trials, in the whole area, the news spread that there was a small left-handed batter from Samastipur who had exceptional talent,” Jha says. “He was selected in the state Under-17 team at the age of eight-and-a-half.”</p>
+</blockquote>
+<p>One of the most exciting stars in all sports. </p>
+</li>
+<li><p class="hy-link-headline"><a href="https://intelligence.exponentialview.co/" target="_blank" rel="noopener">The State of the AI Economy</a></p>
+<blockquote>
+<p>Over the past 12 months, the AI ecosystem generated $110 billion in revenue when you remove double-counting. The growth rate is healthy. Annualizing the most recent month’s revenues indicates a $175 billion revenue run rate.
+These revenues are growing faster than previous IT-oriented waves, roughly three times more rapidly than the mobile or Internet waves.</p>
+</blockquote>
+</li>
+</ol>]]></content:encoded>
+            <author>noreply@approvedthoughts.com (Apoorv Trivedi)</author>
+            <category><![CDATA[links]]></category>
+        </item>
+
         <item>
             <title><![CDATA[Links: Weeks of 21 Jun 2026]]></title>
             <link>https://www.approvedthoughts.com/posts/2026/links-21-jun-2026.html</link>
@@ -772,49 +815,6 @@ The sector-level analysis of which business models are vulnerable is genuinely g
             <category><![CDATA[post]]></category>
             <category><![CDATA[ai]]></category>
             <category><![CDATA[economics]]></category>
-        </item>
-
-        <item>
-            <title><![CDATA[Links: Week of 01 Mar 2026]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-01-mar-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-01-mar-2026.html</guid>
-            <pubDate>Sun, 01 Mar 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[...]]></description>
-            <content:encoded><![CDATA[<h4>Links</h4>
-<ol>
-<li><p class="hy-link-headline"><a href="https://www.daniellitt.com/blog/2026/2/20/mathematics-in-the-library-of-babel" target="_blank" rel="noopener">Mathematics in the Library of Babel</a>: Speaking of vibe-shifts...Daniel Litt is a professor of mathematics at the University of Toronto.</p>
-<blockquote>
-<p>I think I have been underrating the pace of model improvements. In March 2025 I made a bet with Tamay Besiroglu, cofounder of RL environment company Mechanize, that AI tools would not be able to autonomously produce papers I judge to be at a level comparable to that of the best few papers published in 2025, at comparable cost to human experts, by 2030. I gave him 3:1 odds at the time; I now expect to lose this bet.</p>
-</blockquote>
-</li>
-<li><p class="hy-link-headline"><a href="https://x.com/karpathy/status/2026731645169185220" target="_blank" rel="noopener">Andrej Karpathy</a>: </p>
-<blockquote>
-<p>It is hard to communicate how much programming has changed due to AI in the last 2 months: not gradually and over time in the &quot;progress as usual&quot; way, but specifically this last December. There are a number of asterisks but imo coding agents basically didn’t work before December and basically work since - the models have significantly higher quality, long-term coherence and tenacity and they can power through large and long tasks, well past enough that it is extremely disruptive to the default programming workflow.</p>
-<p>It’s not perfect, it needs high-level direction, judgement, taste, oversight, iteration and hints and ideas. It works a lot better in some scenarios than others (e.g. especially for tasks that are well-specified and where you can verify/test functionality). The key is to build intuition to decompose the task just right to hand off the parts that work and help out around the edges. But imo, this is nowhere near &quot;business as usual&quot; time in software.</p>
-</blockquote>
-</li>
-<li><p class="hy-link-headline"><a href="https://x.com/meer_aiit/status/2027509711722188976" target="_blank" rel="noopener">Best Practices for Claude Code</a>: TBF this looks like an influencer account but I am collecting these guides and this is one. </p>
-</li>
-<li><p class="hy-link-headline"><a href="https://x.com/zackbshapiro/status/2027389987444957625" target="_blank" rel="noopener">The Claude-Native Law Firm</a>: Another one of the above. </p>
-</li>
-<li><p class="hy-link-headline"><a href="https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/#atom-everything" target="_blank" rel="noopener">Writing about Agentic Engineering Patterns</a>: A more serious work...</p>
-<blockquote>
-<p>I think of vibe coding using its original definition of coding where you pay no attention to the code at all, which today is often associated with non-programmers using LLMs to write code.</p>
-<p>Agentic Engineering represents the other end of the scale: professional software engineers using coding agents to improve and accelerate their work by amplifying their existing expertise.</p>
-</blockquote>
-</li>
-<li><p class="hy-link-headline"><a href="https://www.ben-evans.com/benedictevans/2026/2/19/how-will-openai-compete-nkg2x" target="_blank" rel="noopener">How will OpenAI compete?</a>: Great read. </p>
-<blockquote>
-<p>OpenAI has some big questions. It doesn’t have unique tech. It has a big user base, but with limited engagement and stickiness and no network effect. The incumbents have matched the tech and are leveraging their product and distribution. And a lot of the value and leverage will come from new experiences that haven’t been invented yet, and it can’t invent all of those itself. What’s the plan?</p>
-</blockquote>
-</li>
-<li><p class="hy-link-headline"><a href="https://www.youtube.com/watch?v=PjTaZvvOtxU" target="_blank" rel="noopener">These Al Prompts Exposed My Biggest Blind Spots</a>: More influencer content but interesting direction. </p>
- <div class="video-container"></div>
-</li>
-</ol>]]></content:encoded>
-            <author>noreply@approvedthoughts.com (Apoorv Trivedi)</author>
-            <category><![CDATA[links]]></category>
-            <category><![CDATA[ai]]></category>
         </item>
     </channel>
 </rss>
