@@ -66,7 +66,8 @@ draft: false
      
      Order yours below.
    :::
-   > I am optimistic because unlike the rest, this doesn't promise the world - putting things in their place and folding laundry. $8K. 
+   
+   I am optimistic because unlike the rest, this doesn't promise the world - putting things in their place and folding laundry. $8K. 
 
 6. [How to ask for help from people who don't know you](https://pradyuprasad.com/writings/how-to-ask-for-help/)
    > No matter what you’re doing, from building a civilization on Mars to getting a summer internship, you will have to ask people for help. Yet, most people get this crucial skill wrong. They put themselves at the front of their request, when they should be putting the other person there. But isn’t getting help just charisma and luck? No, asking for help is a skill, not an attribute you are assigned at birth like green eyes.
@@ -93,4 +94,12 @@ draft: false
    :::
 
 9. Happy Semiquincentennial to those who celebrate!
-   ![https://x.com/dschlopesisback/status/2073179433729445921]
+   ::: tweet
+   url: https://twitter.com/DschlopesIsBack/status/2073179433729445921
+   author: Gain of Fauci
+   handle: DschlopesIsBack
+   date: Fri Jul 03 22:57:49 +0000 2026
+   image: https://pbs.twimg.com/amplify_video_thumb/2073179298702213120/img/3GTXqxrqLb62MVgo.jpg
+   body: |
+     Washington’s Dream For America 🇺🇸😂
+   :::
