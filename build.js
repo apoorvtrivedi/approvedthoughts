@@ -997,25 +997,70 @@ async function generateIndexPage(posts, pageNum = 1) {
     console.log(`  ✓ Generated: ${fileName}`);
 }
 
+// Prepare a post's HTML for inclusion in RSS/JSON feeds. Feed readers can't
+// use our CSS or JS, so we:
+//   1. Reduce .hy-tweet cards to a minimal blockquote: @handle (linked to X)
+//      + body text + attached image, dropping avatar/name/date/"View on X".
+//   2. Keep YouTube iframes AND append a text-link fallback (many readers
+//      strip iframes for security).
+//   3. Strip DOM handlers (onclick, id, style, data-*, role, tabindex).
+//   4. Fix stray unescaped '&' entities.
+//   5. Rewrite site-relative href/src to absolute URLs (without breaking
+//      URLs that are already absolute — the bug the previous regex had for
+//      pbs.twimg.com image sources).
+function prepareContentForFeed(post) {
+    let content = post.content;
+
+    // 1. Tweet cards → simple blockquote.
+    content = content.replace(
+        /<div class="hy-tweet" data-href="([^"]+)"[^>]*>[\s\S]*?<span class="handle">@([A-Za-z0-9_]+)[^<]*<\/span>[\s\S]*?<p class="hy-tweet-body">([\s\S]*?)<\/p>([\s\S]*?)<\/div><\/div><\/div>/g,
+        (_, url, handle, body, tail) => {
+            const imgMatch = tail.match(/<img[^>]+src="([^"]+)"[^>]*>/);
+            const imgHtml = imgMatch ? `<p><img src="${imgMatch[1]}" alt="" /></p>` : '';
+            return `<blockquote><p><a href="${url}">@${handle}</a></p><p>${body}</p>${imgHtml}</blockquote>`;
+        }
+    );
+
+    // 2. YouTube: keep the iframe but add a plain-link fallback beneath it.
+    content = content.replace(
+        /<div class="video-container"><iframe src="https:\/\/www\.youtube-nocookie\.com\/embed\/([A-Za-z0-9_-]+)[^"]*"[^>]*><\/iframe><\/div>/g,
+        (match, videoId) =>
+            `${match}<p><a href="https://www.youtube.com/watch?v=${videoId}">Watch on YouTube</a></p>`
+    );
+
+    // 3. Strip stuff that has no place in a feed. NOTE: we no longer strip
+    //    iframes here — YouTube embeds need to survive.
+    content = content
+        .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
+        .replace(/onclick="[^"]*"/g, '')
+        .replace(/id="[^"]*"/g, '')
+        .replace(/style="[^"]*"/g, '')
+        .replace(/data-[\w-]+="[^"]*"/g, '')
+        .replace(/role="[^"]*"/g, '')
+        .replace(/tabindex="[^"]*"/g, '')
+        .replace(/&(?![a-zA-Z0-9#]{1,6};)/g, '&amp;')
+        .trim();
+
+    // 4. Rewrite site-relative URLs to absolute. Skip URLs that already
+    //    start with http://, https:// or // (protocol-relative), so we
+    //    don't double-prefix pbs.twimg.com or other external hosts.
+    const abs = (path) => {
+        const clean = path.replace(/^\//, '');
+        return `${config.siteUrl}/${clean}`;
+    };
+    content = content
+        .replace(/href="(?!https?:\/\/|\/\/|mailto:|#)([^"]+)"/g, (_, path) => `href="${abs(path)}"`)
+        .replace(/href="#([^"]*)"/g, `href="${config.siteUrl}/${post.url}#$1"`)
+        .replace(/src="(?!https?:\/\/|\/\/|data:)([^"]+)"/g, (_, path) => `src="${abs(path)}"`);
+
+    return content;
+}
+
 // Generate RSS feed and JSON feed
 async function generateRSSFeed(posts) {
     // RSS Feed Generation
     const feedItems = posts.slice(0, 20).map(post => {
-        // Clean up content for RSS - more thorough cleaning
-        let cleanContent = post.content
-            .replace(/<script[^>]*>.*?<\/script>/gis, '') // Remove script tags
-            .replace(/onclick="[^"]*"/g, '') // Remove onclick handlers
-            .replace(/id="[^"]*"/g, '') // Remove IDs that might conflict
-            .replace(/<iframe[^>]*>.*?<\/iframe>/gis, '') // Remove iframes
-            .replace(/style="[^"]*"/g, '') // Remove style attributes
-            .replace(/&(?![a-zA-Z0-9#]{1,6};)/g, '&amp;') // Fix unescaped & characters
-            .trim();
-        
-        // Convert relative URLs to absolute URLs
-        cleanContent = cleanContent
-            .replace(/href="([^"]*\.html)"/g, `href="${config.siteUrl}/$1"`)
-            .replace(/href="#([^"]*)"/g, `href="${config.siteUrl}/${post.url}#$1"`) // Fix relative anchors
-            .replace(/src="([^"]*\.(jpg|jpeg|png|gif|webp))"/g, `src="${config.siteUrl}/$1"`);
+        const cleanContent = prepareContentForFeed(post);
         
         // Create a simpler description without HTML for better compatibility
         const plainDescription = post.excerpt
@@ -1070,17 +1115,7 @@ async function generateRSSFeed(posts) {
 
     // JSON Feed Generation (rest remains the same)
     const jsonItems = posts.slice(0, 20).map(post => {
-        // Clean up content similar to RSS but less strict for JSON
-        let cleanContent = post.content
-            .replace(/<script[^>]*>.*?<\/script>/gis, '')
-            .replace(/onclick="[^"]*"/g, '')
-            .trim();
-        
-        // Ensure all URLs are absolute
-        cleanContent = cleanContent
-            .replace(/href="([^"]*\.html)"/g, `href="${config.siteUrl}/$1"`)
-            .replace(/href="#([^"]*)"/g, `href="${config.siteUrl}/${post.url}#$1"`)
-            .replace(/src="([^"]*\.(jpg|jpeg|png|gif|webp))"/g, `src="${config.siteUrl}/$1"`);
+        const cleanContent = prepareContentForFeed(post);
         
         return {
             id: `${config.siteUrl}/${post.url}`,
