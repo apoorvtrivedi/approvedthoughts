@@ -25,7 +25,7 @@ draft: false
 2. [Missing women on Indian streets](https://marginalrevolution.com/marginalrevolution/2026/07/missing-women-on-indian-streets.html)
    > How absent are women from city streets in the developing world? We answer this question using GPS-linked wearable cameras and randomized street audits across ~900 kilometers of roads in greater Mumbai. Across 4000+ street images containing 23,000+ visible person observations, women account for 16.4% of visible people in Mumbai and 14.7% in Navi Mumbai, far below their population shares. We estimate pedestrian sex ratios of 239 and 223 women per 1,000 men, implying 71% and 76% of women expected based on residential ratios are missing from the streets. This pattern holds across road types, and private mobility does not explain the gap; women’s share on two-wheelers is lower still (8.4% and 5.7%). These results provide the first large-scale measurement of gender disparities in urban public life that self-reported data cannot capture.
 
-Here is the [actual paper](https://drive.google.com/file/d/1wpW9CKOgvRW7SD-xVc0ScycfUmRb9820/view). 
+   Here is the [actual paper](https://drive.google.com/file/d/1wpW9CKOgvRW7SD-xVc0ScycfUmRb9820/view). 
 
 3. [The 20 Most Interesting Ideas We've Found in 2026](https://www.chinatalk.media/p/the-20-most-interesting-ideas-weve)
    > We translated an all-star panel discussion about the state of Chinese AI, in which panelists argue that China’s success with open source cannot compensate for the persistent and widening gap with US closed models. Qwen’s former tech lead estimated that there’s only a ~20% chance (“already very optimistic”) that the leading AI model in 3-5 years will be a Chinese one.
