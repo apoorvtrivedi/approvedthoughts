@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://www.approvedthoughts.com/sitemap.xml
+Sitemap: https://approvedthoughts.com/sitemap.xml
 
 # Disallow search results and admin areas (if any)
 Disallow: /data/

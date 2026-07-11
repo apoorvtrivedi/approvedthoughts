@@ -19,7 +19,7 @@ const config = {
     postsPerPage: 10,
     siteTitle: 'Approved Thoughts',
     siteDescription: '',
-    siteUrl: 'https://www.approvedthoughts.com',
+    siteUrl: 'https://approvedthoughts.com',
     author: 'Apoorv Trivedi'
 };
 
@@ -1021,11 +1021,18 @@ function prepareContentForFeed(post) {
         }
     );
 
-    // 2. YouTube: keep the iframe but add a plain-link fallback beneath it.
+    // 2. YouTube: replace the iframe with a clickable thumbnail. Iframes
+    //    render inconsistently in feed readers (some strip them, some show a
+    //    giant blank area because they can't use our CSS aspect-ratio rules).
+    //    A linked poster image is universal, uses YouTube's own artwork, and
+    //    still opens the video on click.
     content = content.replace(
         /<div class="video-container"><iframe src="https:\/\/www\.youtube-nocookie\.com\/embed\/([A-Za-z0-9_-]+)[^"]*"[^>]*><\/iframe><\/div>/g,
-        (match, videoId) =>
-            `${match}<p><a href="https://www.youtube.com/watch?v=${videoId}">Watch on YouTube</a></p>`
+        (_, videoId) => {
+            const watchUrl = `https://www.youtube.com/watch?v=${videoId}`;
+            const thumb = `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+            return `<p><a href="${watchUrl}"><img src="${thumb}" alt="YouTube video" /></a></p><p><a href="${watchUrl}">Watch on YouTube</a></p>`;
+        }
     );
 
     // 3. Strip stuff that has no place in a feed. NOTE: we no longer strip

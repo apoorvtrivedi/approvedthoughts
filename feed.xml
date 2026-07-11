@@ -5,22 +5,67 @@
     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <channel>
         <title><![CDATA[Approved Thoughts]]></title>
-        <link>https://www.approvedthoughts.com</link>
+        <link>https://approvedthoughts.com</link>
         <description><![CDATA[]]></description>
         <language>en-us</language>
         <managingEditor>noreply@approvedthoughts.com (Apoorv Trivedi)</managingEditor>
         <webMaster>noreply@approvedthoughts.com (Apoorv Trivedi)</webMaster>
-        <lastBuildDate>Sat, 04 Jul 2026 15:47:58 GMT</lastBuildDate>
-        <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+        <lastBuildDate>Sat, 11 Jul 2026 11:23:16 GMT</lastBuildDate>
+        <pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate>
         <generator>Approved Thoughts Static Site Generator</generator>
         <docs>https://www.rssboard.org/rss-specification</docs>
         <ttl>1440</ttl>
-        <atom:link href="https://www.approvedthoughts.com/feed.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://approvedthoughts.com/feed.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title><![CDATA[Links: Week of 11 Jul 2026]]></title>
+            <link>https://approvedthoughts.com/posts/2026/links-11-jul-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-11-jul-2026.html</guid>
+            <pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[1.
+   ::: tweet
+   url: https://twitter.com/arakharazian/status/2071942212925936053
+   author: Ara Kharazian
+   handle: arakharazian
+   date: Tue Jun ...]]></description>
+            <content:encoded><![CDATA[<ol>
+<li><blockquote><p><a href="https://twitter.com/arakharazian/status/2071942212925936053">@arakharazian</a></p><p>We can finally say AI isn&#39;t killing jobs.<br><br>A new paper from me, <a href="https://x.com/tryramp" target="_blank" rel="noopener">@tryramp</a>, and <a href="https://x.com/RevelioLabs" target="_blank" rel="noopener">@RevelioLabs</a> uses firm-level spend and workforce data across 21K U.S. businesses to measure AI&#39;s impact on jobs.<br><br>Firms that adopt AI heavily grow headcount 10% over two years following adoption. Low adopters see no statistically significant change.</p><p><img src="https://pbs.twimg.com/media/HMD-xviXcAArYSd.jpg" alt="" /></p></blockquote>
+</li>
+<li><p class="hy-link-headline"><a href="https://marginalrevolution.com/marginalrevolution/2026/07/missing-women-on-indian-streets.html" target="_blank" rel="noopener">Missing women on Indian streets</a></p>
+<blockquote>
+<p>How absent are women from city streets in the developing world? We answer this question using GPS-linked wearable cameras and randomized street audits across ~900 kilometers of roads in greater Mumbai. Across 4000+ street images containing 23,000+ visible person observations, women account for 16.4% of visible people in Mumbai and 14.7% in Navi Mumbai, far below their population shares. We estimate pedestrian sex ratios of 239 and 223 women per 1,000 men, implying 71% and 76% of women expected based on residential ratios are missing from the streets. This pattern holds across road types, and private mobility does not explain the gap; women’s share on two-wheelers is lower still (8.4% and 5.7%). These results provide the first large-scale measurement of gender disparities in urban public life that self-reported data cannot capture.</p>
+</blockquote>
+</li>
+</ol>
+<p>Here is the <a href="https://drive.google.com/file/d/1wpW9CKOgvRW7SD-xVc0ScycfUmRb9820/view" target="_blank" rel="noopener">actual paper</a>. </p>
+<ol start="3">
+<li><p class="hy-link-headline"><a href="https://www.chinatalk.media/p/the-20-most-interesting-ideas-weve" target="_blank" rel="noopener">The 20 Most Interesting Ideas We&#39;ve Found in 2026</a></p>
+<blockquote>
+<p>We translated an all-star panel discussion about the state of Chinese AI, in which panelists argue that China’s success with open source cannot compensate for the persistent and widening gap with US closed models. Qwen’s former tech lead estimated that there’s only a ~20% chance (“already very optimistic”) that the leading AI model in 3-5 years will be a Chinese one.</p>
+</blockquote>
+<p>and </p>
+<blockquote>
+<p>How Much AI Does $1 Get You in China vs America? In February, Aqib calculated that American chips are so much better than Chinese ones that, even with cheaper Chinese electricity and construction, $1 gets you more FLOPS in the U.S. (<del>24 GFLOPS/$) compared to China (</del>14 GFLOPS/$). We found that construction and chips account for almost all of the cost of running a data center, and other bills like electricity and water are basically rounding errors.</p>
+</blockquote>
+</li>
+<li><p class="hy-link-headline"><a href="https://davidoks.blog/p/why-american-ambulance-rides-are" target="_blank" rel="noopener">Why American ambulance rides are so expensive</a></p>
+<blockquote>
+<p>Over the weeks that followed, Whitten got bills from both hospitals. Everything was roughly what he expected, and all of it would be covered by his insurance plan. But a few months later, Whitten got another bill—this time from American Medical Response, the ambulance provider that had transferred him between hospitals. The ambulance ride, he learned, would cost him $12,873: $737 for the miles traveled, $314 for monitoring his heart on the trip, $151 for infection control, and $11,670 as a “base rate.”</p>
+<p>So why are American ambulances so expensive?</p>
+<p>The standard answer is greed: rapacious ambulance operators, owned by villainous private equity firms, exploit patients at their most helpless. But I don’t think that’s actually what’s going on. Ambulance providers are chronically unprofitable businesses; margins are thin, crews are underpaid, and operators exit the industry every year. Whatever is being extracted from patients like Whitten, it isn’t padding anyone’s pockets.</p>
+</blockquote>
+<p>David Oks strikes again. The depth and breadth of his blog is unmatched. Read the whole thing. </p>
+<p>This is a textbook example of why, when you read yet another article about the &quot;greed&quot; of corporations being responsible for one of our problems, you should be skeptical. It &quot;sounds&quot; true, but usually is as far from truth as it gets.</p>
+</li>
+</ol>]]></content:encoded>
+            <author>noreply@approvedthoughts.com (Apoorv Trivedi)</author>
+            <category><![CDATA[links]]></category>
+        </item>
+
+        <item>
             <title><![CDATA[Links: Semiquincentennial Day]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-04-jul-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-04-jul-2026.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/links-04-jul-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-04-jul-2026.html</guid>
             <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[1.
    ::: tweet
@@ -33,7 +78,7 @@
 <p>One of the most important charts of the year. Growth, for the lack of a better word, is good.</p>
 </li>
 <li><p class="hy-link-headline"><a href="https://www.youtube.com/@ChloeVSHistory" target="_blank" rel="noopener">Chloe vs. History</a> via <a href="https://marginalrevolution.com/marginalrevolution/2026/06/chloe-vs-history.html" target="_blank" rel="noopener">MR</a></p>
-<div class="video-container"><iframe src="https://www.youtube-nocookie.com/embed/aaua5ghidk0?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><p><a href="https://www.youtube.com/watch?v=aaua5ghidk0">Watch on YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=aaua5ghidk0"><img src="https://i.ytimg.com/vi/aaua5ghidk0/hqdefault.jpg" alt="YouTube video" /></a></p><p><a href="https://www.youtube.com/watch?v=aaua5ghidk0">Watch on YouTube</a></p>
 <p>New business models enabled by AI starting to come into focus. </p>
 </li>
 <li><blockquote><p><a href="https://twitter.com/karpathy/status/1756380066580455557">@karpathy</a></p><p># on shortification of &quot;learning&quot;<br><br>There are a lot of videos on YouTube/TikTok etc. that give the appearance of education, but if you look closely they are really just entertainment. This is very convenient for everyone involved : the people watching enjoy thinking they are learning (but actually they are just having fun). The people creating this content also enjoy it because fun has a much larger audience, fame and revenue. But as far as learning goes, this is a trap. This content is an epsilon away from watching the Bachelorette. It&#39;s like snacking on those &quot;Garden Veggie Straws&quot;, which feel like you&#39;re eating healthy vegetables until you look at the ingredients.<br><br>Learning is not supposed to be fun. It doesn&#39;t have to be actively not fun either, but the primary feeling should be that of effort. It should look a lot less like that &quot;10 minute full body&quot; workout from your local digital media creator and a lot more like a serious session at the gym. You want the mental equivalent of sweating. It&#39;s not that the quickie doesn&#39;t do anything, it&#39;s just that it is wildly suboptimal if you actually care to learn.<br><br>I find it helpful to explicitly declare your intent up front as a sharp, binary variable in your mind. If you are consuming content: are you trying to be entertained or are you trying to learn? And if you are creating content: are you trying to entertain or are you trying to teach? You&#39;ll go down a different path in each case. Attempts to seek the stuff in between actually clamp to zero.<br><br>So for those who actually want to learn. Unless you are trying to learn something narrow and specific, close those tabs with quick blog posts. Close those tabs of &quot;Learn XYZ in 10 minutes&quot;. Consider the opportunity cost of snacking and seek the meal - the textbooks, docs, papers, manuals, longform. Allocate a 4 hour window. Don&#39;t just read, take notes, re-read, re-phrase, process, manipulate, learn.<br><br>And for those actually trying to educate, please consider writing/recording longform, designed for someone to get &quot;sweaty&quot;, especially in today&#39;s era of quantity over quality. Give someone a real workout. This is what I aspire to in my own educational work too. My audience will decrease. The ones that remain might not even like it. But at least we&#39;ll learn something.</p></blockquote>
@@ -74,8 +119,8 @@
 
         <item>
             <title><![CDATA[Links: Weeks of 27 Jun 2026]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-27-jun-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-27-jun-2026.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/links-27-jun-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-27-jun-2026.html</guid>
             <pubDate>Sat, 27 Jun 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[1. [One Blood Test. Fifty Cancers. The Screening Revolution That Could Save Millions of Lives.](https://afshine.substack.com/p/one-blood-test-fifty-ca...]]></description>
             <content:encoded><![CDATA[<ol>
@@ -117,8 +162,8 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 
         <item>
             <title><![CDATA[Links: Weeks of 21 Jun 2026]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-21-jun-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-21-jun-2026.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/links-21-jun-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-21-jun-2026.html</guid>
             <pubDate>Sun, 21 Jun 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[...]]></description>
             <content:encoded><![CDATA[<ol>
@@ -157,8 +202,8 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 
         <item>
             <title><![CDATA[Links: Weeks of 13 Jun 2026]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-13-jun-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-13-jun-2026.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/links-13-jun-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-13-jun-2026.html</guid>
             <pubDate>Sat, 13 Jun 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[1.
    ::: tweet
@@ -197,8 +242,8 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 
         <item>
             <title><![CDATA[Links: Weeks of 06 Jun 2026]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-06-jun-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-06-jun-2026.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/links-06-jun-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-06-jun-2026.html</guid>
             <pubDate>Sat, 06 Jun 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[1.  👀...]]></description>
             <content:encoded><![CDATA[<ol>
@@ -217,7 +262,7 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 <p>This is a good use of 19 minutes. </p>
 </li>
 <li><p class="hy-link-headline"><a href="https://marginalrevolution.com/marginalrevolution/2026/06/tyler-and-alex-speak-to-openai.html" target="_blank" rel="noopener">OpenAI - Fireside Chat with Tyler Cowen and Alex Tabarrok</a>
-<div class="video-container"><iframe src="https://www.youtube-nocookie.com/embed/eAq1GBUzmlk?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><p><a href="https://www.youtube.com/watch?v=eAq1GBUzmlk">Watch on YouTube</a></p></p>
+<p><a href="https://www.youtube.com/watch?v=eAq1GBUzmlk"><img src="https://i.ytimg.com/vi/eAq1GBUzmlk/hqdefault.jpg" alt="YouTube video" /></a></p><p><a href="https://www.youtube.com/watch?v=eAq1GBUzmlk">Watch on YouTube</a></p></p>
 <p>If you have an hour and 20 minutes, then this one should be good too.</p>
 </li>
 <li><p class="hy-link-headline"><a href="https://www.washingtonpost.com/opinions/2026/06/05/school-days-off-ai-fiction-iran-roman-empire-an-education/" target="_blank" rel="noopener">Early dismissals and random days off are driving parents and teachers crazy</a>: This. </p>
@@ -232,8 +277,8 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 
         <item>
             <title><![CDATA[Links: Weeks of 30 May 2026 - Air India Wi-Fi Edition]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-30-may-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-30-may-2026.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/links-30-may-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-30-may-2026.html</guid>
             <pubDate>Sat, 30 May 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[1. Some good news in 4 but my! How things have changed since "Hum Do, Hamare Do."
    ::: tweet
@@ -289,8 +334,8 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 
         <item>
             <title><![CDATA[Links: Weeks of 23 May 2026]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-23-may-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-23-may-2026.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/links-23-may-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-23-may-2026.html</guid>
             <pubDate>Sat, 23 May 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[1.
    ::: tweet
@@ -320,8 +365,8 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 
         <item>
             <title><![CDATA[Visual Refresh]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/visual-refresh.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/visual-refresh.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/visual-refresh.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/visual-refresh.html</guid>
             <pubDate>Sat, 16 May 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[The new design of the site is now live. It was entirely designed in Claude Design, which then handed over the implementation to Claude Code. Unlike th...]]></description>
             <content:encoded><![CDATA[<p>The new design of the site is now live. It was entirely designed in Claude Design, which then handed over the implementation to Claude Code. Unlike the previous two rounds, this time I did not need to copy and paste any code into various files. Claude Code handled it all. I needed to test, follow its instructions for de-bugging and deployment. </p>
@@ -333,8 +378,8 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 
         <item>
             <title><![CDATA[Links: Weeks of 16 May 2026]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-16-may-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-16-may-2026.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/links-16-may-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-16-may-2026.html</guid>
             <pubDate>Sat, 16 May 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[A light edition this week. No reason. I saved a ton of links, but in the fullness of time they did not age well....]]></description>
             <content:encoded><![CDATA[<p>A light edition this week. No reason. I saved a ton of links, but in the fullness of time they did not age well. </p>
@@ -367,8 +412,8 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 
         <item>
             <title><![CDATA[Links: Week of 09 May 2026]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-09-may-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-09-may-2026.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/links-09-may-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-09-may-2026.html</guid>
             <pubDate>Sat, 09 May 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[1. [The layoffs will continue till we learn to use AI](https://x.com/championswimmer/status/2051807284691612099):
    > Code is an input. 
@@ -420,8 +465,8 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 
         <item>
             <title><![CDATA[Links: Week of 02 May 2026]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-02-may-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-02-may-2026.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/links-02-may-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-02-may-2026.html</guid>
             <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[1. 
    ::: tweet
@@ -455,8 +500,8 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 
         <item>
             <title><![CDATA[Links: Week of 25 Apr 2026 - Backlash Edition]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-25-apr-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-25-apr-2026.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/links-25-apr-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-25-apr-2026.html</guid>
             <pubDate>Sat, 25 Apr 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[1. [THE PEOPLE DO NOT YEARN FOR AUTOMATION](https://www.theverge.com/podcast/917029/software-brain-ai-backlash-databases-automation): 
    > In fact, t...]]></description>
@@ -508,8 +553,8 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 
         <item>
             <title><![CDATA[Links: Week of 19 Apr 2026]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-19-apr-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-19-apr-2026.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/links-19-apr-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-19-apr-2026.html</guid>
             <pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[1. [Sites Unseen: What Travel Is Like for Those Who Can’t See](https://www.nytimes.com/interactive/2026/04/07/travel/blind-visually-impaired-travelers...]]></description>
             <content:encoded><![CDATA[<ol>
@@ -541,8 +586,8 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 
         <item>
             <title><![CDATA[Links: Week of 12 Apr 2026]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-12-apr-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-12-apr-2026.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/links-12-apr-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-12-apr-2026.html</guid>
             <pubDate>Sun, 12 Apr 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[1. [Slop Watch: GLP-1 Edition](https://futurism.com/medvi-ai-ozempic):
    > We did find some Reddit comments, though, warning other netizens to steer ...]]></description>
@@ -612,8 +657,8 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 
         <item>
             <title><![CDATA[Links: Week of 05 Apr 2026]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-05-apr-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-05-apr-2026.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/links-05-apr-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-05-apr-2026.html</guid>
             <pubDate>Sun, 05 Apr 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[A lighter edition this week as the family traveled for Spring Break. Normal service should resume next week....]]></description>
             <content:encoded><![CDATA[<p>A lighter edition this week as the family traveled for Spring Break. Normal service should resume next week. </p>
@@ -646,8 +691,8 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 
         <item>
             <title><![CDATA[Links: Week of 29 Mar 2026]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-29-mar-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-29-mar-2026.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/links-29-mar-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-29-mar-2026.html</guid>
             <pubDate>Mon, 30 Mar 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[1. [China and the Future of Science](https://scholarstage.substack.com/p/china-and-the-future-of-science)
    > The Chinese party-state is fundamentall...]]></description>
@@ -685,8 +730,8 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 
         <item>
             <title><![CDATA[Links: Week of 22 Mar 2026]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-22-mar-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-22-mar-2026.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/links-22-mar-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-22-mar-2026.html</guid>
             <pubDate>Sun, 22 Mar 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Word of The Day: [TESCREAL](https://en.wikipedia.org/wiki/TESCREAL)...]]></description>
             <content:encoded><![CDATA[<p><strong>Word of The Day</strong>: <a href="https://en.wikipedia.org/wiki/TESCREAL" target="_blank" rel="noopener">TESCREAL</a></p>
@@ -732,8 +777,8 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 
         <item>
             <title><![CDATA[Links: Week of 15 Mar 2026]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-15-mar-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-15-mar-2026.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/links-15-mar-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-15-mar-2026.html</guid>
             <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[The first two stories this week are mindblowing. Huge if true, as they say....]]></description>
             <content:encoded><![CDATA[<p>The first two stories this week are mindblowing. Huge if true, as they say. </p>
@@ -748,7 +793,7 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 <p>In 2024, the entire neuronal diagram of the fruit-fly brain–some 140,000 neurons and 50 million connections–was mapped. Later research showed that the map could be used to predict behavior. Now, Eon Systems a firm with some of the scientists involved in the fruit-fly research and with the goal of uploading a human brain has announced that they uploaded the fruit fly brain to a digital environment.</p>
 <p>The digital fly appears to behave in the digital environment in reasonably fly like ways–this is not a simulation, the fly’s “sensors” are being activated by the digital environment and the neurons are responding.</p>
 </blockquote>
-<div class="video-container"><iframe src="https://www.youtube-nocookie.com/embed/e21OUXPlnhk?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><p><a href="https://www.youtube.com/watch?v=e21OUXPlnhk">Watch on YouTube</a></p>
+<p><a href="https://www.youtube.com/watch?v=e21OUXPlnhk"><img src="https://i.ytimg.com/vi/e21OUXPlnhk/hqdefault.jpg" alt="YouTube video" /></a></p><p><a href="https://www.youtube.com/watch?v=e21OUXPlnhk">Watch on YouTube</a></p>
 </li>
 <li><p>Some <a href="https://x.com/Afinetheorem/status/2031566775230279815?s=20" target="_blank" rel="noopener">more</a> AI <a href="https://x.com/garrytan/status/2032014570118922347" target="_blank" rel="noopener">tutorials</a>. So many tutorials, so little time. </p>
 </li>
@@ -763,11 +808,11 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 
         <item>
             <title><![CDATA[Links: Week of 08 Mar 2026]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/links-08-mar-2026.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/links-08-mar-2026.html</guid>
+            <link>https://approvedthoughts.com/posts/2026/links-08-mar-2026.html</link>
+            <guid isPermaLink="true">https://approvedthoughts.com/posts/2026/links-08-mar-2026.html</guid>
             <pubDate>Sun, 08 Mar 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[![SavithaShan](/assets/images/2026/Mar/Moar%20Updatez.webp)...]]></description>
-            <content:encoded><![CDATA[<div class="image-container"><img src="https://www.approvedthoughts.com/assets/images/2026/Mar/Moar%20Updatez.webp" alt="SavithaShan" loading="lazy" class="inline-image clickable-image"    /></div>
+            <content:encoded><![CDATA[<div class="image-container"><img src="https://approvedthoughts.com/assets/images/2026/Mar/Moar%20Updatez.webp" alt="SavithaShan" loading="lazy" class="inline-image clickable-image"    /></div>
 <blockquote>
 <p>Savitha Shan, an undergrad double major here in economics and information systems, who was <a href="https://scottaaronson.blog/?p=9606" target="_blank" rel="noopener">murdered over the weekend</a> by an Islamist terrorist who started randomly shooting people on Sixth Street, apparently angry about the war in Iran. Two other innocents were also killed.  - <a href="https://scottaaronson.blog/?p=9606" target="_blank" rel="noopener">Scott Aaronson</a></p>
 </blockquote>
@@ -789,47 +834,11 @@ These revenues are growing faster than previous IT-oriented waves, roughly three
 <li><blockquote><p><a href="https://twitter.com/Chapinc/status/2028156012511846733">@Chapinc</a></p><p>You want me to be physically present at a meeting in the office? Like the Ayatollah?</p></blockquote>
 </li>
 <li><p>I wouldn&#39;t stand there.</p>
-<div class="image-container"><img src="https://www.approvedthoughts.com/assets/images/2026/Mar/I%20wouldn't%20stand%20there.jpeg" alt="IWouldntStandThere" loading="lazy" class="inline-image clickable-image"    /></div>
+<div class="image-container"><img src="https://approvedthoughts.com/assets/images/2026/Mar/I%20wouldn't%20stand%20there.jpeg" alt="IWouldntStandThere" loading="lazy" class="inline-image clickable-image"    /></div>
 </li>
 </ol>]]></content:encoded>
             <author>noreply@approvedthoughts.com (Apoorv Trivedi)</author>
             <category><![CDATA[links]]></category>
-            <category><![CDATA[ai]]></category>
-        </item>
-
-        <item>
-            <title><![CDATA[Feeling the AGI]]></title>
-            <link>https://www.approvedthoughts.com/posts/2026/feeling-the-agi.html</link>
-            <guid isPermaLink="true">https://www.approvedthoughts.com/posts/2026/feeling-the-agi.html</guid>
-            <pubDate>Sun, 08 Mar 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[I have been following the AI revolution almost since the day ChatGPT launched in Nov 2022. That this was a transformational technology has also been c...]]></description>
-            <content:encoded><![CDATA[<p>I have been following the AI revolution almost since the day ChatGPT launched in Nov 2022. That this was a transformational technology has also been clear to me for almost as long. I even sensed the <a href="https://approvedthoughts.com/posts/2026/links-10-jan-2026">&quot;vibe shift&quot;</a> in early Jan.</p>
-<p>But so far I didn&#39;t really &quot;feel the AGI&quot;. Last week I did.</p>
-<p>AGI stands for Artificial General Intelligence. Here&#39;s how Claude defines it:</p>
-<blockquote>
-<p>An AI system capable of performing any intellectual task that a human can — reasoning, learning, and adapting across domains without being specifically programmed for each one.&quot; - Claude Sonnet 4.6</p>
-</blockquote>
-<p>It is also worth knowing the related concept of ASI, Artificial Superintelligence.</p>
-<blockquote>
-<p>An AI that surpasses the cognitive abilities of all humans combined across every domain, including scientific reasoning, social intelligence, and creative problem-solving.&quot;</p>
-</blockquote>
-<p>Last week we finally signed up for Claude Code at work and I started playing with it.</p>
-<p>Claude Code works via the CLI (command line interface) or the terminal - the black screen with white text used by all the movie nerds. It can be a little intimidating if you are not a programmer but really once you set up Claude Code, it works just like the chat window.</p>
-<p>It is so much more powerful though. It can manipulate files on your computer and run the code it writes. This means it is not restricted to recommendations or single steps any more. It can generate an entire plan of action and execute and implement the thing by itself. It can be more than a little freaky when you see the output of a particularly complex task.</p>
-<p>Let me share a couple of examples that blew my mind.</p>
-<p>At work we have a database that stores our financial projections for a company we cover. The investment team can use custom functions in excel to then download this data. This is useful to create reports for analysis - say comparing 5 companies across a few metrics. There are different functions for different types of data and the IT team has created an excel file with about 20 sheets listing the syntax for each function, the list of values that can go in each function etc.</p>
-<p>I pointed Claude Code to this help file and asked it to create a &quot;skill&quot; for itself that would allow it to create reports in excel using these formulas. I gave it the same context as the previous paragraph - maybe a little more technical but nothing a lay person wouldn&#39;t understand.</p>
-<p>With that single command, in maybe 3-5 minutes, the skill was ready. Now when we need to create a report we can just ask Claude Code to use the skill, the data we want in the report and it creates a fully formatted excel file with the (usually) correct formulas. Tasks that would take me or my team members 20-60 minutes, automated permanently. Using English sentences, no technical knowledge.</p>
-<p>Second example. We wanted to perform some statistical analysis on 20 year historical performance of 600 stocks to identify specific episodes / time periods and then dig deeper into specific episodes to understand their fundamental causes.</p>
-<p>An analyst spent probably 5-6 hours to download the data in excel, process it so we could start identifying the qualifying episodes / time periods in different markets. At this point we were somewhat stumped about how to isolate the relevant episodes from this vast data. Probably a trivial problem for a data scientist but not for us.</p>
-<p>In the past, we would have spent probably another 5-10 hours trying to either eyeball the data using charts or some other way to get our answer. Over the last couple of years, we would have asked Claude or ChatGPT to suggest a better way.</p>
-<p>But since we had Claude Code, I pointed it to the existing file, with all its messy sheets and structure and explained what we were trying to do and asked it to identify the episodes. It whirred away for about 20 min, an occasional question here or a permission there and then it spat out a report.</p>
-<p>But the report didn&#39;t just have the episodes identified. It also identified potential causes for each episode (based on web searches presumably), linked patterns across multiple episodes, gave charts and commentary that helped us understand the relevance of each episode, limitations of the analysis, suggested next steps etc.</p>
-<p>Now we have all seen more than enough AI slop to not be impressed by the sheer volume of content these tools can spit out. But we spent a few hours verifying the numbers and conclusions. So far it all checks out. You have to take my word for it, but man, this was not slop. If a junior associate had put this out I would be proud of them. There were parts that I would have been proud to create and, of course, large parts that we simply couldn&#39;t have created at all.</p>
-<p>And those were not the only thing Claude Code did last week that blew my mind.</p>
-<p>So, let it be noted on this 8th of March, 2026, I felt the AGI last week. I may even have felt the ASI.</p>]]></content:encoded>
-            <author>noreply@approvedthoughts.com (Apoorv Trivedi)</author>
-            <category><![CDATA[post]]></category>
             <category><![CDATA[ai]]></category>
         </item>
     </channel>

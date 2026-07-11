@@ -1188,5 +1188,19 @@
     "retweets": 2311,
     "replies": 166,
     "_fetched_at": "2026-07-04T15:26:31.216Z"
+  },
+  "2071942212925936053": {
+    "url": "https://twitter.com/arakharazian/status/2071942212925936053",
+    "id": "2071942212925936053",
+    "author": "Ara Kharazian",
+    "handle": "arakharazian",
+    "text": "We can finally say AI isn't killing jobs.\n\nA new paper from me, @tryramp, and @RevelioLabs uses firm-level spend and workforce data across 21K U.S. businesses to measure AI's impact on jobs.\n\nFirms that adopt AI heavily grow headcount 10% over two years following adoption. Low adopters see no statistically significant change.",
+    "created_at": "Tue Jun 30 13:01:33 +0000 2026",
+    "timestamp": 1782824493,
+    "image": "https://pbs.twimg.com/media/HMD-xviXcAArYSd.jpg",
+    "likes": 2729,
+    "retweets": 609,
+    "replies": 164,
+    "_fetched_at": "2026-07-11T11:11:42.331Z"
   }
 }
