@@ -32,7 +32,7 @@ draft: false
 
    and 
 
-   > How Much AI Does $1 Get You in China vs America? In February, Aqib calculated that American chips are so much better than Chinese ones that, even with cheaper Chinese electricity and construction, $1 gets you more FLOPS in the U.S. (~24 GFLOPS/$) compared to China (~14 GFLOPS/$). We found that construction and chips account for almost all of the cost of running a data center, and other bills like electricity and water are basically rounding errors.
+   > How Much AI Does $1 Get You in China vs America? In February, Aqib calculated that American chips are so much better than Chinese ones that, even with cheaper Chinese electricity and construction, $1 gets you more FLOPS in the U.S. (24 GFLOPS/$) compared to China (14 GFLOPS/$). We found that construction and chips account for almost all of the cost of running a data center, and other bills like electricity and water are basically rounding errors.
 
 4. [Why American ambulance rides are so expensive](https://davidoks.blog/p/why-american-ambulance-rides-are)
    > Over the weeks that followed, Whitten got bills from both hospitals. Everything was roughly what he expected, and all of it would be covered by his insurance plan. But a few months later, Whitten got another bill—this time from American Medical Response, the ambulance provider that had transferred him between hospitals. The ambulance ride, he learned, would cost him $12,873: $737 for the miles traveled, $314 for monitoring his heart on the trip, $151 for infection control, and $11,670 as a “base rate.”
